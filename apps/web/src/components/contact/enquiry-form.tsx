@@ -97,7 +97,7 @@ Details: ${formData.details}`);
                     textDecoration: 'none',
                   }}
                 >
-                  View on Google Maps / Business Profile ↗
+                  View on Google Maps ↗
                 </a>
               </div>
             </div>

@@ -50,7 +50,7 @@ export function SiteFooter() {
               rel="noopener noreferrer"
               style={{ color: 'var(--blue)', fontSize: '13px', textDecoration: 'none', fontWeight: 600 }}
             >
-              📍 Google Business Profile →
+              📍 View on Google Maps →
             </a>
           </p>
           <p>
