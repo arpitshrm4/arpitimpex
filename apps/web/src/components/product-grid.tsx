@@ -39,7 +39,7 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
                     </Link>
                     <a
                       className="button-product-whatsapp"
-                      href={`https://wa.me/917942634041?text=${waText}`}
+                      href={`https://wa.me/918285687940?text=${waText}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       title="Enquire on WhatsApp"

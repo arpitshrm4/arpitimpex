@@ -40,7 +40,7 @@ export function EnquiryForm() {
 *Quantity:* ${formData.quantity}
 *Notes/Spec:* ${formData.details || 'Interested in price quotation and catalog.'}`;
 
-    const url = `https://wa.me/917942634041?text=${encodeURIComponent(text)}`;
+    const url = `https://wa.me/918285687940?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
     setSubmitted(true);
   };
@@ -93,7 +93,7 @@ Details: ${formData.details}`);
 
           <div className="contact-quick-actions">
             <a
-              href={`https://wa.me/917942634041?text=${encodeURIComponent('Hi Arpit Impex, I would like to enquire about your hardware products.')}`}
+              href={`https://wa.me/918285687940?text=${encodeURIComponent('Hi Arpit Impex, I would like to enquire about your hardware products.')}`}
               className="quick-btn-whatsapp"
               target="_blank"
               rel="noopener noreferrer"

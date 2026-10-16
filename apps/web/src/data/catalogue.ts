@@ -153,7 +153,8 @@ export const products: ProductItem[] = [
 export const companyInfo = {
   name: 'Arpit Impex',
   contactPerson: 'Jugendra Kumar Sharma',
-  phone: '+91 7942634041',
+  phone: '+91 8285687940',
+  whatsapp: '+91 8285687940',
   location: 'Aligarh, Uttar Pradesh - 202001, India',
   email: 'arpitimpex@gmail.com',
   gstVerified: true,
