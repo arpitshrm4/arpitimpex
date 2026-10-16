@@ -8,9 +8,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Export Coordination & B2B Sourcing Process | Arpit Impex India',
+      title: 'B2B Hardware Ordering & Export Process | Arpit Impex',
       description:
-        'Understand our 6-step B2B hardware export process: requirement review, specification confirmation, commercial quotation, sample evaluation, inspection, and export documentation.',
+        'Learn how Arpit Impex reviews product requirements, confirms specifications, quotes bulk orders and coordinates packaging and export dispatch.',
     }
   );
 }
@@ -19,8 +19,8 @@ export default function ProcessPage() {
     <main>
       <PageIntro
         eyebrow="SOURCING & EXPORT PROCESS"
-        title="Clear Steps. Considered Sourcing."
-        text="From your initial requirement to confirmed export documentation and dispatch, we keep order expectations practical. Product availability, specifications, and commercial terms are reviewed for every order."
+        title="How Our B2B Hardware Order Process Works"
+        text="We coordinate each order from product enquiry through specification confirmation, quotation, sample review where available, agreed inspection, packaging and shipment. Availability, lead time, costs and shipping terms are confirmed for the specific order."
       />
       <Process />
       <Faq />

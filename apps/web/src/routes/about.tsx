@@ -11,9 +11,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'About Arpit Impex | Hardware Manufacturing & Export Supply Aligarh',
+      title: 'About Arpit Impex | Architectural Hardware from India',
       description:
-        'Learn about Arpit Impex in Aligarh, India. We combine in-house mechanical lock manufacturing with verified partner sourcing for international architectural hardware buyers.',
+        'Learn about Arpit Impex’s selected in-house hardware manufacturing, local supply partners and B2B export coordination from Aligarh, India.',
       image: images.factoryEntrance,
     }
   );
@@ -24,8 +24,8 @@ export default function AboutPage() {
     <main>
       <PageIntro
         eyebrow="ABOUT ARPIT IMPEX"
-        title="Architectural Hardware Supply Backed by Local Manufacturing Capability"
-        text="Based in Aligarh, Uttar Pradesh, India, we combine in-house power press production for selected locks and lock bodies with verified partner sourcing for handles and cylinders, providing transparent B2B supply."
+        title="Architectural Hardware Supply from Aligarh, India"
+        text="Arpit Impex serves business buyers looking for architectural door hardware from India. Our range includes door locks, mortise lock bodies, cylinders, handles and related fittings. We manufacture selected products in our Aligarh unit and coordinate additional products through local supply partners."
       />
       <About />
       <FacilityShowcase />

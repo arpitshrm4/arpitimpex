@@ -26,7 +26,7 @@ export function meta({ data, params, matches, location }: Route.MetaArgs) {
     { matches, location },
     {
       title: `${product.name} ${product.modelNumber} | Arpit Impex`,
-      description: `View specifications and bulk supply options for ${product.name} (${product.modelNumber}) from Arpit Impex, India. Ask about materials, finishes, packaging, MOQ and export quotation.`,
+      description: `Request bulk pricing and confirmed specifications for model ${product.modelNumber} (${product.name}) from Arpit Impex, India.`,
       image: product.image,
       jsonLd: [
         {
@@ -72,11 +72,6 @@ export function meta({ data, params, matches, location }: Route.MetaArgs) {
             '@type': 'Brand',
             name: 'Arpit Impex',
           },
-          manufacturer: {
-            '@type': 'Organization',
-            name: 'Arpit Impex',
-            url: 'https://arpitimpex.com',
-          },
         },
       ],
     }
@@ -119,7 +114,7 @@ export default function ProductDetailPage() {
             <div className="pdp-main-image-wrap">
               <img
                 src={product.image}
-                alt={`${product.name} model ${product.modelNumber}, architectural door hardware from Arpit Impex`}
+                alt={`${product.name}, model ${product.modelNumber}`}
                 width="700"
                 height="700"
                 loading="eager"
@@ -221,16 +216,20 @@ export default function ProductDetailPage() {
         </div>
       </section>
 
-      {/* Verified Technical Specifications Section */}
+      {/* Technical Specifications Section */}
       <section className="section pdp-specs-section">
         <div className="section-heading">
           <div>
             <p className="eyebrow">TECHNICAL DATA & FITMENT</p>
-            <h2>Verified Product Specifications</h2>
+            <h2>Product Specifications</h2>
           </div>
           <Link to="/products" className="text-link">
             <ArrowLeft size={16} /> Back to Full Catalogue
           </Link>
+        </div>
+
+        <div className="specs-trust-note" style={{ background: '#f6f3ec', borderLeft: '3px solid var(--gold)', padding: '14px 18px', marginBottom: '24px', fontSize: '13px', lineHeight: '1.6', color: 'var(--navy)' }}>
+          Specifications shown are based on currently available product information. Please confirm dimensions, materials, finish, compatibility and included accessories against the latest technical drawing or sample before placing a bulk order.
         </div>
 
         <div className="specs-table-wrapper">
@@ -247,6 +246,10 @@ export default function ProductDetailPage() {
               <tr>
                 <th scope="row">Category</th>
                 <td>{product.categoryName}</td>
+              </tr>
+              <tr>
+                <th scope="row">Manufacturing & Supply Arrangement</th>
+                <td>{product.supplyArrangement || 'Confirmed for this model during quotation.'}</td>
               </tr>
               {product.sourceStatus === 'Available on enquiry' && (
                 <tr>
@@ -316,33 +319,33 @@ export default function ProductDetailPage() {
         <div className="steps">
           <article>
             <span className="step-number">01</span>
-            <h3>Share Requirements</h3>
-            <p>Provide target quantities, required surface finishes, destination country, and any custom branding needs.</p>
+            <h3>Share your requirement</h3>
+            <p>Send the product model, drawing or reference image, quantity, finish preference and destination country.</p>
           </article>
           <article>
             <span className="step-number">02</span>
-            <h3>Confirm Specifications</h3>
-            <p>We review technical drawings, dimensional tolerances, and confirm in-house vs partner-sourced production status.</p>
+            <h3>Confirm product details</h3>
+            <p>We review dimensions, materials, compatibility, included accessories and whether the item is manufactured in-house or supplied through a partner.</p>
           </article>
           <article>
             <span className="step-number">03</span>
-            <h3>Commercial Terms</h3>
-            <p>Receive a clear quotation covering per-unit pricing, confirmed MOQ, production lead time, and FOB/CIF freight options.</p>
+            <h3>Review the quotation</h3>
+            <p>The quotation sets out confirmed pricing, quantity requirements, applicable MOQ, lead time, packaging and agreed shipping terms.</p>
           </article>
           <article>
             <span className="step-number">04</span>
-            <h3>Sample Evaluation</h3>
-            <p>Physical samples or pre-production check pieces can be arranged where applicable prior to bulk batch production.</p>
+            <h3>Review a sample, where available</h3>
+            <p>Sample availability, cost and dispatch timing are confirmed for the requested model before a bulk order proceeds.</p>
           </article>
           <article>
             <span className="step-number">05</span>
-            <h3>Inspection & Packaging</h3>
-            <p>Order-specific dimensional, surface, and mechanical checks are performed followed by export carton packaging.</p>
+            <h3>Agree inspection and packaging</h3>
+            <p>Inspection points and packaging requirements are agreed in advance and completed as specified for the order.</p>
           </article>
           <article>
             <span className="step-number">06</span>
-            <h3>Export Documentation</h3>
-            <p>We supply commercial invoices, packing lists, and coordinate freight dispatch according to agreed Incoterms.</p>
+            <h3>Coordinate dispatch</h3>
+            <p>We coordinate dispatch and the applicable export documents and freight arrangements according to the agreed terms and destination requirements.</p>
           </article>
         </div>
       </section>

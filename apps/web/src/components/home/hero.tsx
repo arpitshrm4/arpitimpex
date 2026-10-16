@@ -6,25 +6,25 @@ export function Hero() {
     <section className="hero">
       <div className="hero-copy">
         <p className="eyebrow">
-          <span /> ALIGARH, INDIA → B2B EXPORT SUPPLY
+          <span /> ARCHITECTURAL HARDWARE · ALIGARH, INDIA
         </p>
         <h1>
           Architectural Door Hardware<br />
-          <span>from India.</span>
+          <span>for Global B2B Buyers</span>
         </h1>
         <p className="hero-description">
-          Arpit Impex supplies door locks, mortise lock bodies, cylinders, handles and related architectural hardware to business buyers. Based in Aligarh, India, we support product enquiries, specification discussions, customization requests and export coordination for bulk orders.
+          Arpit Impex supplies door locks, mortise lock bodies, cylinders, handles and related architectural hardware to importers, distributors, wholesalers and project buyers. Based in Aligarh, India, we support bulk enquiries, product-specification reviews, customization discussions and export coordination.
         </p>
         <div className="actions">
           <Link to="/contact" className="button">
             Request a B2B Quote <ArrowRight size={18} />
           </Link>
           <Link to="/products" className="button outline">
-            Explore Product Range <ArrowUpRight size={18} />
+            Explore Products <ArrowUpRight size={18} />
           </Link>
         </div>
         <p className="reassurance">
-          Bulk enquiries <b>·</b> Product specifications <b>·</b> Customization discussions <b>·</b> Export coordination
+          Bulk supply <b>·</b> Model-level specifications <b>·</b> Customization enquiries <b>·</b> Export coordination
         </p>
       </div>
       <div className="hero-media">

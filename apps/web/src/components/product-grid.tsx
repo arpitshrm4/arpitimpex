@@ -22,7 +22,7 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
                   <Link to={`/products/${p.slug}`} className="product-image-link" aria-label={`View specifications for ${p.name}`}>
                     <img
                       src={p.image}
-                      alt={`${p.name} model ${p.modelNumber}, architectural door hardware`}
+                      alt={`${p.name}, model ${p.modelNumber}`}
                       width="500"
                       height="500"
                       loading="lazy"

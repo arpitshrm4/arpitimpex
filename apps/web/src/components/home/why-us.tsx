@@ -4,37 +4,36 @@ export function WhyUs() {
   const features = [
     {
       icon: Wrench,
-      title: 'In-House Manufacturing & Tooling',
-      text: 'Direct workshop production in Aligarh for selected mortise locks, pressed steel lock bodies, latches, and internal mechanism components.',
+      title: 'In-house manufacturing',
+      text: 'Selected locks, lock bodies and pressed components are produced in our Aligarh workshop. Manufacturing status is confirmed by model.',
     },
     {
       icon: Layers,
-      title: 'Specification-Led Sourcing',
-      text: 'We review drawings, dimensions, backsets, and finishes to provide exact matching options—combining in-house fabrication with verified local partners.',
+      title: 'Product matching',
+      text: 'Share a model number, drawing, dimensions or reference sample. We review the requirement and confirm the closest available specification before quoting.',
     },
     {
       icon: CheckCircle2,
-      title: 'Order-Specific Quality Checks',
-      text: 'Every order undergoes physical checks—including dimensional tolerance, key operation, plating finish, and mechanism movement before packing.',
+      title: 'Order-specific inspection',
+      text: 'Inspection requirements are agreed for each order. Depending on the product, checks may include dimensions, finish, mechanism operation and packaging condition.',
     },
     {
       icon: PackageCheck,
-      title: 'Custom Packaging & Export Handling',
-      text: 'We coordinate bulk export cartons, private-label branding (subject to MOQ), and standard export shipping documentation (FOB/CIF where mutually agreed).',
+      title: 'Bulk packaging and export coordination',
+      text: 'We discuss standard or buyer-branded packaging, subject to product availability and order quantity, and coordinate applicable shipment documentation and freight arrangements.',
     },
   ];
 
   return (
     <section className="why-section section">
       <div>
-        <p className="eyebrow">CAPABILITIES & STANDARDS</p>
+        <p className="eyebrow">CAPABILITIES & SOURCING</p>
         <h2>
-          Architectural Hardware Backed by<br />
-          Local Manufacturing & Verified Supply
+          Manufacturing Capability and<br />
+          Product Sourcing
         </h2>
         <p>
-          Practical coordination. Model-level specifications.<br />
-          Clear expectations from enquiry to dispatch.
+          We manufacture selected hardware products in our Aligarh unit and coordinate additional products through local supply partners. For each enquiry, we confirm the product specification, supply arrangement, available finish options, order quantity and packaging requirements before quotation.
         </p>
       </div>
       <div className="feature-list">

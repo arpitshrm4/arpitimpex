@@ -71,6 +71,7 @@ export interface ProductItem {
   category: string;
   categoryName: string;
   sourceStatus?: 'Available on enquiry';
+  supplyArrangement?: string;
   material: string;
   finish: string;
   mechanism: string;
@@ -90,15 +91,16 @@ export const products: ProductItem[] = [
     modelNumber: 'JL-PB01',
     category: 'door-locks',
     categoryName: 'Rim Door Lock',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Mild Steel Casing & Bolt Assembly',
     finish: 'Dual-tone Metallic Powder Coated with Polished Accents',
     mechanism: 'Multi-bolt (5-bolt) rim deadbolt mechanism with key-operated exterior and interior thumbturn/knob',
     keys: '4 Numbered Brass Keys',
-    dimensions: 'Standard rim lock housing footprint (~130mm x 95mm)',
-    doorThickness: '30mm – 55mm wooden & metal doors',
+    dimensions: 'Approx. 130mm x 95mm housing (confirm on enquiry)',
+    doorThickness: '30mm – 55mm (confirm on enquiry)',
     packaging: 'Individual product box; master corrugated export cartons',
-    image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
-    description: 'Surface-mounted rim door lock featuring a multi-bolt (5-bolt) deadbolt configuration for entrance doors. Fabricated in our Aligarh workshop from mild steel plate with durable surface coating and numbered key entry.',
+    image: '/images/hero-penta-bolt-rim-lock.jpg',
+    description: 'Surface-mounted rim door lock with a five-bolt locking configuration. Suitable applications, body material, finish, dimensions, door-thickness range, key configuration and included accessories must be confirmed against the current model specification before ordering.',
     applications: 'Main entrance wooden doors, security gates, apartment entry doors, and perimeter utility doors.',
   },
   {
@@ -107,15 +109,16 @@ export const products: ProductItem[] = [
     modelNumber: 'No. 6052',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Casing with Stamped Steel Lever Pack',
     finish: 'Nickel Plated / Zinc Passivated Options',
     mechanism: '6-lever single chal (single-throw bolt throw of approx. 12mm on a single key rotation)',
     keys: '2 or 3 Numbered Steel Keys',
-    dimensions: '65mm backset standard; mortise depth approx. 70mm',
-    doorThickness: '32mm – 45mm interior and exterior doors',
+    dimensions: '65mm backset; mortise depth approx. 70mm (confirm on enquiry)',
+    doorThickness: '32mm – 45mm (confirm on enquiry)',
     packaging: 'Individually boxed with strike plate; master export cartons',
     image: '/images/products/6-lever-zinc-alloy-single-chal-mortise-lock.png',
-    description: 'Standard 6-lever mortise lock (Lock No. 6052) designed for flush wooden and composite doors. Utilizes a single-throw bolt mechanism with precision stamped lever tumblers for smooth everyday operation.',
+    description: 'Six-lever mortise lock with a single-throw bolt mechanism. Confirm the casing and lever-pack materials, backset, mortise depth, door-thickness compatibility, key count and finish against the current model drawing or sample.',
     applications: 'Office doors, residential bedrooms, commercial utility rooms, and interior partitions.',
   },
   {
@@ -124,15 +127,16 @@ export const products: ProductItem[] = [
     modelNumber: 'No. 68',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Body with Steel Internal Levers',
     finish: 'Zinc Plated / Satin Finish Faceplate',
     mechanism: '6-lever double chal (double-throw bolt mechanism with extended deadbolt travel on two key turns)',
     keys: '3 Numbered Keys',
-    dimensions: 'Standard mortise pocket profile (~75mm depth)',
-    doorThickness: '35mm – 50mm wooden doors',
+    dimensions: 'Standard mortise pocket profile (~75mm depth, confirm on enquiry)',
+    doorThickness: '35mm – 50mm (confirm on enquiry)',
     packaging: 'Individual box packaging; corrugated export cartons',
     image: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.jpeg',
-    description: 'Traditional double chal (double-throw) 6-lever mortise lock (Lock No. 68). The two-turn key mechanism extends the deadbolt deeper into the door frame strike plate for dependable closure.',
+    description: 'Traditional double-throw (double chal) 6-lever mortise lock. Two-turn key mechanism extends the deadbolt into the frame strike plate. Dimensions, materials, key count and finish options must be confirmed against current technical drawings.',
     applications: 'Residential wooden doors, hotel service doors, and commercial interior installations.',
   },
   {
@@ -142,15 +146,16 @@ export const products: ProductItem[] = [
     category: 'door-locks',
     categoryName: 'Rim Lock',
     sourceStatus: 'Available on enquiry',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Pressed Steel Body with Electroplated Antique Brass Finish',
     finish: 'Antique Brass (Aged Patina Appearance)',
     mechanism: 'Surface-mounted rim deadbolt and latch combination with interior snib',
     keys: 'Numbered Brass Keys',
-    dimensions: 'Approx. 120mm x 85mm surface mount housing',
-    doorThickness: '30mm – 50mm exterior and heritage doors',
+    dimensions: 'Approx. 120mm x 85mm surface mount housing (confirm on enquiry)',
+    doorThickness: '30mm – 50mm (confirm on enquiry)',
     packaging: 'Individual presentation box; master trade cartons',
     image: '/images/products/antique-brass-door-rim-lock-set.png',
-    description: 'Surface-mount rim lock set finished with a classic antique brass electroplating. Suitable for period doors, traditional interiors, and wooden perimeter gates requiring exterior key and interior snib operation.',
+    description: 'Surface-mount rim lock set with antique brass style finish. Suitable for period doors, traditional interiors, and wooden perimeter gates requiring exterior key and interior snib operation. Confirm dimensions, materials, and included accessories on enquiry.',
     applications: 'Heritage properties, boutique hotels, vintage interior decor, and decorative wooden gates.',
   },
   {
@@ -159,16 +164,17 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-160RGB',
     category: 'door-handles',
     categoryName: 'Door Handle',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy / Aluminium Alloy Casting',
     finish: 'Matte Black Powder Coat with Rose Gold Electroplated Accents',
     mechanism: 'Spring-assisted lever return with 8mm square spindle drive',
     keys: 'N/A (Lever Handle Fitting for Mortise Pairing)',
     dimensions: '160mm lever length; 50mm rose diameter / backplate',
-    doorThickness: '35mm – 50mm wooden & flush doors',
+    doorThickness: '35mm – 50mm wooden & flush doors (confirm on enquiry)',
     packaging: 'Matched pair packaging with spindle, escutcheons, and fixing screws',
     image: '/images/products/160mm-black-door-handle.jpeg',
-    description: 'Contemporary architectural lever handle featuring a 160mm ergonomic profile. Finished in dual-tone matte black and electroplated rose gold accent for modern interior residential and hotel doors.',
-    applications: 'Upscale residential bedrooms, luxury apartments, boutique hotel suites, and executive cabins.',
+    description: 'Architectural lever handle featuring a 160mm profile with two-tone finish. Designed for interior wooden and flush doors. Confirm material specifications, rose diameter, and spindle fitment on enquiry.',
+    applications: 'Residential bedrooms, modern apartments, hotel suites, and executive cabins.',
   },
   {
     slug: '175mm-black-door-handle',
@@ -176,16 +182,17 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-175BLK',
     category: 'door-handles',
     categoryName: 'Door Handle Set',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy / Extruded Aluminium Alloy',
     finish: 'Matte Black Electrostatic Finish',
     mechanism: 'Integrated backplate with spring-loaded lever return',
     keys: 'Keyhole cut-out for standard mortise pairing',
     dimensions: '175mm backplate length; 40mm width; 8mm spindle',
-    doorThickness: '35mm – 55mm wooden & composite doors',
+    doorThickness: '35mm – 55mm wooden & composite doors (confirm on enquiry)',
     packaging: 'Matched pair set with mounting screws and connecting spindle',
     image: '/images/products/175mm-black-door-handle.jpeg',
-    description: 'Long-plate architectural lever handle set measuring 175mm in length. Designed for mortise lock pairings on wooden entry, office, and apartment doors with clean minimalist styling.',
-    applications: 'Commercial offices, modern apartment doors, institutional buildings, and interior residential doors.',
+    description: 'Long-plate architectural lever handle set measuring 175mm in length. Designed for mortise lock pairings on wooden entry, office, and apartment doors. Confirm dimensions and finish specifications during quotation.',
+    applications: 'Commercial offices, apartment doors, institutional buildings, and interior residential doors.',
   },
   {
     slug: '160mm-brushed-gold-door-handle',
@@ -193,16 +200,17 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-160BGD',
     category: 'door-handles',
     categoryName: 'Door Handle',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Solid Zinc Alloy Casting',
     finish: 'Brushed Satin Gold (Lacquered Protective Finish)',
     mechanism: 'Spring-loaded return cassette with horizontal stop',
     keys: 'N/A (Lever Handle Fitting)',
     dimensions: '160mm lever length; 52mm circular escutcheon rose',
-    doorThickness: '32mm – 50mm wooden & laminate doors',
+    doorThickness: '32mm – 50mm wooden & laminate doors (confirm on enquiry)',
     packaging: 'Protective foam-lined pair packaging with hardware installation pack',
     image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
-    description: 'Modern straight-line lever handle in a warm brushed satin gold finish. Features internal spring cassette for positive horizontal alignment and smooth return action on interior door sets.',
-    applications: 'Luxury residences, hospitality guest rooms, designer commercial interiors, and showroom doors.',
+    description: 'Straight-line lever handle in a brushed satin gold finish for interior door sets. Confirm material, rose diameter, spring mechanism, and spindle dimensions on enquiry.',
+    applications: 'Residential spaces, hospitality guest rooms, commercial interiors, and showroom doors.',
   },
   {
     slug: 'mortise-cylinder-numbered-keys',
@@ -211,15 +219,16 @@ export const products: ProductItem[] = [
     category: 'cylinder-locks',
     categoryName: 'Cylinder Lock',
     sourceStatus: 'Available on enquiry',
-    material: 'Solid Brass Core with Sintered Steel Rotating Cam',
+    supplyArrangement: 'Confirmed for this model during quotation',
+    material: 'Brass Core with Rotating Cam',
     finish: 'Satin Nickel / Natural Brass Finish',
-    mechanism: 'Pin tumbler cylinder mechanism with balanced brass tumbler pins',
+    mechanism: 'Pin tumbler cylinder mechanism',
     keys: '3 or 5 Numbered Brass Keys',
-    dimensions: 'Standard 60mm / 70mm symmetrical cylinder profiles',
+    dimensions: 'Standard 60mm / 70mm symmetrical cylinder profiles (confirm on enquiry)',
     doorThickness: 'Compatible with standard mortise lock bodies',
     packaging: 'Individual box packaging with M5 cylinder mounting screw',
     image: '/images/products/mortise-cylinder-numbered-keys.jpeg',
-    description: 'BSK profile mortise cylinder lock with numbered brass keys for organized key tracking. Features balanced pin tumblers and standard cam throw for mortise lock body integration.',
+    description: 'Mortise lock cylinder with numbered keys for organized key tracking. Features pin tumbler mechanism and standard cam for mortise lock body pairing. Confirm cylinder length, material, and key count during quotation.',
     applications: 'Residential mortise locks, office door mortise bodies, and commercial key-controlled access points.',
   },
   {
@@ -229,15 +238,16 @@ export const products: ProductItem[] = [
     category: 'cylinder-locks',
     categoryName: 'Euro Cylinder',
     sourceStatus: 'Available on enquiry',
-    material: 'Solid Extruded Brass Body with Steel Cam',
+    supplyArrangement: 'Confirmed for this model during quotation',
+    material: 'Extruded Brass Body with Steel Cam',
     finish: 'Satin Chrome / Brushed Brass Options',
-    mechanism: 'Standard DIN Euro profile pin tumbler mechanism',
+    mechanism: 'Standard Euro profile pin tumbler mechanism',
     keys: '3 Numbered Keys',
     dimensions: '60mm (30/30), 70mm (35/35), and 80mm (40/40) length options',
-    doorThickness: '35mm – 65mm euro-profile door sets',
-    packaging: 'Individual retail box or bulk poly packaging for OEM door manufacturers',
+    doorThickness: '35mm – 65mm euro-profile door sets (confirm on enquiry)',
+    packaging: 'Individual box or bulk packaging for OEM door manufacturers',
     image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
-    description: 'Standard DIN Euro profile cylinder lock for compatibility with European and international mortise lock cases. Includes numbered keys for systematic key management across multi-door installations.',
+    description: 'Euro profile cylinder lock designed for compatible mortise lock cases. Includes numbered keys for systematic key management. Confirm profile dimensions, alloy specification, and keying requirements before bulk ordering.',
     applications: 'Apartment entry doors, office euro-lock cases, aluminum section doors, and commercial perimeter doors.',
   },
   {
@@ -246,16 +256,17 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-ALU20',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
-    material: 'Galvanized Steel Lock Case with Stainless Steel Strike Plate (Kram)',
+    supplyArrangement: 'Confirmed for this model during quotation',
+    material: 'Galvanized Steel Lock Case with Stainless Steel Strike Plate',
     finish: 'Satin Stainless Steel Faceplate',
     mechanism: 'Narrow-backset deadbolt and spring-loaded reversible latch',
     keys: 'Operated by Euro profile cylinder (sold separately)',
-    dimensions: 'Narrow 20mm / 25mm backset for slim-profile sections; 85mm centres',
+    dimensions: 'Narrow 20mm / 25mm backset for slim-profile sections; 85mm centres (confirm on enquiry)',
     doorThickness: 'Aluminium extrusion profiles and narrow stile metal doors',
     packaging: 'Individually wrapped with SS strike plate and mounting fasteners',
     image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
-    description: 'Specialized narrow-style mortise lock body engineered for aluminium section doors, sliding partitions, and metal profile joinery where standard deep-backset bodies cannot fit.',
-    applications: 'Aluminium frame doors, glass partition perimeter frames, shopfronts, and commercial metal stiles.',
+    description: 'Narrow-backset mortise lock body with a stainless-steel strike plate, intended for compatible narrow-profile door systems. Confirm backset, centres, latch/bolt configuration, faceplate material, cylinder requirements and installation compatibility against the current drawing.',
+    applications: 'Aluminium frame doors, narrow stile metal doors, and commercial perimeter profiles.',
   },
   {
     slug: 'stainless-steel-sleek-mortise-lock-body',
@@ -263,15 +274,16 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-SS85',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
-    material: 'Pressed Steel Body Casing with Stainless Steel Front Plate',
+    supplyArrangement: 'Confirmed for this model during quotation',
+    material: 'Steel Body Casing with Stainless Steel Front Plate',
     finish: 'Brushed Stainless Steel Faceplate & Strike',
     mechanism: 'Reversible brass latch bolt and double-turn deadbolt mechanism',
     keys: 'Euro profile cylinder operated (cylinder paired separately)',
-    dimensions: '85mm centre distance; 45mm / 50mm backset standard',
+    dimensions: '85mm centre distance; 45mm / 50mm backset standard (confirm on enquiry)',
     doorThickness: '35mm – 55mm wooden and hollow metal doors',
     packaging: 'Individual box with stainless steel strike plate and fixing screws',
     image: '/images/products/stainless-steel-sleek-mortise-lock-body.jpeg',
-    description: 'Full-case mortise lock body with reversible latch and deadbolt. Features a stainless steel front plate and precision-formed internal levers for standard wooden and metal architectural doors.',
+    description: 'Full-case mortise lock body with reversible latch and deadbolt. Features stainless steel front plate and strike for standard architectural doors. Confirm backset, centres, and door thickness compatibility against current drawings.',
     applications: 'Residential wooden entrance doors, commercial office interior doors, and institutional flush doors.',
   },
   {
@@ -280,15 +292,16 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-DC68',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
-    material: 'Zinc Alloy Internal Components with Heavy-Gauge Steel Body Case',
+    supplyArrangement: 'Confirmed for this model during quotation',
+    material: 'Zinc Alloy Internal Components with Steel Body Case',
     finish: 'Zinc Passivated Case with Polished Brass or Chrome Faceplate',
     mechanism: 'Double-throw (double chal) deadbolt linkage with key-operated two-turn throw',
     keys: 'Key-operated via matched lever pack or cylinder interface',
-    dimensions: 'Standard mortise pocket profile (~70mm case depth)',
+    dimensions: 'Standard mortise pocket profile (~70mm case depth, confirm on enquiry)',
     doorThickness: '35mm – 50mm wooden doors',
     packaging: 'Export trade cartons with matched strike plates',
     image: '/images/products/zinc-alloy-double-chal-mortise-lock-body.png',
-    description: 'Double-throw (double chal) mortise lock case engineered for doors requiring dual-turn deadbolt extension. Produced in our Aligarh workshop with heavy-gauge side plates and durable latch linkages.',
+    description: 'Double-throw (double chal) mortise lock case engineered for doors requiring dual-turn deadbolt extension. Confirm case depth, backset, faceplate finish, and internal material specifications during enquiry.',
     applications: 'Traditional residential wooden doors, apartment front doors, and commercial interior locking.',
   },
   {
@@ -297,15 +310,16 @@ export const products: ProductItem[] = [
     modelNumber: 'LT-BL01',
     category: 'lock-bodies',
     categoryName: 'Baby Latch',
+    supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Body with Brass Latch Tongue',
     finish: 'Polished Nickel / Bright Brass',
     mechanism: 'Spring-loaded cylindrical tubular latch mechanism',
     keys: 'N/A (Push/Turn Interior Privacy Latch)',
-    dimensions: 'Compact 50mm / 60mm backset tubular latch casing',
+    dimensions: 'Compact 50mm / 60mm backset tubular latch casing (confirm on enquiry)',
     doorThickness: '25mm – 45mm privacy and cabinet doors',
     packaging: 'Bulk contractor packaging (20 pcs/inner box) or individually boxed',
     image: '/images/products/zinc-alloy-door-baby-latch.png',
-    description: 'Interior privacy baby latch designed for light-duty doors, bathroom doors, and partition panels. Compact casing allows rapid mortise boring and smooth push-to-close action.',
+    description: 'Interior privacy baby latch designed for light-duty doors, bathroom doors, and partition panels. Compact tubular casing allows straightforward mortise fitment. Confirm backset dimensions and finish options on quotation.',
     applications: 'Bathroom privacy doors, bedroom doors with knob fittings, cabinetry, and interior room dividers.',
   },
 ];
@@ -331,12 +345,12 @@ export const companyInfo = {
 };
 
 export const steps = [
-  ['Share Requirements', 'Provide target product models, required quantities, finish preferences, and destination country.'],
-  ['Confirm Specifications & Feasibility', 'We clarify product dimensions, materials, in-house vs partner supply status, and packaging details.'],
-  ['Receive Commercial Quotation', 'We provide transparent per-unit pricing, order-specific MOQ terms, production lead times, and FOB/CIF freight options where mutually agreed.'],
-  ['Sample Review & Pre-Production', 'Sample evaluation is coordinated where applicable before bulk production, tooling, and partner sourcing begin.'],
-  ['Inspection & Packaging', 'Order-specific visual, dimensional, and functional checks are performed before protective export packaging and palletization.'],
-  ['Export Documentation & Dispatch', 'We coordinate the agreed shipping arrangements and supply applicable export documentation, including Commercial Invoice and Packing List.'],
+  ['Share your requirement', 'Send the product model, drawing or reference image, quantity, finish preference and destination country.'],
+  ['Confirm product details', 'We review dimensions, materials, compatibility, included accessories and whether the item is manufactured in-house or supplied through a partner.'],
+  ['Review the quotation', 'The quotation sets out confirmed pricing, quantity requirements, applicable MOQ, lead time, packaging and agreed shipping terms.'],
+  ['Review a sample, where available', 'Sample availability, cost and dispatch timing are confirmed for the requested model before a bulk order proceeds.'],
+  ['Agree inspection and packaging', 'Inspection points and packaging requirements are agreed in advance and completed as specified for the order.'],
+  ['Coordinate dispatch', 'We coordinate dispatch and the applicable export documents and freight arrangements according to the agreed terms and destination requirements.']
 ];
 
 export const faqs = [
@@ -346,7 +360,7 @@ export const faqs = [
   ],
   [
     'Which products are manufactured in-house and which are partner-sourced?',
-    'Arpit Impex operates a manufacturing and tooling unit in Aligarh where we produce selected mechanical lock bodies, lever mortise locks, baby latches, and pressed steel lock components. Certain handle sets, specialty cylinders, and specialized electroplated fittings are sourced through verified local partner manufacturers. We confirm the manufacturing or sourcing status of every SKU during enquiry discussions.'
+    'We manufacture selected hardware products in our Aligarh unit and coordinate additional products through local supply partners. For each enquiry, we confirm the product specification, supply arrangement, available finish options, order quantity and packaging requirements before quotation.'
   ],
   [
     'Do you accept bulk and wholesale business enquiries?',
@@ -358,7 +372,7 @@ export const faqs = [
   ],
   [
     'Can I request samples before confirming a bulk order?',
-    'Sample requests can be arranged for evaluation of material, mechanism, and surface finish. Sample availability, lead time, and applicable dispatch charges are confirmed against the specific product models requested.'
+    'Sample availability, cost and dispatch timing are confirmed for the requested model before a bulk order proceeds.'
   ],
   [
     'What details should I provide to receive an accurate quotation?',
@@ -374,17 +388,17 @@ export const faqs = [
   ],
   [
     'What quality checks are performed prior to dispatch?',
-    'We perform order-specific dimensional verification, surface finish inspection, key operation testing, and secure packaging checks as appropriate to each product type before clearing goods for shipment.'
+    'Inspection requirements are agreed for each order. Depending on the product, checks may include dimensions, surface finish, key operation, mechanism movement and packaging condition. Any agreed inspection criteria are confirmed before dispatch.'
   ],
   [
     'Which export documents are provided for international shipments?',
-    'Depending on destination regulations and agreed terms, we provide standard export trade documentation including Commercial Invoice, Packing List, Certificate of Origin, and shipping bills or courier airway bills.'
+    'Export documents are coordinated according to the shipment, destination requirements and agreed commercial terms. Applicable documents may include a commercial invoice, packing list, shipping bill and certificate of origin where required and available.'
   ],
 ];
 
 export const aboutCopy =
-  'Arpit Impex is based in Aligarh, Uttar Pradesh, India, and serves business buyers seeking architectural door hardware. Our range includes door locks, mortise lock bodies, cylinders, handles and related fittings. We manufacture selected products in our own unit and can arrange additional products through supply partners, depending on the specification and order requirement. We work with buyers to clarify product details, quantities, finishes, packaging and commercial terms before confirming an order.';
+  'Arpit Impex serves business buyers looking for architectural door hardware from India. Our range includes door locks, mortise lock bodies, cylinders, handles and related fittings. We manufacture selected products in our Aligarh unit and coordinate additional products through local supply partners. We work with buyers to confirm product specifications, manufacturing or sourcing arrangements, quantities, finish options, packaging and commercial terms before an order is accepted.';
 
 export const approachCopy =
-  'Our focus is practical communication and clear order expectations: identifying the required product, confirming its specifications and availability, agreeing pricing and delivery terms, and coordinating the applicable checks, packaging and dispatch documentation.';
+  'Our approach is straightforward: understand the requirement, clarify the product details, provide a quotation based on confirmed specifications, agree the applicable inspection and packaging requirements, and coordinate dispatch documentation and shipping arrangements.';
 

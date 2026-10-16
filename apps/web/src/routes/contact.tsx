@@ -7,8 +7,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Request a B2B Quote | Arpit Impex Aligarh Hardware Exporter',
-      description: `Send bulk product enquiries, request specifications, and discuss export quotation terms with Arpit Impex in Aligarh, India. Official sales desk: ${companyInfo.phone}, email: ${companyInfo.email}.`,
+      title: 'Request a Hardware Export Quote | Arpit Impex',
+      description:
+        'Send Arpit Impex your product models, quantity, finish and destination to discuss architectural hardware supply and export quotations from India.',
       jsonLd: {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',

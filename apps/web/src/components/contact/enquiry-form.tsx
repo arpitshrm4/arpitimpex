@@ -84,9 +84,9 @@ ${formData.details}`);
     <section className="section contact-section">
       <div>
         <p className="eyebrow">DIRECT SOURCING & EXPORT DESK</p>
-        <h1>Request a B2B Quote</h1>
+        <h1>Request a B2B Hardware Quotation</h1>
         <p>
-          Connect directly with our sales and export coordination team in Aligarh, India. Share your target product models, expected volume, and destination for a quotation and specification review.
+          Tell us which products you need, the approximate quantity and your destination country. We will review the requirement and confirm the product details, availability, quotation and next steps.
         </p>
 
         <div className="contact-info-card">
@@ -198,15 +198,15 @@ ${formData.details}`);
       <div className="form-panel">
         <h2>Request a B2B Quotation</h2>
         <p className="form-subheading">
-          Provide your order specifications below. We review technical details and respond with per-unit pricing, confirmed MOQ, production timelines, and freight terms.
+          For a faster quotation, include model numbers or drawings, required dimensions and finish, estimated quantity, packaging preferences and destination port or city.
         </p>
 
         {submitted ? (
           <div className="form-success-box">
             <CheckCircle2 size={36} color="#16a34a" />
-            <h3>Quotation Request Generated!</h3>
+            <h3>Enquiry Prepared</h3>
             <p style={{ maxWidth: '420px', margin: '0 auto' }}>
-              Your product specifications have been prepared and opened in WhatsApp. You can also send a copy directly to our business email inbox.
+              Thank you for contacting Arpit Impex. Your enquiry details have been prepared for submission. We will review the information and respond using the contact details you provided.
             </p>
             <div style={{ display: 'flex', gap: '12px', marginTop: '16px', flexWrap: 'wrap', justifyContent: 'center' }}>
               <button
@@ -403,14 +403,14 @@ ${formData.details}`);
 
             <div className="form-submit-actions">
               <button type="submit" className="button submit-whatsapp-btn">
-                <MessageCircle size={18} /> Send via WhatsApp
+                <MessageCircle size={18} /> Continue via WhatsApp
               </button>
               <button
                 type="button"
                 className="button outline"
                 onClick={handleMailtoSubmit}
               >
-                <Mail size={16} /> Send via Email
+                <Mail size={16} /> Prepare Email Enquiry
               </button>
             </div>
             <small className="form-disclaimer">

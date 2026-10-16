@@ -21,6 +21,16 @@ const app = express();
 app.disable('x-powered-by');
 app.use(compression());
 
+// 301 Permanent redirect for www host to non-www canonical host
+app.use((req, res, next) => {
+  const host = req.headers.host || '';
+  if (host.startsWith('www.')) {
+    const cleanHost = host.replace(/^www\./, '');
+    return res.redirect(301, `https://${cleanHost}${req.originalUrl}`);
+  }
+  next();
+});
+
 app.use(
   '/assets',
   express.static(path.join(clientBuildPath, 'assets'), {

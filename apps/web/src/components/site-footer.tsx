@@ -70,7 +70,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="footer-bottom">
-        <span>© 2026 Arpit Impex. Verified IndiaMART Supplier.</span>
+        <span>© 2026 Arpit Impex. B2B hardware enquiries · Manufacturing and export supply from Aligarh, India</span>
         <div>
           <Link to="/privacy">Privacy Policy</Link>
           <Link to="/terms">Terms & Conditions</Link>
