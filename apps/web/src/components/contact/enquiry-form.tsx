@@ -170,11 +170,9 @@ ${formData.details}`);
             </div>
             <h4>{selected.name} (SKU: {selected.modelNumber})</h4>
             <p className="selected-product-desc">{selected.description}</p>
-            {selected.sourceStatus === 'Available on enquiry' && (
-              <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--blue)', fontWeight: 600 }}>
-                Available on enquiry
-              </div>
-            )}
+            <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--blue)', fontWeight: 600 }}>
+              Available on enquiry
+            </div>
           </div>
         ) : (
           <div className="selected-product-preview">

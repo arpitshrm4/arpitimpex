@@ -119,11 +119,9 @@ export default function ProductDetailPage() {
                 height="700"
                 loading="eager"
               />
-              {product.sourceStatus === 'Available on enquiry' && (
-                <span className="product-source-badge source-enquiry">
-                  Available on enquiry
-                </span>
-              )}
+              <span className="product-source-badge source-enquiry">
+                Available on enquiry
+              </span>
             </div>
             <p className="pdp-image-note">
               SKU photo from our Aligarh catalogue. Surface finish samples and technical drawings are provided during quotation discussions.
@@ -158,17 +156,15 @@ export default function ProductDetailPage() {
             </div>
 
             {/* Sourcing Clarification Card */}
-            {product.sourceStatus === 'Available on enquiry' && (
-              <div className="pdp-source-card">
-                <div className="source-card-header">
-                  <CheckCircle size={20} className="source-icon partner" />
-                  <strong>Supply Availability</strong>
-                </div>
-                <p className="source-card-body">
-                  <strong>Available on B2B Enquiry:</strong> Available for commercial supply. Exact manufacturing, finish specifications, and sourcing details are confirmed upon enquiry.
-                </p>
+            <div className="pdp-source-card">
+              <div className="source-card-header">
+                <CheckCircle size={20} className="source-icon partner" />
+                <strong>Supply Availability</strong>
               </div>
-            )}
+              <p className="source-card-body">
+                <strong>Available on B2B Enquiry:</strong> Available for commercial supply. Exact manufacturing, finish specifications, and sourcing details are confirmed upon enquiry.
+              </p>
+            </div>
 
             <p className="pdp-description">{product.description}</p>
 
@@ -251,16 +247,14 @@ export default function ProductDetailPage() {
                 <th scope="row">Manufacturing & Supply Arrangement</th>
                 <td>{product.supplyArrangement || 'Confirmed for this model during quotation.'}</td>
               </tr>
-              {product.sourceStatus === 'Available on enquiry' && (
-                <tr>
-                  <th scope="row">Availability</th>
-                  <td>
-                    <span className="specs-status-pill source-enquiry">
-                      Available on enquiry
-                    </span>
-                  </td>
-                </tr>
-              )}
+              <tr>
+                <th scope="row">Availability</th>
+                <td>
+                  <span className="specs-status-pill source-enquiry">
+                    Available on enquiry
+                  </span>
+                </td>
+              </tr>
               <tr>
                 <th scope="row">Body & Component Material</th>
                 <td>{product.material}</td>
@@ -376,11 +370,9 @@ export default function ProductDetailPage() {
                       loading="lazy"
                     />
                   </Link>
-                  {p.sourceStatus === 'Available on enquiry' && (
-                    <span className="product-source-badge source-enquiry">
-                      Available on enquiry
-                    </span>
-                  )}
+                  <span className="product-source-badge source-enquiry">
+                    Available on enquiry
+                  </span>
                 </div>
                 <div className="product-text">
                   <div className="product-meta-header">

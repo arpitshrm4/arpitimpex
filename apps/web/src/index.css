@@ -447,9 +447,15 @@
   border: 1px solid #d0d7de;
 }
 .product-source-badge.source-enquiry {
-  background: #fafaf7;
-  color: #626B75;
-  border: 1px solid #d0d7de;
+  background: #ffffff;
+  color: #142D4E;
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.specs-status-pill.source-enquiry {
+  background: #f1f5f9;
+  color: #142D4E;
+  border: 1px solid #cbd5e1;
 }
 
 /* Breadcrumbs & Product Detail Page (PDP) */

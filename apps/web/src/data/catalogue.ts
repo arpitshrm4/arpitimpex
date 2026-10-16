@@ -70,7 +70,7 @@ export interface ProductItem {
   modelNumber: string;
   category: string;
   categoryName: string;
-  sourceStatus?: 'Available on enquiry';
+  sourceStatus: 'Available on enquiry';
   supplyArrangement?: string;
   material: string;
   finish: string;
@@ -91,6 +91,7 @@ export const products: ProductItem[] = [
     modelNumber: 'JL-PB01',
     category: 'door-locks',
     categoryName: 'Rim Door Lock',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Mild Steel Casing & Bolt Assembly',
     finish: 'Dual-tone Metallic Powder Coated with Polished Accents',
@@ -109,6 +110,7 @@ export const products: ProductItem[] = [
     modelNumber: 'No. 6052',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Casing with Stamped Steel Lever Pack',
     finish: 'Nickel Plated / Zinc Passivated Options',
@@ -127,6 +129,7 @@ export const products: ProductItem[] = [
     modelNumber: 'No. 68',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Body with Steel Internal Levers',
     finish: 'Zinc Plated / Satin Finish Faceplate',
@@ -164,6 +167,7 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-160RGB',
     category: 'door-handles',
     categoryName: 'Door Handle',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy / Aluminium Alloy Casting',
     finish: 'Matte Black Powder Coat with Rose Gold Electroplated Accents',
@@ -182,6 +186,7 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-175BLK',
     category: 'door-handles',
     categoryName: 'Door Handle Set',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy / Extruded Aluminium Alloy',
     finish: 'Matte Black Electrostatic Finish',
@@ -200,6 +205,7 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-160BGD',
     category: 'door-handles',
     categoryName: 'Door Handle',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Solid Zinc Alloy Casting',
     finish: 'Brushed Satin Gold (Lacquered Protective Finish)',
@@ -256,6 +262,7 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-ALU20',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Galvanized Steel Lock Case with Stainless Steel Strike Plate',
     finish: 'Satin Stainless Steel Faceplate',
@@ -274,6 +281,7 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-SS85',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Steel Body Casing with Stainless Steel Front Plate',
     finish: 'Brushed Stainless Steel Faceplate & Strike',
@@ -292,6 +300,7 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-DC68',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Internal Components with Steel Body Case',
     finish: 'Zinc Passivated Case with Polished Brass or Chrome Faceplate',
@@ -310,6 +319,7 @@ export const products: ProductItem[] = [
     modelNumber: 'LT-BL01',
     category: 'lock-bodies',
     categoryName: 'Baby Latch',
+    sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
     material: 'Zinc Alloy Body with Brass Latch Tongue',
     finish: 'Polished Nickel / Bright Brass',

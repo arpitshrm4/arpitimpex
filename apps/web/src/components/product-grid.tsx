@@ -28,11 +28,9 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
                       loading="lazy"
                     />
                   </Link>
-                  {p.sourceStatus === 'Available on enquiry' && (
-                    <span className="product-source-badge source-enquiry">
-                      Available on enquiry
-                    </span>
-                  )}
+                  <span className="product-source-badge source-enquiry">
+                    Available on enquiry
+                  </span>
                 </div>
                 <div className="product-text">
                   <div className="product-meta-header">
