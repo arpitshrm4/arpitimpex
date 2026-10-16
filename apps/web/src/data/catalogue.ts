@@ -5,7 +5,37 @@ export const images = {
   cylinders: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
   lockBodies: '/images/products/aluminium-section-mortise-lock-body.jpeg',
   logo: '/images/logo.png',
+  factoryEntrance: '/images/factory-entrance.png',
+  pressWorkshop: '/images/press-workshop.png',
+  executiveOffice: '/images/executive-office.png',
 };
+
+export const facilities = [
+  {
+    id: 'press-workshop',
+    title: 'Precision Press & Machine Workshop',
+    tag: 'PRODUCTION PLANT',
+    image: '/images/press-workshop.png',
+    alt: 'Arpit Impex Power Press Workshop and Tooling Line in Aligarh',
+    description: 'Equipped with heavy-duty mechanical power presses, precision stamping dies, and automated cutting tools to produce durable lock bodies, latches, and architectural fittings.',
+  },
+  {
+    id: 'executive-office',
+    title: 'Executive Commercial & Sourcing Office',
+    tag: 'SOURCING DESK',
+    image: '/images/executive-office.png',
+    alt: 'Arpit Impex Modern Executive Office and Commercial Sourcing Desk',
+    description: 'Modern executive workstation and client coordination hub for specification reviews, volume pricing negotiations, digital communication, and overseas export documentation.',
+  },
+  {
+    id: 'factory-entrance',
+    title: 'Factory Premises & Dispatch Hub',
+    tag: 'ALIGARH PREMISES',
+    image: '/images/factory-entrance.png',
+    alt: 'Arpit Impex Factory Entrance and Facility in Shastri Nagar, Aligarh',
+    description: 'Centrally situated at Shastri Nagar, Chhawani Road, Aligarh, ensuring smooth logistics, strict pre-dispatch quality checks, and prompt domestic and international shipments.',
+  },
+];
 
 export const categories = [
   {

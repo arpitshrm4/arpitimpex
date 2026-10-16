@@ -151,15 +151,16 @@ Details: ${formData.details}`);
           <div className="selected-product-preview">
             <div className="selected-product-img">
               <img
-                src={images.hero}
-                alt="Arpit Impex Hardware"
+                src={images.executiveOffice}
+                alt="Arpit Impex Commercial Sourcing Desk and Executive Office"
                 width="400"
                 height="300"
+                style={{ objectFit: 'cover' }}
               />
             </div>
-            <h4>Door Locks & Architectural Hardware</h4>
+            <h4>Official Factory & Sourcing Desk</h4>
             <p className="selected-product-desc">
-              Precision manufactured in Aligarh, Uttar Pradesh. Supplying wholesale distributors, builders, and export trade partners.
+              Direct factory coordination from our facilities in Aligarh, Uttar Pradesh. Supplying wholesale distributors, builders, and export trade partners.
             </p>
           </div>
         )}

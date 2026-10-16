@@ -8,6 +8,7 @@ import { Process } from '@/components/home/process';
 import { Featured } from '@/components/home/featured';
 import { EnquiryBanner } from '@/components/enquiry-banner';
 import { About } from '@/components/home/about';
+import { FacilityShowcase } from '@/components/home/facility-showcase';
 import { Faq } from '@/components/home/faq';
 import { FinalCta } from '@/components/home/final-cta';
 export function meta({ matches, location }: Route.MetaArgs) {
@@ -40,4 +41,4 @@ export function meta({ matches, location }: Route.MetaArgs) {
     }
   );
 }
-export default function HomePage(){return <main><Hero/><Categories/><WhyUs/><Process/><Featured/><EnquiryBanner/><About/><Faq/><FinalCta/></main>}
+export default function HomePage(){return <main><Hero/><Categories/><WhyUs/><Process/><Featured/><EnquiryBanner/><About/><FacilityShowcase/><Faq/><FinalCta/></main>}
