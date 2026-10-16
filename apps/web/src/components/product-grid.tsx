@@ -1,0 +1,4 @@
+import { Link } from 'react-router';
+import { ArrowUpRight } from 'lucide-react';
+import { products } from '@/data/catalogue';
+export function ProductGrid({category='all'}:{category?:string}){const visible=products.filter(p=>category==='all'||p.category===category);return <>{visible.length?<div className="product-grid">{visible.map(p=><article key={p.slug}><img src={p.image} alt={`Illustrative hardware photograph for ${p.name}`} width="640" height="480" loading="lazy"/><div className="product-text"><small>REPRESENTATIVE PRODUCT</small><h3>{p.name}</h3><p>{p.description}</p><Link className="text-link" to={`/contact?product=${encodeURIComponent(p.name)}`}>Enquire About This Product <ArrowUpRight size={16}/></Link></div></article>)}</div>:<p>No examples in this category yet. Please enquire about your requirements.</p>}</>}

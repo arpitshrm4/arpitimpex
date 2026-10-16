@@ -1,0 +1,2 @@
+import { ProductGrid } from '@/components/product-grid';
+export function Featured(){return <section className="section featured"><p className="eyebrow">A STARTING POINT FOR YOUR ENQUIRY</p><h2>Explore Our Product Range</h2><p className="section-intro">Representative catalogue examples. Availability, materials, finishes and specifications are confirmed during your enquiry. Images are illustrative.</p><ProductGrid/></section>}

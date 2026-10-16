@@ -1,0 +1,4 @@
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router';
+import { Menu, X, ArrowUpRight } from 'lucide-react';
+export function SiteHeader(){const [open,setOpen]=useState(false);return <header className="site-header"><Link className="brand" to="/" aria-label="Arpit Impex home"><span className="brand-mark">AI<span /></span><span>ARPIT IMPEX<small>HARDWARE · SOURCING · EXPORTS</small></span></Link><nav className={open?'navigation open':'navigation'} aria-label="Main navigation">{[['/','Home'],['/products','Products'],['/about','About Us'],['/contact','Contact']].map(([url,label])=><NavLink key={url} to={url} end onClick={()=>setOpen(false)}>{label}</NavLink>)}</nav><Link className="button header-quote" to="/contact">Request a Quote <ArrowUpRight size={16}/></Link><button className="menu-toggle" aria-label={open?'Close menu':'Open menu'} aria-expanded={open} onClick={()=>setOpen(!open)}>{open?<X/>:<Menu/>}</button></header>}
