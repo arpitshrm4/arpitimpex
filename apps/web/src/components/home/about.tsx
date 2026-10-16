@@ -13,10 +13,10 @@ export function About() {
       />
       <div>
         <p className="eyebrow">ABOUT ARPIT IMPEX</p>
-        <h2>Connecting Buyers with<br/>Products from India</h2>
+        <h2>Architectural Hardware Supply Backed by Local Manufacturing Capability</h2>
         <p>{aboutCopy}</p>
         <p>{approachCopy}</p>
-        <Link className="text-link" to="/about">Explore Our Infrastructure & Facilities ↗</Link>
+        <Link className="text-link" to="/about">Learn More About Our Capabilities & Facilities ↗</Link>
       </div>
     </section>
   );

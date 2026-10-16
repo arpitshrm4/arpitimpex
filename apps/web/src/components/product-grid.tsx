@@ -13,23 +13,47 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
         <div className="product-grid">
           {visible.map((p) => {
             const waText = encodeURIComponent(
-              `Hello Arpit Impex, I am interested in "${p.name}". Please provide wholesale pricing, MOQ, and availability.`
+              `Hello Arpit Impex, I would like to enquire about bulk supply and specifications for ${p.name} (${p.modelNumber}).`
             );
+            const sourceClass =
+              p.sourceStatus === 'Manufactured by Arpit Impex'
+                ? 'source-inhouse'
+                : p.sourceStatus === 'Partner-sourced'
+                ? 'source-partner'
+                : 'source-enquiry';
+
             return (
               <article key={p.slug} className="product-card">
                 <div className="product-image-container">
-                  <img
-                    src={p.image}
-                    alt={p.name}
-                    width="500"
-                    height="500"
-                    loading="lazy"
-                  />
+                  <Link to={`/products/${p.slug}`} className="product-image-link" aria-label={`View specifications for ${p.name}`}>
+                    <img
+                      src={p.image}
+                      alt={`${p.name} model ${p.modelNumber}, architectural door hardware`}
+                      width="500"
+                      height="500"
+                      loading="lazy"
+                    />
+                  </Link>
+                  <span className={`product-source-badge ${sourceClass}`}>
+                    {p.sourceStatus}
+                  </span>
                 </div>
                 <div className="product-text">
-                  <span className="product-category-tag">{p.categoryName || 'Hardware'}</span>
-                  <h3>{p.name}</h3>
+                  <div className="product-meta-header">
+                    <span className="product-category-tag">{p.categoryName || 'Hardware'}</span>
+                    <span className="product-model-code">SKU: {p.modelNumber}</span>
+                  </div>
+                  <h3>
+                    <Link to={`/products/${p.slug}`} className="product-title-link">
+                      {p.name}
+                    </Link>
+                  </h3>
                   <p className="product-desc">{p.description}</p>
+                  <div style={{ marginBottom: '14px' }}>
+                    <Link to={`/products/${p.slug}`} className="product-view-spec-link">
+                      View Full Specifications & Drawings →
+                    </Link>
+                  </div>
                   <div className="product-actions">
                     <Link
                       className="button-product-quote"

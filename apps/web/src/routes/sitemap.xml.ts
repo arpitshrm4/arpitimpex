@@ -1,5 +1,6 @@
 import type { Route } from './+types/sitemap.xml';
 import { siteOrigin } from '@/lib/site-origin.server';
+import { products } from '@/data/catalogue';
 
 type SitemapEntry = {
 	path: string;
@@ -37,13 +38,12 @@ function serializeSitemap(origin: string, entries: SitemapEntry[]): string {
 }
 
 /**
- * Public dynamic URLs (blog posts, PDPs, articles).
- * Return `{ path, lastmod }` in the same change that adds a collection.
- * Return `[]` only while the site has no public records; clear those URLs
- * again in the same change that removes the collection.
+ * Public dynamic URLs (catalogue PDPs).
  */
 async function getDynamicEntries(): Promise<SitemapEntry[]> {
-	return [];
+	return products.map(p => ({
+		path: `/products/${p.slug}`,
+	}));
 }
 
 export async function loader({ request }: Route.LoaderArgs) {

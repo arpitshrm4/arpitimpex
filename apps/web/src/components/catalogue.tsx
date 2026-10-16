@@ -8,10 +8,10 @@ export function Catalogue() {
 
   return (
     <section className="section catalogue">
-      <p className="eyebrow">MANUFACTURER & WHOLESALE EXPORTER</p>
-      <h1>Our Products & Hardware Solutions</h1>
+      <p className="eyebrow">ARCHITECTURAL HARDWARE CATALOGUE</p>
+      <h1>Door Locks, Lock Bodies & Architectural Fittings</h1>
       <p className="section-intro">
-        Browse our genuine range of heavy-duty locks, luxury door handles, computerized cylinder locks, and precision lock bodies manufactured in Aligarh, India. Get wholesale quotations, volume pricing, and custom finishes for your business.
+        Browse our range of door locks, mortise lock bodies, profile cylinders, and door handles from Aligarh, India. We distinguish products manufactured in our own workshop from partner-sourced items. Enquire for specifications, finish options, volume pricing, and export supply terms.
       </p>
 
       <Form method="get" className="filters">
@@ -35,7 +35,7 @@ export function Catalogue() {
       </Form>
 
       <p className="catalogue-note">
-        Direct manufacturer & wholesale supplier catalogue. Bulk volume discounts, OEM branding, and international export packing available on request.
+        Bulk B2B supply catalogue. Manufacturing status, dimensional specifications, finish samples, and export packaging details are confirmed on enquiry.
       </p>
 
       <ProductGrid category={category} />

@@ -7,8 +7,8 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Contact Arpit Impex | Factory & Office Aligarh',
-      description: `Contact Arpit Impex in Aligarh, India. Manufacturer & exporter of architectural door locks, luxury handles, and euro cylinders. Call ${companyInfo.phone} or visit our premises at Shastri Nagar, Chhawani Road, Aligarh.`,
+      title: 'Request a B2B Quote | Arpit Impex Aligarh Hardware Exporter',
+      description: `Send bulk product enquiries, request specifications, and discuss export quotation terms with Arpit Impex in Aligarh, India. Official sales desk: ${companyInfo.phone}, email: ${companyInfo.email}.`,
       jsonLd: {
         '@context': 'https://schema.org',
         '@type': 'LocalBusiness',

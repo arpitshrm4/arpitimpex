@@ -386,5 +386,345 @@
   }
 }
 
+/* Product Card Badges & Links */
+.product-meta-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.product-model-code {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  background: #f0f3f6;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.product-title-link {
+  color: var(--navy);
+  text-decoration: none;
+}
+.product-title-link:hover {
+  color: var(--blue);
+}
+.product-view-spec-link {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.product-view-spec-link:hover {
+  color: var(--navy);
+  text-decoration: underline;
+}
+.product-source-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+  z-index: 2;
+  letter-spacing: 0.3px;
+}
+.product-source-badge.source-inhouse {
+  background: #142D4E;
+  color: #ffffff;
+  border: 1px solid #1e3a5f;
+}
+.product-source-badge.source-partner {
+  background: #f4f6f8;
+  color: #142D4E;
+  border: 1px solid #d0d7de;
+}
+.product-source-badge.source-enquiry {
+  background: #fafaf7;
+  color: #626B75;
+  border: 1px solid #d0d7de;
+}
+
+/* Breadcrumbs & Product Detail Page (PDP) */
+.breadcrumbs-nav {
+  background: #f4f6f8;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 5.2%;
+}
+.breadcrumbs-container {
+  max-width: 1600px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--quiet);
+}
+.breadcrumbs-container a {
+  color: var(--quiet);
+  text-decoration: none;
+}
+.breadcrumbs-container a:hover {
+  color: var(--blue);
+  text-decoration: underline;
+}
+.breadcrumb-separator {
+  color: #9ca3af;
+}
+.breadcrumb-current {
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.product-pdp-hero {
+  padding: 56px 5.2% 40px;
+  max-width: 1600px;
+  margin: auto;
+}
+.pdp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 56px;
+  align-items: flex-start;
+}
+.pdp-gallery-column {
+  position: sticky;
+  top: 110px;
+}
+.pdp-main-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1.1;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(20, 45, 78, 0.04);
+}
+.pdp-main-image-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 24px;
+}
+.pdp-image-note {
+  font-size: 12px;
+  color: var(--quiet);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.pdp-highlights-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 16px;
+}
+.highlight-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.highlight-label {
+  font-size: 12px;
+  color: var(--quiet);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.highlight-val {
+  font-size: 13px;
+  color: var(--navy);
+  font-weight: 700;
+}
+
+.pdp-info-column {
+  display: flex;
+  flex-direction: column;
+}
+.pdp-title {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: clamp(28px, 2.5vw, 36px);
+  line-height: 1.25;
+}
+.pdp-sku-badge {
+  font-size: 13px;
+  color: var(--quiet);
+  margin-bottom: 18px;
+}
+.pdp-sku-badge strong {
+  color: var(--navy);
+  background: #edf2f7;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+.pdp-source-card {
+  background: #ffffff;
+  border: 1px solid #d5dde5;
+  border-left: 4px solid var(--blue);
+  padding: 16px 20px;
+  border-radius: 4px;
+  margin-bottom: 22px;
+}
+.source-card-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--navy);
+  margin-bottom: 6px;
+}
+.source-icon.inhouse {
+  color: #142D4E;
+}
+.source-icon.partner {
+  color: var(--blue);
+}
+.source-card-body {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--quiet);
+  margin: 0;
+}
+.pdp-description {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.pdp-terms-card {
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 26px;
+}
+.terms-card-title {
+  font-size: 14px;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+.terms-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 13px;
+  line-height: 1.65;
+  color: var(--quiet);
+}
+.terms-list li {
+  margin-bottom: 8px;
+}
+.terms-list li:last-child {
+  margin-bottom: 0;
+}
+.terms-list strong {
+  color: var(--navy);
+}
+.pdp-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.pdp-btn-quote {
+  flex: 1.2;
+  min-width: 220px;
+}
+.pdp-btn-whatsapp {
+  flex: 1;
+  min-width: 200px;
+  background: #25D366;
+  border-color: #25D366;
+}
+.pdp-btn-whatsapp:hover {
+  background: #20bd5a;
+  border-color: #20bd5a;
+}
+.pdp-disclaimer {
+  font-size: 12px;
+  color: var(--quiet);
+  line-height: 1.5;
+}
+
+/* Specifications Table */
+.pdp-specs-section {
+  border-top: 1px solid var(--line);
+  padding-top: 60px;
+}
+.specs-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+.specs-table th,
+.specs-table td {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+.specs-table tr:last-child th,
+.specs-table tr:last-child td {
+  border-bottom: 0;
+}
+.specs-table th {
+  width: 32%;
+  background: #f8fafc;
+  color: var(--navy);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.specs-table td {
+  color: var(--text);
+  line-height: 1.6;
+}
+.specs-status-pill {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 3px;
+}
+
+.pdp-workflow-section {
+  border-top: 1px solid var(--line);
+  background: #fdfdfd;
+}
+.pdp-related-section {
+  border-top: 1px solid var(--line);
+}
+
+@media (max-width: 900px) {
+  .pdp-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .pdp-gallery-column {
+    position: static;
+  }
+  .specs-table th {
+    width: 40%;
+    white-space: normal;
+  }
+}
+
 
 

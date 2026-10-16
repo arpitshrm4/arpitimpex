@@ -1,4 +1,50 @@
 import { Link } from 'react-router';
 import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { images } from '@/data/catalogue';
-export function Hero(){return <section className="hero"><div className="hero-copy"><p className="eyebrow"><span/> INDIA → GLOBAL MARKETS</p><h1>Hardware Sourcing,<br/><span>Made Simpler.</span></h1><p className="hero-description">Looking for a dependable partner to source hardware from India? Arpit Impex helps international buyers explore product options, coordinate sourcing and move forward with clear communication from enquiry to shipment.</p><div className="actions"><Link to="/products" className="button">Explore Products <ArrowRight size={18}/></Link><Link to="/contact" className="button outline">Request a Quote <ArrowUpRight size={18}/></Link></div><p className="reassurance">Product enquiries <b>·</b> Sourcing support <b>·</b> Export coordination</p></div><div className="hero-media"><img src={images.hero} alt="Representative architectural hardware arrangement with door handles, locks and hinges" width="1100" height="825" fetchPriority="high"/><div className="image-caption"><span>THOUGHTFUL SOURCING. PRACTICAL SOLUTIONS.</span><span>01 / HARDWARE</span></div><div className="image-label">From India.<br/><strong>For your market.</strong></div></div></section>}
+export function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-copy">
+        <p className="eyebrow">
+          <span /> ALIGARH, INDIA → B2B EXPORT SUPPLY
+        </p>
+        <h1>
+          Architectural Door Hardware<br />
+          <span>from India.</span>
+        </h1>
+        <p className="hero-description">
+          Arpit Impex supplies door locks, mortise lock bodies, cylinders, handles and related architectural hardware to business buyers. Based in Aligarh, India, we support product enquiries, specification discussions, customization requests and export coordination for bulk orders.
+        </p>
+        <div className="actions">
+          <Link to="/contact" className="button">
+            Request a B2B Quote <ArrowRight size={18} />
+          </Link>
+          <Link to="/products" className="button outline">
+            Explore Product Range <ArrowUpRight size={18} />
+          </Link>
+        </div>
+        <p className="reassurance">
+          Bulk enquiries <b>·</b> Product specifications <b>·</b> Customization discussions <b>·</b> Export coordination
+        </p>
+      </div>
+      <div className="hero-media">
+        <img
+          src={images.hero}
+          alt="Representative architectural door hardware arrangement showing mortise locks, door handles, and precision fittings"
+          width="1100"
+          height="825"
+          fetchPriority="high"
+        />
+        <div className="image-caption">
+          <span>ALIGARH MANUFACTURING & EXPORT SUPPLY</span>
+          <span>01 / ARCHITECTURAL HARDWARE</span>
+        </div>
+        <div className="image-label">
+          From India.<br />
+          <strong>Direct B2B Supply.</strong>
+        </div>
+      </div>
+    </section>
+  );
+}
+

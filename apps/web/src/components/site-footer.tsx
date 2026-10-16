@@ -17,16 +17,16 @@ export function SiteFooter() {
             <span>ARPIT IMPEX<span className="gold">.</span></span>
           </Link>
           <p>
-            Manufacturer and exporter of architectural door hardware, locks, handles, and lock bodies from Aligarh, India.
+            Architectural door hardware manufacturer and export supply partner based in Aligarh, India. Supplying door locks, mortise lock bodies, cylinders, and handles to B2B buyers.
           </p>
-          <small>Precision Hardware · Trusted Security · Global Export</small>
+          <small>Bulk enquiries · Product specifications · Customization discussions · Export coordination</small>
         </div>
         <div>
           <h3>Explore</h3>
           <Link to="/products">All Products</Link>
           <Link to="/about">About Us</Link>
           <Link to="/process">Export Process</Link>
-          <Link to="/contact">Request a Quote</Link>
+          <Link to="/contact">Request a B2B Quote</Link>
         </div>
         <div>
           <h3>Product Categories</h3>

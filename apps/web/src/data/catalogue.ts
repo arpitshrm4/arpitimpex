@@ -13,27 +13,27 @@ export const images = {
 export const facilities = [
   {
     id: 'press-workshop',
-    title: 'Precision Press & Machine Workshop',
-    tag: 'PRODUCTION PLANT',
+    title: 'Press & Tooling Workshop',
+    tag: 'PRODUCTION WORKSHOP',
     image: '/images/press-workshop.png',
     alt: 'Arpit Impex Power Press Workshop and Tooling Line in Aligarh',
-    description: 'Equipped with heavy-duty mechanical power presses, precision stamping dies, and automated cutting tools to produce durable lock bodies, latches, and architectural fittings.',
+    description: 'Equipped with mechanical power presses, stamping dies, and tooling equipment to form mild steel lock casings, mortise bodies, and strike plates.',
   },
   {
     id: 'executive-office',
-    title: 'Executive Commercial & Sourcing Office',
+    title: 'Commercial & Export Sourcing Desk',
     tag: 'SOURCING DESK',
     image: '/images/executive-office.png',
-    alt: 'Arpit Impex Modern Executive Office and Commercial Sourcing Desk',
-    description: 'Modern executive workstation and client coordination hub for specification reviews, volume pricing negotiations, digital communication, and overseas export documentation.',
+    alt: 'Arpit Impex Executive Office and Commercial Sourcing Desk',
+    description: 'Dedicated workstation for product specification reviews, quotation preparation, international buyer communication, and export documentation coordination.',
   },
   {
     id: 'factory-entrance',
-    title: 'Factory Premises & Dispatch Hub',
+    title: 'Premises & Dispatch Facility',
     tag: 'ALIGARH PREMISES',
     image: '/images/factory-entrance.png',
-    alt: 'Arpit Impex Factory Entrance and Facility in Shastri Nagar, Aligarh',
-    description: 'Centrally situated at Shastri Nagar, Chhawani Road, Aligarh, ensuring smooth logistics, strict pre-dispatch quality checks, and prompt domestic and international shipments.',
+    alt: 'Arpit Impex Facility Entrance in Shastri Nagar, Aligarh',
+    description: 'Situated at Shastri Nagar, Chhawani Road, Aligarh, coordinating domestic logistics, pre-dispatch packaging checks, and export cargo handoff.',
   },
 ];
 
@@ -41,25 +41,25 @@ export const categories = [
   {
     id: 'door-locks',
     name: 'Door Locks & Rim Locks',
-    description: 'Heavy duty penta bolt locks, multi-lever mortise locks, and antique brass rim lock sets.',
+    description: 'Penta bolt rim locks, multi-lever mortise locks, and antique-finish surface rim lock sets.',
     image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
   },
   {
     id: 'door-handles',
     name: 'Door Handles & Fittings',
-    description: 'Luxury rose gold, matte black, and brushed gold architectural handles for residential and commercial doors.',
+    description: 'Rose gold, matte black, and brushed satin gold architectural door handles for residential and commercial projects.',
     image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
   },
   {
     id: 'cylinder-locks',
     name: 'Cylinder Locks & Keys',
-    description: 'Euro profile and BSK mortise cylinder locks with computerized numbered keys for high-security access.',
+    description: 'Euro profile and BSK mortise lock cylinders with numbered brass keys for organized key tracking.',
     image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
   },
   {
     id: 'lock-bodies',
     name: 'Lock Bodies & Latches',
-    description: 'Aluminium section lock bodies with SS kram, sleek mortise cases, double-chal bodies, and baby latches.',
+    description: 'Narrow aluminium section lock bodies with SS strike, standard mortise cases, double-throw bodies, and interior baby latches.',
     image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
   },
 ];
@@ -67,116 +67,256 @@ export const categories = [
 export interface ProductItem {
   slug: string;
   name: string;
+  modelNumber: string;
   category: string;
-  categoryName?: string;
+  categoryName: string;
+  sourceStatus: 'Manufactured by Arpit Impex' | 'Partner-sourced' | 'Available on enquiry';
+  material: string;
+  finish: string;
+  mechanism: string;
+  keys: string;
+  dimensions: string;
+  doorThickness?: string;
+  packaging: string;
   image: string;
   description: string;
+  applications: string;
 }
 
 export const products: ProductItem[] = [
   {
     slug: 'j-lock-mild-steel-door-penta-bolt-lock-set',
-    name: 'J Lock Mild Steel Door Penta Bolt Lock Set',
+    name: 'Penta Bolt Rim Door Lock Set',
+    modelNumber: 'JL-PB01',
     category: 'door-locks',
-    categoryName: 'Door Lock',
+    categoryName: 'Rim Door Lock',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Mild Steel Casing & Bolt Assembly',
+    finish: 'Dual-tone Metallic Powder Coated with Polished Accents',
+    mechanism: 'Multi-bolt (5-bolt) rim deadbolt mechanism with key-operated exterior and interior thumbturn/knob',
+    keys: '4 Numbered Brass Keys',
+    dimensions: 'Standard rim lock housing footprint (~130mm x 95mm)',
+    doorThickness: '30mm – 55mm wooden & metal doors',
+    packaging: 'Individual product box; master corrugated export cartons',
     image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
-    description: 'The Penta Bolt Door Lock Heavy Duty is designed to provide enhanced door security with a robust multi-bolt locking mechanism. Its durable mild steel construction supports dependable everyday performance for residential and commercial doors.',
+    description: 'Surface-mounted rim door lock featuring a multi-bolt (5-bolt) deadbolt configuration for entrance doors. Fabricated in our Aligarh workshop from mild steel plate with durable surface coating and numbered key entry.',
+    applications: 'Main entrance wooden doors, security gates, apartment entry doors, and perimeter utility doors.',
   },
   {
     slug: '6-lever-zinc-alloy-single-chal-mortise-lock',
-    name: '6 Lever Zinc Alloy Single Chal Mortise Lock',
+    name: '6-Lever Single-Throw Mortise Lock',
+    modelNumber: 'No. 6052',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Zinc Alloy Casing with Stamped Steel Lever Pack',
+    finish: 'Nickel Plated / Zinc Passivated Options',
+    mechanism: '6-lever single chal (single-throw bolt throw of approx. 12mm on a single key rotation)',
+    keys: '2 or 3 Numbered Steel Keys',
+    dimensions: '65mm backset standard; mortise depth approx. 70mm',
+    doorThickness: '32mm – 45mm interior and exterior doors',
+    packaging: 'Individually boxed with strike plate; master export cartons',
     image: '/images/products/6-lever-zinc-alloy-single-chal-mortise-lock.png',
-    description: 'Lock Number 6052. Designed for secure and smooth door locking with a precision six-lever mechanism. Crafted with durable zinc alloy construction suitable for residential, office, and commercial mortise door installations.',
+    description: 'Standard 6-lever mortise lock (Lock No. 6052) designed for flush wooden and composite doors. Utilizes a single-throw bolt mechanism with precision stamped lever tumblers for smooth everyday operation.',
+    applications: 'Office doors, residential bedrooms, commercial utility rooms, and interior partitions.',
   },
   {
     slug: '6-lever-zinc-alloy-double-chal-mortise-lock',
-    name: '6 Lever Zinc Alloy Double Chal Mortise Lock',
+    name: '6-Lever Double-Throw Mortise Lock',
+    modelNumber: 'No. 68',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Zinc Alloy Body with Steel Internal Levers',
+    finish: 'Zinc Plated / Satin Finish Faceplate',
+    mechanism: '6-lever double chal (double-throw bolt mechanism with extended deadbolt travel on two key turns)',
+    keys: '3 Numbered Keys',
+    dimensions: 'Standard mortise pocket profile (~75mm depth)',
+    doorThickness: '35mm – 50mm wooden doors',
+    packaging: 'Individual box packaging; corrugated export cartons',
     image: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.jpeg',
-    description: 'Lock Number 68. Engineered for reliable two-way door security and convenient locking from both sides. Features a heavy-duty zinc alloy casing and a smooth 6-lever double-chal mechanism.',
+    description: 'Traditional double chal (double-throw) 6-lever mortise lock (Lock No. 68). The two-turn key mechanism extends the deadbolt deeper into the door frame strike plate for dependable closure.',
+    applications: 'Residential wooden doors, hotel service doors, and commercial interior installations.',
   },
   {
     slug: 'antique-brass-door-rim-lock-set',
-    name: 'Antique Brass Door Rim Lock Set',
+    name: 'Antique Brass Finish Rim Lock Set',
+    modelNumber: 'RL-AB04',
     category: 'door-locks',
     categoryName: 'Rim Lock',
+    sourceStatus: 'Available on enquiry',
+    material: 'Pressed Steel Body with Electroplated Antique Brass Finish',
+    finish: 'Antique Brass (Aged Patina Appearance)',
+    mechanism: 'Surface-mounted rim deadbolt and latch combination with interior snib',
+    keys: 'Numbered Brass Keys',
+    dimensions: 'Approx. 120mm x 85mm surface mount housing',
+    doorThickness: '30mm – 50mm exterior and heritage doors',
+    packaging: 'Individual presentation box; master trade cartons',
     image: '/images/products/antique-brass-door-rim-lock-set.png',
-    description: 'Features a classic antique brass finish that adds a vintage heritage touch to doors and interiors. Offers dependable surface-mounted rim locking performance with high decorative appeal.',
+    description: 'Surface-mount rim lock set finished with a classic antique brass electroplating. Suitable for period doors, traditional interiors, and wooden perimeter gates requiring exterior key and interior snib operation.',
+    applications: 'Heritage properties, boutique hotels, vintage interior decor, and decorative wooden gates.',
   },
   {
     slug: '160mm-black-door-handle',
-    name: '160mm Black Door Handle (Rose Gold & Black)',
+    name: '160mm Two-Tone Door Handle (Rose Gold & Black)',
+    modelNumber: 'DH-160RGB',
     category: 'door-handles',
     categoryName: 'Door Handle',
+    sourceStatus: 'Partner-sourced',
+    material: 'Zinc Alloy / Aluminium Alloy Casting',
+    finish: 'Matte Black Powder Coat with Rose Gold Electroplated Accents',
+    mechanism: 'Spring-assisted lever return with 8mm square spindle drive',
+    keys: 'N/A (Lever Handle Fitting for Mortise Pairing)',
+    dimensions: '160mm lever length; 50mm rose diameter / backplate',
+    doorThickness: '35mm – 50mm wooden & flush doors',
+    packaging: 'Matched pair packaging with spindle, escutcheons, and fixing screws',
     image: '/images/products/160mm-black-door-handle.jpeg',
-    description: 'Luxury two-tone finish combining deep matte black with warm rose gold accents. Ergonomically sculpted for a comfortable grip in modern bedrooms, living rooms, hotels, and executive offices.',
+    description: 'Contemporary architectural lever handle featuring a 160mm ergonomic profile. Finished in dual-tone matte black and electroplated rose gold accent for modern interior residential and hotel doors.',
+    applications: 'Upscale residential bedrooms, luxury apartments, boutique hotel suites, and executive cabins.',
   },
   {
     slug: '175mm-black-door-handle',
-    name: '175mm Black Door Handle Set',
+    name: '175mm Contemporary Black Plate Door Handle Set',
+    modelNumber: 'DH-175BLK',
     category: 'door-handles',
     categoryName: 'Door Handle Set',
+    sourceStatus: 'Partner-sourced',
+    material: 'Zinc Alloy / Extruded Aluminium Alloy',
+    finish: 'Matte Black Electrostatic Finish',
+    mechanism: 'Integrated backplate with spring-loaded lever return',
+    keys: 'Keyhole cut-out for standard mortise pairing',
+    dimensions: '175mm backplate length; 40mm width; 8mm spindle',
+    doorThickness: '35mm – 55mm wooden & composite doors',
+    packaging: 'Matched pair set with mounting screws and connecting spindle',
     image: '/images/products/175mm-black-door-handle.jpeg',
-    description: 'Contemporary 175mm door handle set with integrated plate styling. Combines dual-tone black and metallic accents with heavy-duty durability for upscale residential and commercial projects.',
+    description: 'Long-plate architectural lever handle set measuring 175mm in length. Designed for mortise lock pairings on wooden entry, office, and apartment doors with clean minimalist styling.',
+    applications: 'Commercial offices, modern apartment doors, institutional buildings, and interior residential doors.',
   },
   {
     slug: '160mm-brushed-gold-door-handle',
-    name: '160mm Brushed Gold Door Handle Assembly',
+    name: '160mm Brushed Gold Architectural Door Handle',
+    modelNumber: 'DH-160BGD',
     category: 'door-handles',
     categoryName: 'Door Handle',
+    sourceStatus: 'Partner-sourced',
+    material: 'Solid Zinc Alloy Casting',
+    finish: 'Brushed Satin Gold (Lacquered Protective Finish)',
+    mechanism: 'Spring-loaded return cassette with horizontal stop',
+    keys: 'N/A (Lever Handle Fitting)',
+    dimensions: '160mm lever length; 52mm circular escutcheon rose',
+    doorThickness: '32mm – 50mm wooden & laminate doors',
+    packaging: 'Protective foam-lined pair packaging with hardware installation pack',
     image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
-    description: 'Refined brushed gold finish bringing contemporary elegance to interior doors. Engineered for smooth spring-loaded action, corrosion resistance, and timeless architectural aesthetics.',
+    description: 'Modern straight-line lever handle in a warm brushed satin gold finish. Features internal spring cassette for positive horizontal alignment and smooth return action on interior door sets.',
+    applications: 'Luxury residences, hospitality guest rooms, designer commercial interiors, and showroom doors.',
   },
   {
     slug: 'mortise-cylinder-numbered-keys',
-    name: 'Mortise Cylinder with Numbered Keys (No. 2325)',
+    name: 'BSK Mortise Lock Cylinder with Numbered Keys',
+    modelNumber: 'CYL-BSK2325',
     category: 'cylinder-locks',
     categoryName: 'Cylinder Lock',
+    sourceStatus: 'Available on enquiry',
+    material: 'Solid Brass Core with Sintered Steel Rotating Cam',
+    finish: 'Satin Nickel / Natural Brass Finish',
+    mechanism: 'Pin tumbler cylinder mechanism with balanced brass tumbler pins',
+    keys: '3 or 5 Numbered Brass Keys',
+    dimensions: 'Standard 60mm / 70mm symmetrical cylinder profiles',
+    doorThickness: 'Compatible with standard mortise lock bodies',
+    packaging: 'Individual box packaging with M5 cylinder mounting screw',
     image: '/images/products/mortise-cylinder-numbered-keys.jpeg',
-    description: 'BSK precision-machined mortise cylinder lock with computerized numbered keys. Designed for smooth key entry, high pick resistance, and dependable everyday locking on mortise door sets.',
+    description: 'BSK profile mortise cylinder lock with numbered brass keys for organized key tracking. Features balanced pin tumblers and standard cam throw for mortise lock body integration.',
+    applications: 'Residential mortise locks, office door mortise bodies, and commercial key-controlled access points.',
   },
   {
     slug: 'euro-cylinder-lock-numbered-keys',
-    name: 'Euro Cylinder Lock with Numbered Keys (No. 2631)',
+    name: 'Euro Profile Cylinder Lock with Numbered Keys',
+    modelNumber: 'CYL-EP2631',
     category: 'cylinder-locks',
     categoryName: 'Euro Cylinder',
+    sourceStatus: 'Available on enquiry',
+    material: 'Solid Extruded Brass Body with Steel Cam',
+    finish: 'Satin Chrome / Brushed Brass Options',
+    mechanism: 'Standard DIN Euro profile pin tumbler mechanism',
+    keys: '3 Numbered Keys',
+    dimensions: '60mm (30/30), 70mm (35/35), and 80mm (40/40) length options',
+    doorThickness: '35mm – 65mm euro-profile door sets',
+    packaging: 'Individual retail box or bulk poly packaging for OEM door manufacturers',
     image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
-    description: 'Standard euro profile cylinder lock engineered for universal compatibility with modern euro-lock cases. Includes numbered brass keys for organized key tracking and enhanced access control.',
+    description: 'Standard DIN Euro profile cylinder lock for compatibility with European and international mortise lock cases. Includes numbered keys for systematic key management across multi-door installations.',
+    applications: 'Apartment entry doors, office euro-lock cases, aluminum section doors, and commercial perimeter doors.',
   },
   {
     slug: 'aluminium-section-mortise-lock-body',
-    name: 'Aluminium Section Mortise Lock Body with SS Kram',
+    name: 'Narrow-Backset Mortise Lock Body with SS Strike',
+    modelNumber: 'LB-ALU20',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Galvanized Steel Lock Case with Stainless Steel Strike Plate (Kram)',
+    finish: 'Satin Stainless Steel Faceplate',
+    mechanism: 'Narrow-backset deadbolt and spring-loaded reversible latch',
+    keys: 'Operated by Euro profile cylinder (sold separately)',
+    dimensions: 'Narrow 20mm / 25mm backset for slim-profile sections; 85mm centres',
+    doorThickness: 'Aluminium extrusion profiles and narrow stile metal doors',
+    packaging: 'Individually wrapped with SS strike plate and mounting fasteners',
     image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
-    description: 'Compact narrow-backset lock body with heavy-duty stainless steel strike (kram). Tailor-made for aluminium section doors, sliding partitions, and metal profile window installations.',
+    description: 'Specialized narrow-style mortise lock body engineered for aluminium section doors, sliding partitions, and metal profile joinery where standard deep-backset bodies cannot fit.',
+    applications: 'Aluminium frame doors, glass partition perimeter frames, shopfronts, and commercial metal stiles.',
   },
   {
     slug: 'stainless-steel-sleek-mortise-lock-body',
-    name: 'Stainless Steel Sleek Mortise Lock Body',
+    name: 'Stainless Steel Faceplate Sleek Mortise Lock Body',
+    modelNumber: 'LB-SS85',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Pressed Steel Body Casing with Stainless Steel Front Plate',
+    finish: 'Brushed Stainless Steel Faceplate & Strike',
+    mechanism: 'Reversible brass latch bolt and double-turn deadbolt mechanism',
+    keys: 'Euro profile cylinder operated (cylinder paired separately)',
+    dimensions: '85mm centre distance; 45mm / 50mm backset standard',
+    doorThickness: '35mm – 55mm wooden and hollow metal doors',
+    packaging: 'Individual box with stainless steel strike plate and fixing screws',
     image: '/images/products/stainless-steel-sleek-mortise-lock-body.jpeg',
-    description: 'Ultra-durable sleek mortise lock case constructed from high-grade stainless steel components. Ensures jam-free latch movement and reliable deadbolt throw across commercial and residential wooden doors.',
+    description: 'Full-case mortise lock body with reversible latch and deadbolt. Features a stainless steel front plate and precision-formed internal levers for standard wooden and metal architectural doors.',
+    applications: 'Residential wooden entrance doors, commercial office interior doors, and institutional flush doors.',
   },
   {
     slug: 'zinc-alloy-double-chal-mortise-lock-body',
-    name: 'Zinc Alloy Double Chal Mortise Lock Body',
+    name: 'Double-Throw (Double Chal) Mortise Lock Body',
+    modelNumber: 'LB-DC68',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Zinc Alloy Internal Components with Heavy-Gauge Steel Body Case',
+    finish: 'Zinc Passivated Case with Polished Brass or Chrome Faceplate',
+    mechanism: 'Double-throw (double chal) deadbolt linkage with key-operated two-turn throw',
+    keys: 'Key-operated via matched lever pack or cylinder interface',
+    dimensions: 'Standard mortise pocket profile (~70mm case depth)',
+    doorThickness: '35mm – 50mm wooden doors',
+    packaging: 'Export trade cartons with matched strike plates',
     image: '/images/products/zinc-alloy-double-chal-mortise-lock-body.png',
-    description: 'Sturdy double-throw (chal) mortise lock body built with premium zinc alloy components for doors requiring double-turn bolt extension and dependable everyday security.',
+    description: 'Double-throw (double chal) mortise lock case engineered for doors requiring dual-turn deadbolt extension. Produced in our Aligarh workshop with heavy-gauge side plates and durable latch linkages.',
+    applications: 'Traditional residential wooden doors, apartment front doors, and commercial interior locking.',
   },
   {
     slug: 'zinc-alloy-door-baby-latch',
-    name: 'Zinc Alloy Door Baby Latch',
+    name: 'Compact Zinc Alloy Door Baby Latch',
+    modelNumber: 'LT-BL01',
     category: 'lock-bodies',
     categoryName: 'Baby Latch',
+    sourceStatus: 'Manufactured by Arpit Impex',
+    material: 'Zinc Alloy Body with Brass Latch Tongue',
+    finish: 'Polished Nickel / Bright Brass',
+    mechanism: 'Spring-loaded cylindrical tubular latch mechanism',
+    keys: 'N/A (Push/Turn Interior Privacy Latch)',
+    dimensions: 'Compact 50mm / 60mm backset tubular latch casing',
+    doorThickness: '25mm – 45mm privacy and cabinet doors',
+    packaging: 'Bulk contractor packaging (20 pcs/inner box) or individually boxed',
     image: '/images/products/zinc-alloy-door-baby-latch.png',
-    description: 'Smooth-acting interior baby latch fitting designed for quick, secure closure on privacy doors, bathroom doors, and cabinetry. Compact, durable, and easy to install.',
+    description: 'Interior privacy baby latch designed for light-duty doors, bathroom doors, and partition panels. Compact casing allows rapid mortise boring and smooth push-to-close action.',
+    applications: 'Bathroom privacy doors, bedroom doors with knob fittings, cabinetry, and interior room dividers.',
   },
 ];
 
@@ -201,20 +341,60 @@ export const companyInfo = {
 };
 
 export const steps = [
-  ['Share Your Requirement', 'Tell us the product models, specifications, and estimated wholesale quantities you need.'],
-  ['Discuss Product Options', 'We review your requirements and provide tailored sourcing options directly from our manufacturing base in Aligarh.'],
-  ['Receive a Quotation', 'We provide transparent per-piece pricing, packaging options, MOQ terms, and export freight details.'],
-  ['Coordinate Your Order', 'Upon confirmation, we coordinate strict quality inspection, packaging, documentation, and prompt shipment.'],
+  ['Share Requirements', 'Provide target product models, required quantities, finish preferences, and destination country.'],
+  ['Confirm Specifications & Feasibility', 'We clarify product dimensions, materials, in-house vs partner supply status, and packaging details.'],
+  ['Receive Commercial Quotation', 'We provide transparent per-unit pricing, order-specific MOQ terms, production lead times, and FOB/CIF freight options where mutually agreed.'],
+  ['Sample Review & Pre-Production', 'Sample evaluation is coordinated where applicable before bulk production, tooling, and partner sourcing begin.'],
+  ['Inspection & Packaging', 'Order-specific visual, dimensional, and functional checks are performed before protective export packaging and palletization.'],
+  ['Export Documentation & Dispatch', 'We coordinate the agreed shipping arrangements and supply applicable export documentation, including Commercial Invoice and Packing List.'],
 ];
 
 export const faqs = [
-  ['What products are manufactured by Arpit Impex?', 'Arpit Impex specializes in door locks (penta bolt, 6-lever mortise, rim locks), luxury door handles (black, rose gold, brushed gold), euro & mortise cylinder locks, and mortise lock bodies.'],
-  ['Where is Arpit Impex located?', 'Our manufacturing base and registered office are located at 1/874, Gali No. 1, Shastri Nagar, Chhawani Road, Aligarh, Uttar Pradesh - 202001, India — the global manufacturing hub of architectural hardware and locking systems.'],
-  ['Can you handle bulk and wholesale export orders?', 'Yes, we cater to wholesale distributors, builders, contractors, and overseas buyers with competitive volume-based FOB/CIF quotations.'],
-  ['Do your products come with custom finishes or branding?', 'Yes, we can discuss custom surface finishes, key combinations, and customized packaging based on your required order quantities.'],
-  ['What information is needed to receive an exact quotation?', 'Please specify the product model, required quantity (MOQ), delivery city/country, and any special packaging or specification requirements.'],
+  [
+    'Which architectural hardware products can I source from Arpit Impex?',
+    'Our range covers four primary categories: door locks and rim locks (penta bolt and multi-lever locks), mortise lock bodies and latches (narrow section and standard mortise cases), profile cylinders (euro and mortise cylinders with numbered keys), and architectural door handles in various contemporary finishes.'
+  ],
+  [
+    'Which products are manufactured in-house and which are partner-sourced?',
+    'Arpit Impex operates a manufacturing and tooling unit in Aligarh where we produce selected mechanical lock bodies, lever mortise locks, baby latches, and pressed steel lock components. Certain handle sets, specialty cylinders, and specialized electroplated fittings are sourced through verified local partner manufacturers. We confirm the manufacturing or sourcing status of every SKU during enquiry discussions.'
+  ],
+  [
+    'Do you accept bulk and wholesale business enquiries?',
+    'Yes. We cater specifically to B2B clients including overseas importers, regional distributors, building material wholesalers, contractors, and institutional buyers seeking commercial supply.'
+  ],
+  [
+    'Can you discuss custom finishes, dimensions, or private-label packaging?',
+    'Yes, custom surface electroplating, dimensional adaptations, and private-label OEM box packaging can be reviewed subject to order volume feasibility and confirmed minimum order quantities (MOQ).'
+  ],
+  [
+    'Can I request samples before confirming a bulk order?',
+    'Sample requests can be arranged for evaluation of material, mechanism, and surface finish. Sample availability, lead time, and applicable dispatch charges are confirmed against the specific product models requested.'
+  ],
+  [
+    'What details should I provide to receive an accurate quotation?',
+    'Please specify the exact product model or specification drawing, required order quantity, preferred finish, packaging requirements, and target destination port or city.'
+  ],
+  [
+    'How are minimum order quantities (MOQ) and production lead times determined?',
+    'MOQ and lead times are order-specific. They depend on whether the item is manufactured in-house or partner-sourced, the raw material availability, required finish treatments, and customized packaging requirements. Exact timelines are confirmed on enquiry.'
+  ],
+  [
+    'Which export and shipping terms can you quote?',
+    'We can discuss Ex-Works (EXW), Free on Board (FOB Indian port), or Cost, Insurance and Freight (CIF destination port) terms where applicable and mutually agreed between both parties.'
+  ],
+  [
+    'What quality checks are performed prior to dispatch?',
+    'We perform order-specific dimensional verification, surface finish inspection, key operation testing, and secure packaging checks as appropriate to each product type before clearing goods for shipment.'
+  ],
+  [
+    'Which export documents are provided for international shipments?',
+    'Depending on destination regulations and agreed terms, we provide standard export trade documentation including Commercial Invoice, Packing List, Certificate of Origin, and shipping bills or courier airway bills.'
+  ],
 ];
 
-export const aboutCopy = 'Arpit Impex is an Aligarh-based manufacturer and exporter of premium architectural door locks, luxury handles, euro cylinders, and precision hardware fittings. Established with a commitment to quality craftsmanship and dependable security solutions, we supply buyers across India and global trade markets.';
+export const aboutCopy =
+  'Arpit Impex is based in Aligarh, Uttar Pradesh, India, and serves business buyers seeking architectural door hardware. Our range includes door locks, mortise lock bodies, cylinders, handles and related fittings. We manufacture selected products in our own unit and can arrange additional products through supply partners, depending on the specification and order requirement. We work with buyers to clarify product details, quantities, finishes, packaging and commercial terms before confirming an order.';
 
-export const approachCopy = 'Our approach combines precision manufacturing, rigorous quality checks, and responsive commercial communication. From high-grade zinc alloy and stainless steel castings to modern electroplated finishes, we deliver hardware built for durability and style.';
+export const approachCopy =
+  'Our focus is practical communication and clear order expectations: identifying the required product, confirming its specifications and availability, agreeing pricing and delivery terms, and coordinating the applicable checks, packaging and dispatch documentation.';
+

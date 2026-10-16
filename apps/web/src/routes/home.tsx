@@ -15,9 +15,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Arpit Impex | Hardware Sourcing & Export from India',
+      title: 'Architectural Door Hardware Manufacturer & Exporter India | Arpit Impex',
       description:
-        'Source locks, door handles, cylinders and architectural hardware from India. Arpit Impex provides dependable manufacturing, wholesale supply, and export coordination from Aligarh.',
+        'Explore door locks, mortise lock bodies, cylinders, handles and architectural hardware from Arpit Impex in Aligarh, India. Enquire about bulk supply, specifications and export orders.',
       image: images.hero,
       jsonLd: {
         '@context': 'https://schema.org',
@@ -36,7 +36,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
         },
         sameAs: [companyInfo.googleBusinessUrl],
         description:
-          'Manufacturer and exporter of premium architectural door locks, luxury handles, euro cylinders, and precision hardware fittings based in Aligarh, Uttar Pradesh, India.',
+          'Architectural door hardware supplier and manufacturer based in Aligarh, India, providing door locks, mortise lock bodies, cylinders, handles, and export coordination for bulk B2B orders.',
       },
     }
   );
