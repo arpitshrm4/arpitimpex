@@ -156,6 +156,40 @@ ${formData.details}`);
               <Phone size={16} /> Call Sales Desk
             </a>
           </div>
+
+          <div className="contact-qr-box">
+            <div className="contact-qr-img-wrap">
+              <a
+                href="https://wa.me/918285687940"
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Open WhatsApp chat with Arpit Impex"
+                aria-label="Scan or open WhatsApp QR Code"
+              >
+                <img
+                  src="/images/whatsapp-qr.png"
+                  alt="WhatsApp QR Code for Quick Connect to Arpit Impex Sales Desk"
+                  width="96"
+                  height="96"
+                  className="contact-qr-img"
+                  loading="lazy"
+                />
+              </a>
+            </div>
+            <div className="contact-qr-details">
+              <span className="contact-qr-badge">QUICK CONNECT</span>
+              <h4>Scan to Chat on WhatsApp</h4>
+              <p>Scan with your phone camera for instant connection with our Aligarh export sales desk.</p>
+              <a
+                href="https://wa.me/918285687940"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="contact-qr-action-link"
+              >
+                Open WhatsApp (+91 8285687940) →
+              </a>
+            </div>
+          </div>
         </div>
 
         {selected ? (

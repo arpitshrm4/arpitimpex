@@ -802,3 +802,146 @@
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 0 !important;
 }
+
+/* Footer WhatsApp QR Widget */
+.footer-whatsapp-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 10px 12px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+.footer-qr-img-link {
+  flex-shrink: 0;
+  display: block;
+  background: #ffffff;
+  padding: 4px;
+  border-radius: 4px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+.footer-qr-img-link:hover {
+  transform: scale(1.04);
+}
+.footer-qr-code {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+.footer-qr-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.footer-qr-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--navy);
+  letter-spacing: 0;
+}
+.footer-qr-sub {
+  font-size: 12px;
+  color: var(--quiet);
+  line-height: 1.35;
+}
+.footer-qr-link {
+  font-size: 12px;
+  color: #128c7e !important;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 2px;
+}
+.footer-qr-link:hover {
+  text-decoration: underline !important;
+}
+
+/* Contact Page WhatsApp QR Box */
+.contact-qr-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-left: 3px solid #25D366;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: 18px;
+  box-shadow: 0 4px 12px rgba(20, 45, 78, 0.04);
+}
+.contact-qr-img-wrap {
+  flex-shrink: 0;
+  background: #ffffff;
+  padding: 6px;
+  border: 1px solid #e2e8f0;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+.contact-qr-img-wrap:hover {
+  transform: scale(1.03);
+}
+.contact-qr-img {
+  display: block;
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+}
+.contact-qr-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+.contact-qr-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #075e54;
+  background: #e8f8f0;
+  padding: 2px 8px;
+  border-radius: 2px;
+}
+.contact-qr-details h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  letter-spacing: 0;
+}
+.contact-qr-details p {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0;
+}
+.contact-qr-action-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #128c7e;
+  text-decoration: none;
+  margin-top: 4px;
+}
+.contact-qr-action-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .contact-qr-box {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+

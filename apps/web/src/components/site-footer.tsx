@@ -72,6 +72,37 @@ export function SiteFooter() {
               </a>
             </div>
           </div>
+          <div className="footer-whatsapp-card">
+            <a
+              href="https://wa.me/918285687940"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="footer-qr-img-link"
+              title="Open WhatsApp chat with Arpit Impex"
+              aria-label="Scan or click WhatsApp QR Code"
+            >
+              <img
+                src="/images/whatsapp-qr.png"
+                alt="Scan WhatsApp QR code for quick business connect"
+                width="64"
+                height="64"
+                className="footer-qr-code"
+                loading="lazy"
+              />
+            </a>
+            <div className="footer-qr-info">
+              <span className="footer-qr-title">Quick WhatsApp Connect</span>
+              <span className="footer-qr-sub">Scan QR or click to chat with sales desk</span>
+              <a
+                href="https://wa.me/918285687940"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="footer-qr-link"
+              >
+                Chat: +91 8285687940 ↗
+              </a>
+            </div>
+          </div>
           <Link to="/contact" className="footer-enquiry-btn">
             Send Direct Enquiry <ArrowRight size={14} />
           </Link>

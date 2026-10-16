@@ -8,6 +8,7 @@ export const images = {
   factoryEntrance: '/images/factory-entrance.png',
   pressWorkshop: '/images/press-workshop.png',
   executiveOffice: '/images/executive-office.png',
+  whatsappQr: '/images/whatsapp-qr.png',
 };
 
 export const facilities = [
