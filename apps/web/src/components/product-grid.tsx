@@ -1,4 +1,65 @@
 import { Link } from 'react-router';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, MessageCircle } from 'lucide-react';
 import { products } from '@/data/catalogue';
-export function ProductGrid({category='all'}:{category?:string}){const visible=products.filter(p=>category==='all'||p.category===category);return <>{visible.length?<div className="product-grid">{visible.map(p=><article key={p.slug}><img src={p.image} alt={`Illustrative hardware photograph for ${p.name}`} width="640" height="480" loading="lazy"/><div className="product-text"><small>REPRESENTATIVE PRODUCT</small><h3>{p.name}</h3><p>{p.description}</p><Link className="text-link" to={`/contact?product=${encodeURIComponent(p.name)}`}>Enquire About This Product <ArrowUpRight size={16}/></Link></div></article>)}</div>:<p>No examples in this category yet. Please enquire about your requirements.</p>}</>}
+
+export function ProductGrid({ category = 'all' }: { category?: string }) {
+  const visible = products.filter(
+    (p) => category === 'all' || p.category === category
+  );
+
+  return (
+    <>
+      {visible.length ? (
+        <div className="product-grid">
+          {visible.map((p) => {
+            const waText = encodeURIComponent(
+              `Hello Arpit Impex, I am interested in "${p.name}" (${p.price || ''}). Please provide wholesale pricing, MOQ, and availability.`
+            );
+            return (
+              <article key={p.slug} className="product-card">
+                <div className="product-image-container">
+                  <img
+                    src={p.image}
+                    alt={p.name}
+                    width="500"
+                    height="500"
+                    loading="lazy"
+                  />
+                  {p.price && <span className="product-price-pill">{p.price}</span>}
+                </div>
+                <div className="product-text">
+                  <span className="product-category-tag">{p.categoryName || 'Hardware'}</span>
+                  <h3>{p.name}</h3>
+                  <p className="product-desc">{p.description}</p>
+                  <div className="product-actions">
+                    <Link
+                      className="button-product-quote"
+                      to={`/contact?product=${encodeURIComponent(p.name)}`}
+                    >
+                      Request Quote <ArrowUpRight size={14} />
+                    </Link>
+                    <a
+                      className="button-product-whatsapp"
+                      href={`https://wa.me/917942634041?text=${waText}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      title="Enquire on WhatsApp"
+                      aria-label="Enquire on WhatsApp"
+                    >
+                      <MessageCircle size={15} />
+                      <span>WhatsApp</span>
+                    </a>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      ) : (
+        <p className="no-products-msg">
+          No items found in this category. Please contact us for custom hardware sourcing.
+        </p>
+      )}
+    </>
+  );
+}

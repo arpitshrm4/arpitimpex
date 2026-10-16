@@ -1,3 +1,276 @@
+import { useState } from 'react';
 import { useSearchParams } from 'react-router';
-import { products, categories, images } from '@/data/catalogue';
-export function EnquiryForm(){const [params]=useSearchParams();const product=params.get('product')||'';const selected=products.find(p=>p.name===product);return <section className="section contact-section"><div><p className="eyebrow">YOUR NEXT STEP STARTS HERE</p><h1>Let’s Talk Hardware.</h1><p>Tell us what you’re looking for, where it needs to go and the quantity you have in mind.</p><div className="contact-info"><h3>Arpit Impex</h3><p>Hardware sourcing & export coordination<br/>India</p><p>Business email: to be provided<br/>Phone / WhatsApp: to be provided</p></div><img src={selected?.image||images.hero} alt={selected?`Illustrative products for ${selected.name}`:'Representative architectural hardware'} width="640" height="480"/>{selected&&<div><h3>{selected.name}</h3><p>{selected.description} Materials, finishes, specifications and availability require confirmation.</p></div>}</div><div className="form-panel"><h2>Request a Quote</h2><div className="form-notice" role="status"><strong>Enquiries are not yet open.</strong><p>The business email address has not been provided. This form cannot send or save enquiries until delivery has been configured and tested. Please do not enter personal information yet.</p></div><form><fieldset disabled><div className="form-grid"><label>Full Name *<input required name="name" placeholder="Your full name"/></label><label>Business Email *<input required type="email" name="email" placeholder="Your business email"/></label><label>Company Name *<input required name="company" placeholder="Your company"/></label><label>Country *<input required name="country" placeholder="Destination country"/></label><label className="full">Product / Category *<select name="product" defaultValue={product||'none'}><option value="none">Select a product or category</option>{products.map(p=><option key={p.slug}>{p.name}</option>)}{categories.map(c=><option key={c.id}>{c.name}</option>)}<option>Other requirement</option></select></label><label>Estimated Quantity<input name="quantity" placeholder="e.g. 500 pieces"/></label><label>Phone / WhatsApp<input name="phone" type="tel" placeholder="Include country code"/></label><label className="full">Product Specification or Reference<input name="reference" placeholder="Reference link, material, finish or dimensions"/></label><label className="full">Enquiry Details *<textarea required name="details" rows={5} placeholder="Tell us about the products and requirements you have in mind."/></label></div><button type="button" className="button disabled">Send Enquiry ↗</button></fieldset><small>Form preview only. Submission is disabled until email delivery is ready.</small></form></div></section>}
+import { products, categories, images, companyInfo } from '@/data/catalogue';
+import { Phone, MessageCircle, Mail, MapPin, CheckCircle2 } from 'lucide-react';
+
+export function EnquiryForm() {
+  const [params] = useSearchParams();
+  const initialProduct = params.get('product') || '';
+  const selected = products.find((p) => p.name === initialProduct);
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    country: 'India',
+    phone: '',
+    product: initialProduct || (products[0]?.name ?? ''),
+    quantity: '500 Pieces',
+    reference: '',
+    details: '',
+  });
+
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleWhatsAppSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const text = `*New Product Enquiry - Arpit Impex Website*
+*Name:* ${formData.name || 'Not provided'}
+*Company:* ${formData.company || 'Not provided'}
+*Phone:* ${formData.phone || 'Not provided'}
+*Email:* ${formData.email || 'Not provided'}
+*Country:* ${formData.country || 'India'}
+*Product:* ${formData.product}
+*Quantity:* ${formData.quantity}
+*Notes/Spec:* ${formData.details || 'Interested in price quotation and catalog.'}`;
+
+    const url = `https://wa.me/917942634041?text=${encodeURIComponent(text)}`;
+    window.open(url, '_blank');
+    setSubmitted(true);
+  };
+
+  const handleMailtoSubmit = () => {
+    const subject = encodeURIComponent(`Product Enquiry: ${formData.product} - ${formData.company || formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}
+Company: ${formData.company}
+Phone: ${formData.phone}
+Email: ${formData.email}
+Country: ${formData.country}
+Product: ${formData.product}
+Quantity: ${formData.quantity}
+Details: ${formData.details}`);
+    window.location.href = `mailto:${companyInfo.email}?subject=${subject}&body=${body}`;
+  };
+
+  return (
+    <section className="section contact-section">
+      <div>
+        <p className="eyebrow">DIRECT FACTORY ENQUIRY</p>
+        <h1>Let’s Talk Hardware.</h1>
+        <p>
+          Connect directly with our sales & export team in Aligarh. Share your target product models, required quantities, and delivery location for instant pricing.
+        </p>
+
+        <div className="contact-info-card">
+          <h3>{companyInfo.name}</h3>
+          <p className="contact-person">
+            <strong>Contact Person:</strong> {companyInfo.contactPerson}
+          </p>
+          <div className="contact-detail-item">
+            <MapPin size={18} className="contact-icon" />
+            <span>{companyInfo.location}</span>
+          </div>
+          <div className="contact-detail-item">
+            <Phone size={18} className="contact-icon" />
+            <a href={`tel:${companyInfo.phone}`}>{companyInfo.phone}</a>
+          </div>
+          <div className="contact-detail-item">
+            <Mail size={18} className="contact-icon" />
+            <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
+          </div>
+
+          <div className="contact-quick-actions">
+            <a
+              href={`https://wa.me/917942634041?text=${encodeURIComponent('Hi Arpit Impex, I would like to enquire about your hardware products.')}`}
+              className="quick-btn-whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <MessageCircle size={16} /> Chat on WhatsApp
+            </a>
+            <a href={`tel:${companyInfo.phone}`} className="quick-btn-call">
+              <Phone size={16} /> Call Directly
+            </a>
+          </div>
+        </div>
+
+        {selected ? (
+          <div className="selected-product-preview">
+            <div className="selected-product-img">
+              <img
+                src={selected.image}
+                alt={selected.name}
+                width="400"
+                height="300"
+              />
+            </div>
+            <h4>{selected.name}</h4>
+            {selected.price && (
+              <p className="selected-product-price">{selected.price}</p>
+            )}
+            <p className="selected-product-desc">{selected.description}</p>
+          </div>
+        ) : (
+          <div className="selected-product-preview">
+            <div className="selected-product-img">
+              <img
+                src={images.hero}
+                alt="Arpit Impex Hardware"
+                width="400"
+                height="300"
+              />
+            </div>
+            <h4>Door Locks & Architectural Hardware</h4>
+            <p className="selected-product-desc">
+              Precision manufactured in Aligarh, Uttar Pradesh. Supplying wholesale distributors, builders, and export trade partners.
+            </p>
+          </div>
+        )}
+      </div>
+
+      <div className="form-panel">
+        <h2>Request a Quotation</h2>
+        <p className="form-subheading">
+          Fill in your details below to send an instant enquiry directly to our WhatsApp or email.
+        </p>
+
+        {submitted ? (
+          <div className="form-success-box">
+            <CheckCircle2 size={32} color="#16a34a" />
+            <h3>Enquiry Opened!</h3>
+            <p>
+              Your enquiry has been prepared and opened in WhatsApp. You can also send it via email below if preferred.
+            </p>
+            <button
+              type="button"
+              className="button outline"
+              onClick={handleMailtoSubmit}
+            >
+              Send via Email as well
+            </button>
+          </div>
+        ) : (
+          <form onSubmit={handleWhatsAppSubmit}>
+            <div className="form-grid">
+              <label>
+                Full Name *
+                <input
+                  required
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  placeholder="e.g. Ramesh Kumar / John Smith"
+                />
+              </label>
+              <label>
+                Phone / WhatsApp *
+                <input
+                  required
+                  name="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="+91 98765 43210"
+                />
+              </label>
+              <label>
+                Business Email
+                <input
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="name@company.com"
+                />
+              </label>
+              <label>
+                Company / Firm Name
+                <input
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Your business or firm name"
+                />
+              </label>
+              <label>
+                Destination City / Country *
+                <input
+                  required
+                  name="country"
+                  value={formData.country}
+                  onChange={handleChange}
+                  placeholder="e.g. Mumbai, India / Dubai, UAE"
+                />
+              </label>
+              <label>
+                Estimated Quantity
+                <input
+                  name="quantity"
+                  value={formData.quantity}
+                  onChange={handleChange}
+                  placeholder="e.g. 200 Pieces, 1000 Sets"
+                />
+              </label>
+              <label className="full">
+                Product Model / Requirement *
+                <select
+                  name="product"
+                  value={formData.product}
+                  onChange={handleChange}
+                >
+                  <optgroup label="Official IndiaMART Products">
+                    {products.map((p) => (
+                      <option key={p.slug} value={p.name}>
+                        {p.name} {p.price ? `(${p.price})` : ''}
+                      </option>
+                    ))}
+                  </optgroup>
+                  <optgroup label="Categories">
+                    {categories.map((c) => (
+                      <option key={c.id} value={c.name}>
+                        {c.name} (General Enquiry)
+                      </option>
+                    ))}
+                  </optgroup>
+                  <option value="Custom Hardware / Other">Other Custom Hardware Requirement</option>
+                </select>
+              </label>
+              <label className="full">
+                Enquiry Details & Specifications
+                <textarea
+                  name="details"
+                  rows={4}
+                  value={formData.details}
+                  onChange={handleChange}
+                  placeholder="Mention finish requirements (Brass/Antique/SS/Black), key combination preferences, packaging requirements, or delivery schedule..."
+                />
+              </label>
+            </div>
+
+            <div className="form-submit-actions">
+              <button type="submit" className="button submit-whatsapp-btn">
+                <MessageCircle size={18} /> Send via WhatsApp Instant
+              </button>
+              <button
+                type="button"
+                className="button outline"
+                onClick={handleMailtoSubmit}
+              >
+                <Mail size={16} /> Send via Email
+              </button>
+            </div>
+            <small className="form-disclaimer">
+              Direct connection with Arpit Impex sales desk. We reply promptly within business hours.
+            </small>
+          </form>
+        )}
+      </div>
+    </section>
+  );
+}

@@ -1,36 +1,194 @@
 export const images = {
- hero: 'https://images.hostinger.com/1738be03-eca8-4783-92fc-1ae4bd81728b.png',
- locks: 'https://images.hostinger.com/85c5b678-9524-4bbf-84e4-ba7ac132563d.png',
- handles: 'https://images.hostinger.com/2f06da1e-3983-4b30-baca-e7c6a982bbb9.png',
- hinges: 'https://images.hostinger.com/75670f79-e417-4702-b85f-bb4153e032ce.png',
+  hero: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
+  locks: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.jpeg',
+  handles: '/images/products/160mm-brushed-gold-door-handle.jpeg',
+  cylinders: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
+  lockBodies: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+  logo: '/images/logo.png',
 };
+
 export const categories = [
- {id:'locks', name:'Locks & Security Hardware', description:'Explore locking solutions for different applications.', image:images.locks},
- {id:'handles', name:'Door Handles & Fittings', description:'Hardware options for residential and commercial doors.', image:images.handles},
- {id:'hinges', name:'Hinges & Door Accessories', description:'Essential fittings for door installation and everyday use.', image:images.hinges},
- {id:'architectural', name:'Architectural & Building Hardware', description:'Hardware sourcing for building, interior and renovation requirements.', image:images.hero},
+  {
+    id: 'door-locks',
+    name: 'Door Locks & Rim Locks',
+    description: 'Heavy duty penta bolt locks, multi-lever mortise locks, and antique brass rim lock sets.',
+    image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
+  },
+  {
+    id: 'door-handles',
+    name: 'Door Handles & Fittings',
+    description: 'Luxury rose gold, matte black, and brushed gold architectural handles for residential and commercial doors.',
+    image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
+  },
+  {
+    id: 'cylinder-locks',
+    name: 'Cylinder Locks & Keys',
+    description: 'Euro profile and BSK mortise cylinder locks with computerized numbered keys for high-security access.',
+    image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
+  },
+  {
+    id: 'lock-bodies',
+    name: 'Lock Bodies & Latches',
+    description: 'Aluminium section lock bodies with SS kram, sleek mortise cases, double-chal bodies, and baby latches.',
+    image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+  },
 ];
-export const products = [
- {slug:'mortise-locks', name:'Mortise Locks', category:'locks', image:images.locks, description:'Locking options for residential and commercial doors.'},
- {slug:'padlocks', name:'Padlocks', category:'locks', image:images.locks, description:'Explore portable locking solutions for your market.'},
- {slug:'door-handles', name:'Door Handles', category:'handles', image:images.handles, description:'Lever handles for residential and commercial interiors.'},
- {slug:'stainless-steel-hinges', name:'Stainless Steel Hinges', category:'hinges', image:images.hinges, description:'Hinge sourcing for door installation requirements.'},
- {slug:'cabinet-handles', name:'Cabinet Handles', category:'handles', image:images.handles, description:'Handle options for cabinetry and furniture.'},
- {slug:'door-accessories', name:'Door Accessories', category:'architectural', image:images.hinges, description:'Practical fittings for building and interior projects.'},
+
+export interface ProductItem {
+  slug: string;
+  name: string;
+  category: string;
+  categoryName?: string;
+  price?: string;
+  image: string;
+  description: string;
+}
+
+export const products: ProductItem[] = [
+  {
+    slug: 'j-lock-mild-steel-door-penta-bolt-lock-set',
+    name: 'J Lock Mild Steel Door Penta Bolt Lock Set',
+    category: 'door-locks',
+    categoryName: 'Door Lock',
+    price: '₹ 720 / Piece',
+    image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
+    description: 'The Penta Bolt Door Lock Heavy Duty is designed to provide enhanced door security with a robust multi-bolt locking mechanism. Its durable mild steel construction supports dependable everyday performance for residential and commercial doors.',
+  },
+  {
+    slug: '6-lever-zinc-alloy-single-chal-mortise-lock',
+    name: '6 Lever Zinc Alloy Single Chal Mortise Lock',
+    category: 'door-locks',
+    categoryName: 'Mortise Lock',
+    price: '₹ 150 / Piece',
+    image: '/images/products/6-lever-zinc-alloy-single-chal-mortise-lock.png',
+    description: 'Lock Number 6052. Designed for secure and smooth door locking with a precision six-lever mechanism. Crafted with durable zinc alloy construction suitable for residential, office, and commercial mortise door installations.',
+  },
+  {
+    slug: '6-lever-zinc-alloy-double-chal-mortise-lock',
+    name: '6 Lever Zinc Alloy Double Chal Mortise Lock',
+    category: 'door-locks',
+    categoryName: 'Mortise Lock',
+    price: '₹ 160 / Piece',
+    image: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.jpeg',
+    description: 'Lock Number 68. Engineered for reliable two-way door security and convenient locking from both sides. Features a heavy-duty zinc alloy casing and a smooth 6-lever double-chal mechanism.',
+  },
+  {
+    slug: 'antique-brass-door-rim-lock-set',
+    name: 'Antique Brass Door Rim Lock Set',
+    category: 'door-locks',
+    categoryName: 'Rim Lock',
+    price: '₹ 250 / Piece',
+    image: '/images/products/antique-brass-door-rim-lock-set.png',
+    description: 'Features a classic antique brass finish that adds a vintage heritage touch to doors and interiors. Offers dependable surface-mounted rim locking performance with high decorative appeal.',
+  },
+  {
+    slug: '160mm-black-door-handle',
+    name: '160mm Black Door Handle (Rose Gold & Black)',
+    category: 'door-handles',
+    categoryName: 'Door Handle',
+    price: '₹ 610 / Piece',
+    image: '/images/products/160mm-black-door-handle.jpeg',
+    description: 'Luxury two-tone finish combining deep matte black with warm rose gold accents. Ergonomically sculpted for a comfortable grip in modern bedrooms, living rooms, hotels, and executive offices.',
+  },
+  {
+    slug: '175mm-black-door-handle',
+    name: '175mm Black Door Handle Set',
+    category: 'door-handles',
+    categoryName: 'Door Handle Set',
+    price: '₹ 620 / Set',
+    image: '/images/products/175mm-black-door-handle.jpeg',
+    description: 'Contemporary 175mm door handle set with integrated plate styling. Combines dual-tone black and metallic accents with heavy-duty durability for upscale residential and commercial projects.',
+  },
+  {
+    slug: '160mm-brushed-gold-door-handle',
+    name: '160mm Brushed Gold Door Handle Assembly',
+    category: 'door-handles',
+    categoryName: 'Door Handle',
+    price: '₹ 610 / Piece',
+    image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
+    description: 'Refined brushed gold finish bringing contemporary elegance to interior doors. Engineered for smooth spring-loaded action, corrosion resistance, and timeless architectural aesthetics.',
+  },
+  {
+    slug: 'mortise-cylinder-numbered-keys',
+    name: 'Mortise Cylinder with Numbered Keys (No. 2325)',
+    category: 'cylinder-locks',
+    categoryName: 'Cylinder Lock',
+    price: '₹ 303 / Piece',
+    image: '/images/products/mortise-cylinder-numbered-keys.jpeg',
+    description: 'BSK precision-machined mortise cylinder lock with computerized numbered keys. Designed for smooth key entry, high pick resistance, and dependable everyday locking on mortise door sets.',
+  },
+  {
+    slug: 'euro-cylinder-lock-numbered-keys',
+    name: 'Euro Cylinder Lock with Numbered Keys (No. 2631)',
+    category: 'cylinder-locks',
+    categoryName: 'Euro Cylinder',
+    price: '₹ 283 / Piece',
+    image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
+    description: 'Standard euro profile cylinder lock engineered for universal compatibility with modern euro-lock cases. Includes numbered brass keys for organized key tracking and enhanced access control.',
+  },
+  {
+    slug: 'aluminium-section-mortise-lock-body',
+    name: 'Aluminium Section Mortise Lock Body with SS Kram',
+    category: 'lock-bodies',
+    categoryName: 'Lock Body',
+    price: '₹ 350 / Piece',
+    image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+    description: 'Compact narrow-backset lock body with heavy-duty stainless steel strike (kram). Tailor-made for aluminium section doors, sliding partitions, and metal profile window installations.',
+  },
+  {
+    slug: 'stainless-steel-sleek-mortise-lock-body',
+    name: 'Stainless Steel Sleek Mortise Lock Body',
+    category: 'lock-bodies',
+    categoryName: 'Lock Body',
+    price: '₹ 225 / Piece',
+    image: '/images/products/stainless-steel-sleek-mortise-lock-body.jpeg',
+    description: 'Ultra-durable sleek mortise lock case constructed from high-grade stainless steel components. Ensures jam-free latch movement and reliable deadbolt throw across commercial and residential wooden doors.',
+  },
+  {
+    slug: 'zinc-alloy-double-chal-mortise-lock-body',
+    name: 'Zinc Alloy Double Chal Mortise Lock Body',
+    category: 'lock-bodies',
+    categoryName: 'Lock Body',
+    price: '₹ 180 / Piece',
+    image: '/images/products/zinc-alloy-double-chal-mortise-lock-body.png',
+    description: 'Sturdy double-throw (chal) mortise lock body built with premium zinc alloy components for doors requiring double-turn bolt extension and dependable everyday security.',
+  },
+  {
+    slug: 'zinc-alloy-door-baby-latch',
+    name: 'Zinc Alloy Door Baby Latch',
+    category: 'lock-bodies',
+    categoryName: 'Baby Latch',
+    price: '₹ 95 / Piece',
+    image: '/images/products/zinc-alloy-door-baby-latch.png',
+    description: 'Smooth-acting interior baby latch fitting designed for quick, secure closure on privacy doors, bathroom doors, and cabinetry. Compact, durable, and easy to install.',
+  },
 ];
+
+export const companyInfo = {
+  name: 'Arpit Impex',
+  contactPerson: 'Jugendra Kumar Sharma',
+  phone: '+91 7942634041',
+  location: 'Aligarh, Uttar Pradesh - 202001, India',
+  email: 'arpitimpex@gmail.com',
+  gstVerified: true,
+  memberSince: '7+ Years',
+};
+
 export const steps = [
- ['Share Your Requirement','Tell us the product, specifications and estimated quantity you need.'],
- ['Discuss Product Options','We review your requirements and identify suitable sourcing options.'],
- ['Receive a Quotation','We discuss pricing, quantities, packaging and relevant trade terms.'],
- ['Coordinate Your Order','Once agreed, we coordinate the next steps for sourcing, documentation and shipment.'],
+  ['Share Your Requirement', 'Tell us the product models, specifications, and estimated wholesale quantities you need.'],
+  ['Discuss Product Options', 'We review your requirements and provide tailored sourcing options directly from our manufacturing base in Aligarh.'],
+  ['Receive a Quotation', 'We provide transparent per-piece pricing, packaging options, MOQ terms, and export freight details.'],
+  ['Coordinate Your Order', 'Upon confirmation, we coordinate strict quality inspection, packaging, documentation, and prompt shipment.'],
 ];
+
 export const faqs = [
- ['What products can I source through Arpit Impex?','You can enquire about locks, door handles, hinges, door accessories and architectural hardware. Product availability is confirmed for each enquiry.'],
- ['Can I enquire about a product not listed on the website?','Yes. Share a description or reference with us so we can review possible sourcing options. The catalogue is a starting point, not a confirmed availability list.'],
- ['What information should I share to receive a quotation?','Please share your product requirements, specifications, estimated quantity and destination country. Reference details and packaging requirements are helpful too.'],
- ['Can you discuss bulk and wholesale requirements?','Yes. We can discuss bulk and wholesale enquiries. Minimum order quantities and pricing depend on the product and supplier.'],
- ['Can you help coordinate international shipping and export documentation?','We can discuss export documentation and shipping coordination as part of your enquiry. Arrangements and responsibilities depend on the agreed order and trade terms.'],
- ['Do you accept custom product specifications or packaging requests?','Share your requirements for review. Customisation, materials, finishes and packaging depend on supplier capabilities and order quantities.'],
+  ['What products are manufactured by Arpit Impex?', 'Arpit Impex specializes in door locks (penta bolt, 6-lever mortise, rim locks), luxury door handles (black, rose gold, brushed gold), euro & mortise cylinder locks, and mortise lock bodies.'],
+  ['Where is Arpit Impex located?', 'We are based in Aligarh, Uttar Pradesh (India) — the renowned global hub of architectural hardware and locking systems.'],
+  ['Can you handle bulk and wholesale export orders?', 'Yes, we cater to wholesale distributors, builders, contractors, and overseas buyers with competitive volume-based FOB/CIF quotations.'],
+  ['Do your products come with custom finishes or branding?', 'Yes, we can discuss custom surface finishes, key combinations, and customized packaging based on your required order quantities.'],
+  ['What information is needed to receive an exact quotation?', 'Please specify the product model, required quantity (MOQ), delivery city/country, and any special packaging or specification requirements.'],
 ];
-export const aboutCopy = "Arpit Impex is an India-based export and sourcing business focused on hardware, locks and architectural fittings. We work to connect international buyers with suitable products and sourcing options from India’s supplier ecosystem.";
-export const approachCopy = 'Our approach is simple: understand your requirements, communicate clearly and coordinate the sourcing process with care. We aim to build lasting business relationships through transparency, responsiveness and practical solutions.';
+
+export const aboutCopy = 'Arpit Impex is an Aligarh-based manufacturer and exporter of premium architectural door locks, luxury handles, euro cylinders, and precision hardware fittings. Established with a commitment to quality craftsmanship and dependable security solutions, we supply buyers across India and global trade markets.';
+
+export const approachCopy = 'Our approach combines precision manufacturing, rigorous quality checks, and responsive commercial communication. From high-grade zinc alloy and stainless steel castings to modern electroplated finishes, we deliver hardware built for durability and style.';
