@@ -13,7 +13,7 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
         <div className="product-grid">
           {visible.map((p) => {
             const waText = encodeURIComponent(
-              `Hello Arpit Impex, I am interested in "${p.name}" (${p.price || ''}). Please provide wholesale pricing, MOQ, and availability.`
+              `Hello Arpit Impex, I am interested in "${p.name}". Please provide wholesale pricing, MOQ, and availability.`
             );
             return (
               <article key={p.slug} className="product-card">
@@ -25,7 +25,6 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
                     height="500"
                     loading="lazy"
                   />
-                  {p.price && <span className="product-price-pill">{p.price}</span>}
                 </div>
                 <div className="product-text">
                   <span className="product-category-tag">{p.categoryName || 'Hardware'}</span>

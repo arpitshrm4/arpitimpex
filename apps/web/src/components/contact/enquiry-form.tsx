@@ -111,9 +111,6 @@ Details: ${formData.details}`);
               />
             </div>
             <h4>{selected.name}</h4>
-            {selected.price && (
-              <p className="selected-product-price">{selected.price}</p>
-            )}
             <p className="selected-product-desc">{selected.description}</p>
           </div>
         ) : (
@@ -227,7 +224,7 @@ Details: ${formData.details}`);
                   <optgroup label="Official IndiaMART Products">
                     {products.map((p) => (
                       <option key={p.slug} value={p.name}>
-                        {p.name} {p.price ? `(${p.price})` : ''}
+                        {p.name}
                       </option>
                     ))}
                   </optgroup>

@@ -35,7 +35,7 @@ export function Catalogue() {
       </Form>
 
       <p className="catalogue-note">
-        Direct factory prices. Bulk wholesale orders, OEM branding, and international export packing available on request.
+        Direct manufacturer & wholesale supplier catalogue. Bulk volume discounts, OEM branding, and international export packing available on request.
       </p>
 
       <ProductGrid category={category} />
