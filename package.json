@@ -6,7 +6,7 @@
   "scripts": {
     "setup": "npm install",
     "dev": "concurrently --kill-others --raw \"npm run dev --prefix apps/web\"",
-    "build": "concurrently --raw \"npm run build --prefix apps/web\"",
+    "build": "concurrently --raw \"npm run build --prefix apps/web\" && node -e \"import('node:fs').then(fs => { fs.mkdirSync('build', {recursive:true}); fs.cpSync('dist/apps/web', 'build', {recursive:true}); fs.copyFileSync('index.js', 'build/index.js'); })\"",
     "start": "concurrently --kill-others --raw \"npm run start --prefix apps/web\"",
     "lint": "concurrently --raw \"npm run lint --prefix apps/web\"",
     "typecheck": "concurrently --raw \"npm run typecheck --prefix apps/web\""
