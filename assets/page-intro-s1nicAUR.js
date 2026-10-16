@@ -1,0 +1,1 @@
+import{j as e}from"./jsx-runtime-CHiRuPaO.js";function o({eyebrow:s,title:r,text:n}){return e.jsxs("section",{className:"page-intro",children:[e.jsx("p",{className:"eyebrow",children:s}),e.jsx("h1",{children:r}),e.jsx("p",{children:n})]})}export{o as P};
