@@ -272,3 +272,39 @@
   gap: 12px;
 }
 
+/* Brand logo styling */
+.brand-logo-img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: block;
+}
+.footer-brand {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 12px;
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--navy);
+  letter-spacing: 1px;
+}
+.footer-logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: inline-block;
+}
+@media (max-width: 760px) {
+  .brand-logo-img {
+    width: 34px;
+    height: 34px;
+  }
+  .footer-logo-img {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+

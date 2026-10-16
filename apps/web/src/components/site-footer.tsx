@@ -7,7 +7,14 @@ export function SiteFooter() {
       <div className="footer-grid">
         <div>
           <Link to="/" className="footer-brand">
-            ARPIT IMPEX<span className="gold">.</span>
+            <img
+              src="/images/logo.png"
+              alt="Arpit Impex"
+              className="footer-logo-img"
+              width="36"
+              height="36"
+            />
+            <span>ARPIT IMPEX<span className="gold">.</span></span>
           </Link>
           <p>
             Manufacturer and exporter of architectural door hardware, locks, handles, and lock bodies from Aligarh, India.
