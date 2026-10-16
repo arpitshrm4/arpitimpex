@@ -1,30 +1,49 @@
-import { spawn } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import fs from 'node:fs';
+import express from 'express';
+import compression from 'compression';
+import { createRequestHandler } from '@react-router/express';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const possibleLocations = [
-  path.resolve(__dirname, 'dist/apps/web/server/index.js'),
-  path.resolve(__dirname, 'build/server/index.js'),
-  path.resolve(__dirname, 'build/index.js'),
-];
+const serverBuildPath = fs.existsSync(path.resolve(__dirname, 'dist/apps/web/server/index.js'))
+  ? path.resolve(__dirname, 'dist/apps/web/server/index.js')
+  : path.resolve(__dirname, 'build/server/index.js');
 
-const serverBuild = possibleLocations.find(loc => fs.existsSync(loc)) || possibleLocations[0];
+const clientBuildPath = fs.existsSync(path.resolve(__dirname, 'dist/apps/web/client'))
+  ? path.resolve(__dirname, 'dist/apps/web/client')
+  : path.resolve(__dirname, 'build/client');
 
-const possibleCli = [
-  path.resolve(__dirname, 'node_modules/@react-router/serve/bin.cjs'),
-  path.resolve(__dirname, 'apps/web/node_modules/@react-router/serve/bin.cjs'),
-];
+const build = await import(serverBuildPath);
 
-const cliPath = possibleCli.find(p => fs.existsSync(p)) || 'react-router-serve';
+const app = express();
+app.disable('x-powered-by');
+app.use(compression());
 
-const child = spawn(process.execPath, [cliPath, serverBuild], {
-  stdio: 'inherit',
-  env: process.env,
+app.use(
+  '/assets',
+  express.static(path.join(clientBuildPath, 'assets'), {
+    immutable: true,
+    maxAge: '1y',
+  })
+);
+app.use(express.static(clientBuildPath, { maxAge: '1h' }));
+
+app.all(
+  '/{*splat}',
+  createRequestHandler({
+    build,
+    mode: process.env.NODE_ENV ?? 'production',
+  })
+);
+
+const port = Number(process.env.PORT) || 3000;
+const server = app.listen(port, () => {
+  console.log(`[Hostinger Node.js] Server is listening on port ${port}`);
 });
 
-child.on('exit', (code) => {
-  process.exit(code ?? 0);
-});
+process.on('SIGTERM', () => server.close());
+process.on('SIGINT', () => server.close());
+
+export default app;
