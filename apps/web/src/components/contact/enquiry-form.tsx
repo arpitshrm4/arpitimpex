@@ -72,7 +72,7 @@ Details: ${formData.details}`);
             <img src="/images/logo.png" alt="Arpit Impex" width="48" height="48" style={{ objectFit: 'contain' }} />
             <div>
               <h3 style={{ margin: 0 }}>{companyInfo.name}</h3>
-              <small style={{ color: 'var(--blue)', fontWeight: 700, fontSize: '10px', letterSpacing: '0.5px' }}>OFFICIAL SOURCING DESK</small>
+              <small style={{ color: 'var(--blue)', fontWeight: 700, fontSize: '12px', letterSpacing: '0.5px' }}>OFFICIAL SOURCING DESK</small>
             </div>
           </div>
           <p className="contact-person">
