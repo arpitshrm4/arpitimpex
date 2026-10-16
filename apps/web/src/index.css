@@ -176,6 +176,7 @@
 }
 .quick-btn-whatsapp:hover {
   background: #20bd5a;
+  color: #ffffff !important;
 }
 .quick-btn-call {
   flex: 1;
@@ -190,9 +191,12 @@
   font-size: 12px;
   font-weight: 700;
   text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
 }
 .quick-btn-call:hover {
   background: var(--blue);
+  color: #ffffff !important;
+  transform: translateY(-1px);
 }
 .selected-product-preview {
   background: #fdfdfd;
@@ -650,6 +654,7 @@
 .pdp-btn-whatsapp:hover {
   background: #20bd5a;
   border-color: #20bd5a;
+  color: #ffffff !important;
 }
 .pdp-disclaimer {
   font-size: 12px;
