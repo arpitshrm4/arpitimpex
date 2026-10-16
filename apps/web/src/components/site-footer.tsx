@@ -1,4 +1,5 @@
 import { Link } from 'react-router';
+import { Phone, Mail, ArrowRight } from 'lucide-react';
 import { categories, companyInfo } from '@/data/catalogue';
 
 export function SiteFooter() {
@@ -48,25 +49,32 @@ export function SiteFooter() {
               href={companyInfo.googleBusinessUrl}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'var(--blue)', fontSize: '13px', textDecoration: 'none', fontWeight: 600 }}
+              style={{ color: 'var(--blue)', fontSize: '12px', textDecoration: 'none', fontWeight: 600 }}
             >
               📍 View on Google Maps →
             </a>
           </p>
-          <p>
-            Contact: {companyInfo.contactPerson}
-            <br />
-            Phone:{' '}
-            <a href={`tel:${companyInfo.phone}`} style={{ color: 'inherit', fontWeight: 600 }}>
-              {companyInfo.phone}
-            </a>
-            <br />
-            Email:{' '}
-            <a href={`mailto:${companyInfo.email}`} style={{ color: 'inherit' }}>
-              {companyInfo.email}
-            </a>
-          </p>
-          <Link to="/contact">Send Direct Enquiry →</Link>
+          <div className="footer-contact-list">
+            <div className="footer-contact-item">
+              <span style={{ color: 'var(--quiet)', fontSize: '12px' }}>Contact:</span>
+              <strong style={{ color: 'var(--navy)', fontSize: '12px' }}>{companyInfo.contactPerson}</strong>
+            </div>
+            <div className="footer-contact-item">
+              <Phone size={14} style={{ color: 'var(--blue)', flexShrink: 0 }} />
+              <a href={`tel:${companyInfo.phone}`} className="footer-contact-link">
+                {companyInfo.phone}
+              </a>
+            </div>
+            <div className="footer-contact-item">
+              <Mail size={14} style={{ color: 'var(--blue)', flexShrink: 0 }} />
+              <a href={`mailto:${companyInfo.email}`} className="footer-contact-link">
+                {companyInfo.email}
+              </a>
+            </div>
+          </div>
+          <Link to="/contact" className="footer-enquiry-btn">
+            Send Direct Enquiry <ArrowRight size={14} />
+          </Link>
         </div>
       </div>
       <div className="footer-bottom">

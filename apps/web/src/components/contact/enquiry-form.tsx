@@ -136,7 +136,7 @@ ${formData.details}`);
           </div>
           <div style={{ marginTop: '12px', paddingTop: '10px', borderTop: '1px solid rgba(255,255,255,0.08)', fontSize: '12px', color: 'var(--text-muted)' }}>
             <span style={{ display: 'inline-block', marginRight: '14px' }}>
-              <strong>GSTIN:</strong> {companyInfo.gstNumber} (Verified)
+              <strong>GSTIN:</strong> {companyInfo.gstNumber}
             </span>
             <span>
               <strong>Hours:</strong> {companyInfo.openingHours}
