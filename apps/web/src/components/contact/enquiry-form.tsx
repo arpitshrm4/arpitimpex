@@ -170,9 +170,11 @@ ${formData.details}`);
             </div>
             <h4>{selected.name} (SKU: {selected.modelNumber})</h4>
             <p className="selected-product-desc">{selected.description}</p>
-            <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--blue)', fontWeight: 600 }}>
-              Status: {selected.sourceStatus}
-            </div>
+            {selected.sourceStatus === 'Available on enquiry' && (
+              <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--blue)', fontWeight: 600 }}>
+                Available on enquiry
+              </div>
+            )}
           </div>
         ) : (
           <div className="selected-product-preview">
@@ -299,7 +301,7 @@ ${formData.details}`);
                       .filter((p) => p.category === 'door-locks')
                       .map((p) => (
                         <option key={p.slug} value={p.name}>
-                          {p.name} ({p.modelNumber}) — {p.sourceStatus}
+                          {p.name} ({p.modelNumber}){p.sourceStatus === 'Available on enquiry' ? ' — Available on enquiry' : ''}
                         </option>
                       ))}
                   </optgroup>
@@ -308,7 +310,7 @@ ${formData.details}`);
                       .filter((p) => p.category === 'lock-bodies')
                       .map((p) => (
                         <option key={p.slug} value={p.name}>
-                          {p.name} ({p.modelNumber}) — {p.sourceStatus}
+                          {p.name} ({p.modelNumber}){p.sourceStatus === 'Available on enquiry' ? ' — Available on enquiry' : ''}
                         </option>
                       ))}
                   </optgroup>
@@ -317,7 +319,7 @@ ${formData.details}`);
                       .filter((p) => p.category === 'cylinder-locks')
                       .map((p) => (
                         <option key={p.slug} value={p.name}>
-                          {p.name} ({p.modelNumber}) — {p.sourceStatus}
+                          {p.name} ({p.modelNumber}){p.sourceStatus === 'Available on enquiry' ? ' — Available on enquiry' : ''}
                         </option>
                       ))}
                   </optgroup>
@@ -326,7 +328,7 @@ ${formData.details}`);
                       .filter((p) => p.category === 'door-handles')
                       .map((p) => (
                         <option key={p.slug} value={p.name}>
-                          {p.name} ({p.modelNumber}) — {p.sourceStatus}
+                          {p.name} ({p.modelNumber}){p.sourceStatus === 'Available on enquiry' ? ' — Available on enquiry' : ''}
                         </option>
                       ))}
                   </optgroup>

@@ -70,7 +70,7 @@ export interface ProductItem {
   modelNumber: string;
   category: string;
   categoryName: string;
-  sourceStatus: 'Manufactured by Arpit Impex' | 'Partner-sourced' | 'Available on enquiry';
+  sourceStatus?: 'Available on enquiry';
   material: string;
   finish: string;
   mechanism: string;
@@ -90,7 +90,6 @@ export const products: ProductItem[] = [
     modelNumber: 'JL-PB01',
     category: 'door-locks',
     categoryName: 'Rim Door Lock',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Mild Steel Casing & Bolt Assembly',
     finish: 'Dual-tone Metallic Powder Coated with Polished Accents',
     mechanism: 'Multi-bolt (5-bolt) rim deadbolt mechanism with key-operated exterior and interior thumbturn/knob',
@@ -108,7 +107,6 @@ export const products: ProductItem[] = [
     modelNumber: 'No. 6052',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Zinc Alloy Casing with Stamped Steel Lever Pack',
     finish: 'Nickel Plated / Zinc Passivated Options',
     mechanism: '6-lever single chal (single-throw bolt throw of approx. 12mm on a single key rotation)',
@@ -126,7 +124,6 @@ export const products: ProductItem[] = [
     modelNumber: 'No. 68',
     category: 'door-locks',
     categoryName: 'Mortise Lock',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Zinc Alloy Body with Steel Internal Levers',
     finish: 'Zinc Plated / Satin Finish Faceplate',
     mechanism: '6-lever double chal (double-throw bolt mechanism with extended deadbolt travel on two key turns)',
@@ -162,7 +159,6 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-160RGB',
     category: 'door-handles',
     categoryName: 'Door Handle',
-    sourceStatus: 'Partner-sourced',
     material: 'Zinc Alloy / Aluminium Alloy Casting',
     finish: 'Matte Black Powder Coat with Rose Gold Electroplated Accents',
     mechanism: 'Spring-assisted lever return with 8mm square spindle drive',
@@ -180,7 +176,6 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-175BLK',
     category: 'door-handles',
     categoryName: 'Door Handle Set',
-    sourceStatus: 'Partner-sourced',
     material: 'Zinc Alloy / Extruded Aluminium Alloy',
     finish: 'Matte Black Electrostatic Finish',
     mechanism: 'Integrated backplate with spring-loaded lever return',
@@ -198,7 +193,6 @@ export const products: ProductItem[] = [
     modelNumber: 'DH-160BGD',
     category: 'door-handles',
     categoryName: 'Door Handle',
-    sourceStatus: 'Partner-sourced',
     material: 'Solid Zinc Alloy Casting',
     finish: 'Brushed Satin Gold (Lacquered Protective Finish)',
     mechanism: 'Spring-loaded return cassette with horizontal stop',
@@ -252,7 +246,6 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-ALU20',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Galvanized Steel Lock Case with Stainless Steel Strike Plate (Kram)',
     finish: 'Satin Stainless Steel Faceplate',
     mechanism: 'Narrow-backset deadbolt and spring-loaded reversible latch',
@@ -270,7 +263,6 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-SS85',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Pressed Steel Body Casing with Stainless Steel Front Plate',
     finish: 'Brushed Stainless Steel Faceplate & Strike',
     mechanism: 'Reversible brass latch bolt and double-turn deadbolt mechanism',
@@ -288,7 +280,6 @@ export const products: ProductItem[] = [
     modelNumber: 'LB-DC68',
     category: 'lock-bodies',
     categoryName: 'Lock Body',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Zinc Alloy Internal Components with Heavy-Gauge Steel Body Case',
     finish: 'Zinc Passivated Case with Polished Brass or Chrome Faceplate',
     mechanism: 'Double-throw (double chal) deadbolt linkage with key-operated two-turn throw',
@@ -306,7 +297,6 @@ export const products: ProductItem[] = [
     modelNumber: 'LT-BL01',
     category: 'lock-bodies',
     categoryName: 'Baby Latch',
-    sourceStatus: 'Manufactured by Arpit Impex',
     material: 'Zinc Alloy Body with Brass Latch Tongue',
     finish: 'Polished Nickel / Bright Brass',
     mechanism: 'Spring-loaded cylindrical tubular latch mechanism',

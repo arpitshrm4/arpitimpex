@@ -15,12 +15,6 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
             const waText = encodeURIComponent(
               `Hello Arpit Impex, I would like to enquire about bulk supply and specifications for ${p.name} (${p.modelNumber}).`
             );
-            const sourceClass =
-              p.sourceStatus === 'Manufactured by Arpit Impex'
-                ? 'source-inhouse'
-                : p.sourceStatus === 'Partner-sourced'
-                ? 'source-partner'
-                : 'source-enquiry';
 
             return (
               <article key={p.slug} className="product-card">
@@ -34,9 +28,11 @@ export function ProductGrid({ category = 'all' }: { category?: string }) {
                       loading="lazy"
                     />
                   </Link>
-                  <span className={`product-source-badge ${sourceClass}`}>
-                    {p.sourceStatus}
-                  </span>
+                  {p.sourceStatus === 'Available on enquiry' && (
+                    <span className="product-source-badge source-enquiry">
+                      Available on enquiry
+                    </span>
+                  )}
                 </div>
                 <div className="product-text">
                   <div className="product-meta-header">

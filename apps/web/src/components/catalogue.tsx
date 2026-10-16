@@ -11,7 +11,7 @@ export function Catalogue() {
       <p className="eyebrow">ARCHITECTURAL HARDWARE CATALOGUE</p>
       <h1>Door Locks, Lock Bodies & Architectural Fittings</h1>
       <p className="section-intro">
-        Browse our range of door locks, mortise lock bodies, profile cylinders, and door handles from Aligarh, India. We distinguish products manufactured in our own workshop from partner-sourced items. Enquire for specifications, finish options, volume pricing, and export supply terms.
+        Browse our range of door locks, mortise lock bodies, profile cylinders, and door handles from Aligarh, India. Enquire for specifications, finish options, volume pricing, and export supply terms.
       </p>
 
       <Form method="get" className="filters">

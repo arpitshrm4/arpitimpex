@@ -94,13 +94,6 @@ export default function ProductDetailPage() {
     .filter((p) => p.category === product.category && p.slug !== product.slug)
     .slice(0, 3);
 
-  const sourceBadgeClass =
-    product.sourceStatus === 'Manufactured by Arpit Impex'
-      ? 'source-inhouse'
-      : product.sourceStatus === 'Partner-sourced'
-      ? 'source-partner'
-      : 'source-enquiry';
-
   return (
     <main className="product-detail-page">
       {/* Breadcrumb Navigation */}
@@ -131,9 +124,11 @@ export default function ProductDetailPage() {
                 height="700"
                 loading="eager"
               />
-              <span className={`product-source-badge ${sourceBadgeClass}`}>
-                {product.sourceStatus}
-              </span>
+              {product.sourceStatus === 'Available on enquiry' && (
+                <span className="product-source-badge source-enquiry">
+                  Available on enquiry
+                </span>
+              )}
             </div>
             <p className="pdp-image-note">
               SKU photo from our Aligarh catalogue. Surface finish samples and technical drawings are provided during quotation discussions.
@@ -168,31 +163,17 @@ export default function ProductDetailPage() {
             </div>
 
             {/* Sourcing Clarification Card */}
-            <div className="pdp-source-card">
-              <div className="source-card-header">
-                {product.sourceStatus === 'Manufactured by Arpit Impex' ? (
-                  <ShieldCheck size={20} className="source-icon inhouse" />
-                ) : (
+            {product.sourceStatus === 'Available on enquiry' && (
+              <div className="pdp-source-card">
+                <div className="source-card-header">
                   <CheckCircle size={20} className="source-icon partner" />
-                )}
-                <strong>Manufacturing & Sourcing Status</strong>
+                  <strong>Supply Availability</strong>
+                </div>
+                <p className="source-card-body">
+                  <strong>Available on B2B Enquiry:</strong> Available for commercial supply. Exact manufacturing, finish specifications, and sourcing details are confirmed upon enquiry.
+                </p>
               </div>
-              <p className="source-card-body">
-                {product.sourceStatus === 'Manufactured by Arpit Impex' ? (
-                  <>
-                    <strong>Manufactured by Arpit Impex:</strong> Fabricated in our Aligarh workshop utilizing mechanical power press tooling, stamping dies, and assembly checks.
-                  </>
-                ) : product.sourceStatus === 'Partner-sourced' ? (
-                  <>
-                    <strong>Partner-Sourced Supply:</strong> Supplied through verified local production partners under Arpit Impex specification management, visual inspection, and export coordination.
-                  </>
-                ) : (
-                  <>
-                    <strong>Available on B2B Enquiry:</strong> Available for commercial supply. Exact manufacturing and sourcing details confirmed upon enquiry.
-                  </>
-                )}
-              </p>
-            </div>
+            )}
 
             <p className="pdp-description">{product.description}</p>
 
@@ -267,14 +248,16 @@ export default function ProductDetailPage() {
                 <th scope="row">Category</th>
                 <td>{product.categoryName}</td>
               </tr>
-              <tr>
-                <th scope="row">Manufacturing Status</th>
-                <td>
-                  <span className={`specs-status-pill ${sourceBadgeClass}`}>
-                    {product.sourceStatus}
-                  </span>
-                </td>
-              </tr>
+              {product.sourceStatus === 'Available on enquiry' && (
+                <tr>
+                  <th scope="row">Availability</th>
+                  <td>
+                    <span className="specs-status-pill source-enquiry">
+                      Available on enquiry
+                    </span>
+                  </td>
+                </tr>
+              )}
               <tr>
                 <th scope="row">Body & Component Material</th>
                 <td>{product.material}</td>
@@ -390,15 +373,11 @@ export default function ProductDetailPage() {
                       loading="lazy"
                     />
                   </Link>
-                  <span className={`product-source-badge ${
-                    p.sourceStatus === 'Manufactured by Arpit Impex'
-                      ? 'source-inhouse'
-                      : p.sourceStatus === 'Partner-sourced'
-                      ? 'source-partner'
-                      : 'source-enquiry'
-                  }`}>
-                    {p.sourceStatus}
-                  </span>
+                  {p.sourceStatus === 'Available on enquiry' && (
+                    <span className="product-source-badge source-enquiry">
+                      Available on enquiry
+                    </span>
+                  )}
                 </div>
                 <div className="product-text">
                   <div className="product-meta-header">
