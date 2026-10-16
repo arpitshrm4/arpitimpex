@@ -30,9 +30,9 @@ export function Hero() {
       <div className="hero-media">
         <img
           src={images.hero}
-          alt="Representative architectural door hardware arrangement showing mortise locks, door handles, and precision fittings"
-          width="1100"
-          height="825"
+          alt="J-Lock penta-bolt rim door lock set with solid brass keys, strike box, and decorative escutcheon plate"
+          width="1024"
+          height="682"
           fetchPriority="high"
         />
         <div className="image-caption">

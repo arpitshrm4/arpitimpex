@@ -1,5 +1,5 @@
 export const images = {
-  hero: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
+  hero: '/images/hero-penta-bolt-rim-lock.jpg',
   locks: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.jpeg',
   handles: '/images/products/160mm-brushed-gold-door-handle.jpeg',
   cylinders: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
