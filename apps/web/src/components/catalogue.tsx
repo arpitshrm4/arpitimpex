@@ -1,5 +1,5 @@
 import { Form, useSearchParams } from 'react-router';
-import { categories } from '@/data/catalogue';
+import { categories, products } from '@/data/catalogue';
 import { ProductGrid } from '@/components/product-grid';
 
 export function Catalogue() {
@@ -20,7 +20,7 @@ export function Catalogue() {
           value="all"
           className={category === 'all' ? 'selected' : ''}
         >
-          All Products (13)
+          All Products ({products.length})
         </button>
         {categories.map((c) => (
           <button
