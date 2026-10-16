@@ -43,6 +43,16 @@ export function SiteFooter() {
             <br />
             {companyInfo.location}
           </p>
+          <p style={{ marginTop: '-4px', marginBottom: '8px' }}>
+            <a
+              href={companyInfo.googleBusinessUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'var(--blue)', fontSize: '13px', textDecoration: 'none', fontWeight: 600 }}
+            >
+              📍 Google Business Profile →
+            </a>
+          </p>
           <p>
             Contact: {companyInfo.contactPerson}
             <br />

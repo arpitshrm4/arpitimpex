@@ -79,8 +79,28 @@ Details: ${formData.details}`);
             <strong>Contact Person:</strong> {companyInfo.contactPerson}
           </p>
           <div className="contact-detail-item">
-            <MapPin size={18} className="contact-icon" />
-            <span>{companyInfo.location}</span>
+            <MapPin size={18} className="contact-icon" style={{ flexShrink: 0, marginTop: '3px' }} />
+            <div>
+              <span>{companyInfo.location}</span>
+              <div style={{ marginTop: '6px' }}>
+                <a
+                  href={companyInfo.googleBusinessUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    fontSize: '12px',
+                    color: 'var(--blue)',
+                    fontWeight: 600,
+                    textDecoration: 'none',
+                  }}
+                >
+                  View on Google Maps / Business Profile ↗
+                </a>
+              </div>
+            </div>
           </div>
           <div className="contact-detail-item">
             <Phone size={18} className="contact-icon" />
@@ -89,6 +109,14 @@ Details: ${formData.details}`);
           <div className="contact-detail-item">
             <Mail size={18} className="contact-icon" />
             <a href={`mailto:${companyInfo.email}`}>{companyInfo.email}</a>
+          </div>
+          <div style={{ marginTop: '12px', paddingTop: '10px', borderTop: '1px solid rgba(255,255,255,0.08)', fontSize: '12px', color: 'var(--text-muted)' }}>
+            <span style={{ display: 'inline-block', marginRight: '14px' }}>
+              <strong>GSTIN:</strong> {companyInfo.gstNumber} (Verified)
+            </span>
+            <span>
+              <strong>Hours:</strong> {companyInfo.openingHours}
+            </span>
           </div>
 
           <div className="contact-quick-actions">

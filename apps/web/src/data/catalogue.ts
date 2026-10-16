@@ -155,10 +155,19 @@ export const companyInfo = {
   contactPerson: 'Jugendra Kumar Sharma',
   phone: '+91 8285687940',
   whatsapp: '+91 8285687940',
-  location: 'Aligarh, Uttar Pradesh - 202001, India',
+  address: '1/874, Gali No. 1, Shastri Nagar, Chhawani Road',
+  city: 'Aligarh',
+  state: 'Uttar Pradesh',
+  pincode: '202001',
+  country: 'India',
+  location: '1/874, Gali No. 1, Shastri Nagar, Chhawani Road, Aligarh, Uttar Pradesh - 202001, India',
   email: 'arpitimpex@gmail.com',
+  gstNumber: '09AEOPS8020A1ZH',
   gstVerified: true,
   memberSince: '7+ Years',
+  googleBusinessUrl: 'https://share.google/WEMlvSsA4BpyfkvUf',
+  googleMapsDirectionsUrl: 'https://www.google.com/maps/search/?api=1&query=Arpit+Impex+Shastri+Nagar+Aligarh',
+  openingHours: 'Mon - Sat: 9:30 AM – 7:30 PM (Sun Closed)',
 };
 
 export const steps = [
@@ -170,7 +179,7 @@ export const steps = [
 
 export const faqs = [
   ['What products are manufactured by Arpit Impex?', 'Arpit Impex specializes in door locks (penta bolt, 6-lever mortise, rim locks), luxury door handles (black, rose gold, brushed gold), euro & mortise cylinder locks, and mortise lock bodies.'],
-  ['Where is Arpit Impex located?', 'We are based in Aligarh, Uttar Pradesh (India) — the renowned global hub of architectural hardware and locking systems.'],
+  ['Where is Arpit Impex located?', 'Our manufacturing base and registered office are located at 1/874, Gali No. 1, Shastri Nagar, Chhawani Road, Aligarh, Uttar Pradesh - 202001, India — the global manufacturing hub of architectural hardware and locking systems.'],
   ['Can you handle bulk and wholesale export orders?', 'Yes, we cater to wholesale distributors, builders, contractors, and overseas buyers with competitive volume-based FOB/CIF quotations.'],
   ['Do your products come with custom finishes or branding?', 'Yes, we can discuss custom surface finishes, key combinations, and customized packaging based on your required order quantities.'],
   ['What information is needed to receive an exact quotation?', 'Please specify the product model, required quantity (MOQ), delivery city/country, and any special packaging or specification requirements.'],
