@@ -41,4 +41,4 @@ export function meta({ matches, location }: Route.MetaArgs) {
     }
   );
 }
-export default function HomePage(){return <main><Hero/><Categories/><WhyUs/><Process/><Featured/><EnquiryBanner/><About/><FacilityShowcase/><Faq/><FinalCta/></main>}
+export default function HomePage(){return <main><Hero/><Categories/><WhyUs/><Featured/><Process/><EnquiryBanner/><About/><FacilityShowcase/><Faq/><FinalCta/></main>}

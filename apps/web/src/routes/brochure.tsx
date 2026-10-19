@@ -10,9 +10,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Architectural Door Hardware Product Brochure & Export Catalog | Arpit Impex',
+      title: 'Arpit Impex | Architectural Door Hardware Product Brochure & Export Catalog',
       description:
-        'Download or view the official B2B product brochure from Arpit Impex, Aligarh, India. Complete engineering specifications, dimensions, materials, and finishes for all 26 door locks, handles, cylinders, and mortise bodies.',
+        'Arpit Impex offers comprehensive architectural door hardware including locks, handles, cylinders, and mortise bodies. Explore our complete B2B product catalog with detailed specifications.',
       image: images.hero,
       jsonLd: [
         {
@@ -38,7 +38,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
           '@type': 'ItemList',
           name: 'Arpit Impex Architectural Hardware Product Brochure',
           description:
-            'Complete B2B product brochure and catalog of architectural door locks, rim locks, mortise bodies, cylinders, and door handles from Aligarh, India.',
+            'Catalog of architectural door locks, rim locks, mortise bodies, cylinders, and door handles from Aligarh, India.',
           url: canonicalUrl,
           numberOfItems: products.length,
           itemListElement: products.map((product, idx) => ({
