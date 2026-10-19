@@ -15,7 +15,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Architectural Door Hardware Supplier & Export Partner India | Arpit Impex',
+      title: 'Arpit Impex | Architectural Door Hardware Supplier & Export Partner India',
       description:
         'Source door locks, mortise lock bodies, cylinders and handles from Arpit Impex in Aligarh, India. Enquire about bulk supply, specifications and export terms.',
       image: images.hero,
@@ -41,4 +41,4 @@ export function meta({ matches, location }: Route.MetaArgs) {
     }
   );
 }
-export default function HomePage(){return <main><Hero/><Categories/><WhyUs/><Featured/><Process/><EnquiryBanner/><About/><FacilityShowcase/><Faq/><FinalCta/></main>}
+export default function HomePage() { return <main><Hero /><Categories /><WhyUs /><Featured /><Process /><EnquiryBanner /><About /><FacilityShowcase /><Faq /><FinalCta /></main> }
