@@ -71,6 +71,13 @@
   color: var(--quiet);
   margin-bottom: 16px;
   flex-grow: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: calc(12px * 1.55 * 2);
 }
 .product-actions {
   display: flex;
