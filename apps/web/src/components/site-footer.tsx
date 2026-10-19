@@ -25,6 +25,7 @@ export function SiteFooter() {
         <div>
           <h3>Explore</h3>
           <Link to="/products">All Products</Link>
+          <Link to="/brochure">Product Brochure (PDF)</Link>
           <Link to="/about">About Us</Link>
           <Link to="/process">Export Process</Link>
           <Link to="/contact">Request a B2B Quote</Link>

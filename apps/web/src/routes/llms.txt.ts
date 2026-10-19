@@ -19,6 +19,7 @@ Arpit Impex supplies door locks, mortise lock bodies, cylinders, handles, and re
 
 ## Key Pages
 - [Products](${origin}/products): Catalogue of door locks, lock bodies, profile cylinders, and door handles with model numbers and technical specifications.
+- [Digital Brochure](${origin}/brochure): Complete architectural hardware product brochure, printable engineering spec sheets, and comparison matrix for all 26 catalogued models.
 - [About Us](${origin}/about): Selected in-house manufacturing, local supply partners, and B2B export coordination from Aligarh, India.
 - [Export Process](${origin}/process): 6-step ordering process from requirement sharing to documentation and export dispatch.
 - [B2B Quote Enquiry](${origin}/contact): Official sales and export desk contact with direct WhatsApp (+91 8285687940) and email (${origin}/contact).

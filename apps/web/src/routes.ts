@@ -4,6 +4,7 @@ export default [
 	index('routes/home.tsx'),
 	route('products', 'routes/products.tsx'),
 	route('products/:slug', 'routes/product-detail.tsx'),
+	route('brochure', 'routes/brochure.tsx'),
 	route('about', 'routes/about.tsx'),
 	route('process', 'routes/process.tsx'),
 	route('contact', 'routes/contact.tsx'),

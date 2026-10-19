@@ -13,8 +13,8 @@ export function loader({ params }: Route.LoaderArgs) {
   return { product };
 }
 
-export function meta({ data, params, matches, location }: Route.MetaArgs) {
-  const product = data?.product ?? products.find((p) => p.slug === params?.slug);
+export function meta({ loaderData, params, matches, location }: Route.MetaArgs) {
+  const product = loaderData?.product ?? products.find((p) => p.slug === params?.slug);
   if (!product) {
     return [{ title: 'Product Not Found | Arpit Impex' }];
   }
