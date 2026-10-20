@@ -101,7 +101,7 @@ export function BrochurePage() {
         </div>
         <div className="print-doc-title-bar">
           <span>COMPLETE ARCHITECTURAL HARDWARE PRODUCT SPECIFICATION BROCHURE</span>
-          <span>EDITION 2026 · ALL 26 SKUs</span>
+          <span>EDITION 2026 · ALL {products.length} SKUs</span>
         </div>
       </div>
 
@@ -116,8 +116,8 @@ export function BrochurePage() {
             Architectural Door Hardware <span className="gold-accent">Brochure</span>
           </h1>
           <p className="brochure-subtitle">
-            Complete technical specification manual and catalog compendium for all 26 door locks, 
-            mortise lock bodies, euro cylinders, and architectural pull handles from our manufacturing 
+            Complete technical specification manual and catalog compendium for all {products.length} door locks, 
+            mortise lock bodies, euro cylinders, architectural handles, and ironmongery hardware from our manufacturing 
             and sourcing facility in Aligarh, India.
           </p>
 
@@ -139,7 +139,7 @@ export function BrochurePage() {
             <div className="cred-card">
               <Layers className="cred-icon" size={20} />
               <div>
-                <strong>26 Complete SKUs</strong>
+                <strong>{products.length} Complete SKUs</strong>
                 <span>With full dimensions & finish specs</span>
               </div>
             </div>

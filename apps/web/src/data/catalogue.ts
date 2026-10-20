@@ -1,9 +1,12 @@
+import { ironmongeryProducts } from './ironmongery';
+
 export const images = {
   hero: '/images/hero-penta-bolt-rim-lock.jpg',
   locks: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.jpeg',
   handles: '/images/products/160mm-brushed-gold-door-handle.jpeg',
   cylinders: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
   lockBodies: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+  ironmongery: '/images/ironmongery/matte-black-t-hinge-product-photo.png',
   logo: '/images/logo.png',
   factoryEntrance: '/images/factory-entrance.png',
   pressWorkshop: '/images/press-workshop.png',
@@ -62,6 +65,12 @@ export const categories = [
     name: 'Lock Bodies & Latches',
     description: 'Narrow aluminium section lock bodies with SS strike, standard mortise cases, double-throw bodies, and interior baby latches.',
     image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+  },
+  {
+    id: 'ironmongery',
+    name: 'Architectural Ironmongery',
+    description: 'Heavy-duty gate hinges, strap T-hinges, galvanized padbolts, barrel bolts, brackets, and black antique builder fittings.',
+    image: '/images/ironmongery/matte-black-t-hinge-product-photo.png',
   },
 ];
 
@@ -580,6 +589,7 @@ export const products: ProductItem[] = [
     description: 'Heavy-duty Z-shaped structural door frame anchor clamp precision-formed from thick mild steel plate. Coated with yellow zinc electroplating for anti-corrosion protection against mortar and moisture. Designed for securing door frames, roll-up shutter tracks, and masonry wall attachments.',
     applications: 'Door frame masonry anchoring, metal shutter tracks, window subframe installation, and industrial structural clamping.',
   },
+  ...ironmongeryProducts,
 ];
 
 export const companyInfo = {

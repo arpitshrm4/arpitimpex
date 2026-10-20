@@ -23,7 +23,7 @@ export function Catalogue() {
           </span>
           <h3>Looking for our Complete Product Brochure & Specification Sheets?</h3>
           <p>
-            Access the full compendium of all 26 catalogued door hardware items with detailed engineering dimensions, finish treatments, locking mechanisms, and print-ready export sheets.
+            Access the full compendium of all {products.length} catalogued architectural hardware and ironmongery items with detailed engineering dimensions, finish treatments, locking mechanisms, and print-ready export sheets.
           </p>
         </div>
         <div className="brochure-banner-actions">
