@@ -603,7 +603,7 @@ export const companyInfo = {
   pincode: '202001',
   country: 'India',
   location: '1/874, Gali No. 1, Shastri Nagar, Chhawani Road, Aligarh, Uttar Pradesh - 202001, India',
-  email: 'arpitimpex@gmail.com',
+  email: 'exports@arpitimpex.com',
   gstNumber: '09AEOPS8020A1ZH',
   gstVerified: true,
   memberSince: '7+ Years',
