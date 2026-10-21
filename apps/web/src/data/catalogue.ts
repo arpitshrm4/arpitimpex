@@ -594,7 +594,7 @@ export const products: ProductItem[] = [
 
 export const companyInfo = {
   name: 'Arpit Impex',
-  contactPerson: 'Jugendra Kumar Sharma',
+  contactPerson: 'Arpit Sharma',
   phone: '+91 8285687940',
   whatsapp: '+91 8285687940',
   address: '1/874, Gali No. 1, Shastri Nagar, Chhawani Road',
