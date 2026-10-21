@@ -84,26 +84,56 @@ export function BrochurePage() {
 
   return (
     <div className="brochure-page-container">
-      {/* Print-Only Official Document Header */}
-      <div className="brochure-print-header" aria-hidden="true">
-        <div className="print-brand-wrap">
-          <div>
-            <h1 className="print-company-name">ARPIT IMPEX</h1>
-            <p className="print-company-tagline">
-              Architectural Door Hardware Manufacturer & Export Sourcing Partner
-            </p>
-          </div>
-          <div className="print-meta-right">
-            <p><strong>Location:</strong> Aligarh, Uttar Pradesh - 202001, India</p>
-            <p><strong>GST:</strong> {companyInfo.gstNumber} | <strong>Verified:</strong> B2B Manufacturer</p>
-            <p><strong>Tel / WhatsApp:</strong> {companyInfo.phone} | <strong>Email:</strong> {companyInfo.email}</p>
-          </div>
-        </div>
-        <div className="print-doc-title-bar">
-          <span>COMPLETE ARCHITECTURAL HARDWARE PRODUCT SPECIFICATION BROCHURE</span>
-          <span>EDITION 2026 · ALL {products.length} SKUs</span>
-        </div>
-      </div>
+      <table className="print-layout-table">
+        <thead>
+          <tr>
+            <td>
+              {/* Print-Only Official Document Header (Repeated on every printed page) */}
+              <div className="brochure-print-header" aria-hidden="true">
+                <div className="print-brand-wrap">
+                  <div>
+                    <h1 className="print-company-name">
+                      ARPIT IMPEX<span className="gold">.</span>
+                    </h1>
+                    <p className="print-company-tagline">
+                      Architectural Door Hardware Manufacturer &amp; Export Sourcing Partner
+                    </p>
+                  </div>
+                  <div className="print-meta-right">
+                    <p><strong>Contact Person:</strong> {companyInfo.contactPerson} | <strong>Location:</strong> Aligarh, India</p>
+                    <p><strong>GSTIN:</strong> {companyInfo.gstNumber} | <strong>Verified B2B Manufacturer</strong></p>
+                    <p><strong>WhatsApp / Tel:</strong> {companyInfo.phone} | <strong>Email:</strong> {companyInfo.email}</p>
+                  </div>
+                </div>
+                <div className="print-doc-title-bar">
+                  <span>COMPLETE ARCHITECTURAL HARDWARE PRODUCT SPECIFICATION BROCHURE</span>
+                  <span>B2B EXPORT EDITION · ALL {products.length} CERTIFIED SKUS</span>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </thead>
+        <tfoot>
+          <tr>
+            <td>
+              {/* Print-Only Document Footer (Repeated on every printed page) */}
+              <div className="brochure-print-footer" aria-hidden="true">
+                <div className="print-footer-inner">
+                  <p>
+                    <strong>ARPIT IMPEX</strong> · Aligarh, Uttar Pradesh - 202001, India · Contact: <strong>{companyInfo.contactPerson}</strong> · 
+                    WhatsApp: <strong>{companyInfo.phone}</strong> · Email: <strong>{companyInfo.email}</strong> · Web: <strong>https://arpitimpex.com</strong>
+                  </p>
+                  <p className="print-copy-notice">
+                    Official B2B Export Product Specification Compendium. Confidential trade document. All dimensions, finishes, and MOQs confirmed on formal quotation.
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tfoot>
+        <tbody>
+          <tr>
+            <td>
 
       {/* Screen Hero Banner */}
       <section className="brochure-hero-section">
@@ -593,18 +623,11 @@ export function BrochurePage() {
             </a>
           </div>
         </section>
-
-        {/* Print-Only Document Footer */}
-        <div className="brochure-print-footer" aria-hidden="true">
-          <p>
-            <strong>ARPIT IMPEX</strong> · Aligarh, Uttar Pradesh, India · GSTIN: {companyInfo.gstNumber} · 
-            Phone: {companyInfo.phone} · Email: {companyInfo.email} · Website: https://arpitimpex.com
-          </p>
-          <p className="print-copy-notice">
-            Confidential B2B Product Brochure & Engineering Compendium. All dimensions and specifications subject to technical confirmation on quotation.
-          </p>
-        </div>
       </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
