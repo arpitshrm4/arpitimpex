@@ -298,7 +298,7 @@ export function BrochurePage() {
             <span className="search-status-tag">Matching: &ldquo;{searchQuery}&rdquo;</span>
           )}
           <span className="print-hint-note">
-            💡 Tip: Click <strong>&ldquo;Print / Save as PDF&rdquo;</strong> to generate an offline product catalog booklet.
+            💡 <strong>Fast PDF Tip:</strong> Click <strong>&ldquo;Print / Save as PDF&rdquo;</strong> to save. Filter by category above for a compact targeted PDF, or select <strong>&ldquo;Specs Matrix&rdquo;</strong> for an ultra-lightweight ~2MB engineering table.
           </span>
         </div>
       </section>
