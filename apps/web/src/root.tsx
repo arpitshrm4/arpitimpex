@@ -88,6 +88,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					}}
 				/>
 				<HorizonsPreviewScripts />
+				{/* Google tag (gtag.js) event */}
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+  gtag('event', 'conversion_event_request_quote', {
+    // <event_parameters>
+  });
+`,
+					}}
+				/>
 			</head>
 			<body>
 				{/* Google Tag Manager (noscript) */}
@@ -109,7 +119,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 }
 
 export default function App() {
-	return <><a href="#main-content" className="skip-link">Skip to content</a><SiteHeader/><div id="main-content"><Outlet /></div><SiteFooter/></>;
+	return <><a href="#main-content" className="skip-link">Skip to content</a><SiteHeader /><div id="main-content"><Outlet /></div><SiteFooter /></>;
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
