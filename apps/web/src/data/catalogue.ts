@@ -81,14 +81,14 @@ export const categories = [
     id: 'bolts-latches',
     name: 'Bolts & Gate Latches',
     description: 'Galvanized sliding padbolts, heavy tower barrel bolts, spring-loaded gate bolts, hasps, and thumb latches.',
-    image: '/images/ironmongery/standard-galvanized-padbolt-latch-150mm-photo.png',
+    image: '/images/ironmongery/galvanized-sliding-barrel-bolt-latch.png',
     path: '/category/bolts-latches',
   },
   {
     id: 'brackets-anchors',
     name: 'Brackets, Anchors & Fixings',
     description: 'Heavy structural corner brackets, framing L-brackets, yellow zinc Z-frame anchors, handrail mounts, and barn door guides.',
-    image: '/images/ironmongery/structural-galvanized-steel-corner-bracket-photo.png',
+    image: '/images/ironmongery/galvanized-steel-corner-bracket.png',
     path: '/category/brackets-anchors',
   },
 ];

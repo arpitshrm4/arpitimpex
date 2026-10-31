@@ -168,7 +168,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Galvanized sliding padbolts, tower barrel bolts, gate latches, and security hasps from Aligarh, India. Heavy-duty hardware for B2B export supply.',
     h1: 'Padbolts, Barrel Bolts & Gate Latches Manufacturer from India',
     eyebrow: 'SLIDING BOLTS & GATE LATCHES · ALIGARH',
-    image: '/images/ironmongery/standard-galvanized-padbolt-latch-150mm-photo.png',
+    image: '/images/ironmongery/galvanized-sliding-barrel-bolt-latch.png',
     intro:
       'Arpit Impex manufactures an extensive selection of heavy sliding padbolts, tower barrel bolts, spring-loaded gate bolts, ornate thumb latches, and security hasp & staple assemblies. Fabricated in Aligarh from heavy-duty mild steel, malleable cast iron, and solid brass, these locking hardware components provide dependable perimeter and secondary security for garden gates, industrial sheds, transport containers, and residential doors. Highlights include 150mm and 200mm extended-reach galvanized sliding padbolts with padlock eyes, drop rods with guide brackets, reversible ring gate latches, and heavy swivel hasps. Every unit is manufactured with tight dimensional tolerances to ensure smooth throw operation and high shear resistance.',
     buyerTypes: ['Building Material Wholesalers', 'Perimeter Security Distributors', 'Fencing & Gate Contractors', 'Industrial Supply Companies'],
@@ -197,7 +197,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Heavy-duty steel corner brackets, Z-brackets, masonry anchors, timber framing plates, and roller guides from Aligarh, India. B2B wholesale export.',
     h1: 'Structural Brackets & Door Frame Anchors Manufacturer from India',
     eyebrow: 'STRUCTURAL HARDWARE & FIXINGS · ALIGARH',
-    image: '/images/ironmongery/structural-galvanized-steel-corner-bracket-photo.png',
+    image: '/images/ironmongery/galvanized-steel-corner-bracket.png',
     intro:
       'Engineered for structural stability and framing rigidity, our industrial bracket and anchor hardware portfolio includes 90-degree galvanized corner brackets, heavy L-plates, Z-shaped door frame masonry clamps, handrail brackets, sliding barn door rollers, and heavy tie-down anchor plates. Stamped from thick cold-rolled carbon steel (3mm to 5mm gauge) in our Aligarh workshop, these brackets provide exceptional tensile and shear strength for connecting heavy timber beams, anchoring door frames into masonry walls, hanging heavy sliding gates, and stabilizing industrial machinery. Available in hot-dip galvanized and yellow zinc chromate finishes for superior resistance against mortar moisture and outdoor weathering.',
     buyerTypes: ['Timber Construction Wholesalers', 'Masonry Framing Contractors', 'Hardware Distributor Chains', 'Industrial Fabricators'],
@@ -219,3 +219,4 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     ],
   },
 };
+
