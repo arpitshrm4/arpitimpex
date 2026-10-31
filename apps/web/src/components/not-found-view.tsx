@@ -115,3 +115,4 @@ export function NotFoundView({
     </main>
   );
 }
+

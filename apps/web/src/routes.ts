@@ -10,6 +10,7 @@ export default [
 	route('contact', 'routes/contact.tsx'),
 	route('privacy', 'routes/privacy.tsx'),
 	route('terms', 'routes/terms.tsx'),
+	route('return-policy', 'routes/return-policy.tsx'),
 	route('llms.txt', 'routes/llms.txt.ts'),
 	route('sitemap.xml', 'routes/sitemap.xml.ts'),
 	route('products-feed.xml', 'routes/products-feed.xml.ts'),
