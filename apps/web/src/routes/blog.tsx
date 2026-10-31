@@ -12,7 +12,6 @@ import {
   UserCheck,
   ChevronRight,
   Filter,
-  CheckCircle2,
   FileText,
 } from 'lucide-react';
 
@@ -189,51 +188,6 @@ export default function BlogIndexPage() {
             ))}
           </div>
         )}
-      </section>
-
-      {/* Editorial Calendar / Upcoming Topics Callout */}
-      <section className="section blog-calendar-section" style={{ background: '#fdfbf7', padding: '48px 32px', borderRadius: '16px', margin: '40px auto', maxWidth: '1200px', border: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto', textAlign: 'center' }}>
-          <p className="eyebrow">EDITORIAL ROADMAP · 2 POSTS PER MONTH</p>
-          <h2 style={{ fontSize: '26px', color: 'var(--navy)', marginBottom: '12px' }}>Upcoming Export Sourcing Topics</h2>
-          <p style={{ fontSize: '15px', lineHeight: '1.7', color: 'var(--body)', marginBottom: '28px' }}>
-            We share practical engineering data, tolerance specs, and logistics guides drawn directly from our Aligarh factory floor and export consignments.
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px', maxWidth: '960px', margin: '0 auto' }}>
-          <div style={{ background: '#ffffff', padding: '16px 20px', borderRadius: '8px', border: '1px solid var(--border)', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-            <CheckCircle2 size={18} color="var(--gold)" style={{ flexShrink: 0, marginTop: '2px' }} />
-            <div>
-              <strong style={{ fontSize: '14px', color: 'var(--navy)', display: 'block' }}>Door Handle Finishes Compared</strong>
-              <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>Brushed Gold, Matte Black, Antique Brass &amp; Chrome</span>
-            </div>
-          </div>
-
-          <div style={{ background: '#ffffff', padding: '16px 20px', borderRadius: '8px', border: '1px solid var(--border)', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-            <CheckCircle2 size={18} color="var(--gold)" style={{ flexShrink: 0, marginTop: '2px' }} />
-            <div>
-              <strong style={{ fontSize: '14px', color: 'var(--navy)', display: 'block' }}>Pre-Dispatch Inspection Checklist</strong>
-              <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>What to verify before container departure</span>
-            </div>
-          </div>
-
-          <div style={{ background: '#ffffff', padding: '16px 20px', borderRadius: '8px', border: '1px solid var(--border)', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-            <CheckCircle2 size={18} color="var(--gold)" style={{ flexShrink: 0, marginTop: '2px' }} />
-            <div>
-              <strong style={{ fontSize: '14px', color: 'var(--navy)', display: 'block' }}>Barrel, Tower &amp; Padbolts Differences</strong>
-              <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>Throw travel, mounting styles &amp; padlocking</span>
-            </div>
-          </div>
-
-          <div style={{ background: '#ffffff', padding: '16px 20px', borderRadius: '8px', border: '1px solid var(--border)', display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
-            <CheckCircle2 size={18} color="var(--gold)" style={{ flexShrink: 0, marginTop: '2px' }} />
-            <div>
-              <strong style={{ fontSize: '14px', color: 'var(--navy)', display: 'block' }}>Private Label Door Hardware (OEM)</strong>
-              <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>Tooling, laser branding &amp; custom box packaging</span>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Enquiry Banner */}
