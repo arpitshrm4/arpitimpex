@@ -1,5 +1,5 @@
 import { Form, Link, useSearchParams } from 'react-router';
-import { FileText, Printer, ArrowRight } from 'lucide-react';
+import { FileText, Printer, ArrowRight, ChevronRight } from 'lucide-react';
 import { categories, products } from '@/data/catalogue';
 import { ProductGrid } from '@/components/product-grid';
 
@@ -9,6 +9,12 @@ export function Catalogue() {
 
   return (
     <section className="section catalogue">
+      <nav className="pdp-breadcrumbs" aria-label="Breadcrumb">
+        <Link to="/">Home</Link>
+        <ChevronRight size={14} className="pdp-breadcrumb-sep" aria-hidden="true" />
+        <span aria-current="page">Products</span>
+      </nav>
+
       <p className="eyebrow">ARCHITECTURAL HARDWARE EXPORT CATALOGUE</p>
       <h1>Door Locks, Hinges, Bolts &amp; Gate Hardware from India</h1>
       <p className="section-intro" style={{ maxWidth: '880px', lineHeight: '1.8' }}>

@@ -73,7 +73,7 @@ export default function BlogIndexPage() {
       <section className="section blog-hero">
         <nav className="pdp-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
-          <ChevronRight size={14} className="pdp-breadcrumb-sep" />
+          <ChevronRight size={14} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <span aria-current="page">Blog</span>
         </nav>
 

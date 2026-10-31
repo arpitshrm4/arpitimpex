@@ -126,11 +126,11 @@ export default function BlogDetailPage() {
     <main className="blog-detail-page">
       <article className="section blog-article" style={{ maxWidth: '860px', margin: '0 auto', padding: '40px 24px' }}>
         {/* Breadcrumb Navigation */}
-        <nav className="pdp-breadcrumbs" aria-label="Breadcrumb" style={{ marginBottom: '24px' }}>
+        <nav className="pdp-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
-          <ChevronRight size={14} className="pdp-breadcrumb-sep" />
+          <ChevronRight size={14} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <Link to="/blog">Blog</Link>
-          <ChevronRight size={14} className="pdp-breadcrumb-sep" />
+          <ChevronRight size={14} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <span aria-current="page">{post.title.slice(0, 36)}...</span>
         </nav>
 

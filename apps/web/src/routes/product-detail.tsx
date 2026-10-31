@@ -2,7 +2,7 @@ import { Link, useLoaderData } from 'react-router';
 import type { Route } from './+types/product-detail';
 import { products, categories, companyInfo, images, type ProductItem } from '@/data/catalogue';
 import { seo, absoluteUrl, siteOriginFrom } from '@/lib/seo';
-import { ArrowUpRight, MessageCircle, CheckCircle, ShieldCheck, HelpCircle, Package, ArrowLeft } from 'lucide-react';
+import { ArrowUpRight, MessageCircle, CheckCircle, ShieldCheck, HelpCircle, Package, ArrowLeft, ChevronRight } from 'lucide-react';
 import { EnquiryBanner } from '@/components/enquiry-banner';
 import { NotFoundView } from '@/components/not-found-view';
 
@@ -192,11 +192,11 @@ export default function ProductDetailPage() {
       <nav aria-label="Breadcrumb" className="breadcrumbs-nav">
         <div className="breadcrumbs-container">
           <Link to="/">Home</Link>
-          <span className="breadcrumb-separator">/</span>
+          <ChevronRight size={13} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <Link to="/products">Products</Link>
-          <span className="breadcrumb-separator">/</span>
+          <ChevronRight size={13} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <Link to={`/category/${product.category}`}>{product.categoryName}</Link>
-          <span className="breadcrumb-separator">/</span>
+          <ChevronRight size={13} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <span className="breadcrumb-current" aria-current="page">
             {product.name} ({product.modelNumber})
           </span>

@@ -89,11 +89,11 @@ export default function GuideDetailPage() {
     <main className="guide-detail-page">
       <article className="section guide-article" style={{ maxWidth: '860px', margin: '0 auto', padding: '40px 24px' }}>
         {/* Breadcrumb Navigation */}
-        <nav className="pdp-breadcrumbs" aria-label="Breadcrumb" style={{ marginBottom: '24px' }}>
+        <nav className="pdp-breadcrumbs" aria-label="Breadcrumb">
           <Link to="/">Home</Link>
-          <ChevronRight size={14} className="pdp-breadcrumb-sep" />
+          <ChevronRight size={14} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <Link to="/guides">Guides</Link>
-          <ChevronRight size={14} className="pdp-breadcrumb-sep" />
+          <ChevronRight size={14} className="pdp-breadcrumb-sep" aria-hidden="true" />
           <span aria-current="page">{guide.title.slice(0, 36)}...</span>
         </nav>
 
