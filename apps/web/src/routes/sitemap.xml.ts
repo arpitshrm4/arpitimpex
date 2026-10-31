@@ -3,6 +3,7 @@ import { siteOrigin } from '@/lib/site-origin.server';
 import { products } from '@/data/catalogue';
 import { CATEGORIES_DATA } from '@/data/categories-data';
 import { GUIDES_DATA } from '@/data/guides-data';
+import { BLOG_POSTS } from '@/data/blog-data';
 
 type SitemapEntry = {
 	path: string;
@@ -12,6 +13,7 @@ type SitemapEntry = {
 const STATIC_PATHS = [
 	'/',
 	'/products',
+	'/blog',
 	'/oem-private-label',
 	'/quality-inspection',
 	'/guides',
@@ -65,11 +67,16 @@ async function getDynamicEntries(): Promise<SitemapEntry[]> {
 		lastmod: g.publishedDate,
 	}));
 
+	const blogEntries: SitemapEntry[] = BLOG_POSTS.map(b => ({
+		path: `/blog/${b.slug}`,
+		lastmod: b.publishedDate,
+	}));
+
 	const productEntries: SitemapEntry[] = products.map(p => ({
 		path: `/products/${p.slug}`,
 	}));
 
-	return [...categoryEntries, ...guideEntries, ...productEntries];
+	return [...categoryEntries, ...guideEntries, ...blogEntries, ...productEntries];
 }
 
 export async function loader({ request }: Route.LoaderArgs) {

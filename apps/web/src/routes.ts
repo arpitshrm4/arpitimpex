@@ -5,6 +5,8 @@ export default [
 	route('products', 'routes/products.tsx'),
 	route('products/:slug', 'routes/product-detail.tsx'),
 	route('category/:category', 'routes/category.tsx'),
+	route('blog', 'routes/blog.tsx'),
+	route('blog/:slug', 'routes/blog-detail.tsx'),
 	route('oem-private-label', 'routes/oem-private-label.tsx'),
 	route('quality-inspection', 'routes/quality-inspection.tsx'),
 	route('guides', 'routes/guides.tsx'),

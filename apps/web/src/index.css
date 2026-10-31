@@ -2690,5 +2690,26 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
 }
 
+.blog-lead {
+  font-size: 18px;
+  line-height: 1.8;
+  color: var(--navy);
+  font-weight: 500;
+  margin-bottom: 28px;
+}
+
+.blog-table-wrapper {
+  overflow-x: auto;
+  margin: 24px 0;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
+}
+
+
 
 
