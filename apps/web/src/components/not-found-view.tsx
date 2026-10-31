@@ -64,13 +64,13 @@ export function NotFoundView({
         <div className="category-grid">
           {categories.map((cat) => (
             <article key={cat.id} className="category-card">
-              <Link to={`/products?category=${cat.id}`} className="photo-link" aria-label={`Browse ${cat.name}`}>
+              <Link to={`/category/${cat.id}`} className="photo-link" aria-label={`Browse ${cat.name}`}>
                 <img src={cat.image} alt={cat.name} loading="lazy" width="280" height="230" />
                 <span>{cat.name}</span>
               </Link>
               <h3>{cat.name}</h3>
               <p>{cat.description}</p>
-              <Link to={`/products?category=${cat.id}`} className="text-link">
+              <Link to={`/category/${cat.id}`} className="text-link">
                 Explore Category <ArrowRight size={13} />
               </Link>
             </article>

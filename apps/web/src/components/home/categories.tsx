@@ -19,7 +19,7 @@ export function Categories() {
           <article key={c.id} className="category-card">
             <Link
               className="photo-link"
-              to={`/products?category=${c.id}`}
+              to={`/category/${c.id}`}
               aria-label={`View ${c.name} category`}
             >
               <img
@@ -33,7 +33,7 @@ export function Categories() {
             </Link>
             <h3>{c.name}</h3>
             <p>{c.description}</p>
-            <Link className="text-link" to={`/products?category=${c.id}`}>
+            <Link className="text-link" to={`/category/${c.id}`}>
               View Products <ArrowUpRight size={16} />
             </Link>
           </article>

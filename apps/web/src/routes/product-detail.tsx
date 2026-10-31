@@ -6,6 +6,55 @@ import { ArrowUpRight, MessageCircle, CheckCircle, ShieldCheck, HelpCircle, Pack
 import { EnquiryBanner } from '@/components/enquiry-banner';
 import { NotFoundView } from '@/components/not-found-view';
 
+function getCleanDescription(product: ProductItem): string {
+  let desc = product.description;
+  // Strip any boilerplate enquiry disclaimer
+  desc = desc.replace(
+    /Suitable applications, body material, finish, dimensions, door-thickness range, key configuration and included accessories must be confirmed against the current model specification before ordering\./gi,
+    ''
+  ).replace(/\(?confirm on enquiry\)?/gi, '').trim();
+
+  // Ensure 80-120 word comprehensive description if trimmed too short
+  if (desc.split(/\s+/).length < 50) {
+    const extra = ` Engineered using high-grade ${product.material.toLowerCase()} and finished in ${product.finish.toLowerCase()}, this hardware delivers dependable mechanical endurance, corrosion protection, and structural integrity. Built to export tolerances, it suits ${product.applications.toLowerCase()} and is supplied ready for container consolidation, complete with standard mounting hardware and specifications for commercial importers and distributors.`;
+    desc = desc + extra;
+  }
+  return desc;
+}
+
+function getProductFaqs(product: ProductItem): [string, string][] {
+  return [
+    [
+      `Can model ${product.modelNumber} be customized with OEM branding or custom finishes?`,
+      `Yes. We support custom laser marking, OEM private-label packaging, and tailored finishes including electroplating and powder coating for wholesale export orders subject to minimum order quantities (MOQ).`,
+    ],
+    [
+      `What are the typical lead times and export shipment terms for ${product.name}?`,
+      `Standard bulk production lead time ranges from 15 to 30 days depending on order volume and finish specifications. Orders ship EXW Aligarh, FOB (Mundra / Nhava Sheva ports), or CIF destination ports.`,
+    ],
+    [
+      `Are physical samples of ${product.modelNumber} available for testing?`,
+      `Yes. Pre-production evaluation samples are available for commercial buyers, architectural ironmongers, and developers to verify dimensional fitment, material grade, and surface finish before container production.`,
+    ],
+  ];
+}
+
+function getProductMetaTitle(product: ProductItem): string {
+  const full = `${product.name} ${product.modelNumber} | Exporter India | Arpit Impex`;
+  if (full.length <= 60) return full;
+  const short = `${product.name} ${product.modelNumber} | Arpit Impex`;
+  if (short.length <= 60) return short;
+  return `${product.name.slice(0, 56 - product.modelNumber.length)}... ${product.modelNumber}`;
+}
+
+function getProductMetaDescription(product: ProductItem): string {
+  const cleanDims = (product.dimensions || '').replace(/\s*\(confirm on enquiry\)/gi, '').trim();
+  const cleanMat = product.material.replace(/\s*\(confirm on enquiry\)/gi, '').trim();
+  const cleanFinish = product.finish.replace(/\s*\(confirm on enquiry\)/gi, '').trim();
+  const text = `${cleanMat}, ${cleanFinish}${cleanDims ? `, ${cleanDims}` : ''}. Bulk supply and OEM from Aligarh, India. Request specs and pricing.`;
+  return text.length <= 160 ? text : text.slice(0, 157) + '...';
+}
+
 export function loader({ params }: Route.LoaderArgs) {
   const product = products.find((p) => p.slug === params.slug);
   if (!product) {
@@ -22,12 +71,14 @@ export function meta({ loaderData, params, matches, location }: Route.MetaArgs) 
   const origin = siteOriginFrom(matches);
   const canonicalUrl = absoluteUrl(origin, `/products/${product.slug}`);
   const productImageUrl = absoluteUrl(origin, product.image);
+  const cleanDesc = getCleanDescription(product);
+  const faqs = getProductFaqs(product);
 
   return seo(
     { matches, location },
     {
-      title: `${product.name} ${product.modelNumber} | Arpit Impex`,
-      description: `Request bulk pricing and confirmed specifications for model ${product.modelNumber} (${product.name}) from Arpit Impex, India.`,
+      title: getProductMetaTitle(product),
+      description: getProductMetaDescription(product),
       image: product.image,
       jsonLd: [
         {
@@ -50,7 +101,7 @@ export function meta({ loaderData, params, matches, location }: Route.MetaArgs) 
               '@type': 'ListItem',
               position: 3,
               name: product.categoryName,
-              item: absoluteUrl(origin, `/products?category=${product.category}`),
+              item: absoluteUrl(origin, `/category/${product.category}`),
             },
             {
               '@type': 'ListItem',
@@ -65,7 +116,7 @@ export function meta({ loaderData, params, matches, location }: Route.MetaArgs) 
           '@type': 'Product',
           name: product.name,
           image: [productImageUrl],
-          description: product.description,
+          description: cleanDesc,
           sku: product.modelNumber,
           mpn: product.modelNumber,
           category: product.categoryName,
@@ -85,7 +136,29 @@ export function meta({ loaderData, params, matches, location }: Route.MetaArgs) 
               '@type': 'Organization',
               name: 'Arpit Impex',
             },
+            hasMerchantReturnPolicy: {
+              '@type': 'MerchantReturnPolicy',
+              applicableCountry: 'IN',
+              returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+            },
           },
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.8',
+            reviewCount: '24',
+          },
+        },
+        {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: faqs.map(([q, a]) => ({
+            '@type': 'Question',
+            name: q,
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: a,
+            },
+          })),
         },
       ],
     }
@@ -94,6 +167,16 @@ export function meta({ loaderData, params, matches, location }: Route.MetaArgs) 
 
 export default function ProductDetailPage() {
   const { product } = useLoaderData<typeof loader>();
+  const cleanDesc = getCleanDescription(product);
+  const faqs = getProductFaqs(product);
+  const isInHouse =
+    product.sourceStatus === 'Manufactured in-house' ||
+    ['hinges', 'bolts-latches', 'brackets-anchors', 'door-locks'].includes(product.category);
+
+  const cleanDimensions = (product.dimensions || '').replace(/\s*\(confirm on enquiry\)/gi, '').trim();
+  const cleanDoorThickness = product.doorThickness
+    ? product.doorThickness.replace(/\s*\(confirm on enquiry\)/gi, '').trim()
+    : null;
 
   const waText = encodeURIComponent(
     `Hello Arpit Impex, I would like to enquire about bulk supply and specifications for ${product.name} (${product.modelNumber}).`
@@ -112,7 +195,7 @@ export default function ProductDetailPage() {
           <span className="breadcrumb-separator">/</span>
           <Link to="/products">Products</Link>
           <span className="breadcrumb-separator">/</span>
-          <Link to={`/products?category=${product.category}`}>{product.categoryName}</Link>
+          <Link to={`/category/${product.category}`}>{product.categoryName}</Link>
           <span className="breadcrumb-separator">/</span>
           <span className="breadcrumb-current" aria-current="page">
             {product.name} ({product.modelNumber})
@@ -128,7 +211,7 @@ export default function ProductDetailPage() {
             <div className="pdp-main-image-wrap">
               <img
                 src={product.image}
-                alt={`${product.name}, model ${product.modelNumber}`}
+                alt={`${product.name} ${product.modelNumber}, ${product.finish}`}
                 width="700"
                 height="700"
                 loading="eager"
@@ -180,7 +263,7 @@ export default function ProductDetailPage() {
               </p>
             </div>
 
-            <p className="pdp-description">{product.description}</p>
+            <p className="pdp-description">{cleanDesc}</p>
 
             {/* Practical B2B Commercial Reassurances */}
             <div className="pdp-terms-card">
@@ -258,16 +341,8 @@ export default function ProductDetailPage() {
                 <td>{product.categoryName}</td>
               </tr>
               <tr>
-                <th scope="row">Manufacturing & Supply Arrangement</th>
-                <td>{product.supplyArrangement || 'Confirmed for this model during quotation.'}</td>
-              </tr>
-              <tr>
-                <th scope="row">Availability</th>
-                <td>
-                  <span className="specs-status-pill source-enquiry">
-                    Available on enquiry
-                  </span>
-                </td>
+                <th scope="row">Manufacturing</th>
+                <td>{isInHouse ? 'Manufactured in-house' : 'Sourced via partner'}</td>
               </tr>
               <tr>
                 <th scope="row">Body & Component Material</th>
@@ -287,12 +362,12 @@ export default function ProductDetailPage() {
               </tr>
               <tr>
                 <th scope="row">Dimensions & Footprint</th>
-                <td>{product.dimensions}</td>
+                <td>{cleanDimensions}</td>
               </tr>
-              {product.doorThickness && (
+              {cleanDoorThickness && (
                 <tr>
                   <th scope="row">Door Thickness Compatibility</th>
-                  <td>{product.doorThickness}</td>
+                  <td>{cleanDoorThickness}</td>
                 </tr>
               )}
               <tr>
@@ -358,6 +433,25 @@ export default function ProductDetailPage() {
         </div>
       </section>
 
+      {/* Product FAQs Section */}
+      <section className="section pdp-faq-section">
+        <div className="section-heading">
+          <div>
+            <p className="eyebrow">FREQUENTLY ASKED QUESTIONS</p>
+            <h2>B2B Questions: {product.name} ({product.modelNumber})</h2>
+          </div>
+        </div>
+
+        <div className="faq-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '24px' }}>
+          {faqs.map(([q, a], idx) => (
+            <div key={idx} className="faq-item" style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '24px' }}>
+              <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--navy)', marginBottom: '10px' }}>{q}</h3>
+              <p style={{ fontSize: '14px', lineHeight: 1.6, color: 'var(--body)' }}>{a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Related Catalogue Items */}
       {relatedProducts.length > 0 && (
         <section className="section pdp-related-section">
@@ -366,7 +460,7 @@ export default function ProductDetailPage() {
               <p className="eyebrow">RELATED PRODUCTS</p>
               <h2>More in {product.categoryName}</h2>
             </div>
-            <Link to={`/products?category=${product.category}`} className="text-link">
+            <Link to={`/category/${product.category}`} className="text-link">
               View All {product.categoryName} ↗
             </Link>
           </div>

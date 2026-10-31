@@ -1,9 +1,10 @@
 import { useState } from 'react';
-import { useSearchParams, Link } from 'react-router';
+import { useSearchParams, Link, useNavigate } from 'react-router';
 import { products, categories, images, companyInfo } from '@/data/catalogue';
 import { Phone, MessageCircle, Mail, MapPin, CheckCircle2, ShieldCheck, FileText } from 'lucide-react';
 
 export function EnquiryForm() {
+  const navigate = useNavigate();
   const [params] = useSearchParams();
   const initialProduct = params.get('product') || '';
   const selected = products.find((p) => p.name === initialProduct || p.slug === initialProduct);
@@ -56,6 +57,7 @@ export function EnquiryForm() {
     const url = `https://wa.me/918285687940?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
     setSubmitted(true);
+    navigate('/thank-you');
   };
 
   const handleMailtoSubmit = () => {
@@ -78,6 +80,9 @@ Enquiry Notes & Specifications:
 ${formData.details}`);
 
     window.location.href = `mailto:${companyInfo.email}?subject=${subject}&body=${body}`;
+    setTimeout(() => {
+      navigate('/thank-you');
+    }, 400);
   };
 
   return (

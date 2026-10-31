@@ -25,15 +25,17 @@ export function SiteFooter() {
         <div>
           <h3>Explore</h3>
           <Link to="/products">All Products</Link>
-          <Link to="/brochure">Product Brochure (PDF)</Link>
-          <Link to="/about">About Us</Link>
+          <Link to="/oem-private-label">OEM & Custom Tooling</Link>
+          <Link to="/quality-inspection">Quality & Inspection</Link>
+          <Link to="/guides">Hardware Export Guides</Link>
           <Link to="/process">Export Process</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/contact">Request a B2B Quote</Link>
         </div>
         <div>
           <h3>Product Categories</h3>
           {categories.map((c) => (
-            <Link key={c.id} to={`/products?category=${c.id}`}>
+            <Link key={c.id} to={`/category/${c.id}`}>
               {c.name}
             </Link>
           ))}

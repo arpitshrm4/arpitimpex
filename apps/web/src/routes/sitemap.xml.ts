@@ -1,13 +1,28 @@
 import type { Route } from './+types/sitemap.xml';
 import { siteOrigin } from '@/lib/site-origin.server';
 import { products } from '@/data/catalogue';
+import { CATEGORIES_DATA } from '@/data/categories-data';
+import { GUIDES_DATA } from '@/data/guides-data';
 
 type SitemapEntry = {
 	path: string;
 	lastmod?: string;
 };
 
-const STATIC_PATHS = ['/', '/products', '/brochure', '/about', '/process', '/contact', '/privacy', '/terms'];
+const STATIC_PATHS = [
+	'/',
+	'/products',
+	'/oem-private-label',
+	'/quality-inspection',
+	'/guides',
+	'/brochure',
+	'/about',
+	'/process',
+	'/contact',
+	'/return-policy',
+	'/privacy',
+	'/terms',
+];
 
 function escapeXml(value: string): string {
 	return value
@@ -38,12 +53,23 @@ function serializeSitemap(origin: string, entries: SitemapEntry[]): string {
 }
 
 /**
- * Public dynamic URLs (catalogue PDPs).
+ * Public dynamic URLs (categories, guides, catalogue PDPs).
  */
 async function getDynamicEntries(): Promise<SitemapEntry[]> {
-	return products.map(p => ({
+	const categoryEntries: SitemapEntry[] = Object.keys(CATEGORIES_DATA).map(catId => ({
+		path: `/category/${catId}`,
+	}));
+
+	const guideEntries: SitemapEntry[] = GUIDES_DATA.map(g => ({
+		path: `/guides/${g.slug}`,
+		lastmod: g.publishedDate,
+	}));
+
+	const productEntries: SitemapEntry[] = products.map(p => ({
 		path: `/products/${p.slug}`,
 	}));
+
+	return [...categoryEntries, ...guideEntries, ...productEntries];
 }
 
 export async function loader({ request }: Route.LoaderArgs) {

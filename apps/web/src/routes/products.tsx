@@ -7,9 +7,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Door Locks, Lock Bodies & Door Handles | Arpit Impex',
+      title: 'Door Locks, Hinges, Bolts & Gate Hardware | Arpit Impex',
       description:
-        'Explore architectural door locks, mortise lock bodies, cylinders and handles for B2B supply from India. Request model specifications and a bulk quotation.',
+        'Browse 79 door locks, cylinders, handles, T-hinges, bolts and gate latches from Aligarh, India. Get specs and a bulk quote.',
       image: images.hero,
     }
   );

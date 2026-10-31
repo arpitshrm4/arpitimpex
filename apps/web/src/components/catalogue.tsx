@@ -9,10 +9,10 @@ export function Catalogue() {
 
   return (
     <section className="section catalogue">
-      <p className="eyebrow">ARCHITECTURAL HARDWARE CATALOGUE</p>
-      <h1>Door Locks, Lock Bodies & Architectural Fittings</h1>
-      <p className="section-intro">
-        Browse our range of door locks, mortise lock bodies, profile cylinders, and door handles from Aligarh, India. Enquire for specifications, finish options, volume pricing, and export supply terms.
+      <p className="eyebrow">ARCHITECTURAL HARDWARE EXPORT CATALOGUE</p>
+      <h1>Door Locks, Hinges, Bolts &amp; Gate Hardware from India</h1>
+      <p className="section-intro" style={{ maxWidth: '880px', lineHeight: '1.8' }}>
+        Browse our comprehensive export catalogue of {products.length} architectural door locks, precision euro cylinders, luxury lever handles, heavy-duty T-hinges, galvanized padbolts, and gate latches manufactured in Aligarh, India. Serving international importers, regional building material wholesalers, and institutional contractors, Arpit Impex provides verified dimensional drawings, surface electroplating options, and flexible OEM private-label packaging with full container export coordination.
       </p>
 
       {/* Prominent Digital Brochure Callout Banner */}
@@ -21,7 +21,7 @@ export function Catalogue() {
           <span className="brochure-banner-tag">
             <FileText size={14} /> OFFICIAL 2026 DIGITAL BROCHURE
           </span>
-          <h3>Looking for our Complete Product Brochure & Specification Sheets?</h3>
+          <h3>Looking for our Complete Product Brochure &amp; Specification Sheets?</h3>
           <p>
             Access the full compendium of all {products.length} catalogued architectural hardware and ironmongery items with detailed engineering dimensions, finish treatments, locking mechanisms, and print-ready export sheets.
           </p>
@@ -29,31 +29,29 @@ export function Catalogue() {
         <div className="brochure-banner-actions">
           <Link to="/brochure" className="button brochure-banner-btn">
             <Printer size={16} />
-            <span>Open & Print Brochure</span>
+            <span>Open &amp; Print Brochure</span>
             <ArrowRight size={15} />
           </Link>
         </div>
       </div>
 
-      <Form method="get" className="filters">
-        <button
-          name="category"
-          value="all"
+      <div className="filters">
+        <Link
+          to="/products"
           className={category === 'all' ? 'selected' : ''}
         >
           All Products ({products.length})
-        </button>
+        </Link>
         {categories.map((c) => (
-          <button
+          <Link
             key={c.id}
-            name="category"
-            value={c.id}
+            to={`/category/${c.id}`}
             className={category === c.id ? 'selected' : ''}
           >
             {c.name}
-          </button>
+          </Link>
         ))}
-      </Form>
+      </div>
 
       <p className="catalogue-note">
         Bulk B2B supply catalogue. Manufacturing status, dimensional specifications, finish samples, and export packaging details are confirmed on enquiry.

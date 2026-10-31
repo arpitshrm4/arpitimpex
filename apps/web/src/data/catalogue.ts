@@ -44,33 +44,52 @@ export const facilities = [
 export const categories = [
   {
     id: 'door-locks',
-    name: 'Door Locks & Rim Locks',
-    description: 'Penta bolt rim locks, multi-lever mortise locks, and antique-finish surface rim lock sets.',
+    name: 'Door Locks & Rim Deadbolts',
+    description: 'Penta bolt rim locks, multi-lever mortise locks, and antique-finish surface rim deadbolt sets.',
     image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
+    path: '/category/door-locks',
   },
   {
     id: 'door-handles',
     name: 'Door Handles & Fittings',
     description: 'Rose gold, matte black, and brushed satin gold architectural door handles for residential and commercial projects.',
     image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
+    path: '/category/door-handles',
   },
   {
-    id: 'cylinder-locks',
+    id: 'cylinders',
     name: 'Cylinder Locks & Keys',
     description: 'Euro profile and BSK mortise lock cylinders with numbered brass keys for organized key tracking.',
     image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
+    path: '/category/cylinders',
   },
   {
     id: 'lock-bodies',
     name: 'Lock Bodies & Latches',
     description: 'Narrow aluminium section lock bodies with SS strike, standard mortise cases, double-throw bodies, and interior baby latches.',
     image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+    path: '/category/lock-bodies',
   },
   {
-    id: 'ironmongery',
-    name: 'Architectural Ironmongery',
-    description: 'Heavy-duty gate hinges, strap T-hinges, galvanized padbolts, barrel bolts, brackets, and black antique builder fittings.',
+    id: 'hinges',
+    name: 'Hinges & Gate Hardware',
+    description: 'Heavy-duty tee hinges, strap hinges, reversible gate hinges, and hot-dip galvanized outdoor hardware.',
     image: '/images/ironmongery/matte-black-t-hinge-product-photo.png',
+    path: '/category/hinges',
+  },
+  {
+    id: 'bolts-latches',
+    name: 'Bolts & Gate Latches',
+    description: 'Galvanized sliding padbolts, heavy tower barrel bolts, spring-loaded gate bolts, hasps, and thumb latches.',
+    image: '/images/ironmongery/standard-galvanized-padbolt-latch-150mm-photo.png',
+    path: '/category/bolts-latches',
+  },
+  {
+    id: 'brackets-anchors',
+    name: 'Brackets, Anchors & Fixings',
+    description: 'Heavy structural corner brackets, framing L-brackets, yellow zinc Z-frame anchors, handrail mounts, and barn door guides.',
+    image: '/images/ironmongery/structural-galvanized-steel-corner-bracket-photo.png',
+    path: '/category/brackets-anchors',
   },
 ];
 
@@ -80,7 +99,7 @@ export interface ProductItem {
   modelNumber: string;
   category: string;
   categoryName: string;
-  sourceStatus: 'Available on enquiry';
+  sourceStatus: 'Available on enquiry' | 'Manufactured in-house' | 'Sourced via partner';
   supplyArrangement?: string;
   material: string;
   finish: string;
@@ -97,21 +116,21 @@ export interface ProductItem {
 export const products: ProductItem[] = [
   {
     slug: 'j-lock-mild-steel-door-penta-bolt-lock-set',
-    name: 'Penta Bolt Rim Door Lock Set',
+    name: 'Penta Bolt Rim Lock',
     modelNumber: 'JL-PB01',
     category: 'door-locks',
     categoryName: 'Rim Door Lock',
-    sourceStatus: 'Available on enquiry',
-    supplyArrangement: 'Confirmed for this model during quotation',
-    material: 'Mild Steel Casing & Bolt Assembly',
+    sourceStatus: 'Manufactured in-house',
+    supplyArrangement: 'Manufactured in-house in Aligarh unit',
+    material: '5-bolt mild steel rim lock with 3 numbered brass keys',
     finish: 'Dual-tone Metallic Powder Coated with Polished Accents',
     mechanism: 'Multi-bolt (5-bolt) rim deadbolt mechanism with key-operated exterior and interior thumbturn/knob',
     keys: '3 Numbered Brass Keys',
-    dimensions: 'Approx. 130mm x 95mm housing (confirm on enquiry)',
-    doorThickness: '30mm – 55mm (confirm on enquiry)',
+    dimensions: 'Approx. 130 × 95 mm housing',
+    doorThickness: '30-55 mm door thickness',
     packaging: 'Individual product box; master corrugated export cartons',
     image: '/images/hero-penta-bolt-rim-lock.jpg',
-    description: 'Surface-mounted rim door lock with a five-bolt locking configuration. Suitable applications, body material, finish, dimensions, door-thickness range, key configuration and included accessories must be confirmed against the current model specification before ordering.',
+    description: 'The JL-PB01 is a surface-mounted rim deadbolt with a five-bolt locking mechanism, mild steel casing and a dual-tone powder-coated finish. It ships with 3 numbered brass keys and suits main entrance wooden doors, security gates and apartment entry doors (approx. 130 × 95 mm housing, 30-55 mm door thickness). Engineered for dependable perimeter security, its solid steel bolts extend deeply into the matched steel strike box for enhanced forced-entry resistance.',
     applications: 'Main entrance wooden doors, security gates, apartment entry doors, and perimeter utility doors.',
   },
   {
@@ -232,7 +251,7 @@ export const products: ProductItem[] = [
     slug: 'mortise-cylinder-numbered-keys',
     name: 'BSK Mortise Lock Cylinder with Numbered Keys',
     modelNumber: 'CYL-BSK2325',
-    category: 'cylinder-locks',
+    category: 'cylinders',
     categoryName: 'Cylinder Lock',
     sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
@@ -251,7 +270,7 @@ export const products: ProductItem[] = [
     slug: 'euro-cylinder-lock-numbered-keys',
     name: 'Euro Profile Cylinder Lock with Numbered Keys',
     modelNumber: 'CYL-EP2631',
-    category: 'cylinder-locks',
+    category: 'cylinders',
     categoryName: 'Euro Cylinder',
     sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
@@ -555,7 +574,7 @@ export const products: ProductItem[] = [
     slug: 'solid-brass-architectural-barrel-tower-bolt',
     name: 'Solid Brass Architectural Barrel Tower Bolt',
     modelNumber: 'TB-BR01',
-    category: 'door-handles',
+    category: 'bolts-latches',
     categoryName: 'Tower Bolt & Hardware',
     sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',
@@ -574,7 +593,7 @@ export const products: ProductItem[] = [
     slug: 'heavy-duty-yellow-zinc-passivated-z-bracket-door-frame-anchor',
     name: 'Heavy-Duty Yellow Zinc Passivated Z-Bracket Door Frame Anchor',
     modelNumber: 'FC-Z01',
-    category: 'door-handles',
+    category: 'brackets-anchors',
     categoryName: 'Door Frame Hardware',
     sourceStatus: 'Available on enquiry',
     supplyArrangement: 'Confirmed for this model during quotation',

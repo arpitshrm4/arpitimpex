@@ -9,8 +9,8 @@ export function Hero() {
           <span /> ARCHITECTURAL HARDWARE · ALIGARH, INDIA
         </p>
         <h1>
-          Architectural Door Hardware<br />
-          <span>for Global B2B Buyers</span>
+          Door Lock & Architectural Hardware<br />
+          <span>Exporter from India</span>
         </h1>
         <p className="hero-description">
           Arpit Impex supplies door locks, mortise lock bodies, cylinders, handles and related architectural hardware to importers, distributors, wholesalers and project buyers. Based in Aligarh, India, we support bulk enquiries, product-specification reviews, customization discussions and export coordination.

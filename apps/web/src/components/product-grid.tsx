@@ -1,11 +1,21 @@
 import { Link } from 'react-router';
 import { ArrowUpRight, MessageCircle } from 'lucide-react';
-import { products } from '@/data/catalogue';
+import { products, type ProductItem } from '@/data/catalogue';
 
-export function ProductGrid({ category = 'all' }: { category?: string }) {
-  const visible = products.filter(
+export function ProductGrid({
+  category = 'all',
+  limit,
+  items,
+}: {
+  category?: string;
+  limit?: number;
+  items?: ProductItem[];
+}) {
+  const base = items ?? products;
+  const filtered = base.filter(
     (p) => category === 'all' || p.category === category
   );
+  const visible = limit ? filtered.slice(0, limit) : filtered;
 
   return (
     <>
