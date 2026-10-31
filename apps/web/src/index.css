@@ -2405,4 +2405,165 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ==========================================================================
+   404 NOT FOUND PAGE STYLES
+   ========================================================================== */
+.not-found-page {
+  background: var(--paper);
+  min-height: 70vh;
+}
+
+.not-found-hero {
+  padding: 85px 5.2% 70px;
+  background: linear-gradient(180deg, rgba(237, 241, 244, 0.7) 0%, rgba(250, 250, 247, 1) 100%);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.not-found-hero-inner {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.not-found-eyebrow {
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.not-found-badge {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+
+.not-found-number {
+  font-size: clamp(72px, 10vw, 130px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -3px;
+  color: var(--navy);
+  position: relative;
+  text-shadow: 4px 4px 0 rgba(199, 161, 90, 0.25);
+}
+
+.not-found-sub {
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  color: var(--blue);
+  margin-top: -6px;
+  text-transform: uppercase;
+}
+
+.not-found-title {
+  font-size: clamp(26px, 3.2vw, 42px);
+  color: var(--navy);
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.not-found-desc {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--quiet);
+  max-width: 650px;
+  margin: 0 auto 34px;
+}
+
+.not-found-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.not-found-btn-primary {
+  gap: 10px;
+}
+
+.not-found-btn-secondary {
+  gap: 10px;
+  background: white;
+}
+
+.not-found-categories-section {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.not-found-help-section {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.not-found-help-card {
+  background: var(--navy);
+  border-radius: 4px;
+  padding: 44px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  box-shadow: 0 10px 30px rgba(20, 45, 78, 0.12);
+}
+
+.not-found-help-text h3 {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.not-found-help-text p {
+  color: #ccd7e3;
+  margin: 0;
+  max-width: 580px;
+  font-size: 14px;
+}
+
+.not-found-help-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.not-found-help-btn {
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.not-found-help-email,
+.not-found-help-phone {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #cbd5e1;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.not-found-help-email:hover,
+.not-found-help-phone:hover {
+  color: white;
+}
+
+@media (max-width: 860px) {
+  .not-found-help-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 34px 24px;
+  }
+  .not-found-help-links {
+    width: 100%;
+  }
+  .not-found-help-btn {
+    width: 100%;
+  }
+}
+
 

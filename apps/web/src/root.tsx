@@ -11,6 +11,7 @@ import type { Route } from './+types/root';
 import stylesheet from '@/index.css?url';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+import { NotFoundView } from '@/components/not-found-view';
 import { siteOrigin } from '@/lib/site-origin.server';
 import { HorizonsPreviewScripts } from './horizons-preview-scripts';
 
@@ -127,10 +128,12 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 	let details = 'An unexpected error occurred.';
 	let stack: string | undefined;
 
+	const is404 = isRouteErrorResponse(error) && error.status === 404;
+
 	if (isRouteErrorResponse(error)) {
-		message = error.status === 404 ? '404' : 'Error';
+		message = is404 ? '404' : 'Error';
 		details =
-			error.status === 404
+			is404
 				? 'The requested page could not be found.'
 				: error.statusText || details;
 	} else if (import.meta.env.DEV && error && error instanceof Error) {
@@ -139,14 +142,24 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 	}
 
 	return (
-		<main>
-			<h1>{message}</h1>
-			<p>{details}</p>
-			{stack ? (
-				<pre>
-					<code>{stack}</code>
-				</pre>
-			) : null}
-		</main>
+		<>
+			<a href="#main-content" className="skip-link">Skip to content</a>
+			<SiteHeader />
+			<div id="main-content">
+				<NotFoundView
+					eyebrow={is404 ? '404 · PAGE NOT FOUND' : 'SYSTEM NOTICE'}
+					title={is404 ? 'This Page Could Not Be Found' : 'Something Went Wrong'}
+					message={details}
+				/>
+				{stack ? (
+					<div className="section" style={{ paddingTop: 0 }}>
+						<pre style={{ background: '#f1f5f9', padding: '16px', borderRadius: '4px', overflowX: 'auto', fontSize: '12px' }}>
+							<code>{stack}</code>
+						</pre>
+					</div>
+				) : null}
+			</div>
+			<SiteFooter />
+		</>
 	);
 }

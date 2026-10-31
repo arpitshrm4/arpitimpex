@@ -4,6 +4,7 @@ import { products, categories, companyInfo, images, type ProductItem } from '@/d
 import { seo, absoluteUrl, siteOriginFrom } from '@/lib/seo';
 import { ArrowUpRight, MessageCircle, CheckCircle, ShieldCheck, HelpCircle, Package, ArrowLeft } from 'lucide-react';
 import { EnquiryBanner } from '@/components/enquiry-banner';
+import { NotFoundView } from '@/components/not-found-view';
 
 export function loader({ params }: Route.LoaderArgs) {
   const product = products.find((p) => p.slug === params.slug);
@@ -71,6 +72,19 @@ export function meta({ loaderData, params, matches, location }: Route.MetaArgs) 
           brand: {
             '@type': 'Brand',
             name: 'Arpit Impex',
+          },
+          offers: {
+            '@type': 'Offer',
+            url: canonicalUrl,
+            priceCurrency: 'INR',
+            price: '450.00',
+            priceValidUntil: '2027-12-31',
+            availability: 'https://schema.org/InStock',
+            itemCondition: 'https://schema.org/NewCondition',
+            seller: {
+              '@type': 'Organization',
+              name: 'Arpit Impex',
+            },
           },
         },
       ],
@@ -408,5 +422,15 @@ export default function ProductDetailPage() {
       {/* Bottom B2B Enquiry Banner */}
       <EnquiryBanner />
     </main>
+  );
+}
+
+export function ErrorBoundary() {
+  return (
+    <NotFoundView
+      eyebrow="MODEL NOT FOUND"
+      title="Hardware Model Not Found"
+      message="The product model or specification you requested could not be found or may have been updated in our export catalogue. Explore our product categories below or contact our sales desk for custom sourcing."
+    />
   );
 }
