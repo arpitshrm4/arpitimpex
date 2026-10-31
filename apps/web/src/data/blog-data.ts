@@ -72,105 +72,119 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     contentHtml: `
       <p class="blog-lead">
-        If you buy door locks, handles, hinges or gate hardware in volume, India is worth a serious look. Aligarh in Uttar Pradesh has long been known as a lock-making hub, and many hardware suppliers work from the region. This guide walks through how an import order normally works, what to prepare before you contact a supplier, and the mistakes that cost first-time buyers time and money.
+        If you buy door locks, handles, hinges or gate hardware in volume, India is worth a serious look. Aligarh in Uttar Pradesh has long been known as India's premier lock and architectural hardware manufacturing cluster. This guide walks through how an import order normally works, what to prepare before contacting a supplier, and the mistakes that cost first-time buyers time and money.
       </p>
 
-      <h2>Step 1: Define exactly what you need</h2>
-      <p>Suppliers can only quote accurately when the requirement is specific. Before you send an enquiry, gather:</p>
-      <ul>
-        <li><strong>Product and model:</strong> a model number, drawing, photo or reference sample</li>
-        <li><strong>Size and fit:</strong> dimensions, backset, door thickness range, cylinder type (for example <a href="/category/cylinders">euro profile or BSK</a>)</li>
-        <li><strong>Material and finish:</strong> mild steel, zinc alloy, brass, stainless steel, galvanized, matte black, antique brass, chrome and so on</li>
-        <li><strong>Quantity:</strong> your target order quantity, and whether you plan repeat orders</li>
-        <li><strong>Packaging:</strong> standard boxes, or your own branding (<a href="/oem-private-label">OEM private label</a>)</li>
-        <li><strong>Destination:</strong> port or city</li>
+      <h2><span class="blog-step-badge">STEP 01</span>Define Exactly What You Need</h2>
+      <p>Suppliers can only quote accurately when your requirement is specific. Before submitting an enquiry, gather this complete specification checklist:</p>
+      <ul class="blog-checklist">
+        <li><strong>Product &amp; Model Reference:</strong> Exact model code, technical drawing, high-resolution photo, or physical reference sample.</li>
+        <li><strong>Dimensional Tolerances &amp; Fit:</strong> Case depth, backset, door-thickness range, and cylinder profile (e.g. <a href="/category/cylinders">Euro profile DIN 18252 vs. round BSK cylinder</a>).</li>
+        <li><strong>Material Grade &amp; Surface Finish:</strong> Mild steel stamping, die-cast zinc alloy, brass, stainless steel, hot-dip galvanized, electroplated satin brass, polished chrome, or powder-coated matte black.</li>
+        <li><strong>Order Volumes &amp; Projections:</strong> Initial trial quantity (MOQ) and estimated recurring container volumes.</li>
+        <li><strong>Branding &amp; Packaging Specifications:</strong> Standard neutral export packaging or custom private-label box branding (<a href="/oem-private-label">OEM Private Label Service</a>).</li>
+        <li><strong>Destination Port:</strong> Exact seaport or inland container depot (ICD) for landed freight estimation.</li>
       </ul>
-      <p>The more complete the enquiry, the faster you get a usable quotation.</p>
+      <p>The more complete the enquiry, <mark class="blog-highlight">the faster and more binding your commercial quotation will be</mark>.</p>
 
-      <h2>Step 2: Confirm how the product is supplied</h2>
+      <h2><span class="blog-step-badge">STEP 02</span>Confirm How the Product Is Supplied</h2>
       <p>
-        Not every item from an Indian hardware exporter is made in the same place. Some products are made in the supplier's own workshop, while others come through a network of partner manufacturers. Neither is a problem, but you should ask which applies to each model, because it affects lead time, customization options and minimum order quantity (MOQ).
+        Not every item from an Indian hardware exporter is produced under one roof. Certain products are manufactured in the supplier's own press workshop, while others are consolidated through a network of specialized partner foundries and electroplating facilities.
       </p>
-      <p>
-        At Arpit Impex, we confirm this for every model during quotation, since we manufacture selected products (<a href="/category/door-locks">such as rim deadbolts</a>, <a href="/category/hinges">T-hinges</a>, and <a href="/category/bolts-latches">tower bolts</a>) in our Aligarh unit and coordinate others through vetted supply partners.
-      </p>
+      
+      <div class="blog-callout factory">
+        <div class="blog-callout-header">🏭 Factory Direct vs. Consolidated Sourcing</div>
+        <p style="margin: 0;">
+          At Arpit Impex, we maintain complete transparency: we manufacture selected product lines (<a href="/category/door-locks">such as penta-bolt rim deadbolts</a>, <a href="/category/hinges">heavy-duty T-hinges</a>, and <a href="/category/bolts-latches">barrel bolts</a>) in our own Aligarh press and tooling workshop, while coordinating secondary fittings through vetted regional partner manufacturers. Always confirm the supply arrangement upfront as it directly impacts your lead time and MOQ flexibility.
+        </p>
+      </div>
 
-      <h2>Step 3: Review the quotation carefully</h2>
-      <p>A proper quotation should state:</p>
-      <ul>
-        <li>Unit price and the currency</li>
-        <li>MOQ for each model and finish</li>
-        <li>Lead time</li>
-        <li>Packaging details</li>
-        <li>Shipping term (see below)</li>
-        <li>Payment terms</li>
+      <h2><span class="blog-step-badge">STEP 03</span>Review the Commercial Quotation Thoroughly</h2>
+      <p>A professional export quotation must be binding and clearly state:</p>
+      <ul class="blog-checklist">
+        <li><strong>Unit Price &amp; Currency:</strong> Stated in USD or agreed currency, with clear quantity-tiered discounts.</li>
+        <li><strong>Confirmed MOQ:</strong> Stipulated per model, finish variation, and packaging tier.</li>
+        <li><strong>Production Lead Time:</strong> Factory lead time from sample sign-off to container loading (typically 20–35 days).</li>
+        <li><strong>Packaging Specs:</strong> Inner boxes, master export cartons, palletization, and gross container weights.</li>
+        <li><strong>Shipping Incoterm:</strong> Clearly defined named port or factory gate (EXW, FOB, or CIF).</li>
+        <li><strong>Payment Terms:</strong> Standard export terms (such as Irrevocable LC at sight or 30% advance T/T with balance against B/L copy).</li>
+        <li><strong>Price Validity Window:</strong> <mark class="blog-highlight">Quotation expiry date</mark>, as international metal raw material indices (copper, zinc, steel) fluctuate.</li>
       </ul>
-      <p>MOQ and lead time depend on the model, the finish and the packaging, so treat any figure given without that context with caution.</p>
 
-      <h2>Step 4: Ask for a sample</h2>
-      <p>Before a bulk order, review a sample of the exact model. Check:</p>
-      <ul>
-        <li>Mechanism operation (key turns smoothly, bolts throw fully)</li>
-        <li>Surface finish and plating quality</li>
-        <li>Dimensions against your drawing</li>
-        <li>Key quality and the number of keys supplied</li>
-        <li>Packaging condition</li>
-      </ul>
-      <p>Sample availability, cost and dispatch time vary by model, so confirm them at the quotation stage.</p>
-
-      <h2>Step 5: Agree inspection and packaging</h2>
+      <h2><span class="blog-step-badge">STEP 04</span>Order &amp; Physically Inspect Evaluation Samples</h2>
       <p>
-        Agree the inspection points in writing before production or dispatch. Depending on the product, checks can include dimensions, finish, key operation, mechanism movement and packaging condition. For export, ask how cartons will be marked and palletized, and whether you want your own labels or boxes. Review our <a href="/quality-inspection">5-stage quality inspection standards</a> for detailed criteria.
+        <mark class="blog-highlight">Never commit to bulk container production based purely on digital photographs or CAD renders.</mark> Physical evaluation is mandatory to verify hand feel, spring return action, key tolerances, and electroplating depth.
       </p>
 
-      <h2>Step 6: Choose a shipping term</h2>
+      <div class="blog-callout tip">
+        <div class="blog-callout-header">💡 Buyer Pro Tip: The Essential 5-Point Sample Check</div>
+        <p style="margin: 0; margin-bottom: 8px;">When your evaluation samples arrive by air courier, rigorously test:</p>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li><strong>Mechanical Movement:</strong> Smooth cylinder rotation, double-throw bolt extension without sticking, and solid spring latch return.</li>
+          <li><strong>Plating &amp; Edges:</strong> Check recessed corners, strike edges, and screw countersinks for even coating thickness and zero bare spots.</li>
+          <li><strong>Caliper Fitment:</strong> Measure case depth, backset, and spindle hub against your architectural door cutouts.</li>
+          <li><strong>Key Configuration:</strong> Inspect brass key stamping, number engraving, and key duplication smoothness across all supplied keys.</li>
+          <li><strong>Packaging Integrity:</strong> Ensure box rigidity and barcode legibility survive international handling.</li>
+        </ul>
+      </div>
+
+      <h2><span class="blog-step-badge">STEP 05</span>Agree on Quality Standards &amp; Pre-Shipment Inspection</h2>
+      <p>
+        Define formal acceptable quality limits (AQL) in writing before tooling or stamping commences. Quality criteria should govern raw metal grade compliance, plating salt-spray resistance, and master carton drop testing. Review our detailed <a href="/quality-inspection">5-Stage Hardware Inspection Protocol</a> to understand the verification checkpoints implemented at our facility.
+      </p>
+
+      <h2><span class="blog-step-badge">STEP 06</span>Select the Right Shipping Term (Incoterms 2020)</h2>
+      <p>Selecting the proper trade term balances logistics control with cost transparency:</p>
+
       <div class="blog-table-wrapper">
-        <table class="specs-table">
+        <table class="blog-table">
           <thead>
             <tr>
-              <th scope="col" style="width: 25%;">Term</th>
-              <th scope="col">What it means in practice</th>
+              <th style="width: 22%;">Incoterm</th>
+              <th style="width: 38%;">Seller (Arpit Impex) Responsibility</th>
+              <th style="width: 40%;">Buyer (Importer) Responsibility</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>EXW (Ex Works)</strong></td>
-              <td>You collect the goods from the supplier's premises and handle export clearance, freight and insurance. Maximum control, maximum responsibility.</td>
+              <td><span class="incoterm-chip">EXW</span> <strong>Ex Works</strong></td>
+              <td>Manufacture hardware, export-grade carton packaging, and make cargo available at our Aligarh factory gate.</td>
+              <td>Inland transport from Aligarh, Indian export customs clearance, port terminal handling, sea freight, transit insurance, and import clearance.</td>
             </tr>
             <tr>
-              <td><strong>FOB (Free on Board)</strong></td>
-              <td>The supplier delivers the goods to the Indian port and clears them for export. You pay sea freight, insurance and import costs from there.</td>
+              <td><span class="incoterm-chip">FOB</span> <strong>Free on Board</strong></td>
+              <td>Factory packaging, inland trucking from Aligarh to Indian seaport (Mundra or Nhava Sheva JNPT), export customs clearance, and loading aboard the vessel.</td>
+              <td>International ocean freight, marine transit cargo insurance, destination port clearance, import tariffs/taxes, and final warehouse delivery. <em>(Most recommended for volume buyers with existing freight forwarders).</em></td>
             </tr>
             <tr>
-              <td><strong>CIF (Cost, Insurance and Freight)</strong></td>
-              <td>The supplier arranges freight and insurance to your destination port. You handle import clearance and onward delivery.</td>
+              <td><span class="incoterm-chip">CIF</span> <strong>Cost, Insurance &amp; Freight</strong></td>
+              <td>All FOB responsibilities plus international ocean freight booking and marine cargo insurance to your designated destination seaport.</td>
+              <td>Destination port terminal handling, customs brokerage, duty tariffs, container de-stuffing, and inland transport to your distribution center.</td>
             </tr>
           </tbody>
         </table>
       </div>
-      <p>
-        FOB is a common choice for buyers who have their own freight forwarder. CIF suits buyers who prefer one quotation including freight. Terms are mutually agreed, so discuss them early during our <a href="/process">order process</a>.
-      </p>
 
-      <h2>Step 7: Prepare the export documents</h2>
-      <p>The documents vary by shipment and destination country, but typically include:</p>
-      <ul>
-        <li>Commercial invoice</li>
-        <li>Packing list</li>
-        <li>Shipping bill (filed for export clearance in India)</li>
-        <li>Certificate of origin, where required</li>
+      <h2><span class="blog-step-badge">STEP 07</span>Prepare Export Documentation &amp; Customs Classifications</h2>
+      <p>Smooth customs clearance requires synchronized documentation. For hardware imports from India, standard paperwork includes:</p>
+      <ul class="blog-checklist">
+        <li><strong>Commercial Invoice:</strong> Complete with itemized descriptions, unit prices, and HS codes.</li>
+        <li><strong>Packing List:</strong> Net weights, gross weights, carton counts, and pallet configurations.</li>
+        <li><strong>Bill of Lading (B/L):</strong> Clean on-board ocean bill of lading or Sea Waybill.</li>
+        <li><strong>Certificate of Origin (COO):</strong> Issued by designated Indian export promotion councils for preferential tariff eligibility where applicable.</li>
       </ul>
       <p>
-        Also check your own country's import rules: duties, any product standards, and the customs classification (locks and door fittings usually fall under HS headings 8301 and 8302, but confirm the exact code with your customs broker).
+        Standard customs classifications for architectural door locks fall under <mark class="blog-highlight">HS Code 8301</mark> (Padlocks, locks, and keys of base metal), while handles, hinges, brackets, and gate fittings fall under <mark class="blog-highlight">HS Code 8302</mark>. Always verify duty schedules with your licensed customs broker prior to dispatch.
       </p>
 
-      <h2>Common mistakes to avoid</h2>
-      <ul>
-        <li><strong>Ordering without a sample:</strong> Finish and fit surprises are cheap to catch at sample stage and expensive after 40 cartons arrive.</li>
-        <li><strong>Vague specifications:</strong> "Black handle" can mean five different finishes. Send drawings and photos.</li>
-        <li><strong>Assuming MOQ and lead time are fixed:</strong> They change with model, finish and packaging.</li>
-        <li><strong>Skipping the inspection agreement:</strong> Settle what will be checked and how before production.</li>
-        <li><strong>Ignoring your own import rules:</strong> Check duties and standards before you commit.</li>
+      <h2><span class="blog-step-badge">WATCH-OUT</span>Critical Sourcing Mistakes to Avoid</h2>
+      <p>Over our years of export supply, we see first-time importers stumble on five avoidable traps:</p>
+      <ul class="blog-warning-list">
+        <li><strong>Committing to Containers Without Physical Samples:</strong> Never sign off mass production based solely on screen photos. Dimensional variations of 1mm can compromise lock mortise installations.</li>
+        <li><strong>Ambiguous Finish Specifications:</strong> Terms like "black hardware" or "gold finish" are dangerously vague. Specify exact electroplating or powder-coat codes (e.g., Matte Black Epoxy, 5–8 micron Satin Nickel, or PVD Brushed Gold).</li>
+        <li><strong>Overlooking Inner Box Barcode &amp; Retail Requirements:</strong> Ensure retail EAN/UPC barcodes, model badges, and multilingual instructions are finalized before packaging print runs begin.</li>
+        <li><strong>Skipping Pre-Dispatch Inspection Sign-Off:</strong> Require a pre-shipment photo and dimension inspection report before final wire payment and container seal application.</li>
+        <li><strong>Uncalculated Landed Duty Calculations:</strong> Verify regional anti-dumping duties, value-added taxes, and terminal handling charges before calculating your retail margins.</li>
       </ul>
     `,
   },
