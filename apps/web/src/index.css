@@ -2761,6 +2761,32 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
 }
 
+.blog-card-media {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #f1f5f9;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid var(--line);
+}
+
+.blog-card-media img,
+.blog-card-img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.blog-card:hover .blog-card-img {
+  transform: scale(1.04);
+}
+
 
 
 

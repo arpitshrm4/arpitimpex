@@ -39,8 +39,8 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedDate: '2026-10-31',
     readTime: '7 min read',
     author: 'Arpit Sharma',
-    image: '/images/workshop-power-press-lines.png',
-    imageAlt: 'Arpit Impex manufacturing workshop and power press stamping lines in Aligarh, India',
+    image: '/images/press-workshop.png',
+    imageAlt: 'Arpit Impex Press & Tooling Workshop in Aligarh, India',
     summary:
       'A practical step-by-step roadmap walking through how an import order normally works, what to prepare before you contact a supplier, and the mistakes that cost first-time buyers time and money.',
     faqs: [
@@ -174,6 +174,12 @@ export const BLOG_POSTS: BlogPost[] = [
       </ul>
     `,
   },
+];
+
+/**
+ * Draft blog posts preserved for future publication.
+ */
+export const DRAFT_BLOG_POSTS: BlogPost[] = [
   {
     slug: 'rim-lock-vs-mortise-lock',
     title: 'Rim Lock vs Mortise Lock: Which Should You Stock?',

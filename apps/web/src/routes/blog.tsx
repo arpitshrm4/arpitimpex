@@ -123,7 +123,7 @@ export default function BlogIndexPage() {
             </button>
           </div>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '32px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 420px))', gap: '32px' }}>
             {filteredPosts.map((post) => (
               <article
                 key={post.slug}
@@ -141,14 +141,14 @@ export default function BlogIndexPage() {
                 }}
               >
                 <div>
-                  <Link to={`/blog/${post.slug}`} className="photo-link" style={{ display: 'block', height: '220px', background: '#f8f9fa', overflow: 'hidden' }}>
+                  <Link to={`/blog/${post.slug}`} className="blog-card-media">
                     <img
                       src={post.image}
                       alt={post.imageAlt}
-                      width="600"
-                      height="340"
+                      width="800"
+                      height="450"
                       loading="lazy"
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                      className="blog-card-img"
                     />
                   </Link>
                   <div style={{ padding: '24px 24px 0 24px' }}>
