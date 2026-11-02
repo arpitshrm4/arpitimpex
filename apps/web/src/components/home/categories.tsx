@@ -34,7 +34,7 @@ export function Categories() {
                 width="500"
                 height="435"
                 loading="lazy"
-                style={{ aspectRatio: '1.15' }}
+                className="category-card-img"
               />
               <div className="category-overlay" />
               <div className="category-copy">
