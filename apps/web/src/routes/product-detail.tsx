@@ -4,6 +4,7 @@ import { products, categories, companyInfo, images, type ProductItem } from '@/d
 import { seo, absoluteUrl, siteOriginFrom } from '@/lib/seo';
 import { ArrowUpRight, MessageCircle, CheckCircle, ShieldCheck, HelpCircle, Package, ArrowLeft, ChevronRight } from 'lucide-react';
 import { EnquiryBanner } from '@/components/enquiry-banner';
+import { ProductGrid } from '@/components/product-grid';
 import { NotFoundView } from '@/components/not-found-view';
 
 function getCleanDescription(product: ProductItem): string {
@@ -182,9 +183,13 @@ export default function ProductDetailPage() {
     `Hello Arpit Impex, I would like to enquire about bulk supply and specifications for ${product.name} (${product.modelNumber}).`
   );
 
-  const relatedProducts = products
-    .filter((p) => p.category === product.category && p.slug !== product.slug)
-    .slice(0, 3);
+  const categoryMatches = products.filter(
+    (p) => p.category === product.category && p.slug !== product.slug
+  );
+  const fallbackMatches = products.filter(
+    (p) => p.category !== product.category && p.slug !== product.slug
+  );
+  const relatedProducts = [...categoryMatches, ...fallbackMatches].slice(0, 4);
 
   return (
     <main className="product-detail-page">
@@ -216,9 +221,6 @@ export default function ProductDetailPage() {
                 height="700"
                 loading="eager"
               />
-              <span className="product-source-badge source-enquiry">
-                Available on enquiry
-              </span>
             </div>
             <p className="pdp-image-note">
               SKU photo from our Aligarh catalogue. Surface finish samples and technical drawings are provided during quotation discussions.
@@ -454,61 +456,19 @@ export default function ProductDetailPage() {
 
       {/* Related Catalogue Items */}
       {relatedProducts.length > 0 && (
-        <section className="section pdp-related-section">
-          <div className="section-heading">
-            <div>
-              <p className="eyebrow">RELATED PRODUCTS</p>
-              <h2>More in {product.categoryName}</h2>
+        <section className="pdp-related-section">
+          <div className="pdp-related-container">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">RELATED PRODUCTS</p>
+                <h2>More in {product.categoryName}</h2>
+              </div>
+              <Link to={`/category/${product.category}`} className="text-link">
+                View All {product.categoryName} ↗
+              </Link>
             </div>
-            <Link to={`/category/${product.category}`} className="text-link">
-              View All {product.categoryName} ↗
-            </Link>
-          </div>
 
-          <div className="product-grid">
-            {relatedProducts.map((p) => (
-              <article key={p.slug} className="product-card">
-                <div className="product-image-container">
-                  <Link to={`/products/${p.slug}`} aria-label={`View ${p.name}`}>
-                    <img
-                      src={p.image}
-                      alt={`${p.name} model ${p.modelNumber}`}
-                      width="500"
-                      height="500"
-                      loading="lazy"
-                    />
-                  </Link>
-                  <span className="product-source-badge source-enquiry">
-                    Available on enquiry
-                  </span>
-                </div>
-                <div className="product-text">
-                  <div className="product-meta-header">
-                    <span className="product-category-tag">{p.categoryName}</span>
-                    <span className="product-model-code">SKU: {p.modelNumber}</span>
-                  </div>
-                  <h3>
-                    <Link to={`/products/${p.slug}`} className="product-title-link">
-                      {p.name}
-                    </Link>
-                  </h3>
-                  <p className="product-desc">{p.description}</p>
-                  <div style={{ marginBottom: '14px' }}>
-                    <Link to={`/products/${p.slug}`} className="product-view-spec-link">
-                      View Specifications →
-                    </Link>
-                  </div>
-                  <div className="product-actions">
-                    <Link
-                      className="button-product-quote"
-                      to={`/contact?product=${encodeURIComponent(p.name)}`}
-                    >
-                      Request Quote <ArrowUpRight size={14} />
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            ))}
+            <ProductGrid items={relatedProducts} limit={4} />
           </div>
         </section>
       )}

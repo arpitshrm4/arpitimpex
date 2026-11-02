@@ -1,5 +1,5 @@
 import { Link } from 'react-router';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowUpRight } from 'lucide-react';
 import { ProductGrid } from '@/components/product-grid';
 import { products } from '@/data/catalogue';
 
@@ -20,25 +20,27 @@ export function Featured() {
     .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
   return (
-    <section className="section featured">
+    <section className="featured-section">
       <div className="section-heading">
         <div>
-          <p className="eyebrow">FEATURED HARDWARE HIGHLIGHTS</p>
-          <h2>Featured Hardware from Aligarh</h2>
-          <p className="section-intro" style={{ marginBottom: 0 }}>
-            Selected high-demand door locks, mortise cylinders, architectural handles, and heavy-duty ironmongery.
-          </p>
+          <p className="eyebrow">CURATED EXPORT HIGHLIGHTS</p>
+          <h2>Products we recommend first.</h2>
         </div>
-        <Link to="/products" className="button outline" style={{ whiteSpace: 'nowrap', alignSelf: 'flex-start' }}>
-          View Full Catalogue ({products.length} Products) <ArrowRight size={16} />
-        </Link>
+        <div>
+          <p className="section-heading-desc">
+            High-demand architectural locks, brass cylinders, handles, and forged gate ironmongery proven with overseas buyers and bulk distributors.
+          </p>
+          <Link to="/products" className="link-inline">
+            Explore All {products.length} Products <ArrowUpRight size={15} />
+          </Link>
+        </div>
       </div>
 
-      <ProductGrid items={featuredProducts} limit={8} />
+      <ProductGrid items={featuredProducts} limit={8} firstCover={true} />
 
-      <div style={{ textAlign: 'center', marginTop: '40px' }}>
-        <Link to="/products" className="button" style={{ padding: '16px 32px' }}>
-          Explore All {products.length} Products in Catalogue <ArrowRight size={18} />
+      <div className="featured-bottom-cta">
+        <Link to="/products" className="button button-dark">
+          Browse Full Export Catalogue ({products.length} Items) <ArrowRight size={16} />
         </Link>
       </div>
     </section>

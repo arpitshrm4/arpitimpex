@@ -4,13 +4,8 @@ import { images, companyInfo, faqs } from '@/data/catalogue';
 import { Hero } from '@/components/home/hero';
 import { Categories } from '@/components/home/categories';
 import { WhyUs } from '@/components/home/why-us';
-import { Process } from '@/components/home/process';
 import { Featured } from '@/components/home/featured';
 import { EnquiryBanner } from '@/components/enquiry-banner';
-import { About } from '@/components/home/about';
-import { FacilityShowcase } from '@/components/home/facility-showcase';
-import { Faq } from '@/components/home/faq';
-import { FinalCta } from '@/components/home/final-cta';
 export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
@@ -62,4 +57,14 @@ export function meta({ matches, location }: Route.MetaArgs) {
     }
   );
 }
-export default function HomePage() { return <main><Hero /><Categories /><WhyUs /><Featured /><Process /><EnquiryBanner /><About /><FacilityShowcase /><Faq /><FinalCta /></main> }
+export default function HomePage() {
+  return (
+    <main>
+      <Hero />
+      <Categories />
+      <Featured />
+      <WhyUs />
+      <EnquiryBanner />
+    </main>
+  );
+}

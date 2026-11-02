@@ -41,9 +41,6 @@ export default defineConfig({
 		port: 3000,
 		host: '::',
 		cors: { origin: AllowedEditorOrigins },
-		headers: {
-			'Cross-Origin-Embedder-Policy': 'credentialless',
-		},
 		allowedHosts: ['.app-preview.com', '.app-preview.io'],
 		fs: {
 			strict: true,

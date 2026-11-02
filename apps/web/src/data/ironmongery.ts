@@ -16,7 +16,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "Available in 200mm (8\"), 250mm (10\"), and 300mm (12\") strap lengths; 4mm leaf thickness",
     "doorThickness": "Suitable for 35mm – 65mm timber gates, garage doors, and shed portals",
     "packaging": "Individual polybag pair with hardened black wood screws; 20 pairs per master export carton",
-    "image": "/images/ironmongery/matte-black-t-hinge-product-photo.png",
+    "image": "/images/ironmongery/matte-black-t-hinge-product-photo.webp",
     "description": "Classic heavy-duty tee hinge engineered for exterior timber garden gates, garage doors, and storage sheds. The wide rectangular butt plate fixes securely to the post while the elongated tapered strap distributes load evenly across the door panel. Finished in durable UV-resistant exterior matte black powder coating.",
     "applications": "Timber garden gates, agricultural barn doors, external storage sheds, side entrance gates, and garage doors."
   },
@@ -35,7 +35,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "300mm (12\") and 350mm (14\") long strap; 50mm butt width; 4.5mm steel thickness",
     "doorThickness": "Engineered for heavy timber doors 40mm – 75mm thick",
     "packaging": "Matched pair pack with heavy-duty structural wood screws; master export carton",
-    "image": "/images/ironmongery/matte-black-t-hinge-on-white-background.png",
+    "image": "/images/ironmongery/matte-black-t-hinge-on-white-background.webp",
     "description": "Extra-long heavy pattern tee hinge designed to support oversized or heavyweight timber gates, stable doors, and workshop entrances. The elongated strap prevents door sagging and provides high wind resistance.",
     "applications": "Heavy wooden estate gates, stable doors, barn doors, and commercial exterior timber barriers."
   },
@@ -54,7 +54,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "Available in 150mm (6\"), 200mm (8\"), 250mm (10\"), and 300mm (12\") lengths",
     "doorThickness": "Suitable for 35mm – 60mm exterior wooden gates and sheds",
     "packaging": "Bulk crate packaging or boxed pairs with matching galvanized fixings",
-    "image": "/images/ironmongery/galvanized-t-hinge-product-shot.png",
+    "image": "/images/ironmongery/galvanized-t-hinge-product-shot.webp",
     "description": "Rugged hot-dip galvanized tee hinge specifically manufactured for coastal, agricultural, and high-moisture outdoor installations. Thick zinc coating protects against rust and weathering.",
     "applications": "Farm gates, perimeter boundary gates, garden sheds, coastal properties, and utility doors."
   },
@@ -73,7 +73,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "200mm – 350mm strap length; 5mm plate gauge",
     "doorThickness": "40mm – 70mm timber gates and industrial sheds",
     "packaging": "Individual polybag with fixing screws; export cartons",
-    "image": "/images/ironmongery/galvanized-steel-t-strap-hinge.png",
+    "image": "/images/ironmongery/galvanized-steel-t-strap-hinge.webp",
     "description": "Industrial-grade galvanized T-strap hinge for agricultural fencing, commercial warehouses, and heavy outdoor perimeter doors. Superior load bearing capacity with high shear strength.",
     "applications": "Agricultural fencing, livestock enclosures, warehouse wooden gates, and heavy service doors."
   },
@@ -92,7 +92,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "250mm, 300mm, and 400mm total length; 45mm strap width",
     "doorThickness": "Suitable for heavy timber gates up to 75mm thickness",
     "packaging": "Export grade master cartons with moisture barrier",
-    "image": "/images/ironmongery/galvanized-steel-strap-hinge-on-white.png",
+    "image": "/images/ironmongery/galvanized-steel-strap-hinge-on-white.webp",
     "description": "Straight heavy strap hinge for flush-mount gate and door configurations where both the frame and gate surface sit on the same plane. Galvanized finish provides long-term resistance to atmospheric moisture.",
     "applications": "Double driveway gates, timber barn doors, warehouse double doors, and paddock gates."
   },
@@ -111,7 +111,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "250mm (10\") and 300mm (12\") length; 40mm width; 3.5mm thickness",
     "doorThickness": "35mm – 55mm wooden gates and barn doors",
     "packaging": "Boxed pair with matching black installation fasteners",
-    "image": "/images/ironmongery/matte-black-strap-hinge-on-white.png",
+    "image": "/images/ironmongery/matte-black-strap-hinge-on-white.webp",
     "description": "Universal reversible strap hinge featuring clean straight geometry and countersunk fixing holes. Powder coated in deep matte black to blend seamlessly with stained timber or painted surfaces.",
     "applications": "Garden entrance gates, decorative barn doors, interior rustic partitions, and shed doors."
   },
@@ -130,7 +130,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "300mm and 400mm length; spearhead finial; 4mm gauge",
     "doorThickness": "Suitable for 35mm – 65mm traditional timber doors",
     "packaging": "Matched pair presentation packaging with matching screws",
-    "image": "/images/ironmongery/matte-black-decorative-strap-hinge.png",
+    "image": "/images/ironmongery/matte-black-decorative-strap-hinge.webp",
     "description": "Victorian and colonial style decorative strap hinge featuring an architectural spearhead terminal. Combines structural gate support with classical rustic aesthetics.",
     "applications": "Heritage timber gates, cottage doors, courtyard entrances, decorative bar doors, and wine cellars."
   },
@@ -149,7 +149,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "250mm x 150mm triangular/diagonal profile; 4mm steel thickness",
     "doorThickness": "35mm – 60mm timber doors and gates",
     "packaging": "Individual polybag with black mounting screws",
-    "image": "/images/ironmongery/black-diagonal-strap-hinge.png",
+    "image": "/images/ironmongery/black-diagonal-strap-hinge.webp",
     "description": "Engineered diagonal strap hinge providing enhanced diagonal bracing against door deflection and frame drop. Ideal for high-traffic pedestrian gates.",
     "applications": "Diagonal-braced wooden gates, high-traffic pedestrian entrances, and heavy shed doors."
   },
@@ -168,7 +168,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "300mm total length; 50mm leaf width",
     "doorThickness": "40mm – 75mm timber and steel gate frames",
     "packaging": "Heavy trade carton with protective interleaf wrapping",
-    "image": "/images/ironmongery/black-metal-strap-hinge-assembly.png",
+    "image": "/images/ironmongery/black-metal-strap-hinge-assembly.webp",
     "description": "Two-piece heavy strap hinge assembly featuring an integrated heavy pin and multiple bolt fixing points for reinforced installation.",
     "applications": "Commercial gates, utility buildings, wooden double doors, and farm storage portals."
   },
@@ -187,7 +187,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "200mm, 250mm, and 300mm strap lengths",
     "doorThickness": "35mm – 60mm doors and timber gates",
     "packaging": "Bulk trade carton; polybagged pairs",
-    "image": "/images/ironmongery/black-t-hinge-strap-latch-plate.png",
+    "image": "/images/ironmongery/black-t-hinge-strap-latch-plate.webp",
     "description": "Reinforced tee hinge with thickened strap plate to prevent bending under heavy wind loads and high-frequency gate swinging.",
     "applications": "High-wind exposed gates, garden entrances, side alley timber gates, and outdoor workshops."
   },
@@ -206,7 +206,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "150mm (6\") bolt length; 12mm solid round bolt rod; 45mm x 110mm baseplate",
     "doorThickness": "Universal surface mount for timber, metal, and composite doors",
     "packaging": "Individual box pack with keeper plate and fixing bolts; master export carton",
-    "image": "/images/ironmongery/galvanized-sliding-bolt-latch.png",
+    "image": "/images/ironmongery/galvanized-sliding-bolt-latch.webp",
     "description": "Industry-standard heavy-duty sliding padbolt latch engineered for secure locking of outdoor gates, shed doors, and utility lockers. The integrated padlock eyelet accepts standard padlocks, preventing unauthorized slide retraction.",
     "applications": "Garden gates, warehouse doors, storage units, agricultural sheds, and wooden garage double doors."
   },
@@ -225,7 +225,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "200mm (8\") bolt length; 14mm thick solid bolt shoot; 50mm baseplate",
     "doorThickness": "Suitable for heavy timber gates, metal frames, and industrial sheds",
     "packaging": "Individually packed with heavy strike keeper; 25 units per carton",
-    "image": "/images/ironmongery/galvanized-sliding-bolt-latch-2.png",
+    "image": "/images/ironmongery/galvanized-sliding-bolt-latch-2.webp",
     "description": "Extended 200mm shoot bolt designed for wider door gaps and heavy industrial installations. Deep throw ensures maximum engagement with the strike plate.",
     "applications": "Commercial gates, storage sheds, barn doors, and large agricultural portals."
   },
@@ -244,7 +244,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "100mm, 150mm, and 200mm lengths; 10mm round shoot",
     "doorThickness": "Universal surface mounting on timber, UPVC, and steel doors",
     "packaging": "Individual polybag with flat and angled strike plates; export cartons",
-    "image": "/images/ironmongery/galvanized-sliding-barrel-bolt-latch.png",
+    "image": "/images/ironmongery/galvanized-sliding-barrel-bolt-latch.webp",
     "description": "Heavy barrel bolt latch with integrated retention turn-down handle. Prevents accidental bolt disengagement during door vibration or high wind.",
     "applications": "Exterior gate security, shed doors, bathroom and utility doors, and double door top/bottom latching."
   },
@@ -263,7 +263,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "180mm overall length; 12mm bolt stroke",
     "doorThickness": "Universal surface mount",
     "packaging": "Carton pack with strike keeper and installation hardware",
-    "image": "/images/ironmongery/galvanized-sliding-door-bolt-latch.png",
+    "image": "/images/ironmongery/galvanized-sliding-door-bolt-latch.webp",
     "description": "Sturdy sliding door bolt latch featuring wide mounting brackets and heavy plate construction for commercial sliding barn doors and exterior gates.",
     "applications": "Sliding barn doors, industrial gates, wooden warehouse portals, and livestock enclosures."
   },
@@ -282,7 +282,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "75mm, 100mm, 125mm, and 150mm lengths",
     "doorThickness": "Suitable for internal and external doors, gates, and windows",
     "packaging": "Bulk contractor pack or boxed with receiver strike",
-    "image": "/images/ironmongery/galvanized-steel-barrel-bolt-latch.png",
+    "image": "/images/ironmongery/galvanized-steel-barrel-bolt-latch.webp",
     "description": "Versatile tower barrel bolt with deep engagement into frame strikes. Corrosion-resistant zinc plating ensures smooth operation in damp environments.",
     "applications": "Internal partition doors, utility rooms, garden sheds, casement windows, and double doors."
   },
@@ -301,7 +301,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "160mm total length; 12mm round pin; 35mm throw",
     "doorThickness": "Universal surface mounting on timber gates, trailers, and metal stalls",
     "packaging": "Individual polybag with keeper; 20 units per carton",
-    "image": "/images/ironmongery/galvanized-spring-bolt-latch.png",
+    "image": "/images/ironmongery/galvanized-spring-bolt-latch.webp",
     "description": "Automatic spring-assisted shoot bolt latch designed for animal pens, utility trailers, and farm gates. Twist the handle to lock in the open position, release to snap closed instantly.",
     "applications": "Horse stalls, animal enclosures, trailer tailgates, agricultural gates, and utility barriers."
   },
@@ -320,7 +320,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "180mm length; 14mm heavy bolt pin; 40mm throw stroke",
     "doorThickness": "35mm – 65mm gates, shed doors, and transport partitions",
     "packaging": "Individual box pack with strike guide; master export carton",
-    "image": "/images/ironmongery/black-coiled-spring-door-bolt.png",
+    "image": "/images/ironmongery/black-coiled-spring-door-bolt.webp",
     "description": "Rugged coiled spring bolt featuring a large circular loop handle for quick one-handed operation even while wearing work gloves. High-tension spring prevents gate rattling.",
     "applications": "Farm gates, dog kennels, livestock pens, heavy barn doors, and utility trailers."
   },
@@ -339,7 +339,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "150mm (6\") length; 10mm bolt diameter; 40mm wide body",
     "doorThickness": "Universal surface mount",
     "packaging": "Individually carded/polybagged with flat and universal frame strikes",
-    "image": "/images/ironmongery/black-barrel-bolt-latch-product-shot.png",
+    "image": "/images/ironmongery/black-barrel-bolt-latch-product-shot.webp",
     "description": "Classic architectural black barrel bolt designed for exterior wooden doors and garden gates. Deep throw ensures reliable engagement and protection against forced push-in.",
     "applications": "Garden gates, French doors, wooden privacy doors, and storage sheds."
   },
@@ -358,7 +358,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "100mm (4\") length; 8.5mm solid shoot bolt",
     "doorThickness": "Universal for residential interior and exterior doors",
     "packaging": "Polybag with color header or bulk master carton",
-    "image": "/images/ironmongery/black-barrel-bolt-latch-on-white-background.png",
+    "image": "/images/ironmongery/black-barrel-bolt-latch-on-white-background.webp",
     "description": "Compact 100mm barrel bolt ideal for internal privacy doors, light exterior sheds, and window shutter locking.",
     "applications": "Internal privacy doors, window shutters, garden gates, and cabinets."
   },
@@ -377,7 +377,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "125mm and 150mm lengths; 10mm bolt rod",
     "doorThickness": "Universal surface mount for flush and rebated doors",
     "packaging": "Individual polybag with fixing screws",
-    "image": "/images/ironmongery/black-metal-barrel-bolt-latch.png",
+    "image": "/images/ironmongery/black-metal-barrel-bolt-latch.webp",
     "description": "Sleek black tower bolt featuring rounded ends and countersunk screw holes for a flush, architectural finish.",
     "applications": "Domestic entry doors, bathroom doors, side gates, and utility cabinets."
   },
@@ -396,7 +396,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "160mm length; 12mm solid steel bolt",
     "doorThickness": "35mm – 65mm timber and steel gate frames",
     "packaging": "Individual presentation box with strike cup and fixings",
-    "image": "/images/ironmongery/diagonal-black-sliding-bolt-with-strike-plate.png",
+    "image": "/images/ironmongery/diagonal-black-sliding-bolt-with-strike-plate.webp",
     "description": "Ergonomic sliding gate bolt with an angled diagonal grip designed to provide extra pull leverage when aligning swollen or misaligned wooden gates.",
     "applications": "Timber garden gates, double driveway gates, barn doors, and commercial enclosures."
   },
@@ -415,7 +415,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "175mm length; 12mm diameter bolt shoot",
     "doorThickness": "Universal surface mount",
     "packaging": "Export bulk carton or individual polybag",
-    "image": "/images/ironmongery/metal-bolt-latch-with-triangular-handle.png",
+    "image": "/images/ironmongery/metal-bolt-latch-with-triangular-handle.webp",
     "description": "Heavy industrial bolt latch with an oversized triangular handle allowing comfortable operation in factory, construction, and agricultural settings.",
     "applications": "Machinery enclosures, generator rooms, factory partition doors, and exterior access gates."
   },
@@ -434,7 +434,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "150mm (6\") and 200mm (8\") length; 45mm width; 3.5mm thick hasp",
     "doorThickness": "Universal surface mount for timber and metal doors",
     "packaging": "Individual skin card / polybag with tamper-proof hardened mounting screws",
-    "image": "/images/ironmongery/black-metal-hasp-hinge-latch.png",
+    "image": "/images/ironmongery/black-metal-hasp-hinge-latch.webp",
     "description": "High-security hinged hasp and staple designed for gates, sheds, storage bins, and outbuildings. When closed over the staple, the hasp leaf completely conceals the fixing screws to prevent tampering.",
     "applications": "Garden sheds, storage units, toolboxes, perimeter gates, and commercial lockups."
   },
@@ -453,7 +453,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "180mm overall unfolded length; 42mm leaf width",
     "doorThickness": "Universal surface mounting",
     "packaging": "Individual blister card or box with mounting hardware",
-    "image": "/images/ironmongery/matte-black-hinged-hasp-latch.png",
+    "image": "/images/ironmongery/matte-black-hinged-hasp-latch.webp",
     "description": "Flexible hinged hasp and staple engineered for non-coplanar or corner installations. The additional hinge knuckle allows mounting around door edges or recessed jambs.",
     "applications": "Outbuildings, storage lockers, site storage containers, and double gate leaves."
   },
@@ -472,7 +472,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "140mm length; 40mm width",
     "doorThickness": "Universal surface mount",
     "packaging": "Trade carton pack with screws",
-    "image": "/images/ironmongery/dark-metal-hinged-hasplatch.png",
+    "image": "/images/ironmongery/dark-metal-hinged-hasplatch.webp",
     "description": "Hasplatch featuring a rotating swivel staple that holds the door shut without needing a padlock, but allows quick padlocking when security is required.",
     "applications": "Barn doors, storage cupboards, equipment sheds, and livestock gates."
   },
@@ -491,7 +491,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "Available in 100mm (4\"), 150mm (6\"), 200mm (8\"), and 250mm (10\") lengths",
     "doorThickness": "Universal surface mount on timber, masonry, and metal posts",
     "packaging": "Individual polybag with eye plates and mounting screws",
-    "image": "/images/ironmongery/black-metal-cabin-hook-latch.png",
+    "image": "/images/ironmongery/black-metal-cabin-hook-latch.webp",
     "description": "Heavy-duty architectural cabin hook and eye latch designed to hold gates, patio French doors, and shed doors securely open or closed against wind gusts.",
     "applications": "Restraining open garden gates, patio French doors, window shutters, and garage doors."
   },
@@ -510,7 +510,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "160mm latch bar length; 60mm strike height",
     "doorThickness": "35mm – 65mm timber and metal gates",
     "packaging": "Complete set in presentation box with all fixing screws",
-    "image": "/images/ironmongery/black-metal-door-latch-hardware-set.png",
+    "image": "/images/ironmongery/black-metal-door-latch-hardware-set.webp",
     "description": "All-in-one gate latch set comprising a self-latching gravity bar, keeper plate, and ergonomic thumb handle. Ensures gates automatically close and latch shut.",
     "applications": "Garden gates, perimeter fences, swimming pool enclosures, and pasture gates."
   },
@@ -529,7 +529,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "220mm handle height; 150mm interior latch bar",
     "doorThickness": "35mm – 55mm traditional wooden doors and cottage gates",
     "packaging": "Complete boxed assembly with exterior handle, thumb piece, latch bar, and staple",
-    "image": "/images/ironmongery/black-ornate-iron-door-latch.png",
+    "image": "/images/ironmongery/black-ornate-iron-door-latch.webp",
     "description": "Authentic forged iron Suffolk thumb latch set with decorative leaf spearheads. The exterior thumbpiece lifts the interior latch bar smoothly for easy passage.",
     "applications": "Cottage doors, period renovations, heritage garden gates, and rustic interior doors."
   },
@@ -548,7 +548,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "75mm ring diameter; 150mm latch bar length; 8mm square spindle",
     "doorThickness": "35mm – 65mm timber gates and external doors",
     "packaging": "Complete set in color presentation box with fixing hardware",
-    "image": "/images/ironmongery/symmetrical-black-double-ring-latch.png",
+    "image": "/images/ironmongery/symmetrical-black-double-ring-latch.webp",
     "description": "Classic double ring latch allowing effortless entry and exit from either side of the gate by simply turning the decorative ring handle.",
     "applications": "Side passage gates, garden walls, wooden courtyard gates, and timber yard doors."
   },
@@ -567,7 +567,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "200mm handle length; 150mm shoot bolt; 50mm escutcheons",
     "doorThickness": "Suitable for standard 35mm – 55mm wooden entry doors",
     "packaging": "Complete retail / export presentation box with fixing screws",
-    "image": "/images/ironmongery/ornate-black-iron-door-hardware-set.png",
+    "image": "/images/ironmongery/ornate-black-iron-door-hardware-set.webp",
     "description": "Comprehensive rustic ironmongery suite designed for cohesive door fittings, including an ornamental pull handle, matching surface bolt, and decorative plates.",
     "applications": "Rustic barn doors, wine cellar portals, luxury timber gates, and country homes."
   },
@@ -586,7 +586,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "130mm overall length; 30mm width",
     "doorThickness": "Universal surface mount",
     "packaging": "Individual polybag with mounting screws",
-    "image": "/images/ironmongery/black-metal-latch-with-catch-plates.png",
+    "image": "/images/ironmongery/black-metal-latch-with-catch-plates.webp",
     "description": "Reliable surface latch with two interchangeable strike plates to accommodate both flush and perpendicular frame mounting.",
     "applications": "Garden sheds, side gates, utility lockers, and internal timber barriers."
   },
@@ -605,7 +605,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "300mm rod length; 14mm solid rod thickness",
     "doorThickness": "Universal surface mounting on heavy timber and steel gates",
     "packaging": "Export grade carton packaging with guide brackets",
-    "image": "/images/ironmongery/dark-metal-latch-assembly-and-bent-rod.png",
+    "image": "/images/ironmongery/dark-metal-latch-assembly-and-bent-rod.webp",
     "description": "Heavy-duty drop rod and latch assembly engineered to secure double gates into the ground or header beam, preventing wind movement.",
     "applications": "Double driveway gates, agricultural portals, commercial storage yards, and estate entrances."
   },
@@ -624,7 +624,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "140mm latch body; 50mm receiver strike",
     "doorThickness": "35mm – 65mm timber and steel gate frames",
     "packaging": "Boxed set with mounting hardware",
-    "image": "/images/ironmongery/galvanized-latch-and-strike-assembly.png",
+    "image": "/images/ironmongery/galvanized-latch-and-strike-assembly.webp",
     "description": "Corrosion-proof two-piece gravity latch with heavy strike assembly. Closes automatically on gate swing and features an integrated padlock hole for locking.",
     "applications": "Timber fencing gates, pasture barriers, outdoor security gates, and farm enclosures."
   },
@@ -643,7 +643,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "160mm latch length; twin keeper plates",
     "doorThickness": "Universal for heavy gates",
     "packaging": "Carton pack with mounting bolts",
-    "image": "/images/ironmongery/galvanized-steel-latch-and-keeper-set.png",
+    "image": "/images/ironmongery/galvanized-steel-latch-and-keeper-set.webp",
     "description": "Complete gate latch assembly featuring dual heavy keeper plates for maximum shear resistance on heavy agricultural and commercial gates.",
     "applications": "Heavy farm gates, warehouse gates, security perimeters, and industrial doors."
   },
@@ -662,7 +662,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "300mm and 450mm rod lengths; 16mm solid pin diameter",
     "doorThickness": "Universal surface mount for timber and metal gate frames",
     "packaging": "Bundled set with twin guide brackets and ground receiver plate",
-    "image": "/images/ironmongery/galvanized-rod-and-catch-hardware.png",
+    "image": "/images/ironmongery/galvanized-rod-and-catch-hardware.webp",
     "description": "Substantial galvanized cane drop bolt for immobilizing the inactive leaf of a double gate or securing heavy sliding doors in high winds.",
     "applications": "Double driveway gates, commercial yard gates, barn doors, and metal barrier gates."
   },
@@ -681,7 +681,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "90mm height; 45mm width; 4mm plate thickness",
     "doorThickness": "Universal frame/post attachment",
     "packaging": "Bulk trade carton (50 pcs per carton)",
-    "image": "/images/ironmongery/galvanized-industrial-latch-keeper.png",
+    "image": "/images/ironmongery/galvanized-industrial-latch-keeper.webp",
     "description": "Reinforced industrial latch keeper plate providing a deep retention socket for gate padbolts, tower bolts, and slam latches.",
     "applications": "Post and wall frame strikes, heavy commercial gate enclosures, and metal doors."
   },
@@ -700,7 +700,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "100mm x 35mm; 3.5mm thickness",
     "doorThickness": "Universal",
     "packaging": "Bulk carton packaging for builders and hardware retailers",
-    "image": "/images/ironmongery/galvanized-steel-latch-keeper-plate.png",
+    "image": "/images/ironmongery/galvanized-steel-latch-keeper-plate.webp",
     "description": "Adjustable slotted keeper plate allowing precise alignment of latch bolts even when gates shift or sag over time with seasonal ground movement.",
     "applications": "Timber gates prone to seasonal movement, fence posts, and shed doors."
   },
@@ -719,7 +719,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "150mm x 150mm leg lengths; 40mm width; 4mm gauge",
     "doorThickness": "Engineered for timber frame joints 50mm – 100mm",
     "packaging": "Bulk wholesale carton (40 pcs per box)",
-    "image": "/images/ironmongery/galvanized-steel-corner-bracket.png",
+    "image": "/images/ironmongery/galvanized-steel-corner-bracket.webp",
     "description": "Heavy structural 90-degree corner bracket engineered to brace gate frames, pergola joints, timber sheds, and heavy wooden furniture against racking.",
     "applications": "Timber gate frame reinforcement, wooden pergolas, structural timber framing, and heavy benches."
   },
@@ -738,7 +738,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "120mm x 120mm; 35mm width; 3mm sheet thickness",
     "doorThickness": "Universal framing",
     "packaging": "Trade carton packaging (50 pcs/carton)",
-    "image": "/images/ironmongery/galvanized-steel-l-bracket-hardware.png",
+    "image": "/images/ironmongery/galvanized-steel-l-bracket-hardware.webp",
     "description": "Versatile heavy L-bracket providing strong structural connection between timber posts, header beams, door frames, and masonry anchor points.",
     "applications": "Door frame installation, timber wall framing, shelving supports, and deck substructures."
   },
@@ -757,7 +757,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "100mm x 100mm; 30mm width; 3.5mm gauge",
     "doorThickness": "Universal",
     "packaging": "Polybagged sets with black mounting screws",
-    "image": "/images/ironmongery/matte-black-l-bracket-product-shot.png",
+    "image": "/images/ironmongery/matte-black-l-bracket-product-shot.webp",
     "description": "Sleek matte black corner angle bracket designed for decorative exposed timber joints, modern barn door frames, and architectural shelving.",
     "applications": "Exposed timber framing, barn door headers, architectural furniture, and rustic shelving."
   },
@@ -776,7 +776,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "75mm wall clearance; 65mm circular wall rosette; 3-point fixing",
     "doorThickness": "Wall mount for wooden and metal handrails",
     "packaging": "Individual foam-wrapped box with heavy-duty lag bolts and wall plugs",
-    "image": "/images/ironmongery/graphite-steel-handrail-bracket.png",
+    "image": "/images/ironmongery/graphite-steel-handrail-bracket.webp",
     "description": "Architectural-grade wall bracket for mounting staircase and ramp handrails. Solid forged construction meets commercial load and impact standards.",
     "applications": "Interior staircase handrails, commercial building corridors, exterior entry steps, and ramp railings."
   },
@@ -795,7 +795,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "80mm height; 40mm channel width; 4mm steel thickness",
     "doorThickness": "Universal guide mounting",
     "packaging": "Polybagged with fixing screws",
-    "image": "/images/ironmongery/black-metal-blade-retainer-bracket.png",
+    "image": "/images/ironmongery/black-metal-blade-retainer-bracket.webp",
     "description": "Heavy guide bracket designed to restrain sliding gate blades and industrial vertical drop bolts from bowing under lateral wind pressure.",
     "applications": "Sliding gate floor guides, industrial drop bolt sleeves, and roll-up shutter retainers."
   },
@@ -814,7 +814,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "80mm x 80mm plate; 12mm thick welded round steel loop",
     "doorThickness": "Wall, post, or timber deck mounting",
     "packaging": "Individual polybag with structural anchor bolts",
-    "image": "/images/ironmongery/matte-black-u-loop-mounting-plate.png",
+    "image": "/images/ironmongery/matte-black-u-loop-mounting-plate.webp",
     "description": "Heavy-duty security wall and floor anchor plate. Welded U-loop allows chaining gates, motorcycles, garden equipment, and outdoor furniture securely.",
     "applications": "Security chaining, gate tie-down points, trailer anchor lashing, and equipment securing."
   },
@@ -833,7 +833,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "75mm x 50mm plate; 10mm eye diameter",
     "doorThickness": "Universal wall, beam, or post mounting",
     "packaging": "Bulk trade carton; 50 pcs per carton",
-    "image": "/images/ironmongery/galvanized-steel-anchor-eye-plate.png",
+    "image": "/images/ironmongery/galvanized-steel-anchor-eye-plate.webp",
     "description": "Heavy-duty eye plate engineered for overhead rigging, wire-rope tensioning, gate tie-backs, and marine mooring points.",
     "applications": "Gate stay cables, shade sail tensioning, marine moorings, and trailer tie-downs."
   },
@@ -852,7 +852,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "65mm internal ring diameter; 60mm x 60mm baseplate",
     "doorThickness": "Universal surface mount for timber and masonry",
     "packaging": "Trade cartons with mounting screws",
-    "image": "/images/ironmongery/galvanized-ring-pull-anchor-plate.png",
+    "image": "/images/ironmongery/galvanized-ring-pull-anchor-plate.webp",
     "description": "Substantial drop ring plate used as a heavy chest pull handle, trapdoor lifter, or animal hitching tie-ring on agricultural and equestrian properties.",
     "applications": "Floor trapdoors, heavy chest lids, horse hitching posts, and timber gate pulls."
   },
@@ -871,7 +871,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "90mm projection; 100mm plate height; 5mm thickness",
     "doorThickness": "Post or wall installation",
     "packaging": "Bulk wholesale cartons",
-    "image": "/images/ironmongery/galvanized-hook-mount-hardware.png",
+    "image": "/images/ironmongery/galvanized-hook-mount-hardware.webp",
     "description": "Rugged exterior hook bracket for holding open heavy timber gates, hanging chains, hoses, and farm equipment.",
     "applications": "Gate hold-open retaining, equipment hanging, perimeter fence brackets, and tool racks."
   },
@@ -890,7 +890,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "50mm roller diameter; 150mm threaded rod length",
     "doorThickness": "Adjustable for sliding panels 40mm – 90mm thick",
     "packaging": "Boxed assemblies with dual locking nuts and washers",
-    "image": "/images/ironmongery/galvanized-roller-bracket-with-threaded-rod.png",
+    "image": "/images/ironmongery/galvanized-roller-bracket-with-threaded-rod.webp",
     "description": "Precision-machined roller guide assembly with heavy threaded rod, allowing height and alignment adjustment for sliding industrial doors and cantilever gates.",
     "applications": "Sliding factory doors, cantilever security gates, barn door overhead tracks, and industrial hangar doors."
   },
@@ -909,7 +909,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "Designed for standard 50mm / 60mm box track profiles; 250kg load rating per pair",
     "doorThickness": "Suitable for heavy timber and steel framed doors up to 80mm",
     "packaging": "Boxed pairs with heavy suspension bolts and track stops",
-    "image": "/images/ironmongery/metal-sliding-door-roller-bracket.png",
+    "image": "/images/ironmongery/metal-sliding-door-roller-bracket.webp",
     "description": "Commercial-grade top hanging roller trolley engineered for heavy sliding barn doors, agricultural sheds, and industrial warehouses. Delivers effortless, silent gliding.",
     "applications": "Heavy wooden barn doors, warehouse sliding doors, aircraft hangars, and agricultural buildings."
   },
@@ -928,7 +928,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "M16 / M20 diameter; 200mm embedment length",
     "doorThickness": "Engineered for foundation concrete, masonry piers, and gate posts",
     "packaging": "Bulk master cartons for contractors and steel fabricators",
-    "image": "/images/ironmongery/galvanized-anchor-bolt-assembly-with-red-cap.png",
+    "image": "/images/ironmongery/galvanized-anchor-bolt-assembly-with-red-cap.webp",
     "description": "High-strength structural anchor bolt for anchoring heavy steel gate posts, machinery bases, and structural door lintels into concrete foundations. Includes protective moisture cap.",
     "applications": "Heavy gate post foundation anchoring, structural door frame masonry mounting, and structural columns."
   },
@@ -947,7 +947,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "250mm overall length; 16mm rebar rod; 60mm mounting head",
     "doorThickness": "Cast into brick, stone, or concrete piers",
     "packaging": "Bulk bundle export packaging",
-    "image": "/images/ironmongery/galvanized-steel-rebar-anchor-bracket.png",
+    "image": "/images/ironmongery/galvanized-steel-rebar-anchor-bracket.webp",
     "description": "Heavy rebar masonry anchor bracket designed to be set directly into brickwork or poured concrete to secure heavy hinge gudgeons, gate stops, and security barriers.",
     "applications": "Brick gate pillars, stone walls, poured concrete piers, and security barriers."
   },
@@ -966,7 +966,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "130mm x 80mm baseplate; 100mm grip span",
     "doorThickness": "Universal surface mount for timber boxes, tool chests, and access hatches",
     "packaging": "Individually polybagged; 40 units per master export carton",
-    "image": "/images/ironmongery/galvanized-fold-down-handle-assembly.png",
+    "image": "/images/ironmongery/galvanized-fold-down-handle-assembly.webp",
     "description": "Heavy drop handle that folds flat against the door or chest face when not in use, preventing snagging in tight corridors. High load capacity for heavy lifting.",
     "applications": "Tool chests, equipment cases, cellar trapdoors, roof access hatches, and utility trailers."
   },
@@ -985,7 +985,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "200mm (8\") and 250mm (10\") length; 50mm hand clearance",
     "doorThickness": "Universal surface mount for timber and metal doors",
     "packaging": "Bulk carton packaging or polybag with heavy screws",
-    "image": "/images/ironmongery/galvanized-metal-arch-handle.png",
+    "image": "/images/ironmongery/galvanized-metal-arch-handle.webp",
     "description": "Sturdy arched pull handle providing generous clearance for hands wearing heavy work gloves. Resistant to all weather conditions.",
     "applications": "Timber gates, shed doors, garage sliding doors, barn doors, and commercial storage rooms."
   },
@@ -1004,7 +1004,7 @@ export const ironmongeryProducts: ProductItem[] = [
     "dimensions": "150mm (6\"), 200mm (8\"), and 250mm (10\") lengths",
     "doorThickness": "Mounts to wooden docks, posts, gate frames, and boat decks",
     "packaging": "Bulk crate packaging for marine contractors and hardware distributors",
-    "image": "/images/ironmongery/galvanized-metal-boat-cleat-hardware.png",
+    "image": "/images/ironmongery/galvanized-metal-boat-cleat-hardware.webp",
     "description": "Heavy-duty cast marine dock cleat used for mooring lines, securing heavy tarpaulins, rope railings, and gate tie-off points.",
     "applications": "Boat docks, marina piers, marine hardware, architectural rope handrails, and gate rope tie-offs."
   }

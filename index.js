@@ -38,7 +38,14 @@ app.use(
     maxAge: '1y',
   })
 );
-app.use(express.static(clientBuildPath, { maxAge: '1h' }));
+app.use(
+  '/images',
+  express.static(path.join(clientBuildPath, 'images'), {
+    immutable: true,
+    maxAge: '30d',
+  })
+);
+app.use(express.static(clientBuildPath, { maxAge: '1h', index: false }));
 
 app.all(
   '/{*splat}',

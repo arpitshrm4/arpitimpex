@@ -9,7 +9,7 @@ export function SiteFooter() {
         <div>
           <Link to="/" className="footer-brand">
             <img
-              src="/images/logo.png"
+              src="/images/logo.webp"
               alt="Arpit Impex"
               className="footer-logo-img"
               width="36"
@@ -85,7 +85,7 @@ export function SiteFooter() {
               aria-label="Scan or click WhatsApp QR Code"
             >
               <img
-                src="/images/whatsapp-qr.png"
+                src="/images/whatsapp-qr.webp"
                 alt="Scan WhatsApp QR code for quick business connect"
                 width="64"
                 height="64"

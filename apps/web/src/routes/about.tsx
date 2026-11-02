@@ -17,7 +17,6 @@ import {
   UserCheck,
   Building2,
   ArrowRight,
-  Layers,
   Wrench,
   Award,
 } from 'lucide-react';
@@ -145,87 +144,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* In-House Manufacturing vs Partner Sourced Matrix */}
-      <section className="section about-sourcing-matrix" style={{ background: '#fdfbf7', padding: '60px 24px', borderRadius: '16px', margin: '40px auto', maxWidth: '1200px' }}>
-        <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto 40px auto' }}>
-          <p className="eyebrow">TRANSPARENT SOURCING ARCHITECTURE</p>
-          <h2 style={{ fontSize: '30px', color: 'var(--navy)' }}>What We Make In-House vs. What We Partner-Source</h2>
-          <p style={{ color: 'var(--body)', lineHeight: '1.6' }}>
-            We believe in complete transparency. To deliver competitive wholesale pricing and maintain tight quality control, we clearly distinguish between products fabricated in our own Aligarh workshop and items coordinated through verified specialized cluster partners.
-          </p>
-        </div>
-
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
-          {/* In-House Card */}
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-              <div style={{ background: '#ecfdf5', padding: '10px', borderRadius: '8px' }}>
-                <Factory size={24} color="#059669" />
-              </div>
-              <div>
-                <h3 style={{ fontSize: '20px', color: 'var(--navy)', margin: 0 }}>Manufactured In-House</h3>
-                <span style={{ fontSize: '12px', color: '#059669', fontWeight: 600 }}>Aligarh Workshop Facility</span>
-              </div>
-            </div>
-            <p style={{ fontSize: '14px', color: 'var(--body)', lineHeight: '1.6', marginBottom: '20px' }}>
-              Fabricated directly in our Shastri Nagar workshop using our own mechanical presses, progressive stamping dies, and assembly fixtures:
-            </p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Surface Rim Locks &amp; Deadbolts:</strong> Mild steel casing stamping, bolt assembly, and fitting (including JL-PB01 penta-bolt locks).</span>
-              </li>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Heavy-Duty T-Hinges &amp; Strap Hinges:</strong> Cold-rolled steel cutting, knuckle forming, pin riveting, and rust-inhibiting finishes.</span>
-              </li>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Sliding Barrel Bolts &amp; Padbolts:</strong> Galvanized and black powder-coated security bolts with welded staples.</span>
-              </li>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#059669" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Architectural Brackets &amp; Fixings:</strong> Shelf brackets, timber corner braces, and reinforcing mending plates.</span>
-              </li>
-            </ul>
-          </div>
-
-          {/* Partner Sourced Card */}
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px' }}>
-              <div style={{ background: '#eff6ff', padding: '10px', borderRadius: '8px' }}>
-                <Layers size={24} color="#2563eb" />
-              </div>
-              <div>
-                <h3 style={{ fontSize: '20px', color: 'var(--navy)', margin: 0 }}>Sourced via Verified Partners</h3>
-                <span style={{ fontSize: '12px', color: '#2563eb', fontWeight: 600 }}>Aligarh Industrial Cluster Alliance</span>
-              </div>
-            </div>
-            <p style={{ fontSize: '14px', color: 'var(--body)', lineHeight: '1.6', marginBottom: '20px' }}>
-              Procured from vetted high-precision specialized manufacturers under Arpit Impex quality inspection protocols and export packing agreements:
-            </p>
-            <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#2563eb" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Solid Brass Profile Cylinders:</strong> Computer-pinned and dimple-key euro cylinders manufactured on precision CNC key-milling machinery.</span>
-              </li>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#2563eb" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Die-Cast Zinc Alloy Handles:</strong> High-pressure Zamak alloy architectural pull handles and lever pairs on decorative rose plates.</span>
-              </li>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#2563eb" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Multi-Throw Mortise Lock Bodies:</strong> Narrow-stile commercial mortise cases and roller latch mechanisms for commercial aluminium doors.</span>
-              </li>
-              <li style={{ display: 'flex', gap: '10px', fontSize: '14px' }}>
-                <CheckCircle2 size={16} color="#2563eb" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong>Advanced PVD &amp; Electroplating:</strong> High-durability Physical Vapor Deposition (PVD) gold, antique satin brass, and chrome finishes.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
       {/* Press & Tooling Workshop Details */}
       <section className="section about-workshop-details">
         <div className="section-heading">
@@ -233,8 +151,8 @@ export default function AboutPage() {
             <p className="eyebrow">EQUIPMENT & TECHNICAL TOOLING</p>
             <h2>Press &amp; Tooling Workshop Capabilities</h2>
           </div>
-          <Link to="/quality-inspection" className="button outline">
-            Explore Inspection Protocols <ArrowRight size={16} />
+          <Link to="/quality-inspection" className="button button-dark section-heading-btn">
+            Explore Inspection Protocols <ArrowRight size={15} />
           </Link>
         </div>
 
@@ -344,8 +262,8 @@ export default function AboutPage() {
             <h2 style={{ fontSize: '26px', color: 'var(--navy)', marginBottom: '16px' }}>Find Us on Google Maps</h2>
             <div className="about-map-container" style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
               <iframe
-                title="Arpit Impex Shastri Nagar Aligarh Facility Map"
-                src="https://maps.google.com/maps?q=1%2F874%2C+Gali+No.+1%2C+Shastri+Nagar%2C+Chhawani+Road%2C+Aligarh%2C+Uttar+Pradesh+202001&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                title="Arpit Impex Google Maps Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.8174019528706!2d78.0865685760979!3d27.876878976085838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a5c4a5881231%3A0x12ed45468d9307b3!2sArpit%20Impex!5e0!3m2!1sen!2sin!4v1793619161138!5m2!1sen!2sin"
                 width="100%"
                 height="320"
                 style={{ border: 0, display: 'block' }}
@@ -354,24 +272,24 @@ export default function AboutPage() {
                 referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
-            <div style={{ marginTop: '14px', display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+            <div style={{ marginTop: '16px', display: 'flex', gap: '16px', alignItems: 'center', flexWrap: 'wrap' }}>
               <a
                 href={companyInfo.googleMapsDirectionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button outline"
-                style={{ fontSize: '13px', padding: '10px 16px' }}
+                className="button button-dark"
+                style={{ fontSize: '13px', padding: '10px 20px', gap: '8px' }}
               >
-                <MapPin size={15} /> Open in Google Maps
+                <MapPin size={14} /> Open in Google Maps ↗
               </a>
               <a
                 href={companyInfo.googleBusinessUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="button outline"
-                style={{ fontSize: '13px', padding: '10px 16px' }}
+                className="link-inline"
+                style={{ fontSize: '13.5px' }}
               >
-                Google Business Profile →
+                Google Business Profile ↗
               </a>
             </div>
           </div>

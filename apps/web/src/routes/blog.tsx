@@ -25,7 +25,7 @@ export function meta({ matches, location }: Route.MetaArgs) {
       title: 'Hardware Export Blog & Sourcing Guides | Arpit Impex',
       description:
         'Practical guides on importing architectural door hardware, locks, cylinders, and hinges from Aligarh, India. Sourcing advice, Incoterms, and specifications.',
-      image: '/images/workshop-power-press-lines.png',
+      image: '/images/press-workshop.webp',
       jsonLd: [
         {
           '@context': 'https://schema.org',
@@ -129,13 +129,13 @@ export default function BlogIndexPage() {
                 className="blog-card"
                 style={{
                   background: '#ffffff',
-                  border: '1px solid var(--border)',
-                  borderRadius: '12px',
+                  border: '1px solid var(--line)',
+                  borderRadius: '20px',
                   overflow: 'hidden',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
-                  boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
+                  boxShadow: '0 4px 20px rgba(23, 19, 16, 0.04)',
                   transition: 'transform 0.2s ease, box-shadow 0.2s ease',
                 }}
               >
@@ -152,7 +152,7 @@ export default function BlogIndexPage() {
                   </Link>
                   <div style={{ padding: '24px 24px 0 24px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                      <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 10px', borderRadius: '12px' }}>
+                      <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 12px', borderRadius: '99px' }}>
                         {post.category}
                       </span>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--quiet)' }}>
@@ -160,7 +160,7 @@ export default function BlogIndexPage() {
                       </span>
                     </div>
 
-                    <h2 style={{ fontSize: '20px', color: 'var(--navy)', lineHeight: '1.4', marginBottom: '12px' }}>
+                    <h2 style={{ fontSize: '20px', color: 'var(--ink)', lineHeight: '1.4', marginBottom: '12px', letterSpacing: '-0.02em', fontWeight: 600 }}>
                       <Link to={`/blog/${post.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
                         {post.title}
                       </Link>
@@ -172,7 +172,7 @@ export default function BlogIndexPage() {
                   </div>
                 </div>
 
-                <div style={{ padding: '16px 24px 24px 24px', borderTop: '1px solid var(--border)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div style={{ padding: '16px 24px 24px 24px', borderTop: '1px solid var(--line)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                   <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>
                     By {post.author} · {post.publishedDate}
                   </span>

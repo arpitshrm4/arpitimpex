@@ -5,8 +5,7 @@ export default function horizonsDevHeadersPlugin(): Plugin {
 		name: 'horizons-dev-headers',
 		apply: 'serve',
 		configureServer(server) {
-			server.middlewares.use((_req, res, next) => {
-				res.setHeader('Cross-Origin-Embedder-Policy', 'credentialless');
+			server.middlewares.use((_req, _res, next) => {
 				next();
 			});
 		},

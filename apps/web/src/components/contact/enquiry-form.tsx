@@ -96,7 +96,7 @@ ${formData.details}`);
 
         <div className="contact-info-card">
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '14px' }}>
-            <img src="/images/logo.png" alt="Arpit Impex" width="48" height="48" style={{ objectFit: 'contain' }} />
+            <img src="/images/logo.webp" alt="Arpit Impex" width="48" height="48" style={{ objectFit: 'contain' }} />
             <div>
               <h3 style={{ margin: 0 }}>{companyInfo.name}</h3>
               <small style={{ color: 'var(--blue)', fontWeight: 700, fontSize: '12px', letterSpacing: '0.5px' }}>
@@ -172,7 +172,7 @@ ${formData.details}`);
                 aria-label="Scan or open WhatsApp QR Code"
               >
                 <img
-                  src="/images/whatsapp-qr.png"
+                  src="/images/whatsapp-qr.webp"
                   alt="WhatsApp QR Code for Quick Connect to Arpit Impex Sales Desk"
                   width="96"
                   height="96"

@@ -1,15 +1,17 @@
 import { Link } from 'react-router';
-import { ArrowUpRight, MessageCircle } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { products, type ProductItem } from '@/data/catalogue';
 
 export function ProductGrid({
   category = 'all',
   limit,
   items,
+  firstCover = false,
 }: {
   category?: string;
   limit?: number;
   items?: ProductItem[];
+  firstCover?: boolean;
 }) {
   const base = items ?? products;
   const filtered = base.filter(
@@ -21,64 +23,42 @@ export function ProductGrid({
     <>
       {visible.length ? (
         <div className="product-grid">
-          {visible.map((p) => {
-            const waText = encodeURIComponent(
-              `Hello Arpit Impex, I would like to enquire about bulk supply and specifications for ${p.name} (${p.modelNumber}).`
-            );
+          {visible.map((p, index) => {
+            const isFirst = firstCover && index === 0;
 
             return (
-              <article key={p.slug} className="product-card">
-                <div className="product-image-container">
-                  <Link to={`/products/${p.slug}`} className="product-image-link" aria-label={`View specifications for ${p.name}`}>
-                    <img
-                      src={p.image}
-                      alt={`${p.name}, model ${p.modelNumber}`}
-                      width="500"
-                      height="500"
-                      loading="lazy"
-                    />
-                  </Link>
-                  <span className="product-source-badge source-enquiry">
-                    Available on enquiry
-                  </span>
+              <Link
+                key={p.slug}
+                to={`/products/${p.slug}`}
+                className={`product-card ${isFirst ? 'product-card-first' : ''}`}
+                aria-label={`View specifications for ${p.name}`}
+              >
+                <div className={`product-image-container ${isFirst ? 'image-cover' : ''}`}>
+                  <img
+                    src={p.image}
+                    alt={`${p.name}, model ${p.modelNumber}`}
+                    width="500"
+                    height="435"
+                    loading="lazy"
+                    className={isFirst ? 'product-image-cover' : ''}
+                    style={{ aspectRatio: '1.15' }}
+                  />
                 </div>
                 <div className="product-text">
                   <div className="product-meta-header">
                     <span className="product-category-tag">{p.categoryName || 'Hardware'}</span>
-                    <span className="product-model-code">SKU: {p.modelNumber}</span>
+                    <span className="product-model-code">{p.modelNumber}</span>
                   </div>
-                  <h3>
-                    <Link to={`/products/${p.slug}`} className="product-title-link">
-                      {p.name}
-                    </Link>
+                  <h3 className="product-title">
+                    {p.name}
                   </h3>
-                  <p className="product-desc">{p.description}</p>
-                  <div style={{ marginBottom: '14px' }}>
-                    <Link to={`/products/${p.slug}`} className="product-view-spec-link">
-                      View Full Specifications & Drawings →
-                    </Link>
-                  </div>
-                  <div className="product-actions">
-                    <Link
-                      className="button-product-quote"
-                      to={`/contact?product=${encodeURIComponent(p.name)}`}
-                    >
-                      Request Quote <ArrowUpRight size={14} />
-                    </Link>
-                    <a
-                      className="button-product-whatsapp"
-                      href={`https://wa.me/918285687940?text=${waText}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      title="Enquire on WhatsApp"
-                      aria-label="Enquire on WhatsApp"
-                    >
-                      <MessageCircle size={15} />
-                      <span>WhatsApp</span>
-                    </a>
+                  <div className="product-card-footer">
+                    <span className="product-view-spec">
+                      View Specifications <ArrowUpRight size={13} />
+                    </span>
                   </div>
                 </div>
-              </article>
+              </Link>
             );
           })}
         </div>

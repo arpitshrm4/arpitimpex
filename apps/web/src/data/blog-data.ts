@@ -39,7 +39,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedDate: '2026-10-31',
     readTime: '7 min read',
     author: 'Arpit Sharma',
-    image: '/images/press-workshop.png',
+    image: '/images/press-workshop.webp',
     imageAlt: 'Arpit Impex Press & Tooling Workshop in Aligarh, India',
     summary:
       'A practical step-by-step roadmap walking through how an import order normally works, what to prepare before you contact a supplier, and the mistakes that cost first-time buyers time and money.',
@@ -206,7 +206,7 @@ export const DRAFT_BLOG_POSTS: BlogPost[] = [
     publishedDate: '2026-10-24',
     readTime: '6 min read',
     author: 'Arpit Sharma',
-    image: '/images/hero-penta-bolt-rim-lock.jpg',
+    image: '/images/hero-penta-bolt-rim-lock.webp',
     imageAlt: 'Heavy duty rim deadbolt lock set compared with mortise lock body',
     summary:
       'Understanding the engineering, security mechanisms, installation methods, and commercial applications of surface-mounted rim locks versus recessed mortise lock bodies.',
@@ -238,7 +238,7 @@ export const DRAFT_BLOG_POSTS: BlogPost[] = [
     publishedDate: '2026-10-18',
     readTime: '6 min read',
     author: 'Arpit Sharma',
-    image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
+    image: '/images/products/euro-cylinder-lock-numbered-keys.webp',
     imageAlt: 'Solid brass euro profile cylinder with numbered brass keys',
     summary:
       'A technical breakdown of Euro DIN 18252 profile cylinders versus round BSK lock cylinders, pin tumbler mechanics, and key duplication standards.',
@@ -267,7 +267,7 @@ export const DRAFT_BLOG_POSTS: BlogPost[] = [
     publishedDate: '2026-10-12',
     readTime: '5 min read',
     author: 'Arpit Sharma',
-    image: '/images/ironmongery/matte-black-t-hinge-product-photo.png',
+    image: '/images/ironmongery/matte-black-t-hinge-product-photo.webp',
     imageAlt: 'Matte black heavy duty tee hinge for timber gate installations',
     summary:
       'How to choose between heavy-duty T-hinges and full strap hinges for exterior timber gates, agricultural doors, and architectural outbuildings.',
@@ -296,7 +296,7 @@ export const DRAFT_BLOG_POSTS: BlogPost[] = [
     publishedDate: '2026-10-05',
     readTime: '6 min read',
     author: 'Arpit Sharma',
-    image: '/images/executive-office-showroom.png',
+    image: '/images/executive-office.webp',
     imageAlt: 'Export coordination and commercial shipping desk at Arpit Impex',
     summary:
       'How to evaluate shipping Incoterms for architectural hardware consignments from India. Risk transfer points, freight cost structures, and customs documentation.',

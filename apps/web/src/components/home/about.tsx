@@ -7,9 +7,9 @@ export function About() {
         src={images.factoryEntrance}
         alt="Arpit Impex Factory Entrance and Facilities in Aligarh"
         width="800"
-        height="600"
+        height="571"
         loading="lazy"
-        style={{ objectFit: 'cover' }}
+        style={{ objectFit: 'cover', aspectRatio: '1.4' }}
       />
       <div>
         <p className="eyebrow">ABOUT ARPIT IMPEX</p>

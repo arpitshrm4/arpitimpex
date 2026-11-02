@@ -23,7 +23,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Source high-security penta bolt rim locks and multi-lever mortise locks from Aligarh, India. B2B export supply, custom finishes, and OEM box packaging.',
     h1: 'Door Locks & Rim Deadbolts Manufacturer & Exporter from India',
     eyebrow: 'SECURITY LOCKING SYSTEMS · ALIGARH, INDIA',
-    image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.jpeg',
+    image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.webp',
     intro:
       'Arpit Impex manufactures and coordinates the export supply of premium surface-mounted rim locks, heavy-duty penta-bolt deadbolts, and multi-lever security door lock sets from Aligarh, India. Engineered for maximum physical protection across main wooden entrance doors, commercial portals, residential apartments, and perimeter security gates, our lock systems utilize precision mild steel stamping casings, multi-throw solid steel bolts, and pick-resistant lever configurations. Each lockset includes precision-cut brass keys, matched strike boxes, and decorative rosette trims. We cater to global building material distributors, hardware wholesalers, and commercial developers with full OEM branding, custom electroplated finishes, and master export container consolidation.',
     buyerTypes: ['Hardware Importers', 'Wholesale Distributors', 'Residential Developers', 'Security Gate Fabricators'],
@@ -52,7 +52,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Wholesale architectural door handles, zinc alloy lever handles, and luxury pull handles from Aligarh, India. Modern finishes, custom OEM packaging, B2B supply.',
     h1: 'Door Handles & Architectural Pulls Exporter from India',
     eyebrow: 'ARCHITECTURAL FITTINGS & LEVER HANDLES',
-    image: '/images/products/160mm-brushed-gold-door-handle.jpeg',
+    image: '/images/products/160mm-brushed-gold-door-handle.webp',
     intro:
       'Our architectural door handle and pull collection balances ergonomic industrial design with high-durability electroplated finishes. Manufactured using high-pressure zinc alloy die-casting, solid extruded brass, and premium stainless steel, these handles are designed for high-traffic commercial offices, luxury residential apartments, hotels, and institutional facilities. The range encompasses contemporary rose gold pulls, 160mm and 200mm brushed satin gold grips, textured antique brass lever pairs on backplates, and modern minimalist matte black profiles. Every handle assembly undergoes rigorous torque endurance checks, spring-assist return testing, and salt spray surface corrosion evaluations before export dispatch.',
     buyerTypes: ['Architectural Ironmongers', 'Interior Hardware Retailers', 'Building Contractors', 'Door Manufacturers'],
@@ -81,7 +81,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Solid brass euro profile and BSK mortise lock cylinders from Aligarh, India. Computer keys, master keying options, and B2B wholesale export supply.',
     h1: 'Euro Profile & Mortise Cylinders Manufacturer from India',
     eyebrow: 'PRECISION CYLINDER LOCKS · ALIGARH',
-    image: '/images/products/euro-cylinder-lock-numbered-keys.jpeg',
+    image: '/images/products/euro-cylinder-lock-numbered-keys.webp',
     intro:
       'As a manufacturer and export supplier from Aligarh—India’s premier lockmaking hub—Arpit Impex produces precision-engineered euro profile lock cylinders, double-key cylinders, and BSK mortise cylinders. Machined from solid extruded brass bar stock, our cylinders feature hardened anti-drill pins, pick-resistant brass tumbler pin arrangements, and smooth sintered bronze cams compliant with standard DIN 18252 and EN 1303 dimensions. Suitable for wooden entrance doors, aluminium architectural sections, and fire-rated exit doors, our cylinders are supplied with 3 numbered brass keys or laser-cut computer dimple keys for precise tracking and controlled duplication.',
     buyerTypes: ['Locksmith Distributors', 'Door Fabricators', 'Security Hardware Wholesalers', 'Institutional Procurement'],
@@ -110,7 +110,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Narrow aluminium section lock bodies, 85mm standard mortise cases, and baby latches from Aligarh, India. Precision steel stamping, B2B export supply.',
     h1: 'Mortise Lock Bodies & Latches Manufacturer from India',
     eyebrow: 'STRUCTURAL MORTISE CASES · ALIGARH',
-    image: '/images/products/aluminium-section-mortise-lock-body.jpeg',
+    image: '/images/products/aluminium-section-mortise-lock-body.webp',
     intro:
       'Arpit Impex manufactures heavy-duty mortise lock bodies, narrow-style aluminium section lock cases, and interior baby latches built to withstand rigorous daily cycling. Formed in our Aligarh workshop using heavy-gauge mild steel casings, brass/zinc reversible latch bolts, and solid steel deadbolts, these lock bodies integrate seamlessly with euro cylinders and architectural lever handles. From 20mm and 25mm backset narrow cases designed for modern slim aluminium glass frames to 85mm center mortise lock bodies for main wooden entrance portals, we offer reliable mechanical performance, zinc electroplated anti-rust coatings, and stainless steel strike plates.',
     buyerTypes: ['Aluminium Fabricators', 'Architectural Door Manufacturers', 'Commercial Contractors', 'Hardware Wholesalers'],
@@ -139,7 +139,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Heavy-duty T-hinges, strap hinges, and hot-dip galvanized gate hardware from Aligarh, India. 150mm to 350mm sizes for timber gates, barns, and sheds. B2B supply.',
     h1: 'T-Hinges & Heavy Gate Hinges Manufacturer from India',
     eyebrow: 'HEAVY-DUTY ARCHITECTURAL HINGES · ALIGARH',
-    image: '/images/ironmongery/matte-black-t-hinge-product-photo.png',
+    image: '/images/ironmongery/matte-black-t-hinge-product-photo.webp',
     intro:
       'Arpit Impex is a premier manufacturer and bulk exporter of heavy-duty tee hinges, straight strap hinges, reversible gate hinges, and antique decorative strap assemblies from Aligarh, India. Engineered for exterior timber gates, agricultural barn doors, garden shed portals, and heavy wooden garage doors, our hinges are stamped from heavy-gauge structural carbon steel (up to 4.5mm leaf thickness). Available in strap lengths from 150mm (6") up to 350mm (14"), our hinges feature solid cold-riveted steel pivot pins, tight-tolerance knuckle joints, and countersunk screw placement. Finished in hot-dip galvanized (HDG) zinc or dual-coated UV-resistant exterior matte black powder coating, they deliver superior rust resistance and load distribution.',
     buyerTypes: ['Timber Merchants & Fencing Suppliers', 'Agricultural Hardware Importers', 'Builders Merchants', 'Gate Fabricators'],
@@ -168,7 +168,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Galvanized sliding padbolts, tower barrel bolts, gate latches, and security hasps from Aligarh, India. Heavy-duty hardware for B2B export supply.',
     h1: 'Padbolts, Barrel Bolts & Gate Latches Manufacturer from India',
     eyebrow: 'SLIDING BOLTS & GATE LATCHES · ALIGARH',
-    image: '/images/ironmongery/galvanized-sliding-barrel-bolt-latch.png',
+    image: '/images/ironmongery/galvanized-sliding-barrel-bolt-latch.webp',
     intro:
       'Arpit Impex manufactures an extensive selection of heavy sliding padbolts, tower barrel bolts, spring-loaded gate bolts, ornate thumb latches, and security hasp & staple assemblies. Fabricated in Aligarh from heavy-duty mild steel, malleable cast iron, and solid brass, these locking hardware components provide dependable perimeter and secondary security for garden gates, industrial sheds, transport containers, and residential doors. Highlights include 150mm and 200mm extended-reach galvanized sliding padbolts with padlock eyes, drop rods with guide brackets, reversible ring gate latches, and heavy swivel hasps. Every unit is manufactured with tight dimensional tolerances to ensure smooth throw operation and high shear resistance.',
     buyerTypes: ['Building Material Wholesalers', 'Perimeter Security Distributors', 'Fencing & Gate Contractors', 'Industrial Supply Companies'],
@@ -197,7 +197,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     metaDescription: 'Heavy-duty steel corner brackets, Z-brackets, masonry anchors, timber framing plates, and roller guides from Aligarh, India. B2B wholesale export.',
     h1: 'Structural Brackets & Door Frame Anchors Manufacturer from India',
     eyebrow: 'STRUCTURAL HARDWARE & FIXINGS · ALIGARH',
-    image: '/images/ironmongery/galvanized-steel-corner-bracket.png',
+    image: '/images/ironmongery/galvanized-steel-corner-bracket.webp',
     intro:
       'Engineered for structural stability and framing rigidity, our industrial bracket and anchor hardware portfolio includes 90-degree galvanized corner brackets, heavy L-plates, Z-shaped door frame masonry clamps, handrail brackets, sliding barn door rollers, and heavy tie-down anchor plates. Stamped from thick cold-rolled carbon steel (3mm to 5mm gauge) in our Aligarh workshop, these brackets provide exceptional tensile and shear strength for connecting heavy timber beams, anchoring door frames into masonry walls, hanging heavy sliding gates, and stabilizing industrial machinery. Available in hot-dip galvanized and yellow zinc chromate finishes for superior resistance against mortar moisture and outdoor weathering.',
     buyerTypes: ['Timber Construction Wholesalers', 'Masonry Framing Contractors', 'Hardware Distributor Chains', 'Industrial Fabricators'],

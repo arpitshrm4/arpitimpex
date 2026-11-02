@@ -1,53 +1,75 @@
-import { Wrench, Layers, CheckCircle2, PackageCheck } from 'lucide-react';
+import { Link } from 'react-router';
+import { ArrowRight } from 'lucide-react';
+import { images } from '@/data/catalogue';
 
 export function WhyUs() {
-  const features = [
+  const points = [
     {
-      icon: Wrench,
-      title: 'In-house manufacturing',
-      text: 'Selected locks, lock bodies and pressed components are produced in our Aligarh workshop. Manufacturing status is confirmed by model.',
+      num: '01',
+      title: 'In-House Pressing & Component Tooling',
+      text: 'Mechanical power presses, stamping dies, and tooling equipment to form mild steel lock bodies, outer rim casings, and strike plates right here in Aligarh.',
     },
     {
-      icon: Layers,
-      title: 'Product matching',
-      text: 'Share a model number, drawing, dimensions or reference sample. We review the requirement and confirm the closest available specification before quoting.',
+      num: '02',
+      title: 'Model-Level Specification Reviews',
+      text: 'Share drawing files, CAD models, or physical samples. We analyze backset dimensions, spindle hubs, and finish requirements before quoting.',
     },
     {
-      icon: CheckCircle2,
-      title: 'Order-specific inspection',
-      text: 'Inspection requirements are agreed for each order. Depending on the product, checks may include dimensions, finish, mechanism operation and packaging condition.',
+      num: '03',
+      title: 'Pre-Dispatch Quality & Mechanism Checks',
+      text: 'Order-specific inspection covering bolt throw travel, spring latch tension, brass key smoothness, and salt-spray resistant coatings.',
     },
     {
-      icon: PackageCheck,
-      title: 'Bulk packaging and export coordination',
-      text: 'We discuss standard or buyer-branded packaging, subject to product availability and order quantity, and coordinate applicable shipment documentation and freight arrangements.',
+      num: '04',
+      title: 'Export Packaging & Logistics Coordination',
+      text: 'Individual visual polybags, customized barcode labeling, heavy-duty sea freight master cartons, and complete export shipping documents.',
     },
   ];
 
   return (
-    <section className="why-section section">
-      <div>
-        <p className="eyebrow">CAPABILITIES & SOURCING</p>
-        <h2>
-          Manufacturing Capability and<br />
-          Product Sourcing
-        </h2>
-        <p>
-          We manufacture selected hardware products in our Aligarh unit and coordinate additional products through local supply partners. For each enquiry, we confirm the product specification, supply arrangement, available finish options, order quantity and packaging requirements before quotation.
-        </p>
+    <section className="intro-section">
+      <div className="intro-art">
+        <div className="intro-art-frame">
+          <img
+            src={images.factoryEntrance}
+            alt="Arpit Impex registered manufacturing and export premises in Aligarh, India"
+            width="800"
+            height="600"
+            loading="lazy"
+            style={{ aspectRatio: '4 / 3', objectFit: 'cover' }}
+          />
+        </div>
+        <div className="intro-art-caption">
+          <span>ALIGARH PREMISES</span>
+          <span>01 / REGISTERED FACILITY & DISPATCH</span>
+        </div>
       </div>
-      <div className="feature-list">
-        {features.map((f) => (
-          <div className="feature" key={f.title}>
-            <f.icon size={24} strokeWidth={1.5} />
-            <div>
-              <h3>{f.title}</h3>
-              <p>{f.text}</p>
+
+      <div className="intro-copy">
+        <p className="eyebrow">SOURCING & TOOLING EXCELLENCE</p>
+        <h2>More than products. A clearer way to source.</h2>
+        <p className="intro-lead">
+          We combine local Aligarh tooling capabilities with transparent export desk communication — eliminating middleman markups, reducing specification errors, and providing dependable hardware shipments worldwide.
+        </p>
+
+        <div className="intro-points">
+          {points.map((p) => (
+            <div className="point-row" key={p.num}>
+              <span className="point-num">{p.num}</span>
+              <div className="point-body">
+                <strong>{p.title}</strong>
+                <p>{p.text}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+
+        <div style={{ marginTop: '36px' }}>
+          <Link to="/about" className="button button-dark">
+            Our Manufacturing & Capabilities <ArrowRight size={16} />
+          </Link>
+        </div>
       </div>
     </section>
   );
 }
-
