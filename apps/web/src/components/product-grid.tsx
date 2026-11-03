@@ -31,7 +31,6 @@ export function ProductGrid({
                 key={p.slug}
                 to={`/products/${p.slug}`}
                 className={`product-card ${isFirst ? 'product-card-first' : ''}`}
-                aria-label={`View specifications for ${p.name}`}
               >
                 <div className={`product-image-container ${isFirst ? 'image-cover' : ''}`}>
                   <img

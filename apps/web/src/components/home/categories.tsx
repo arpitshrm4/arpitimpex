@@ -26,7 +26,6 @@ export function Categories() {
             <Link
               to={`/category/${c.id}`}
               className="category-card-link"
-              aria-label={`Explore ${c.name} category`}
             >
               <img
                 src={c.image}

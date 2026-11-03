@@ -75,7 +75,7 @@ const AI_TRAINING_AGENTS = [
  * to it, so the signal is repeated inside each one — otherwise the agents it is
  * aimed at are the only ones that never read it.
  */
-const CONTENT_SIGNAL = 'Content-Signal: search=yes, ai-input=yes, ai-train=no';
+const CONTENT_SIGNAL = '# Content-Signal: search=yes, ai-input=yes, ai-train=no';
 
 function publishedRules(origin: string): string[] {
 	return [

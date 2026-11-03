@@ -23,7 +23,7 @@ export function SiteHeader() {
         background: '#ffffff',
       }}
     >
-      <Link className="brand" to="/" aria-label="Arpit Impex Home">
+      <Link className="brand" to="/">
         <img
           src="/images/logo.webp"
           alt="Arpit Impex Logo"

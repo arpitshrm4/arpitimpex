@@ -6,6 +6,16 @@ import { Categories } from '@/components/home/categories';
 import { WhyUs } from '@/components/home/why-us';
 import { Featured } from '@/components/home/featured';
 import { EnquiryBanner } from '@/components/enquiry-banner';
+export const links: Route.LinksFunction = () => [
+  {
+    rel: 'preload',
+    as: 'image',
+    href: images.hero,
+    type: 'image/webp',
+    fetchPriority: 'high',
+  },
+];
+
 export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
