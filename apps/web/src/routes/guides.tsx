@@ -56,7 +56,7 @@ export default function GuidesIndexPage() {
               style={{
                 background: '#fff',
                 border: '1px solid var(--border)',
-                borderRadius: '12px',
+                borderRadius: 0,
                 padding: '32px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -67,7 +67,7 @@ export default function GuidesIndexPage() {
             >
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 10px', borderRadius: '12px' }}>
+                  <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 10px', borderRadius: 0 }}>
                     {guide.category}
                   </span>
                   <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--quiet)' }}>

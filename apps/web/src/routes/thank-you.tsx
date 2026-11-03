@@ -22,8 +22,8 @@ export function meta({ matches, location }: Route.MetaArgs) {
 export default function ThankYouPage() {
   return (
     <main className="thank-you-page section" style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 24px' }}>
-      <div style={{ maxWidth: '640px', width: '100%', textAlign: 'center', background: '#fff', border: '1px solid var(--border)', borderRadius: '16px', padding: '48px 32px', boxShadow: '0 8px 30px rgba(0,0,0,0.04)' }}>
-        <div style={{ width: '64px', height: '64px', borderRadius: '50%', background: '#ecfdf5', color: '#059669', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px auto' }}>
+      <div style={{ maxWidth: '640px', width: '100%', textAlign: 'center', background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '48px 32px', boxShadow: '0 8px 30px rgba(0,0,0,0.04)' }}>
+        <div style={{ width: '64px', height: '64px', borderRadius: 0, background: '#ecfdf5', color: '#059669', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px auto' }}>
           <CheckCircle2 size={36} />
         </div>
 
@@ -33,7 +33,7 @@ export default function ThankYouPage() {
           We have received your hardware requirement. Our founder, <strong>{companyInfo.contactPerson}</strong>, and the Aligarh export desk are reviewing your models, requested finishes, and shipment destination.
         </p>
 
-        <div style={{ background: '#f8f9fa', borderRadius: '12px', padding: '20px', textAlign: 'left', marginBottom: '32px', border: '1px solid var(--border)' }}>
+        <div style={{ background: '#f8f9fa', borderRadius: 0, padding: '20px', textAlign: 'left', marginBottom: '32px', border: '1px solid var(--border)' }}>
           <h3 style={{ fontSize: '15px', color: 'var(--navy)', marginBottom: '8px', fontWeight: 600 }}>What Happens Next?</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: '1.7', color: 'var(--body)' }}>
             <li><strong>Drawing &amp; Spec Check:</strong> We cross-check dimensions and material suitability.</li>

@@ -21,7 +21,7 @@
     --blue: #765137;
     --gold: #b88e54;
     --header-height: 76px;
-    --radius: 8px;
+    --radius: 0px;
     
     /* Tailwind compatibility tokens */
     --background: 42 25% 94%;
@@ -147,7 +147,7 @@
   justify-content: center;
   gap: 10px;
   padding: 13px 24px;
-  border-radius: 99px;
+  border-radius: 0;
   font-size: 13.5px;
   font-weight: 600;
   text-decoration: none;
@@ -324,7 +324,7 @@
   right: 0;
   height: 2px;
   background: var(--bronze);
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .header-actions {
@@ -389,6 +389,14 @@
   align-items: center;
 }
 
+.hero-bg-picture {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
 .hero-bg-img {
   position: absolute;
   inset: 0;
@@ -417,7 +425,7 @@
   display: inline-block;
   padding: 2px 7px;
   background: rgba(255, 255, 255, 0.12);
-  border-radius: 4px;
+  border-radius: 0;
   font-size: 10px;
 }
 
@@ -559,7 +567,7 @@
   height: clamp(480px, 46vw, 620px);
   position: relative;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 0;
   border: 1px solid var(--line);
   color: #ffffff;
   transition: flex 0.65s cubic-bezier(0.2, 0, 0.2, 1);
@@ -696,7 +704,7 @@
 .intro-art-frame {
   position: relative;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 0;
   border: 1px solid var(--line);
   box-shadow: 0 16px 40px rgba(23, 19, 16, 0.06);
 }
@@ -794,7 +802,7 @@
   display: flex;
   flex-direction: column;
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 0;
   overflow: hidden;
   border: 1px solid var(--line);
   text-decoration: none;
@@ -874,7 +882,7 @@ img.product-image-cover {
   color: var(--quiet);
   background: var(--paper-soft);
   padding: 3px 8px;
-  border-radius: 99px;
+  border-radius: 0;
 }
 
 .product-title {
@@ -1042,7 +1050,7 @@ footer {
   justify-content: center;
   gap: 8px;
   padding: 12px 20px;
-  border-radius: 99px;
+  border-radius: 0;
   background: var(--ink);
   color: #ffffff;
   font-size: 12.5px;
@@ -1117,7 +1125,7 @@ footer {
   justify-content: center;
   padding: 10px 18px;
   border: 1px solid var(--line);
-  border-radius: 99px;
+  border-radius: 0;
   background: #ffffff;
   color: var(--ink);
   font-size: 12.5px;
@@ -1140,7 +1148,7 @@ footer {
   top: -100px;
   z-index: 100;
   padding: 12px 18px;
-  border-radius: 99px;
+  border-radius: 0;
   background: var(--ink);
   color: #fff;
   font-size: 13px;
@@ -1166,7 +1174,7 @@ footer {
 }
 
 .about-section img {
-  border-radius: 8px;
+  border-radius: 0;
   box-shadow: 0 16px 40px rgba(23, 19, 16, 0.06);
   border: 1px solid var(--line);
 }
@@ -1237,7 +1245,7 @@ footer {
   background: #ffffff;
   border: 1px solid var(--line);
   padding: 28px;
-  border-radius: 20px;
+  border-radius: 0;
   margin-top: 24px;
   margin-bottom: 24px;
   box-shadow: 0 4px 20px rgba(23, 19, 16, 0.04);
@@ -1285,7 +1293,7 @@ footer {
   background: #25D366;
   color: white;
   padding: 11px 18px;
-  border-radius: 99px;
+  border-radius: 0;
   font-size: 12.5px;
   font-weight: 600;
   text-decoration: none;
@@ -1304,7 +1312,7 @@ footer {
   background: var(--ink);
   color: white;
   padding: 11px 18px;
-  border-radius: 99px;
+  border-radius: 0;
   font-size: 12.5px;
   font-weight: 600;
   text-decoration: none;
@@ -1318,7 +1326,7 @@ footer {
 .selected-product-preview {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 0;
   padding: 18px;
   margin-top: 20px;
   box-shadow: 0 4px 16px rgba(23, 19, 16, 0.03);
@@ -1327,7 +1335,7 @@ footer {
   width: 100%;
   aspect-ratio: 1.4;
   background: #faf8f5;
-  border-radius: 10px;
+  border-radius: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -1371,7 +1379,7 @@ footer {
 .submit-whatsapp-btn {
   background: #25D366;
   border-color: #25D366;
-  border-radius: 99px;
+  border-radius: 0;
   font-weight: 600;
   padding: 13px 24px;
   flex: 1.2;
@@ -1390,7 +1398,7 @@ footer {
   background: #f0fdf4;
   border: 1px solid #bbf7d0;
   padding: 24px;
-  border-radius: 16px;
+  border-radius: 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1408,7 +1416,7 @@ footer {
 .form-panel {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 0;
   padding: clamp(24px, 4vw, 44px);
   box-shadow: 0 4px 24px rgba(23, 19, 16, 0.04);
 }
@@ -1439,7 +1447,7 @@ footer {
   padding: 13px 16px;
   border: 1px solid var(--line);
   background: #ffffff;
-  border-radius: 12px;
+  border-radius: 0;
   width: 100%;
   font-size: 13.5px;
   color: var(--ink);
@@ -1479,7 +1487,7 @@ footer {
 .steps article {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 0;
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
@@ -1528,7 +1536,7 @@ footer {
   background: #ffffff;
   border: 1px solid var(--line);
   border-left: 3px solid var(--bronze);
-  border-radius: 12px;
+  border-radius: 0;
   margin: 20px 0 28px;
 }
 .category-intro-box {
@@ -1550,7 +1558,7 @@ footer {
 .category-spec-pill {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 99px;
+  border-radius: 0;
   padding: 8px 16px;
   font-size: 12.5px;
   color: var(--ink);
@@ -1620,7 +1628,7 @@ footer {
 .facility-card {
   border: 1px solid var(--line);
   background: #ffffff;
-  border-radius: 20px;
+  border-radius: 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -1656,7 +1664,7 @@ footer {
   font-size: 11px;
   font-weight: 600;
   padding: 5px 12px;
-  border-radius: 99px;
+  border-radius: 0;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -1700,7 +1708,7 @@ footer {
   color: var(--navy);
   background: #f0f3f6;
   padding: 2px 7px;
-  border-radius: 3px;
+  border-radius: 0;
 }
 .product-title-link {
   color: var(--navy);
@@ -1728,7 +1736,7 @@ footer {
   font-size: 12px;
   font-weight: 700;
   padding: 4px 8px;
-  border-radius: 3px;
+  border-radius: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.12);
   z-index: 2;
   letter-spacing: 0.3px;
@@ -1859,7 +1867,7 @@ svg.pdp-breadcrumb-sep {
   aspect-ratio: 1.1;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 20px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1884,7 +1892,7 @@ svg.pdp-breadcrumb-sep {
   flex-direction: column;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 0;
   padding: 14px 20px;
 }
 .pdp-highlights-box .highlight-item {
@@ -1946,7 +1954,7 @@ svg.pdp-breadcrumb-sep {
   color: var(--ink);
   background: rgba(23, 19, 16, 0.05);
   padding: 2px 8px;
-  border-radius: 99px;
+  border-radius: 0;
   margin-left: 4px;
 }
 .pdp-source-card {
@@ -1954,7 +1962,7 @@ svg.pdp-breadcrumb-sep {
   border: 1px solid var(--line);
   border-left: 3px solid var(--bronze);
   padding: 16px 20px;
-  border-radius: 14px;
+  border-radius: 0;
   margin-bottom: 22px;
 }
 .source-card-header {
@@ -1987,7 +1995,7 @@ svg.pdp-breadcrumb-sep {
   background: #ffffff;
   border: 1px solid var(--line);
   padding: 20px;
-  border-radius: 16px;
+  border-radius: 0;
   margin-bottom: 26px;
 }
 .terms-card-title {
@@ -2049,7 +2057,7 @@ svg.pdp-breadcrumb-sep {
   overflow-x: auto;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 16px;
+  border-radius: 0;
   box-shadow: 0 2px 12px rgba(23, 19, 16, 0.03);
 }
 .specs-table {
@@ -2084,7 +2092,7 @@ svg.pdp-breadcrumb-sep {
   font-size: 12px;
   font-weight: 600;
   padding: 4px 12px;
-  border-radius: 99px;
+  border-radius: 0;
 }
 
 .pdp-workflow-section {
@@ -2176,7 +2184,7 @@ svg.pdp-breadcrumb-sep {
   background: var(--navy);
   color: #ffffff !important;
   padding: 10px 18px;
-  border-radius: 4px;
+  border-radius: 0;
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.2px;
@@ -2209,7 +2217,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 12px;
   background: #f8fafc;
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 10px 12px;
   margin-top: 14px;
   margin-bottom: 14px;
@@ -2219,7 +2227,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   background: #ffffff;
   padding: 4px;
-  border-radius: 4px;
+  border-radius: 0;
   border: 1px solid #e2e8f0;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease;
@@ -2269,7 +2277,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff;
   border: 1px solid var(--line);
   border-left: 3px solid #25D366;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 16px;
   margin-top: 18px;
   box-shadow: 0 4px 12px rgba(20, 45, 78, 0.04);
@@ -2279,7 +2287,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff;
   padding: 6px;
   border: 1px solid #e2e8f0;
-  border-radius: 4px;
+  border-radius: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
 }
@@ -2307,7 +2315,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #075e54;
   background: #e8f8f0;
   padding: 2px 8px;
-  border-radius: 2px;
+  border-radius: 0;
 }
 .contact-qr-details h4 {
   font-size: 14px;
@@ -2351,7 +2359,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Catalogue Callout Banner (on /products page) */
 .catalogue-brochure-banner {
   background: #171310;
-  border-radius: 20px;
+  border-radius: 0;
   padding: 28px 32px;
   margin: 28px 0 36px;
   display: flex;
@@ -2397,7 +2405,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   padding: 13px 24px;
   gap: 8px;
-  border-radius: 99px;
+  border-radius: 0;
   border: none;
   font-size: 13px;
   white-space: nowrap;
@@ -2454,7 +2462,7 @@ h1, h2, h3, h4, h5, h6 {
 .brochure-hero-section {
   background: linear-gradient(135deg, #142D4E 0%, #19385c 60%, #1f426d 100%);
   color: #ffffff;
-  border-radius: 8px;
+  border-radius: 0;
   padding: 44px 44px 40px;
   margin-bottom: 28px;
   box-shadow: 0 10px 30px rgba(20, 45, 78, 0.12);
@@ -2471,14 +2479,14 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(199, 161, 90, 0.12);
   border: 1px solid rgba(199, 161, 90, 0.3);
   padding: 5px 12px;
-  border-radius: 20px;
+  border-radius: 0;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
 .badge-dot {
   width: 7px;
   height: 7px;
-  border-radius: 50%;
+  border-radius: 0;
   background: var(--gold);
   box-shadow: 0 0 8px var(--gold);
 }
@@ -2508,7 +2516,7 @@ h1, h2, h3, h4, h5, h6 {
 .cred-card {
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 6px;
+  border-radius: 0;
   padding: 12px 14px;
   display: flex;
   align-items: center;
@@ -2586,7 +2594,7 @@ h1, h2, h3, h4, h5, h6 {
 .brochure-toolbar-wrapper {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 0;
   padding: 18px 22px;
   margin-bottom: 24px;
   box-shadow: 0 2px 8px rgba(20, 45, 78, 0.04);
@@ -2616,7 +2624,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   padding: 10px 36px 10px 38px;
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 0;
   font-size: 13px;
   background: var(--paper);
   color: var(--navy);
@@ -2649,7 +2657,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 6px;
   background: var(--paper);
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 3px;
 }
 .view-toggle-label {
@@ -2668,7 +2676,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 600;
   color: var(--navy);
-  border-radius: 3px;
+  border-radius: 0;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -2700,7 +2708,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 600;
   padding: 7px 14px;
-  border-radius: 20px;
+  border-radius: 0;
   cursor: pointer;
   transition: all 0.15s ease;
 }
@@ -2730,7 +2738,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #e0f2fe;
   color: #0369a1;
   padding: 2px 8px;
-  border-radius: 3px;
+  border-radius: 0;
   font-weight: 600;
 }
 .print-hint-note {
@@ -2744,7 +2752,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fbf9f4;
   border: 1px solid #ebd9b8;
   border-left: 4px solid var(--gold);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 12px 18px;
   margin-bottom: 30px;
   display: flex;
@@ -2769,7 +2777,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 20px;
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 0;
   margin: 20px 0;
 }
 .brochure-empty-state h3 {
@@ -2816,14 +2824,14 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--paper);
   border: 1px solid var(--line);
   padding: 4px 10px;
-  border-radius: 12px;
+  border-radius: 0;
 }
 
 /* Product Spec Sheet Card */
 .brochure-product-sheet {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 0;
   margin-bottom: 24px;
   box-shadow: 0 2px 6px rgba(20, 45, 78, 0.03);
   overflow: hidden;
@@ -2850,7 +2858,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--navy);
   color: #ffffff;
   padding: 3px 10px;
-  border-radius: 3px;
+  border-radius: 0;
   font-size: 11px;
   letter-spacing: 0.5px;
 }
@@ -2869,7 +2877,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--blue);
   background: #eef4f9;
   padding: 3px 8px;
-  border-radius: 3px;
+  border-radius: 0;
   letter-spacing: 0.5px;
 }
 .sheet-avail-badge {
@@ -2880,7 +2888,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #ecfdf5;
   border: 1px solid #a7f3d0;
   padding: 2px 8px;
-  border-radius: 3px;
+  border-radius: 0;
 }
 
 /* Sheet Main Grid */
@@ -2900,7 +2908,7 @@ h1, h2, h3, h4, h5, h6 {
   aspect-ratio: 1.15;
   background: #fcfcfc;
   border: 1px solid #f1f3f5;
-  border-radius: 4px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2919,7 +2927,7 @@ h1, h2, h3, h4, h5, h6 {
 .sheet-quick-facts {
   background: #f8fafc;
   border: 1px solid #eef2f6;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 8px 12px;
 }
 .quick-fact-row {
@@ -2969,7 +2977,7 @@ h1, h2, h3, h4, h5, h6 {
 .sheet-spec-table-wrap {
   background: #ffffff;
   border: 1px solid #e5e9ee;
-  border-radius: 4px;
+  border-radius: 0;
   overflow: hidden;
   margin-bottom: 18px;
 }
@@ -3020,7 +3028,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 700;
   padding: 9px 14px;
-  border-radius: 3px;
+  border-radius: 0;
   gap: 6px;
   min-height: 38px;
 }
@@ -3034,7 +3042,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 12px;
   font-weight: 700;
   padding: 9px 14px;
-  border-radius: 3px;
+  border-radius: 0;
   gap: 6px;
   min-height: 38px;
   border: none;
@@ -3064,7 +3072,7 @@ h1, h2, h3, h4, h5, h6 {
 .brochure-matrix-section {
   background: #ffffff;
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 0;
   padding: 28px;
   margin-bottom: 48px;
   box-shadow: 0 4px 14px rgba(20, 45, 78, 0.04);
@@ -3085,7 +3093,7 @@ h1, h2, h3, h4, h5, h6 {
 .matrix-table-scroll-container {
   overflow-x: auto;
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 0;
 }
 .brochure-matrix-table {
   width: 100%;
@@ -3147,7 +3155,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--blue);
   background: #eef4f9;
   padding: 2px 6px;
-  border-radius: 3px;
+  border-radius: 0;
   white-space: nowrap;
 }
 .matrix-small-cell {
@@ -3163,7 +3171,7 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--navy);
   color: #ffffff;
   padding: 5px 9px;
-  border-radius: 3px;
+  border-radius: 0;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -3177,7 +3185,7 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 .brochure-terms-section {
   background: #edf0f3;
-  border-radius: 6px;
+  border-radius: 0;
   padding: 36px;
   margin-bottom: 48px;
 }
@@ -3199,7 +3207,7 @@ h1, h2, h3, h4, h5, h6 {
 .terms-card {
   background: #ffffff;
   border: 1px solid #dce2e8;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 20px;
 }
 .terms-card h3 {
@@ -3220,7 +3228,7 @@ h1, h2, h3, h4, h5, h6 {
 .brochure-contact-card {
   background: linear-gradient(135deg, #142D4E 0%, #173255 100%);
   color: #ffffff;
-  border-radius: 6px;
+  border-radius: 0;
   padding: 40px;
   margin-bottom: 30px;
 }
@@ -3489,7 +3497,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 7.5pt !important;
     font-weight: 700 !important;
     letter-spacing: 0.5pt;
-    border-radius: 2pt;
+    border-radius: 0;
   }
 
   /* Hero Section in Print */
@@ -3540,7 +3548,7 @@ h1, h2, h3, h4, h5, h6 {
     border: 1pt solid #94a3b8 !important;
     box-shadow: none !important;
     margin-bottom: 12pt !important;
-    border-radius: 2pt !important;
+    border-radius: 0;
   }
   .sheet-top-ribbon {
     background: #f1f5f9 !important;
@@ -3788,7 +3796,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .not-found-help-card {
   background: var(--navy);
-  border-radius: 4px;
+  border-radius: 0;
   padding: 44px 5%;
   display: flex;
   justify-content: space-between;
@@ -3903,7 +3911,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff;
   border: 1px solid var(--line);
   padding: 8px 14px;
-  border-radius: 4px;
+  border-radius: 0;
   font-size: 12.5px;
   color: #475569;
 }
@@ -3977,7 +3985,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 18px 22px;
   background: #fdfbf7;
   border-left: 4px solid var(--gold);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0;
 }
 
 /* Bullets and Lists */
@@ -4009,7 +4017,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px 24px !important;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  border-radius: 0;
   margin: 22px 0 30px !important;
 }
 
@@ -4035,7 +4043,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #8c6b2d;
   font-weight: 800;
   font-size: 12px;
-  border-radius: 50%;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4048,7 +4056,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #fef2f2;
   border: 1px solid #fee2e2;
   border-left: 4px solid #ef4444 !important;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0;
   margin: 24px 0 32px !important;
 }
 
@@ -4075,7 +4083,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #b91c1c;
   font-weight: 800;
   font-size: 11px;
-  border-radius: 50%;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4090,7 +4098,7 @@ h1, h2, h3, h4, h5, h6 {
 mark {
   background: linear-gradient(120deg, rgba(199, 161, 90, 0.22) 0%, rgba(199, 161, 90, 0.38) 100%);
   padding: 2px 8px;
-  border-radius: 4px;
+  border-radius: 0;
   font-weight: 600;
   color: var(--navy);
 }
@@ -4105,7 +4113,7 @@ mark {
   font-size: 12px;
   font-weight: 700;
   padding: 3px 10px;
-  border-radius: 20px;
+  border-radius: 0;
   text-transform: uppercase;
   letter-spacing: 0.04em;
 }
@@ -4118,7 +4126,7 @@ mark {
   font-size: 11px;
   font-weight: 700;
   padding: 4px 12px;
-  border-radius: 99px;
+  border-radius: 0;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   flex-shrink: 0;
@@ -4127,7 +4135,7 @@ mark {
 /* Callout Boxes */
 .blog-callout {
   padding: 22px 26px;
-  border-radius: 16px;
+  border-radius: 0;
   margin: 28px 0;
   position: relative;
   font-size: 15px;
@@ -4171,7 +4179,7 @@ mark {
 .blog-table-wrapper {
   overflow-x: auto;
   margin: 32px 0;
-  border-radius: 16px;
+  border-radius: 0;
   border: 1px solid var(--line);
   box-shadow: 0 4px 16px rgba(23, 19, 16, 0.04);
   background: #ffffff;
@@ -4228,7 +4236,7 @@ mark {
   font-weight: 700;
   font-size: 11.5px;
   padding: 3px 9px;
-  border-radius: 99px;
+  border-radius: 0;
   letter-spacing: 0.06em;
   margin-right: 6px;
 }
@@ -4279,4 +4287,67 @@ mark {
 .final-cta {
   content-visibility: auto;
   contain-intrinsic-size: 0 450px;
+}
+
+/* Architectural Sharp Corners Everywhere — zero roundness */
+*, *::before, *::after {
+  --radius: 0px !important;
+}
+
+button,
+input,
+select,
+textarea,
+.button,
+.button-dark,
+.button-light,
+.button-outline,
+.button-outline-light,
+.button-outline-dark,
+.header-cta,
+.btn-pill,
+.footer-enquiry-btn,
+.product-card,
+.category-card,
+.blog-card,
+.why-card,
+.facility-card,
+.cred-card,
+.terms-card,
+.contact-info-card,
+.footer-whatsapp-card,
+.inquiry-cta-section,
+.blog-quote-cta,
+.final-cta,
+.enquiry-banner,
+.pdp-quick-specs,
+.pdp-quote-box,
+.pdp-main-image-wrap,
+.pdp-highlights-box,
+.pdp-source-card,
+.pdp-terms-card,
+.specs-table-wrapper,
+.product-image-container,
+.image-frame,
+.intro-art-frame,
+.about-map-container,
+.badge,
+.pill,
+.product-category-tag,
+.product-model-code,
+.product-source-badge,
+.category-spec-pill,
+.facility-tag,
+.cat-pill,
+.blog-pill,
+.incoterm-chip,
+.chip,
+.card,
+[class*="rounded"] {
+  border-radius: 0 !important;
+}
+
+[style*="border-radius"],
+[style*="borderRadius"] {
+  border-radius: 0 !important;
 }

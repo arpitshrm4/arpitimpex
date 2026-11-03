@@ -61,8 +61,8 @@ export default function OemPrivateLabelPage() {
       {/* 4 Pillars of OEM Service */}
       <section className="section oem-pillars">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
-            <div style={{ background: '#eff6ff', padding: '12px', borderRadius: '8px', width: 'fit-content', marginBottom: '16px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
+            <div style={{ background: '#eff6ff', padding: '12px', borderRadius: 0, width: 'fit-content', marginBottom: '16px' }}>
               <Wrench size={24} color="#2563eb" />
             </div>
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '10px' }}>Custom Tooling &amp; Dies</h3>
@@ -71,8 +71,8 @@ export default function OemPrivateLabelPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
-            <div style={{ background: '#fdf4ff', padding: '12px', borderRadius: '8px', width: 'fit-content', marginBottom: '16px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
+            <div style={{ background: '#fdf4ff', padding: '12px', borderRadius: 0, width: 'fit-content', marginBottom: '16px' }}>
               <Sparkles size={24} color="#a855f7" />
             </div>
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '10px' }}>Laser Branding &amp; Marking</h3>
@@ -81,8 +81,8 @@ export default function OemPrivateLabelPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
-            <div style={{ background: '#ecfdf5', padding: '12px', borderRadius: '8px', width: 'fit-content', marginBottom: '16px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
+            <div style={{ background: '#ecfdf5', padding: '12px', borderRadius: 0, width: 'fit-content', marginBottom: '16px' }}>
               <Layers size={24} color="#059669" />
             </div>
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '10px' }}>Bespoke Surface Finishes</h3>
@@ -91,8 +91,8 @@ export default function OemPrivateLabelPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
-            <div style={{ background: '#fff7ed', padding: '12px', borderRadius: '8px', width: 'fit-content', marginBottom: '16px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
+            <div style={{ background: '#fff7ed', padding: '12px', borderRadius: 0, width: 'fit-content', marginBottom: '16px' }}>
               <Package size={24} color="#ea580c" />
             </div>
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '10px' }}>Custom Box &amp; Retail Packaging</h3>
@@ -104,7 +104,7 @@ export default function OemPrivateLabelPage() {
       </section>
 
       {/* OEM Workflow */}
-      <section className="section oem-workflow" style={{ background: '#fdfbf7', padding: '60px 24px', borderRadius: '16px', margin: '40px auto', maxWidth: '1200px' }}>
+      <section className="section oem-workflow" style={{ background: '#fdfbf7', padding: '60px 24px', borderRadius: 0, margin: '40px auto', maxWidth: '1200px' }}>
         <div style={{ textAlign: 'center', maxWidth: '750px', margin: '0 auto 40px auto' }}>
           <p className="eyebrow">DEVELOPMENT CYCLE</p>
           <h2 style={{ fontSize: '30px', color: 'var(--navy)' }}>How Our OEM Process Works</h2>

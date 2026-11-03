@@ -92,19 +92,19 @@ export default function AboutPage() {
                 alt="Arpit Impex registered manufacturing facility entrance in Aligarh"
                 width="800"
                 height="600"
-                style={{ width: '100%', height: 'auto', borderRadius: '12px', objectFit: 'cover' }}
+                style={{ width: '100%', height: 'auto', borderRadius: 0, objectFit: 'cover' }}
               />
             </div>
             <div style={{ display: 'flex', gap: '16px', marginTop: '16px' }}>
-              <div style={{ flex: 1, background: '#f8f9fa', padding: '16px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ flex: 1, background: '#f8f9fa', padding: '16px', borderRadius: 0, border: '1px solid var(--border)' }}>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Founding Year</span>
                 <strong style={{ fontSize: '20px', color: 'var(--navy)' }}>2017</strong>
               </div>
-              <div style={{ flex: 1, background: '#f8f9fa', padding: '16px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ flex: 1, background: '#f8f9fa', padding: '16px', borderRadius: 0, border: '1px solid var(--border)' }}>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Key Contact</span>
                 <strong style={{ fontSize: '20px', color: 'var(--navy)' }}>{companyInfo.contactPerson}</strong>
               </div>
-              <div style={{ flex: 1, background: '#f8f9fa', padding: '16px', borderRadius: '8px', border: '1px solid var(--border)' }}>
+              <div style={{ flex: 1, background: '#f8f9fa', padding: '16px', borderRadius: 0, border: '1px solid var(--border)' }}>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Verified GSTIN</span>
                 <strong style={{ fontSize: '14px', color: 'var(--navy)', wordBreak: 'break-all' }}>{companyInfo.gstNumber}</strong>
               </div>
@@ -157,7 +157,7 @@ export default function AboutPage() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px', marginTop: '30px' }}>
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '24px' }}>
             <Wrench size={24} color="var(--gold)" style={{ marginBottom: '12px' }} />
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '8px' }}>Power Press Stamping Lines</h3>
             <p style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--body)' }}>
@@ -165,7 +165,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '24px' }}>
             <Factory size={24} color="var(--gold)" style={{ marginBottom: '12px' }} />
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '8px' }}>Tool Room &amp; Die Maintenance</h3>
             <p style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--body)' }}>
@@ -173,7 +173,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '24px' }}>
             <Award size={24} color="var(--gold)" style={{ marginBottom: '12px' }} />
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '8px' }}>5-Stage Quality Inspection</h3>
             <p style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--body)' }}>
@@ -187,7 +187,7 @@ export default function AboutPage() {
       <FacilityShowcase />
 
       {/* Export Markets Served */}
-      <section className="section about-export-markets" style={{ background: '#fdfbf7', padding: '60px 24px', borderRadius: '16px', margin: '40px auto', maxWidth: '1200px' }}>
+      <section className="section about-export-markets" style={{ background: '#fdfbf7', padding: '60px 24px', borderRadius: 0, margin: '40px auto', maxWidth: '1200px' }}>
         <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto 36px auto' }}>
           <p className="eyebrow">GLOBAL DISTRIBUTION</p>
           <h2 style={{ fontSize: '30px', color: 'var(--navy)' }}>Export Markets We Serve</h2>
@@ -197,22 +197,22 @@ export default function AboutPage() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
-          <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid var(--border)' }}>
+          <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
             <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>Middle East &amp; GCC</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>United Arab Emirates, Saudi Arabia, Oman, Qatar, Bahrain, Kuwait.</p>
           </div>
-          <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid var(--border)' }}>
+          <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
             <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>Africa</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>Kenya, Nigeria, Ghana, Tanzania, South Africa, Uganda, Ethiopia.</p>
           </div>
-          <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid var(--border)' }}>
+          <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
             <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>Europe &amp; UK</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>United Kingdom, Germany, Poland, Spain (architectural ironmongery &amp; hinges).</p>
           </div>
-          <div style={{ background: '#fff', padding: '20px', borderRadius: '10px', border: '1px solid var(--border)' }}>
+          <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
             <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>North America</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>United States and Canada (specialized OEM ironmongery and private-label components).</p>
@@ -230,7 +230,7 @@ export default function AboutPage() {
               Prospective buyers, sourcing delegations, and third-party inspection agencies are welcome to coordinate visits to our registered unit in Shastri Nagar, Aligarh.
             </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', background: '#fff', border: '1px solid var(--border)', borderRadius: '10px', padding: '24px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '24px' }}>
               <div>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase' }}>Legal Entity</span>
                 <strong style={{ fontSize: '16px', color: 'var(--navy)' }}>Arpit Impex</strong>
@@ -238,7 +238,7 @@ export default function AboutPage() {
               <div>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase' }}>Goods &amp; Services Tax Number (GSTIN)</span>
                 <strong style={{ fontSize: '15px', color: 'var(--navy)' }}>{companyInfo.gstNumber}</strong>
-                <span style={{ marginLeft: '8px', fontSize: '11px', background: '#ecfdf5', color: '#059669', padding: '2px 8px', borderRadius: '12px', fontWeight: 600 }}>Active &amp; Verified</span>
+                <span style={{ marginLeft: '8px', fontSize: '11px', background: '#ecfdf5', color: '#059669', padding: '2px 8px', borderRadius: 0, fontWeight: 600 }}>Active &amp; Verified</span>
               </div>
               <div>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase' }}>Managing Executive</span>
@@ -260,7 +260,7 @@ export default function AboutPage() {
           <div>
             <p className="eyebrow">LOCATION &amp; LOGISTICS</p>
             <h2 style={{ fontSize: '26px', color: 'var(--navy)', marginBottom: '16px' }}>Find Us on Google Maps</h2>
-            <div className="about-map-container" style={{ borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+            <div className="about-map-container" style={{ borderRadius: 0, overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
               <iframe
                 title="Arpit Impex Google Maps Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3526.8174019528706!2d78.0865685760979!3d27.876878976085838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a5c4a5881231%3A0x12ed45468d9307b3!2sArpit%20Impex!5e0!3m2!1sen!2sin!4v1793619161138!5m2!1sen!2sin"

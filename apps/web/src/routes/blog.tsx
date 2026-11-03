@@ -109,7 +109,7 @@ export default function BlogIndexPage() {
       {/* Blog Posts Grid */}
       <section className="section blog-posts-section" style={{ paddingTop: 0 }}>
         {filteredPosts.length === 0 ? (
-          <div style={{ textAlign: 'center', padding: '60px 20px', background: '#f8f9fa', borderRadius: '12px' }}>
+          <div style={{ textAlign: 'center', padding: '60px 20px', background: '#f8f9fa', borderRadius: 0 }}>
             <h3>No articles published in this category yet.</h3>
             <p style={{ color: 'var(--body)' }}>Check back soon as we publish 2 new technical guides each month.</p>
             <button
@@ -130,7 +130,7 @@ export default function BlogIndexPage() {
                 style={{
                   background: '#ffffff',
                   border: '1px solid var(--line)',
-                  borderRadius: '20px',
+                  borderRadius: 0,
                   overflow: 'hidden',
                   display: 'flex',
                   flexDirection: 'column',
@@ -152,7 +152,7 @@ export default function BlogIndexPage() {
                   </Link>
                   <div style={{ padding: '24px 24px 0 24px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
-                      <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 12px', borderRadius: '99px' }}>
+                      <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 12px', borderRadius: 0 }}>
                         {post.category}
                       </span>
                       <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--quiet)' }}>

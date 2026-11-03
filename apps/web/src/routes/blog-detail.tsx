@@ -136,7 +136,7 @@ export default function BlogDetailPage() {
 
         {/* Header */}
         <header style={{ marginBottom: '28px', borderBottom: '1px solid var(--border)', paddingBottom: '24px' }}>
-          <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 12px', borderRadius: '12px' }}>
+          <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 12px', borderRadius: 0 }}>
             {post.category}
           </span>
           <h1 style={{ fontSize: '32px', color: 'var(--navy)', marginTop: '16px', marginBottom: '16px', lineHeight: '1.3' }}>
@@ -156,7 +156,7 @@ export default function BlogDetailPage() {
         </header>
 
         {/* Lead Real Photo from Workshop / Dispatch Area */}
-        <div style={{ marginBottom: '36px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 4px 16px rgba(0,0,0,0.04)' }}>
+        <div style={{ marginBottom: '36px', borderRadius: 0, overflow: 'hidden', border: '1px solid var(--border)', boxShadow: '0 4px 16px rgba(0,0,0,0.04)' }}>
           <img
             src={post.image}
             alt={post.imageAlt}
@@ -178,7 +178,7 @@ export default function BlogDetailPage() {
 
         {/* Relevant Product & Category Quick Links */}
         {post.relatedCategories && post.relatedCategories.length > 0 && (
-          <div style={{ background: '#fdfbf7', border: '1px solid var(--border)', borderRadius: '10px', padding: '20px 24px', margin: '36px 0' }}>
+          <div style={{ background: '#fdfbf7', border: '1px solid var(--border)', borderRadius: 0, padding: '20px 24px', margin: '36px 0' }}>
             <span style={{ fontSize: '12px', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--gold)', display: 'block', marginBottom: '8px' }}>
               RELATED HARDWARE CATEGORIES IN OUR CATALOGUE
             </span>
@@ -205,7 +205,7 @@ export default function BlogDetailPage() {
             </h2>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               {post.faqs.map(([q, a], idx) => (
-                <div key={idx} style={{ background: '#f8f9fa', border: '1px solid var(--border)', borderRadius: '8px', padding: '20px' }}>
+                <div key={idx} style={{ background: '#f8f9fa', border: '1px solid var(--border)', borderRadius: 0, padding: '20px' }}>
                   <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--navy)', marginBottom: '8px' }}>{q}</h3>
                   <p style={{ fontSize: '14px', lineHeight: 1.6, color: 'var(--body)', margin: 0 }}>{a}</p>
                 </div>
@@ -215,7 +215,7 @@ export default function BlogDetailPage() {
         )}
 
         {/* Closing Call to Action: Ready to request a quotation? */}
-        <section className="blog-quote-cta" style={{ background: 'var(--navy)', color: '#ffffff', borderRadius: '14px', padding: '36px 32px', marginTop: '48px' }}>
+        <section className="blog-quote-cta" style={{ background: 'var(--navy)', color: '#ffffff', borderRadius: 0, padding: '36px 32px', marginTop: '48px' }}>
           <span style={{ fontSize: '12px', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 700 }}>
             START YOUR ORDER
           </span>
@@ -238,8 +238,8 @@ export default function BlogDetailPage() {
               href={`https://wa.me/918285687940?text=${waText}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="button outline"
-              style={{ color: '#ffffff', borderColor: 'rgba(255,255,255,0.4)', padding: '12px 20px', textDecoration: 'none' }}
+              className="button button-outline-light"
+              style={{ padding: '12px 20px', textDecoration: 'none' }}
             >
               <MessageCircle size={16} /> WhatsApp: +91 8285687940
             </a>
@@ -253,8 +253,8 @@ export default function BlogDetailPage() {
         </section>
 
         {/* Author Bio Card */}
-        <div style={{ background: '#fdfbf7', border: '1px solid var(--border)', borderRadius: '12px', padding: '24px', marginTop: '40px', display: 'flex', gap: '16px', alignItems: 'center' }}>
-          <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'var(--navy)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '18px', flexShrink: 0 }}>
+        <div style={{ background: '#fdfbf7', border: '1px solid var(--border)', borderRadius: 0, padding: '24px', marginTop: '40px', display: 'flex', gap: '16px', alignItems: 'center' }}>
+          <div style={{ width: '48px', height: '48px', borderRadius: 0, background: 'var(--navy)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '18px', flexShrink: 0 }}>
             AS
           </div>
           <div>
@@ -273,7 +273,7 @@ export default function BlogDetailPage() {
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
               {relatedPosts.map((r) => (
-                <article key={r.slug} style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <article key={r.slug} style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                   <div>
                     <span style={{ fontSize: '11px', color: 'var(--blue)', fontWeight: 700, textTransform: 'uppercase' }}>{r.category}</span>
                     <h4 style={{ fontSize: '16px', margin: '8px 0 8px 0', color: 'var(--navy)' }}>

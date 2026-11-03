@@ -129,7 +129,7 @@ export const products: ProductItem[] = [
     dimensions: 'Approx. 130 × 95 mm housing',
     doorThickness: '30-55 mm door thickness',
     packaging: 'Individual product box; master corrugated export cartons',
-    image: '/images/hero-penta-bolt-rim-lock.webp',
+    image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.webp',
     description: 'The JL-PB01 is a surface-mounted rim deadbolt with a five-bolt locking mechanism, mild steel casing and a dual-tone powder-coated finish. It ships with 3 numbered brass keys and suits main entrance wooden doors, security gates and apartment entry doors (approx. 130 × 95 mm housing, 30-55 mm door thickness). Engineered for dependable perimeter security, its solid steel bolts extend deeply into the matched steel strike box for enhanced forced-entry resistance.',
     applications: 'Main entrance wooden doors, security gates, apartment entry doors, and perimeter utility doors.',
   },

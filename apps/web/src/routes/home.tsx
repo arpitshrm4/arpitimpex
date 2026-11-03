@@ -10,8 +10,17 @@ export const links: Route.LinksFunction = () => [
   {
     rel: 'preload',
     as: 'image',
+    href: '/images/hero-penta-bolt-rim-lock-mobile.webp',
+    type: 'image/webp',
+    media: '(max-width: 640px)',
+    fetchPriority: 'high',
+  },
+  {
+    rel: 'preload',
+    as: 'image',
     href: images.hero,
     type: 'image/webp',
+    media: '(min-width: 641px)',
     fetchPriority: 'high',
   },
 ];

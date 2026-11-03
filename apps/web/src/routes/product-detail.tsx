@@ -446,7 +446,7 @@ export default function ProductDetailPage() {
 
         <div className="faq-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', marginTop: '24px' }}>
           {faqs.map(([q, a], idx) => (
-            <div key={idx} className="faq-item" style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '24px' }}>
+            <div key={idx} className="faq-item" style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '24px' }}>
               <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--navy)', marginBottom: '10px' }}>{q}</h3>
               <p style={{ fontSize: '14px', lineHeight: 1.6, color: 'var(--body)' }}>{a}</p>
             </div>

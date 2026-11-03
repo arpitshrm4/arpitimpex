@@ -99,7 +99,7 @@ export default function GuideDetailPage() {
 
         {/* Header */}
         <header style={{ marginBottom: '32px', borderBottom: '1px solid var(--border)', paddingBottom: '24px' }}>
-          <span style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 12px', borderRadius: '12px' }}>
+          <span style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 12px', borderRadius: 0 }}>
             {guide.category}
           </span>
           <h1 style={{ fontSize: '32px', color: 'var(--navy)', marginTop: '16px', marginBottom: '16px', lineHeight: '1.3' }}>
@@ -119,7 +119,7 @@ export default function GuideDetailPage() {
         </header>
 
         {/* Executive Summary */}
-        <div style={{ background: '#f8f9fa', borderLeft: '4px solid var(--gold)', padding: '20px 24px', borderRadius: '8px', marginBottom: '36px', fontSize: '15px', lineHeight: '1.7', color: 'var(--navy)' }}>
+        <div style={{ background: '#f8f9fa', borderLeft: '4px solid var(--gold)', padding: '20px 24px', borderRadius: 0, marginBottom: '36px', fontSize: '15px', lineHeight: '1.7', color: 'var(--navy)' }}>
           <strong>Executive Summary:</strong> {guide.summary}
         </div>
 
@@ -131,8 +131,8 @@ export default function GuideDetailPage() {
         />
 
         {/* Author Bio Card */}
-        <div style={{ background: '#fdfbf7', border: '1px solid var(--border)', borderRadius: '12px', padding: '24px', marginTop: '48px', display: 'flex', gap: '16px', alignItems: 'center' }}>
-          <div style={{ width: '48px', height: '48px', borderRadius: '50%', background: 'var(--navy)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '18px', flexShrink: 0 }}>
+        <div style={{ background: '#fdfbf7', border: '1px solid var(--border)', borderRadius: 0, padding: '24px', marginTop: '48px', display: 'flex', gap: '16px', alignItems: 'center' }}>
+          <div style={{ width: '48px', height: '48px', borderRadius: 0, background: 'var(--navy)', color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '18px', flexShrink: 0 }}>
             AS
           </div>
           <div>
@@ -151,7 +151,7 @@ export default function GuideDetailPage() {
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '16px' }}>
               {sampleProducts.map((p) => (
-                <div key={p.slug} style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '8px', padding: '16px', textAlign: 'center' }}>
+                <div key={p.slug} style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '16px', textAlign: 'center' }}>
                   <img src={p.image} alt={p.name} width="160" height="160" style={{ objectFit: 'contain', margin: '0 auto 10px auto', display: 'block' }} loading="lazy" />
                   <h4 style={{ fontSize: '14px', margin: '0 0 6px 0', color: 'var(--navy)' }}>{p.name}</h4>
                   <span style={{ fontSize: '11px', color: 'var(--quiet)', display: 'block', marginBottom: '10px' }}>SKU: {p.modelNumber}</span>

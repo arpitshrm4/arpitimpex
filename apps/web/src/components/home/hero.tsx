@@ -5,16 +5,25 @@ import { images } from '@/data/catalogue';
 export function Hero() {
   return (
     <section className="hero">
-      <img
-        src={images.hero}
-        alt="J-Lock penta-bolt rim door lock set with solid brass keys, strike box, and decorative escutcheon plate"
-        width="1024"
-        height="682"
-        fetchPriority="high"
-        loading="eager"
-        className="hero-bg-img"
-        style={{ aspectRatio: '1024 / 682' }}
-      />
+      <picture className="hero-bg-picture">
+        <source
+          media="(max-width: 640px)"
+          srcSet="/images/hero-penta-bolt-rim-lock-mobile.webp"
+          type="image/webp"
+          width="540"
+          height="360"
+        />
+        <img
+          src={images.hero}
+          alt="J-Lock penta-bolt rim door lock set with solid brass keys, strike box, and decorative escutcheon plate"
+          width="1024"
+          height="682"
+          fetchPriority="high"
+          loading="eager"
+          className="hero-bg-img"
+          style={{ aspectRatio: '1024 / 682' }}
+        />
+      </picture>
       <div className="hero-shade" />
 
       <div className="hero-content">

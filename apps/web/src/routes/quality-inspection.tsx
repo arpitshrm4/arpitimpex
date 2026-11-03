@@ -69,7 +69,7 @@ export default function QualityInspectionPage() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px', marginTop: '30px' }}>
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
             <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.05em' }}>STAGE 01</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '8px 0 16px 0' }}>
               <Scale size={24} color="var(--navy)" />
@@ -80,7 +80,7 @@ export default function QualityInspectionPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
             <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.05em' }}>STAGE 02</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '8px 0 16px 0' }}>
               <Gauge size={24} color="var(--navy)" />
@@ -91,7 +91,7 @@ export default function QualityInspectionPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
             <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.05em' }}>STAGE 03</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '8px 0 16px 0' }}>
               <Microscope size={24} color="var(--navy)" />
@@ -102,7 +102,7 @@ export default function QualityInspectionPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
             <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.05em' }}>STAGE 04</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '8px 0 16px 0' }}>
               <Layers size={24} color="var(--navy)" />
@@ -113,7 +113,7 @@ export default function QualityInspectionPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: '12px', padding: '32px' }}>
+          <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '32px' }}>
             <span style={{ fontSize: '12px', fontWeight: 700, color: 'var(--gold)', letterSpacing: '0.05em' }}>STAGE 05</span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', margin: '8px 0 16px 0' }}>
               <PackageCheck size={24} color="var(--navy)" />
@@ -124,7 +124,7 @@ export default function QualityInspectionPage() {
             </p>
           </div>
 
-          <div style={{ background: '#fdfbf7', border: '1px solid var(--gold)', borderRadius: '12px', padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+          <div style={{ background: '#fdfbf7', border: '1px solid var(--gold)', borderRadius: 0, padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <ShieldCheck size={32} color="var(--gold)" style={{ marginBottom: '12px' }} />
             <h3 style={{ fontSize: '18px', color: 'var(--navy)', marginBottom: '8px' }}>Third-Party Inspection Support</h3>
             <p style={{ fontSize: '14px', lineHeight: '1.6', color: 'var(--body)', margin: 0 }}>
@@ -135,7 +135,7 @@ export default function QualityInspectionPage() {
       </section>
 
       {/* Traceability Callout */}
-      <section className="section quality-traceability" style={{ background: '#f8f9fa', padding: '48px 32px', borderRadius: '16px', margin: '40px auto', maxWidth: '1200px', border: '1px solid var(--border)' }}>
+      <section className="section quality-traceability" style={{ background: '#f8f9fa', padding: '48px 32px', borderRadius: 0, margin: '40px auto', maxWidth: '1200px', border: '1px solid var(--border)' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '32px', alignItems: 'center' }}>
           <div>
             <p className="eyebrow">BATCH TRACEABILITY &amp; REPORTS</p>

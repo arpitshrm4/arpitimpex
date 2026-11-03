@@ -68,10 +68,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `
-var fl = document.createElement('link');
-fl.rel = 'stylesheet';
-fl.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
-document.head.appendChild(fl);
+(function() {
+  var fl = document.createElement('link');
+  fl.rel = 'stylesheet';
+  fl.href = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
+  document.head.appendChild(fl);
+})();
 `,
 					}}
 				/>
@@ -93,23 +95,25 @@ gtag('config', 'G-CT08YBQKS7');
 function loadAnalytics() {
   if (window.__analyticsLoaded) return;
   window.__analyticsLoaded = true;
+  ['scroll', 'touchstart', 'mousemove', 'click', 'keydown'].forEach(function(evt) {
+    window.removeEventListener(evt, loadAnalytics, { passive: true });
+  });
   var gtm = document.createElement('script');
   gtm.async = true;
   gtm.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-5P28WH78';
   document.head.appendChild(gtm);
-
-  var gtagS = document.createElement('script');
-  gtagS.async = true;
-  gtagS.src = 'https://www.googletagmanager.com/gtag/js?id=G-CT08YBQKS7';
-  document.head.appendChild(gtagS);
 }
 
+['scroll', 'touchstart', 'mousemove', 'click', 'keydown'].forEach(function(evt) {
+  window.addEventListener(evt, loadAnalytics, { passive: true, once: true });
+});
+
 if ('requestIdleCallback' in window) {
-  requestIdleCallback(loadAnalytics, { timeout: 2500 });
-} else {
-  window.addEventListener('load', function() {
-    setTimeout(loadAnalytics, 1000);
+  requestIdleCallback(function() {
+    setTimeout(loadAnalytics, 5000);
   });
+} else {
+  setTimeout(loadAnalytics, 6000);
 }
 `,
 					}}
@@ -169,7 +173,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 				/>
 				{stack ? (
 					<div className="section" style={{ paddingTop: 0 }}>
-						<pre style={{ background: '#f1f5f9', padding: '16px', borderRadius: '4px', overflowX: 'auto', fontSize: '12px' }}>
+						<pre style={{ background: '#f1f5f9', padding: '16px', borderRadius: 0, overflowX: 'auto', fontSize: '12px' }}>
 							<code>{stack}</code>
 						</pre>
 					</div>

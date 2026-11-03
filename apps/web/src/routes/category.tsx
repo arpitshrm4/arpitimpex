@@ -170,7 +170,7 @@ export default function CategoryPage() {
 
           <div className="category-faqs-grid" style={{ display: 'grid', gap: '20px', maxWidth: '1000px' }}>
             {categoryData.faqs.map(([q, a]) => (
-              <div key={q} style={{ background: '#ffffff', border: '1px solid var(--line)', padding: '24px', borderRadius: '4px' }}>
+              <div key={q} style={{ background: '#ffffff', border: '1px solid var(--line)', padding: '24px', borderRadius: 0 }}>
                 <h3 style={{ fontSize: '16px', color: 'var(--navy)', marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
                   <HelpCircle size={18} style={{ color: 'var(--blue)', flexShrink: 0, marginTop: '2px' }} />
                   {q}
