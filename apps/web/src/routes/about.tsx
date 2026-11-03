@@ -198,22 +198,22 @@ export default function AboutPage() {
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
           <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
-            <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
+            <Globe2 size={24} color="var(--bronze)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>Middle East &amp; GCC</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>United Arab Emirates, Saudi Arabia, Oman, Qatar, Bahrain, Kuwait.</p>
           </div>
           <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
-            <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
+            <Globe2 size={24} color="var(--bronze)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>Africa</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>Kenya, Nigeria, Ghana, Tanzania, South Africa, Uganda, Ethiopia.</p>
           </div>
           <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
-            <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
+            <Globe2 size={24} color="var(--bronze)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>Europe &amp; UK</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>United Kingdom, Germany, Poland, Spain (architectural ironmongery &amp; hinges).</p>
           </div>
           <div style={{ background: '#fff', padding: '20px', borderRadius: 0, border: '1px solid var(--border)' }}>
-            <Globe2 size={24} color="var(--blue)" style={{ marginBottom: '10px' }} />
+            <Globe2 size={24} color="var(--bronze)" style={{ marginBottom: '10px' }} />
             <h3 style={{ fontSize: '17px', color: 'var(--navy)', marginBottom: '6px' }}>North America</h3>
             <p style={{ fontSize: '13px', color: 'var(--body)', margin: 0 }}>United States and Canada (specialized OEM ironmongery and private-label components).</p>
           </div>
@@ -251,7 +251,7 @@ export default function AboutPage() {
               <div>
                 <span style={{ fontSize: '12px', color: 'var(--quiet)', display: 'block', textTransform: 'uppercase' }}>Direct Export Desk</span>
                 <p style={{ fontSize: '14px', color: 'var(--navy)', margin: '4px 0 0 0', fontWeight: 600 }}>
-                  <a href={`tel:${companyInfo.phone}`} style={{ color: 'inherit', textDecoration: 'none' }}>{companyInfo.phone}</a> · <a href={`mailto:${companyInfo.email}`} style={{ color: 'var(--blue)', textDecoration: 'none' }}>{companyInfo.email}</a>
+                  <a href={`tel:${companyInfo.phone}`} style={{ color: 'inherit', textDecoration: 'none' }}>{companyInfo.phone}</a> · <a href={`mailto:${companyInfo.email}`} style={{ color: 'var(--bronze)', textDecoration: 'none' }}>{companyInfo.email}</a>
                 </p>
               </div>
             </div>

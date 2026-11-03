@@ -1706,7 +1706,7 @@ footer {
   font-size: 12px;
   font-weight: 700;
   color: var(--navy);
-  background: #f0f3f6;
+  background: var(--paper-soft);
   padding: 2px 7px;
   border-radius: 0;
 }
@@ -1715,13 +1715,13 @@ footer {
   text-decoration: none;
 }
 .product-title-link:hover {
-  color: var(--blue);
+  color: var(--bronze);
 }
 .product-view-spec-link {
   display: inline-block;
   font-size: 12px;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--bronze);
   text-decoration: none;
   transition: color 0.2s;
 }
@@ -1742,30 +1742,30 @@ footer {
   letter-spacing: 0.3px;
 }
 .product-source-badge.source-inhouse {
-  background: #142D4E;
+  background: var(--ink);
   color: #ffffff;
-  border: 1px solid #1e3a5f;
+  border: 1px solid var(--border);
 }
 .product-source-badge.source-partner {
-  background: #f4f6f8;
-  color: #142D4E;
-  border: 1px solid #d0d7de;
+  background: var(--paper-soft);
+  color: var(--ink);
+  border: 1px solid var(--border);
 }
 .product-source-badge.source-enquiry {
   background: #ffffff;
-  color: #142D4E;
-  border: 1px solid #cbd5e1;
+  color: var(--ink);
+  border: 1px solid var(--border);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 .specs-status-pill.source-enquiry {
-  background: #f1f5f9;
-  color: #142D4E;
-  border: 1px solid #cbd5e1;
+  background: var(--paper-soft);
+  color: var(--ink);
+  border: 1px solid var(--border);
 }
 
 /* Breadcrumbs & Product Detail Page (PDP) */
 .breadcrumbs-nav {
-  background: #f8fafc;
+  background: var(--paper);
   border-bottom: 1px solid var(--line);
   padding: 12px 5.2%;
 }
@@ -2172,7 +2172,7 @@ svg.pdp-breadcrumb-sep {
 }
 
 .footer-grid .footer-contact-link:hover {
-  color: var(--blue) !important;
+  color: var(--bronze) !important;
   text-decoration: underline;
 }
 
@@ -2192,17 +2192,17 @@ svg.pdp-breadcrumb-sep {
   margin-top: 4px;
   margin-bottom: 0 !important;
   border: 1px solid var(--navy);
-  box-shadow: 0 2px 4px rgba(20, 45, 78, 0.08);
+  box-shadow: 0 2px 4px rgba(23, 19, 16, 0.08);
   transition: all 0.2s ease;
   width: fit-content;
 }
 
 .footer-grid .footer-enquiry-btn:hover {
-  background: var(--blue);
-  border-color: var(--blue);
+  background: var(--bronze);
+  border-color: var(--bronze);
   color: #ffffff !important;
   transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(20, 45, 78, 0.15);
+  box-shadow: 0 4px 8px rgba(23, 19, 16, 0.15);
 }
 
 /* Ensure all headings strictly have letter-spacing: 0 */
@@ -2215,7 +2215,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   align-items: center;
   gap: 12px;
-  background: #f8fafc;
+  background: var(--paper-soft);
   border: 1px solid var(--line);
   border-radius: 0;
   padding: 10px 12px;
@@ -2228,7 +2228,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff;
   padding: 4px;
   border-radius: 0;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
   transition: transform 0.2s ease;
 }
@@ -2280,13 +2280,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0;
   padding: 16px;
   margin-top: 18px;
-  box-shadow: 0 4px 12px rgba(20, 45, 78, 0.04);
+  box-shadow: 0 4px 12px rgba(23, 19, 16, 0.04);
 }
 .contact-qr-img-wrap {
   flex-shrink: 0;
   background: #ffffff;
   padding: 6px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--border);
   border-radius: 0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
@@ -2460,12 +2460,12 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section */
 .brochure-hero-section {
-  background: linear-gradient(135deg, #142D4E 0%, #19385c 60%, #1f426d 100%);
+  background: var(--ink);
   color: #ffffff;
   border-radius: 0;
   padding: 44px 44px 40px;
   margin-bottom: 28px;
-  box-shadow: 0 10px 30px rgba(20, 45, 78, 0.12);
+  box-shadow: 0 10px 30px rgba(23, 19, 16, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 .brochure-hero-badge {
@@ -2501,7 +2501,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gold);
 }
 .brochure-subtitle {
-  color: #cbd5e1;
+  color: var(--paper-deep);
   font-size: 15px;
   line-height: 1.7;
   max-width: 860px;
@@ -2536,7 +2536,7 @@ h1, h2, h3, h4, h5, h6 {
 .cred-card span {
   display: block;
   font-size: 11px;
-  color: #94a3b8;
+  color: var(--bronze-light);
   margin-top: 2px;
 }
 .brochure-top-actions {
@@ -2547,7 +2547,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .brochure-print-btn {
   background: var(--gold);
-  color: #142D4E;
+  color: var(--ink);
   font-weight: 700;
   border: 1px solid var(--gold);
   gap: 8px;
@@ -2556,7 +2556,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .brochure-print-btn:hover {
   background: #dbb369;
-  color: #0d1e35;
+  color: var(--ink);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(199, 161, 90, 0.35);
 }
@@ -2632,8 +2632,8 @@ h1, h2, h3, h4, h5, h6 {
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .brochure-search-input:focus {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(49, 94, 133, 0.15);
+  border-color: var(--bronze);
+  box-shadow: 0 0 0 3px rgba(118, 81, 55, 0.15);
   background: #ffffff;
 }
 .clear-search-btn {
@@ -2713,15 +2713,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.15s ease;
 }
 .cat-pill:hover {
-  border-color: var(--blue);
+  border-color: var(--bronze);
   background: #ffffff;
-  color: var(--blue);
+  color: var(--bronze);
 }
 .cat-pill.active {
   background: var(--navy);
   color: #ffffff;
   border-color: var(--navy);
-  box-shadow: 0 2px 6px rgba(20, 45, 78, 0.15);
+  box-shadow: 0 2px 6px rgba(23, 19, 16, 0.15);
 }
 
 /* Status Bar */
@@ -2735,15 +2735,16 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 6px;
 }
 .search-status-tag {
-  background: #e0f2fe;
-  color: #0369a1;
+  background: var(--paper-soft);
+  color: var(--bronze);
+  border: 1px solid var(--line);
   padding: 2px 8px;
   border-radius: 0;
   font-weight: 600;
 }
 .print-hint-note {
   margin-left: auto;
-  color: var(--blue);
+  color: var(--bronze);
   font-weight: 500;
 }
 
@@ -2840,12 +2841,12 @@ h1, h2, h3, h4, h5, h6 {
   break-inside: avoid;
 }
 .brochure-product-sheet:hover {
-  border-color: #cbd5e1;
-  box-shadow: 0 8px 20px rgba(20, 45, 78, 0.06);
+  border-color: var(--bronze);
+  box-shadow: 0 8px 20px rgba(23, 19, 16, 0.08);
 }
 .sheet-top-ribbon {
-  background: #f8fafc;
-  border-bottom: 1px solid #edf2f7;
+  background: var(--paper-soft);
+  border-bottom: 1px solid var(--line);
   padding: 10px 20px;
   display: flex;
   align-items: center;
@@ -2874,8 +2875,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--blue);
-  background: #eef4f9;
+  color: var(--ink);
+  background: rgba(23, 19, 16, 0.06);
   padding: 3px 8px;
   border-radius: 0;
   letter-spacing: 0.5px;
@@ -2925,8 +2926,8 @@ h1, h2, h3, h4, h5, h6 {
   transform: scale(1.04);
 }
 .sheet-quick-facts {
-  background: #f8fafc;
-  border: 1px solid #eef2f6;
+  background: var(--paper);
+  border: 1px solid var(--border);
   border-radius: 0;
   padding: 8px 12px;
 }
@@ -2936,7 +2937,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 8px;
   font-size: 11px;
   padding: 4px 0;
-  border-bottom: 1px dashed #e2e8f0;
+  border-bottom: 1px dashed var(--line);
 }
 .quick-fact-row:last-child {
   border-bottom: none;
@@ -2963,7 +2964,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 8px 0;
 }
 .sheet-product-title a:hover {
-  color: var(--blue);
+  color: var(--bronze);
   text-decoration: underline;
 }
 .sheet-product-desc {
@@ -2976,7 +2977,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Specification Table Inside Card */
 .sheet-spec-table-wrap {
   background: #ffffff;
-  border: 1px solid #e5e9ee;
+  border: 1px solid var(--border);
   border-radius: 0;
   overflow: hidden;
   margin-bottom: 18px;
@@ -2989,8 +2990,8 @@ h1, h2, h3, h4, h5, h6 {
 .sheet-spec-table th,
 .sheet-spec-table td {
   padding: 8px 12px;
-  border-bottom: 1px solid #f0f2f5;
-  border-right: 1px solid #f0f2f5;
+  border-bottom: 1px solid var(--line-subtle);
+  border-right: 1px solid var(--line-subtle);
   text-align: left;
   vertical-align: top;
 }
@@ -3003,13 +3004,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .sheet-spec-table th {
   width: 18%;
-  background: #f8fafc;
-  color: var(--navy);
+  background: var(--paper-soft);
+  color: var(--ink);
   font-weight: 600;
 }
 .sheet-spec-table td {
   width: 32%;
-  color: #334155;
+  color: var(--body);
   font-weight: 500;
 }
 
@@ -3033,7 +3034,7 @@ h1, h2, h3, h4, h5, h6 {
   min-height: 38px;
 }
 .sheet-quote-btn:hover {
-  background: var(--blue);
+  background: var(--bronze);
   color: #ffffff;
 }
 .sheet-wa-btn {
@@ -3055,7 +3056,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: auto;
   font-size: 12px;
   font-weight: 600;
-  color: var(--blue);
+  color: var(--bronze);
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -3119,15 +3120,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: background 0.15s ease;
 }
 .brochure-matrix-table tbody tr:nth-child(even) {
-  background: #fbfcfd;
+  background: rgba(23, 19, 16, 0.02);
 }
 .brochure-matrix-table tbody tr:hover {
-  background: #f1f5f9;
+  background: var(--paper-soft);
 }
 .brochure-matrix-table td {
   padding: 10px 14px;
   vertical-align: top;
-  border-right: 1px solid #f1f5f9;
+  border-right: 1px solid var(--line-subtle);
   color: var(--text);
   line-height: 1.45;
 }
@@ -3145,22 +3146,22 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 .matrix-product-link:hover {
-  color: var(--blue);
+  color: var(--bronze);
   text-decoration: underline;
 }
 .matrix-cat-tag {
   display: inline-block;
   font-size: 11px;
   font-weight: 600;
-  color: var(--blue);
-  background: #eef4f9;
+  color: var(--ink);
+  background: rgba(23, 19, 16, 0.06);
   padding: 2px 6px;
   border-radius: 0;
   white-space: nowrap;
 }
 .matrix-small-cell {
   font-size: 11.5px;
-  color: #475569;
+  color: var(--quiet);
 }
 .matrix-quote-btn {
   display: inline-flex;
@@ -3176,7 +3177,7 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 .matrix-quote-btn:hover {
-  background: var(--blue);
+  background: var(--bronze);
   color: #ffffff;
 }
 
@@ -3184,7 +3185,7 @@ h1, h2, h3, h4, h5, h6 {
    EXPORT TERMS & GUIDELINES
    ========================================================================== */
 .brochure-terms-section {
-  background: #edf0f3;
+  background: var(--paper-soft);
   border-radius: 0;
   padding: 36px;
   margin-bottom: 48px;
@@ -3206,7 +3207,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .terms-card {
   background: #ffffff;
-  border: 1px solid #dce2e8;
+  border: 1px solid var(--border);
   border-radius: 0;
   padding: 20px;
 }
@@ -3226,7 +3227,7 @@ h1, h2, h3, h4, h5, h6 {
    OFFICIAL DESK CONTACT CARD
    ========================================================================== */
 .brochure-contact-card {
-  background: linear-gradient(135deg, #142D4E 0%, #173255 100%);
+  background: var(--ink);
   color: #ffffff;
   border-radius: 0;
   padding: 40px;
@@ -3247,7 +3248,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact-detail-col {
   font-size: 13px;
-  color: #e2e8f0;
+  color: rgba(255, 255, 255, 0.85);
 }
 .contact-detail-col .col-label {
   display: block;
@@ -3265,7 +3266,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .contact-detail-col p {
   font-size: 12px;
-  color: #cbd5e1;
+  color: rgba(255, 255, 255, 0.7);
   margin: 3px 0;
   line-height: 1.5;
 }
@@ -3276,7 +3277,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .brochure-card-rfq-btn {
   background: var(--gold);
-  color: #142D4E;
+  color: var(--ink);
   font-weight: 700;
   padding: 12px 24px;
   gap: 8px;
@@ -3284,7 +3285,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .brochure-card-rfq-btn:hover {
   background: #dbb369;
-  color: #0d1e35;
+  color: var(--ink);
 }
 .brochure-card-wa-btn {
   background: #25D366;
@@ -3453,7 +3454,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Display Official Letterhead Header repeated on every page */
   .brochure-print-header {
     display: block !important;
-    border-bottom: 2pt solid #142D4E;
+    border-bottom: 2pt solid var(--ink);
     padding-bottom: 6pt;
     margin-bottom: 12pt;
   }
@@ -3465,7 +3466,7 @@ h1, h2, h3, h4, h5, h6 {
   .print-company-name {
     font-size: 18pt !important;
     font-weight: 800 !important;
-    color: #142D4E !important;
+    color: var(--ink) !important;
     margin: 0 0 2pt 0 !important;
     letter-spacing: 0.5pt;
   }
@@ -3474,13 +3475,13 @@ h1, h2, h3, h4, h5, h6 {
   }
   .print-company-tagline {
     font-size: 8pt !important;
-    color: #475569 !important;
+    color: var(--quiet) !important;
     margin: 0 !important;
   }
   .print-meta-right {
     text-align: right;
     font-size: 7.5pt !important;
-    color: #334155 !important;
+    color: var(--body) !important;
     line-height: 1.35 !important;
   }
   .print-meta-right p {
@@ -3490,7 +3491,7 @@ h1, h2, h3, h4, h5, h6 {
   .print-doc-title-bar {
     display: flex;
     justify-content: space-between;
-    background: #142D4E !important;
+    background: var(--ink) !important;
     color: #ffffff !important;
     padding: 3.5pt 8pt;
     margin-top: 5pt;
@@ -3502,15 +3503,15 @@ h1, h2, h3, h4, h5, h6 {
 
   /* Hero Section in Print */
   .brochure-hero-section {
-    background: #f8fafc !important;
-    color: #142D4E !important;
-    border: 1pt solid #cbd5e1 !important;
+    background: var(--paper-soft) !important;
+    color: var(--ink) !important;
+    border: 1pt solid var(--border) !important;
     box-shadow: none !important;
     padding: 12pt 16pt !important;
     margin-bottom: 14pt !important;
   }
   .brochure-title {
-    color: #142D4E !important;
+    color: var(--ink) !important;
     font-size: 16pt !important;
     margin-bottom: 4pt !important;
   }
@@ -3518,7 +3519,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #996f26 !important;
   }
   .brochure-subtitle {
-    color: #334155 !important;
+    color: var(--body) !important;
     font-size: 9pt !important;
     margin-bottom: 10pt !important;
   }
@@ -3529,15 +3530,15 @@ h1, h2, h3, h4, h5, h6 {
   }
   .cred-card {
     background: #ffffff !important;
-    border: 1pt solid #e2e8f0 !important;
+    border: 1pt solid var(--border) !important;
     padding: 6pt 8pt !important;
   }
   .cred-card strong {
-    color: #142D4E !important;
+    color: var(--ink) !important;
     font-size: 8pt !important;
   }
   .cred-card span {
-    color: #64748b !important;
+    color: var(--quiet) !important;
     font-size: 7.5pt !important;
   }
 
@@ -3545,18 +3546,18 @@ h1, h2, h3, h4, h5, h6 {
   .brochure-product-sheet {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    border: 1pt solid #94a3b8 !important;
+    border: 1pt solid var(--border) !important;
     box-shadow: none !important;
     margin-bottom: 12pt !important;
     border-radius: 0;
   }
   .sheet-top-ribbon {
-    background: #f1f5f9 !important;
-    border-bottom: 1pt solid #cbd5e1 !important;
+    background: var(--paper-soft) !important;
+    border-bottom: 1pt solid var(--border) !important;
     padding: 4pt 8pt !important;
   }
   .sheet-sku-tag {
-    background: #142D4E !important;
+    background: var(--ink) !important;
     color: #ffffff !important;
     font-size: 8pt !important;
   }
@@ -3570,47 +3571,47 @@ h1, h2, h3, h4, h5, h6 {
     width: 140pt !important;
     height: 110pt !important;
     padding: 4pt !important;
-    border: 1pt solid #e2e8f0 !important;
+    border: 1pt solid var(--border) !important;
   }
   .sheet-img-wrap img {
     max-height: 100pt !important;
   }
   .sheet-product-title {
     font-size: 12pt !important;
-    color: #142D4E !important;
+    color: var(--ink) !important;
     margin: 0 0 4pt 0 !important;
   }
   .sheet-product-desc {
     font-size: 8pt !important;
-    color: #334155 !important;
+    color: var(--body) !important;
     margin-bottom: 8pt !important;
     line-height: 1.35 !important;
   }
   .sheet-spec-table {
     font-size: 7.5pt !important;
-    border: 1pt solid #cbd5e1 !important;
+    border: 1pt solid var(--border) !important;
   }
   .sheet-spec-table th,
   .sheet-spec-table td {
     padding: 3pt 6pt !important;
-    border: 1pt solid #cbd5e1 !important;
+    border: 1pt solid var(--border) !important;
     display: table-cell !important;
   }
   .sheet-spec-table th {
-    background: #f8fafc !important;
-    color: #142D4E !important;
+    background: var(--paper-soft) !important;
+    color: var(--ink) !important;
     font-weight: 700 !important;
     width: 20% !important;
   }
   .sheet-spec-table td {
     width: 30% !important;
-    color: #0f172a !important;
+    color: var(--body) !important;
   }
 
   /* Matrix Table in Print */
   .brochure-matrix-section {
     page-break-before: always;
-    border: 1pt solid #cbd5e1 !important;
+    border: 1pt solid var(--border) !important;
     padding: 10pt !important;
     margin-bottom: 14pt !important;
     box-shadow: none !important;
@@ -3620,7 +3621,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 7pt !important;
   }
   .brochure-matrix-table thead th {
-    background: #142D4E !important;
+    background: var(--ink) !important;
     color: #ffffff !important;
     padding: 4pt 5pt !important;
     font-size: 7.5pt !important;
@@ -3628,15 +3629,15 @@ h1, h2, h3, h4, h5, h6 {
   .brochure-matrix-table td {
     padding: 3pt 5pt !important;
     font-size: 7pt !important;
-    border: 1pt solid #e2e8f0 !important;
+    border: 1pt solid var(--border) !important;
   }
 
   /* Terms Section in Print */
   .brochure-terms-section {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    background: #f8fafc !important;
-    border: 1pt solid #cbd5e1 !important;
+    background: var(--paper-soft) !important;
+    border: 1pt solid var(--border) !important;
     padding: 12pt !important;
     margin-bottom: 12pt !important;
   }
@@ -3646,7 +3647,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .terms-card {
     padding: 8pt !important;
-    border: 1pt solid #e2e8f0 !important;
+    border: 1pt solid var(--border) !important;
   }
   .terms-card h3 {
     font-size: 8.5pt !important;
@@ -3659,7 +3660,7 @@ h1, h2, h3, h4, h5, h6 {
   .brochure-contact-card {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
-    background: #142D4E !important;
+    background: var(--ink) !important;
     color: #ffffff !important;
     padding: 14pt !important;
     margin-bottom: 14pt !important;
@@ -3682,12 +3683,12 @@ h1, h2, h3, h4, h5, h6 {
   .brochure-print-footer {
     display: block !important;
     text-align: center;
-    border-top: 1.5pt solid #142D4E !important;
+    border-top: 1.5pt solid var(--ink) !important;
     padding-top: 5pt;
     margin-top: 10pt;
     margin-bottom: 2pt;
     font-size: 7.5pt !important;
-    color: #334155 !important;
+    color: var(--body) !important;
   }
   .print-footer-inner p {
     margin: 1.5pt 0 !important;
@@ -3748,7 +3749,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 11px;
   letter-spacing: 2.5px;
   font-weight: 700;
-  color: var(--blue);
+  color: var(--bronze);
   margin-top: -6px;
   text-transform: uppercase;
 }
@@ -3812,7 +3813,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .not-found-help-text p {
-  color: #ccd7e3;
+  color: rgba(255, 255, 255, 0.75);
   margin: 0;
   max-width: 580px;
   font-size: 14px;
@@ -3837,7 +3838,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  color: #cbd5e1;
+  color: rgba(255, 255, 255, 0.85);
   font-size: 13px;
   font-weight: 500;
   text-decoration: none;
@@ -4015,8 +4016,8 @@ h1, h2, h3, h4, h5, h6 {
 .blog-checklist {
   list-style: none !important;
   padding: 20px 24px !important;
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
   border-radius: 0;
   margin: 22px 0 30px !important;
 }
@@ -4107,9 +4108,9 @@ mark {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background: #eff6ff;
-  color: var(--blue);
-  border: 1px solid #bfdbfe;
+  background: rgba(23, 19, 16, 0.06);
+  color: var(--ink);
+  border: 1px solid var(--line);
   font-size: 12px;
   font-weight: 700;
   padding: 3px 10px;
@@ -4154,8 +4155,8 @@ mark {
 }
 
 .blog-callout.tip {
-  background: #f4f7fb;
-  border: 1px solid #dce4ee;
+  background: var(--paper-soft);
+  border: 1px solid var(--border);
   border-left: 4px solid var(--bronze);
   color: var(--ink);
 }
@@ -4241,16 +4242,25 @@ mark {
   margin-right: 6px;
 }
 
-.blog-card:hover {
+.blog-card:hover,
+.guide-card:hover,
+.related-blog-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
+  border-color: var(--bronze) !important;
+  box-shadow: 0 12px 28px rgba(23, 19, 16, 0.08) !important;
+}
+
+.blog-card:hover .text-link,
+.guide-card:hover .text-link,
+.related-blog-card:hover .text-link {
+  color: var(--bronze);
 }
 
 .blog-card-media {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
-  background: #f1f5f9;
+  background: var(--paper-soft);
   overflow: hidden;
   position: relative;
   border-bottom: 1px solid var(--line);

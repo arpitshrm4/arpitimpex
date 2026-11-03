@@ -52,7 +52,7 @@ export function SiteFooter() {
               href={companyInfo.googleBusinessUrl}
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: 'var(--blue)', fontSize: '12px', textDecoration: 'none', fontWeight: 600 }}
+              style={{ color: 'var(--bronze)', fontSize: '12px', textDecoration: 'none', fontWeight: 600 }}
             >
               📍 View on Google Maps →
             </a>
@@ -63,13 +63,13 @@ export function SiteFooter() {
               <strong style={{ color: 'var(--navy)', fontSize: '12px' }}>{companyInfo.contactPerson}</strong>
             </div>
             <div className="footer-contact-item">
-              <Phone size={14} style={{ color: 'var(--blue)', flexShrink: 0 }} />
+              <Phone size={14} style={{ color: 'var(--bronze)', flexShrink: 0 }} />
               <a href={`tel:${companyInfo.phone}`} className="footer-contact-link">
                 {companyInfo.phone}
               </a>
             </div>
             <div className="footer-contact-item">
-              <Mail size={14} style={{ color: 'var(--blue)', flexShrink: 0 }} />
+              <Mail size={14} style={{ color: 'var(--bronze)', flexShrink: 0 }} />
               <a href={`mailto:${companyInfo.email}`} className="footer-contact-link">
                 {companyInfo.email}
               </a>

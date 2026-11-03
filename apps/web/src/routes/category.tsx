@@ -156,7 +156,7 @@ export default function CategoryPage() {
 
       {/* Category FAQs */}
       {categoryData.faqs.length > 0 && (
-        <section className="section category-faq-section" style={{ background: '#f8fafc', borderTop: '1px solid var(--line)' }}>
+        <section className="section category-faq-section" style={{ background: 'var(--paper)', borderTop: '1px solid var(--line)' }}>
           <div className="section-heading">
             <div>
               <div className="eyebrow">
@@ -172,7 +172,7 @@ export default function CategoryPage() {
             {categoryData.faqs.map(([q, a]) => (
               <div key={q} style={{ background: '#ffffff', border: '1px solid var(--line)', padding: '24px', borderRadius: 0 }}>
                 <h3 style={{ fontSize: '16px', color: 'var(--navy)', marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                  <HelpCircle size={18} style={{ color: 'var(--blue)', flexShrink: 0, marginTop: '2px' }} />
+                  <HelpCircle size={18} style={{ color: 'var(--bronze)', flexShrink: 0, marginTop: '2px' }} />
                   {q}
                 </h3>
                 <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.7', color: 'var(--quiet)', paddingLeft: '28px' }}>

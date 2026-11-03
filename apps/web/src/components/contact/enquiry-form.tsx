@@ -99,7 +99,7 @@ ${formData.details}`);
             <img src="/images/logo.webp" alt="Arpit Impex" width="48" height="48" style={{ objectFit: 'contain' }} />
             <div>
               <h3 style={{ margin: 0 }}>{companyInfo.name}</h3>
-              <small style={{ color: 'var(--blue)', fontWeight: 700, fontSize: '12px', letterSpacing: '0.5px' }}>
+              <small style={{ color: 'var(--bronze)', fontWeight: 700, fontSize: '12px', letterSpacing: '0.5px' }}>
                 ALIGARH SOURCING & EXPORT DESK
               </small>
             </div>
@@ -121,7 +121,7 @@ ${formData.details}`);
                     alignItems: 'center',
                     gap: '4px',
                     fontSize: '12px',
-                    color: 'var(--blue)',
+                    color: 'var(--bronze)',
                     fontWeight: 600,
                     textDecoration: 'none',
                   }}
@@ -209,7 +209,7 @@ ${formData.details}`);
             </div>
             <h4>{selected.name} (SKU: {selected.modelNumber})</h4>
             <p className="selected-product-desc">{selected.description}</p>
-            <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--blue)', fontWeight: 600 }}>
+            <div style={{ marginTop: '8px', fontSize: '12px', color: 'var(--bronze)', fontWeight: 600 }}>
               Available on enquiry
             </div>
           </div>
@@ -432,7 +432,7 @@ ${formData.details}`);
                     style={{ width: 'auto', margin: 0 }}
                   />
                   <span>
-                    I agree to Arpit Impex contacting me regarding this commercial hardware inquiry in accordance with the <Link to="/privacy" style={{ color: 'var(--blue)', textDecoration: 'underline' }}>Privacy Policy</Link>.
+                    I agree to Arpit Impex contacting me regarding this commercial hardware inquiry in accordance with the <Link to="/privacy" style={{ color: 'var(--bronze)', textDecoration: 'underline' }}>Privacy Policy</Link>.
                   </span>
                 </label>
               </div>

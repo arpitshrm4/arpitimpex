@@ -33,7 +33,7 @@ export default function ThankYouPage() {
           We have received your hardware requirement. Our founder, <strong>{companyInfo.contactPerson}</strong>, and the Aligarh export desk are reviewing your models, requested finishes, and shipment destination.
         </p>
 
-        <div style={{ background: '#f8f9fa', borderRadius: 0, padding: '20px', textAlign: 'left', marginBottom: '32px', border: '1px solid var(--border)' }}>
+        <div style={{ background: 'var(--paper-soft)', borderRadius: 0, padding: '20px', textAlign: 'left', marginBottom: '32px', border: '1px solid var(--border)' }}>
           <h3 style={{ fontSize: '15px', color: 'var(--navy)', marginBottom: '8px', fontWeight: 600 }}>What Happens Next?</h3>
           <ul style={{ margin: 0, paddingLeft: '20px', fontSize: '14px', lineHeight: '1.7', color: 'var(--body)' }}>
             <li><strong>Drawing &amp; Spec Check:</strong> We cross-check dimensions and material suitability.</li>
@@ -52,7 +52,7 @@ export default function ThankYouPage() {
         </div>
 
         <div style={{ borderTop: '1px solid var(--border)', paddingTop: '20px', fontSize: '13px', color: 'var(--quiet)' }}>
-          Need urgent assistance? Call or message direct: <strong style={{ color: 'var(--navy)' }}>{companyInfo.phone}</strong> · <a href={`mailto:${companyInfo.email}`} style={{ color: 'var(--blue)' }}>{companyInfo.email}</a>
+          Need urgent assistance? Call or message direct: <strong style={{ color: 'var(--navy)' }}>{companyInfo.phone}</strong> · <a href={`mailto:${companyInfo.email}`} style={{ color: 'var(--bronze)' }}>{companyInfo.email}</a>
         </div>
       </div>
     </main>

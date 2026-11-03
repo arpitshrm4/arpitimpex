@@ -173,7 +173,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
 				/>
 				{stack ? (
 					<div className="section" style={{ paddingTop: 0 }}>
-						<pre style={{ background: '#f1f5f9', padding: '16px', borderRadius: 0, overflowX: 'auto', fontSize: '12px' }}>
+						<pre style={{ background: 'var(--paper-soft)', padding: '16px', borderRadius: 0, overflowX: 'auto', fontSize: '12px', border: '1px solid var(--border)' }}>
 							<code>{stack}</code>
 						</pre>
 					</div>

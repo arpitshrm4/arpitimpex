@@ -578,7 +578,7 @@ export function BrochurePage() {
             <div>
               <p className="cat-eyebrow" style={{ color: 'var(--gold)' }}>DIRECT PROCUREMENT DESK</p>
               <h2>Ready to Order or Request Specification Samples?</h2>
-              <p style={{ color: '#cbd5e1', maxWidth: '650px', fontSize: '13px', lineHeight: 1.6 }}>
+              <p style={{ color: 'rgba(255, 255, 255, 0.75)', maxWidth: '650px', fontSize: '13px', lineHeight: 1.6 }}>
                 Connect directly with our commercial desk in Aligarh for customized quotations, technical data sheets, 
                 sample requests, or export freight estimates.
               </p>

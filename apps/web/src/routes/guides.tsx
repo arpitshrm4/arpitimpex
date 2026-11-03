@@ -50,9 +50,11 @@ export default function GuidesIndexPage() {
 
       <section className="section guides-grid-section">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '32px' }}>
-          {GUIDES_DATA.map((guide, idx) => (
-            <article
+          {GUIDES_DATA.map((guide) => (
+            <Link
               key={guide.slug}
+              to={`/guides/${guide.slug}`}
+              className="guide-card"
               style={{
                 background: '#fff',
                 border: '1px solid var(--border)',
@@ -62,12 +64,15 @@ export default function GuidesIndexPage() {
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 boxShadow: '0 4px 16px rgba(0,0,0,0.03)',
-                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                textDecoration: 'none',
+                color: 'inherit',
+                cursor: 'pointer',
               }}
             >
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
-                  <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 10px', borderRadius: 0 }}>
+                  <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 10px', borderRadius: 0 }}>
                     {guide.category}
                   </span>
                   <span style={{ display: 'flex', alignItems: 'center', gap: '4px', fontSize: '12px', color: 'var(--quiet)' }}>
@@ -76,9 +81,7 @@ export default function GuidesIndexPage() {
                 </div>
 
                 <h2 style={{ fontSize: '20px', color: 'var(--navy)', lineHeight: '1.4', marginBottom: '14px' }}>
-                  <Link to={`/guides/${guide.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                    {guide.title}
-                  </Link>
+                  {guide.title}
                 </h2>
 
                 <p style={{ fontSize: '14px', lineHeight: '1.65', color: 'var(--body)', marginBottom: '20px' }}>
@@ -90,15 +93,14 @@ export default function GuidesIndexPage() {
                 <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>
                   By {guide.author} · {guide.publishedDate}
                 </span>
-                <Link
-                  to={`/guides/${guide.slug}`}
+                <span
                   className="text-link"
-                  style={{ fontWeight: 600, fontSize: '13px' }}
+                  style={{ fontWeight: 600, fontSize: '13px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                 >
                   Read Guide <ArrowRight size={14} />
-                </Link>
+                </span>
               </div>
-            </article>
+            </Link>
           ))}
         </div>
       </section>

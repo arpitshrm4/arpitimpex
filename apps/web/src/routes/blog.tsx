@@ -124,8 +124,9 @@ export default function BlogIndexPage() {
         ) : (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 420px))', gap: '32px' }}>
             {filteredPosts.map((post) => (
-              <article
+              <Link
                 key={post.slug}
+                to={`/blog/${post.slug}`}
                 className="blog-card"
                 style={{
                   background: '#ffffff',
@@ -136,11 +137,14 @@ export default function BlogIndexPage() {
                   flexDirection: 'column',
                   justifyContent: 'space-between',
                   boxShadow: '0 4px 20px rgba(23, 19, 16, 0.04)',
-                  transition: 'transform 0.2s ease, box-shadow 0.2s ease',
+                  transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                  cursor: 'pointer',
                 }}
               >
                 <div>
-                  <Link to={`/blog/${post.slug}`} className="blog-card-media">
+                  <div className="blog-card-media">
                     <img
                       src={post.image}
                       alt={post.imageAlt}
@@ -149,7 +153,7 @@ export default function BlogIndexPage() {
                       loading="lazy"
                       className="blog-card-img"
                     />
-                  </Link>
+                  </div>
                   <div style={{ padding: '24px 24px 0 24px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '12px' }}>
                       <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 12px', borderRadius: 0 }}>
@@ -161,9 +165,7 @@ export default function BlogIndexPage() {
                     </div>
 
                     <h2 style={{ fontSize: '20px', color: 'var(--ink)', lineHeight: '1.4', marginBottom: '12px', letterSpacing: '-0.02em', fontWeight: 600 }}>
-                      <Link to={`/blog/${post.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>
-                        {post.title}
-                      </Link>
+                      {post.title}
                     </h2>
 
                     <p style={{ fontSize: '14px', lineHeight: '1.65', color: 'var(--body)', marginBottom: '16px' }}>
@@ -176,15 +178,14 @@ export default function BlogIndexPage() {
                   <span style={{ fontSize: '12px', color: 'var(--quiet)' }}>
                     By {post.author} · {post.publishedDate}
                   </span>
-                  <Link
-                    to={`/blog/${post.slug}`}
+                  <span
                     className="text-link"
-                    style={{ fontWeight: 600, fontSize: '13px' }}
+                    style={{ fontWeight: 600, fontSize: '13px', display: 'inline-flex', alignItems: 'center', gap: '6px' }}
                   >
                     Read Guide <ArrowRight size={14} />
-                  </Link>
+                  </span>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         )}

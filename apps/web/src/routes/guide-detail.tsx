@@ -99,7 +99,7 @@ export default function GuideDetailPage() {
 
         {/* Header */}
         <header style={{ marginBottom: '32px', borderBottom: '1px solid var(--border)', paddingBottom: '24px' }}>
-          <span style={{ fontSize: '12px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 12px', borderRadius: 0 }}>
+          <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 12px', borderRadius: 0 }}>
             {guide.category}
           </span>
           <h1 style={{ fontSize: '32px', color: 'var(--navy)', marginTop: '16px', marginBottom: '16px', lineHeight: '1.3' }}>

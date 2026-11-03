@@ -91,15 +91,15 @@ export default function ReturnPolicy() {
         <p>
           If you have any questions regarding these commercial terms, specification confirmations, or order dispatch procedures, please contact our export desk:
         </p>
-        <div style={{ background: '#f8fafc', border: '1px solid var(--line)', padding: '20px', borderRadius: 0, marginTop: '16px' }}>
+        <div style={{ background: 'var(--paper-soft)', border: '1px solid var(--line)', padding: '20px', borderRadius: 0, marginTop: '16px' }}>
           <p style={{ margin: '0 0 6px 0', fontWeight: '700', color: 'var(--navy)' }}>{companyInfo.name}</p>
           <p style={{ margin: '0 0 6px 0', fontSize: '13px' }}>Attention: {companyInfo.contactPerson}</p>
           <p style={{ margin: '0 0 6px 0', fontSize: '13px' }}>Address: {companyInfo.location}</p>
           <p style={{ margin: '0 0 6px 0', fontSize: '13px' }}>
-            Email: <a href={`mailto:${companyInfo.email}`} style={{ color: 'var(--blue)', fontWeight: '600' }}>{companyInfo.email}</a>
+            Email: <a href={`mailto:${companyInfo.email}`} style={{ color: 'var(--bronze)', fontWeight: '600' }}>{companyInfo.email}</a>
           </p>
           <p style={{ margin: '0', fontSize: '13px' }}>
-            WhatsApp / Phone: <a href={`tel:${companyInfo.phone}`} style={{ color: 'var(--blue)', fontWeight: '600' }}>{companyInfo.phone}</a>
+            WhatsApp / Phone: <a href={`tel:${companyInfo.phone}`} style={{ color: 'var(--bronze)', fontWeight: '600' }}>{companyInfo.phone}</a>
           </p>
         </div>
       </section>

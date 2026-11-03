@@ -136,7 +136,7 @@ export default function BlogDetailPage() {
 
         {/* Header */}
         <header style={{ marginBottom: '28px', borderBottom: '1px solid var(--border)', paddingBottom: '24px' }}>
-          <span style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--blue)', background: '#eff6ff', padding: '4px 12px', borderRadius: 0 }}>
+          <span style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--ink)', background: 'rgba(23, 19, 16, 0.06)', padding: '4px 12px', borderRadius: 0 }}>
             {post.category}
           </span>
           <h1 style={{ fontSize: '32px', color: 'var(--navy)', marginTop: '16px', marginBottom: '16px', lineHeight: '1.3' }}>
@@ -273,18 +273,35 @@ export default function BlogDetailPage() {
             </h3>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px' }}>
               {relatedPosts.map((r) => (
-                <article key={r.slug} style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                <Link
+                  key={r.slug}
+                  to={`/blog/${r.slug}`}
+                  className="related-blog-card"
+                  style={{
+                    background: '#fff',
+                    border: '1px solid var(--border)',
+                    borderRadius: 0,
+                    padding: '20px',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'space-between',
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    cursor: 'pointer',
+                    transition: 'transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease',
+                  }}
+                >
                   <div>
-                    <span style={{ fontSize: '11px', color: 'var(--blue)', fontWeight: 700, textTransform: 'uppercase' }}>{r.category}</span>
+                    <span style={{ fontSize: '11px', color: 'var(--bronze)', fontWeight: 700, textTransform: 'uppercase' }}>{r.category}</span>
                     <h4 style={{ fontSize: '16px', margin: '8px 0 8px 0', color: 'var(--navy)' }}>
-                      <Link to={`/blog/${r.slug}`} style={{ color: 'inherit', textDecoration: 'none' }}>{r.title}</Link>
+                      {r.title}
                     </h4>
                     <p style={{ fontSize: '13px', color: 'var(--quiet)', lineHeight: '1.5' }}>{r.summary.slice(0, 100)}...</p>
                   </div>
-                  <Link to={`/blog/${r.slug}`} className="text-link" style={{ fontSize: '13px', fontWeight: 600, marginTop: '12px' }}>
+                  <span className="text-link" style={{ fontSize: '13px', fontWeight: 600, marginTop: '12px', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>
                     Read Article →
-                  </Link>
-                </article>
+                  </span>
+                </Link>
               ))}
             </div>
           </div>
