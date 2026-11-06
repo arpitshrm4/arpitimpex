@@ -5,20 +5,26 @@ export function loader({ request }: Route.LoaderArgs) {
 	return new Response(
 		`# Arpit Impex
 
-> Architectural Door Hardware from Aligarh, India | Selected Manufacturing, Sourcing & Export Supply.
+> Architectural Ironmongery & Door Hardware Manufacturer and Exporter from Aligarh, India | Selected Manufacturing, Sourcing & Global Export Supply.
 > Website: https://arpitimpex.com
 
 ## Business Overview
-Arpit Impex supplies door locks, mortise lock bodies, cylinders, handles, architectural ironmongery (gate hinges, sliding bolts, padbolts, brackets), and related hardware to importers, distributors, wholesalers and project buyers. Based in Aligarh, India, we support bulk enquiries, product-specification reviews, customization discussions, and export coordination. We manufacture selected products in our Aligarh unit and coordinate additional products through local supply partners.
+Arpit Impex is a premier direct manufacturer, sourcing partner, and bulk exporter of architectural ironmongery, gate hardware, door locks, mortise lock bodies, profile cylinders, and architectural fittings. Operating from the historic hardware manufacturing cluster of Aligarh, Uttar Pradesh, India, we supply overseas importers, building material distributors, wholesalers, and commercial contractors across the UK, Europe, Middle East (GCC), North America, and Africa.
 
-## Core Capabilities
-- In-house manufacturing: Selected locks, lock bodies and pressed components produced in our Aligarh workshop. Manufacturing status confirmed by model.
-- Product matching: Model review, technical drawings, and closest available specification confirmation.
-- Order-specific inspection: Visual, dimensional, and mechanism checks agreed for each order prior to dispatch.
-- Bulk packaging and export coordination: Standard or custom packaging, commercial invoices, packing lists, and export freight coordination.
+## Core Capabilities & Product Lines
+- **Architectural Gate Ironmongery:** Heavy-duty T-hinges (150mm to 350mm), straight strap hinges, reversible gate hinges, hook and band hinges, and heavy timber gate fittings.
+- **Perimeter & Security Ironmongery:** Heavy galvanized Brenton padbolts, straight and necked barrel bolts, garage door foot bolts, penta-bolt rim deadbolts, and spring animal latches.
+- **Lock Bodies & Cylinders:** Aluminium section narrow mortise lock bodies, stainless steel sashlocks, 6-lever mortise locks, and Euro profile DIN 18252 cylinders with computer-numbered keys.
+- **Decorative & Antique Ironmongery:** Forged black antique thumb latches, ornate ring pull handles, cabin hooks, escutcheons, and textured beeswax/epoxy finished fittings.
+- **OEM Private-Label Tooling:** In-house CAD drawing reviews, progressive stamping die fabrication, custom logo stamping, and customized retail polybag/carton barcoding (EAN-13/UPC).
+- **Surface Weatherproofing:** High-durability finishes including Electrostatic Exterior Matte Black Powder Coating (60–80 µm, ASTM B117 240+ hrs neutral salt spray), Hot-Dip Galvanizing (HDG to ISO 1461), and Trivalent Zinc Passivation (Cr3+).
+- **Export Logistics:** Container consolidation (FCL & LCL) through Mundra Port and Nhava Sheva (JNPT Mumbai) under FOB, CIF, or CFR Incoterms with complete commercial export documentation (HS Codes 8301 & 8302).
 
-## Key Pages
-- [Products](${origin}/products): Catalogue of door locks, lock bodies, profile cylinders, handles, and architectural ironmongery with model numbers and technical specifications.
+## Key Pages & Resources
+- [Products](${origin}/products): Full catalogue of door locks, lock bodies, profile cylinders, handles, and architectural ironmongery with technical specifications.
+- [Architectural Ironmongery Manufacturer Guide](${origin}/blog/architectural-ironmongery-manufacturer-exporter-india): The authoritative B2B direct sourcing guide for overseas importers, architectural ironmongers, and commercial hardware distributors.
+- [OEM & Private Label Manufacturing](${origin}/oem-private-label): Custom tooling, stamping dies, and private-label packaging for international ironmongery distributors.
+- [Quality & Inspection](${origin}/quality-inspection): 5-point factory testing protocol, dimensional tolerances, and salt-spray corrosion standards.
 - [Digital Brochure](${origin}/brochure): Complete architectural hardware and ironmongery product brochure, printable engineering spec sheets, and comparison matrix for all catalogued models.
 - [About Us](${origin}/about): Selected in-house manufacturing, local supply partners, and B2B export coordination from Aligarh, India.
 - [Export Process](${origin}/process): 6-step ordering process from requirement sharing to documentation and export dispatch.
