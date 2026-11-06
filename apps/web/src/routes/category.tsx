@@ -168,17 +168,20 @@ export default function CategoryPage() {
             </div>
           </div>
 
-          <div className="category-faqs-grid" style={{ display: 'grid', gap: '20px', maxWidth: '1000px' }}>
-            {categoryData.faqs.map(([q, a]) => (
-              <div key={q} style={{ background: '#ffffff', border: '1px solid var(--line)', padding: '24px', borderRadius: 0 }}>
-                <h3 style={{ fontSize: '16px', color: 'var(--navy)', marginBottom: '8px', display: 'flex', alignItems: 'flex-start', gap: '10px' }}>
-                  <HelpCircle size={18} style={{ color: 'var(--bronze)', flexShrink: 0, marginTop: '2px' }} />
-                  {q}
-                </h3>
-                <p style={{ margin: 0, fontSize: '13.5px', lineHeight: '1.7', color: 'var(--quiet)', paddingLeft: '28px' }}>
-                  {a}
-                </p>
-              </div>
+          <div className="faq-accordion-group" style={{ maxWidth: '1000px' }}>
+            {categoryData.faqs.map(([q, a], idx) => (
+              <details key={idx} className="faq-accordion-item">
+                <summary className="faq-accordion-summary">
+                  <span className="faq-accordion-title">
+                    <HelpCircle size={18} style={{ color: 'var(--bronze)', flexShrink: 0 }} />
+                    {q}
+                  </span>
+                  <span className="faq-accordion-icon" aria-hidden="true">+</span>
+                </summary>
+                <div className="faq-accordion-content">
+                  <p>{a}</p>
+                </div>
+              </details>
             ))}
           </div>
         </section>

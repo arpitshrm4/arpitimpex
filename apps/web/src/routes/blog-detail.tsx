@@ -203,12 +203,17 @@ export default function BlogDetailPage() {
             <h2 style={{ fontSize: '24px', color: 'var(--navy)', marginBottom: '20px' }}>
               Frequently Asked Questions
             </h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div className="faq-accordion-group">
               {post.faqs.map(([q, a], idx) => (
-                <div key={idx} style={{ background: '#f8f9fa', border: '1px solid var(--border)', borderRadius: 0, padding: '20px' }}>
-                  <h3 style={{ fontSize: '16px', fontWeight: 600, color: 'var(--navy)', marginBottom: '8px' }}>{q}</h3>
-                  <p style={{ fontSize: '14px', lineHeight: 1.6, color: 'var(--body)', margin: 0 }}>{a}</p>
-                </div>
+                <details key={idx} className="faq-accordion-item">
+                  <summary className="faq-accordion-summary">
+                    <span className="faq-accordion-title">{q}</span>
+                    <span className="faq-accordion-icon" aria-hidden="true">+</span>
+                  </summary>
+                  <div className="faq-accordion-content">
+                    <p>{a}</p>
+                  </div>
+                </details>
               ))}
             </div>
           </section>
