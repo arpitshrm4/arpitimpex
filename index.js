@@ -19,12 +19,17 @@ const build = await import(serverBuildPath);
 
 const app = express();
 app.disable('x-powered-by');
+app.enable('trust proxy');
 app.use(compression());
 
-// 301 Permanent redirect for www host to non-www canonical host
+// 301 Permanent redirect for www host and non-HTTPS to canonical non-www HTTPS host
 app.use((req, res, next) => {
   const host = req.headers.host || '';
-  if (host.startsWith('www.')) {
+  const isWww = host.startsWith('www.');
+  const proto = req.headers['x-forwarded-proto'] || (req.secure ? 'https' : 'http');
+  const isHttp = proto === 'http';
+
+  if (isWww || isHttp) {
     const cleanHost = host.replace(/^www\./, '');
     return res.redirect(301, `https://${cleanHost}${req.originalUrl}`);
   }
