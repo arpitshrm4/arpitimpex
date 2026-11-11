@@ -35,8 +35,49 @@ function getGoogleProductCategory(p: ProductItem): string {
   return '2473'; // Hardware > Hardware Accessories
 }
 
+const PRODUCT_USD_PRICES: Record<string, string> = {
+  'PH-TRD01': '3.50 USD',
+  'DH-160BGD': '14.10 USD',
+  'DH-FLR01': '22.00 USD',
+  'DC-BLK02': '3.95 USD',
+  'RL-TB03': '3.90 USD',
+  'PH-CYL01': '26.00 USD',
+  'DH-175BLK': '14.40 USD',
+  'CH-TR03': '12.20 USD',
+  'DC-SS01': '4.95 USD',
+  'LB-ALU20': '14.00 USD',
+  'LB-DC68': '2.50 USD',
+  'DH-160RGB': '14.40 USD',
+  'NO-68': '2.50 USD',
+  'LB-SS85': '9.00 USD',
+  'PH-GEO05': '4.50 USD',
+  'RL-AB04': '6.20 USD',
+  'JL-PB01': '15.50 USD',
+  'PH-ARC02': '2.80 USD',
+  'CYL-BSK2325': '7.00 USD',
+  'CYL-EP2631': '6.00 USD',
+  'FC-Z01': '1.00 USD',
+  'RL-BR02': '4.90 USD',
+  'NO-6033': '2.50 USD',
+  'LT-BL01': '2.20 USD',
+  'CH-BOW01': '2.80 USD',
+  'TB-BR01': '4.50 USD',
+};
+
 function getIndicativePrice(p: ProductItem, currency: string): string {
   const isUsd = currency.toUpperCase() === 'USD';
+  const id = cleanId(p);
+
+  if (isUsd) {
+    if (PRODUCT_USD_PRICES[id]) {
+      return PRODUCT_USD_PRICES[id];
+    }
+    const model = p.modelNumber?.trim().toUpperCase();
+    if (model && PRODUCT_USD_PRICES[model]) {
+      return PRODUCT_USD_PRICES[model];
+    }
+  }
+
   const text = `${p.category} ${p.categoryName} ${p.name}`.toLowerCase();
 
   if (text.includes('closer')) {
@@ -93,7 +134,7 @@ function toAbsoluteUrl(origin: string, path: string): string {
   return `${origin}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-export function getFeedProducts(origin: string, currency = 'INR'): FeedProduct[] {
+export function getFeedProducts(origin: string, currency = 'USD'): FeedProduct[] {
   return products.map((p) => {
     const id = cleanId(p);
     const title = `${p.name} (${p.modelNumber})`;
@@ -124,8 +165,11 @@ export function getFeedProducts(origin: string, currency = 'INR'): FeedProduct[]
   });
 }
 
-export function serializeGoogleMerchantXml(origin: string, currency = 'INR'): string {
+export function serializeGoogleMerchantXml(origin: string, currency = 'USD', country = 'US'): string {
   const items = getFeedProducts(origin, currency);
+  const isUsd = currency.toUpperCase() === 'USD';
+  const shippingPrice = isUsd ? '0.00 USD' : '0.00 INR';
+  const shippingService = country.toUpperCase() === 'US' ? 'Standard Commercial Freight' : 'Standard Logistics / Road Freight';
 
   const xmlItems = items
     .map((item) => {
@@ -146,9 +190,9 @@ export function serializeGoogleMerchantXml(origin: string, currency = 'INR'): st
 \t\t\t<g:material><![CDATA[${item.material}]]></g:material>
 \t\t\t<g:color><![CDATA[${item.color}]]></g:color>
 \t\t\t<g:shipping>
-\t\t\t\t<g:country>IN</g:country>
-\t\t\t\t<g:service>Standard Logistics / Road Freight</g:service>
-\t\t\t\t<g:price>0.00 INR</g:price>
+\t\t\t\t<g:country>${escapeXml(country.toUpperCase())}</g:country>
+\t\t\t\t<g:service>${shippingService}</g:service>
+\t\t\t\t<g:price>${shippingPrice}</g:price>
 \t\t\t</g:shipping>
 \t\t</item>`;
     })
@@ -166,7 +210,7 @@ ${xmlItems}
 `;
 }
 
-export function serializeGoogleMerchantTsv(origin: string, currency = 'INR'): string {
+export function serializeGoogleMerchantTsv(origin: string, currency = 'USD'): string {
   const items = getFeedProducts(origin, currency);
   const headers = [
     'id',

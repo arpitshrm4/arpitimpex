@@ -5,7 +5,9 @@ import { serializeGoogleMerchantTsv } from '@/lib/product-feed.server';
 export async function loader({ request }: Route.LoaderArgs) {
   const origin = siteOrigin(request);
   const url = new URL(request.url);
-  const currency = url.searchParams.get('currency') || 'INR';
+  const country = (url.searchParams.get('country') || 'US').toUpperCase();
+  const defaultCurrency = country === 'IN' ? 'INR' : 'USD';
+  const currency = (url.searchParams.get('currency') || defaultCurrency).toUpperCase();
 
   const tsvContent = serializeGoogleMerchantTsv(origin, currency);
 
