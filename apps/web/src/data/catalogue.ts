@@ -168,8 +168,8 @@ export const products: ProductItem[] = [
     doorThickness: '35mm – 50mm',
     packaging: 'Individual box packaging; corrugated export cartons',
     image: '/images/products/6-lever-zinc-alloy-double-chal-mortise-lock.webp',
-    description: 'The No. 68 is a traditional heavy-duty six-lever double-throw (double chal) mortise door lock engineered for residential entrance doors, commercial offices, and utility rooms. Featuring a robust teal-green powder-coated casing and a polished chrome faceplate, its two-turn key mechanism drives the solid deadbolt deeply into the frame strike for high forced-entry protection. Supplied with 3 numbered precision-cut steel keys and full mounting hardware.',
-    applications: 'Residential wooden doors, hotel service doors, and commercial interior installations.',
+    description: 'The No. 68 is part of our heavy duty mortise locks range—a traditional six-lever double-throw (double chal) mortise door lock engineered for residential entrance doors, commercial offices, and utility rooms. Featuring a robust teal-green powder-coated casing and a polished chrome faceplate, its two-turn key mechanism drives the solid deadbolt deeply into the frame strike for high forced-entry protection. Supplied with 3 numbered precision-cut steel keys and full mounting hardware.',
+    applications: 'Heavy duty mortise locks for residential wooden doors, hotel service doors, and commercial interior installations.',
   },
   {
     slug: 'antique-brass-door-rim-lock-set',
@@ -434,8 +434,8 @@ export const products: ProductItem[] = [
     doorThickness: 'Suitable for wooden, glass, and metal doors of any thickness',
     packaging: 'Single handle or back-to-back pair packaging with installation screws',
     image: '/images/products/traditional-motif-offset-pull-handle.webp',
-    description: 'Architectural cranked offset door pull handle in an antique satin brass finish, featuring deeply engraved traditional spiritual/auspicious motif and dual accent grooved bands. Designed with sturdy mounting tabs that provide comfortable hand clearance from the door face.',
-    applications: 'Temple entry doors, traditional haveli doors, handcrafted wooden gates, main villa entrances, and boutique hospitality interiors.',
+    description: 'Architectural cranked offset door pull handle in an antique satin brass finish, representing our heritage door handles collection with deeply engraved traditional spiritual/auspicious motif and dual accent grooved bands. Designed with sturdy mounting tabs that provide comfortable hand clearance from the door face.',
+    applications: 'Heritage door handles for temple entry doors, traditional haveli doors, handcrafted wooden gates, main villa entrances, and boutique hospitality interiors.',
   },
   {
     slug: 'filigree-tree-pattern-semicircular-wardrobe-pull-handles',

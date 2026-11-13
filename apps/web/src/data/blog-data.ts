@@ -50,7 +50,7 @@ export const BLOG_POSTS: BlogPost[] = [
       ],
       [
         'What types of architectural ironmongery are manufactured in Aligarh, India?',
-        'Aligarh specializes in heavy-duty exterior gate ironmongery (T-hinges, strap hinges, reversible hinges), perimeter security hardware (Brenton padbolts, galvanized sliding barrel bolts, foot bolts, rim deadbolts), interior door fittings (mortise lock bodies, euro cylinders, lever handles), and ornamental black antique hardware (thumb latches, ring pull handles, cabin hooks).',
+        'Aligarh specializes in heavy-duty exterior gate ironmongery (T-hinges, strap hinges, reversible hinges), perimeter security hardware (Brenton padbolts, galvanized sliding barrel bolts, foot bolts, rim deadbolts), interior door fittings (mortise lock bodies, euro cylinders, lever handles), and cast iron ironmongery (thumb latches, ring pull handles, cabin hooks).',
       ],
       [
         'What anti-corrosion surface finishes are recommended for exterior ironmongery exports?',
@@ -140,7 +140,7 @@ export const BLOG_POSTS: BlogPost[] = [
               <td>Residential developers, commercial interior contractors, architectural ironmongers</td>
             </tr>
             <tr>
-              <td><strong>Ornamental &amp; Black Antique Ironmongery</strong></td>
+              <td><strong>Cast Iron Ironmongery &amp; Black Antique Fittings</strong></td>
               <td>Cast Iron Thumb Latches, Ornate Ring Pulls, Fleur-de-Lys Straps, Heavy Cabin Hooks</td>
               <td>Malleable Cast Iron, Forged Mild Steel</td>
               <td>Textured Black Antique Powder Coat, Waxed Rust-Resistant Patina</td>
@@ -316,7 +316,7 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Dimensional Tolerances &amp; Fit:</strong> Case depth, backset, door-thickness range, and cylinder profile (e.g. <a href="/category/cylinders">Euro profile DIN 18252 vs. round BSK cylinder</a>).</li>
         <li><strong>Material Grade &amp; Surface Finish:</strong> Mild steel stamping, die-cast zinc alloy, brass, stainless steel, hot-dip galvanized, electroplated satin brass, polished chrome, or powder-coated matte black.</li>
         <li><strong>Order Volumes &amp; Projections:</strong> Initial trial quantity (MOQ) and estimated recurring container volumes.</li>
-        <li><strong>Branding &amp; Packaging Specifications:</strong> Standard neutral export packaging or custom private-label box branding (<a href="/oem-private-label">OEM Private Label Service</a>).</li>
+        <li><strong>Branding &amp; Packaging Specifications:</strong> Standard neutral export packaging, project-based architectural fittings, or custom private-label box branding (<a href="/oem-private-label">OEM Private Label Service</a>).</li>
         <li><strong>Destination Port:</strong> Exact seaport or inland container depot (ICD) for landed freight estimation.</li>
       </ul>
       <p>The more complete the enquiry, <mark class="blog-highlight">the faster and more binding your commercial quotation will be</mark>.</p>
@@ -472,7 +472,7 @@ export const BLOG_POSTS: BlogPost[] = [
     ],
     contentHtml: `
       <p class="blog-lead">
-        When stocking architectural locking hardware for regional distribution, commercial building contracts, or retail builders merchant counters, choosing the optimal inventory ratio between <strong>surface-mounted rim deadbolts</strong> and <strong>recessed mortise lock bodies</strong> determines your inventory velocity, contractor customer satisfaction, and margin performance. Each lock geometry solves distinct engineering, structural, and aesthetic challenges.
+        When stocking architectural locking hardware for regional distribution, commercial building contracts, or retail builders merchant counters, choosing the optimal inventory ratio between <strong>surface-mounted rim deadbolts</strong> and <strong>heavy duty mortise locks</strong> determines your inventory velocity, contractor customer satisfaction, and margin performance. Each lock geometry solves distinct engineering, structural, and aesthetic challenges.
       </p>
 
       <h2><span class="blog-step-badge">MECHANICS</span>Fundamental Engineering &amp; Structural Differences</h2>

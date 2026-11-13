@@ -15,10 +15,10 @@ export function Catalogue() {
         <span aria-current="page">Products</span>
       </nav>
 
-      <p className="eyebrow">ARCHITECTURAL HARDWARE EXPORT CATALOGUE</p>
-      <h1>Door Locks, Hinges, Bolts &amp; Gate Hardware from India</h1>
+      <p className="eyebrow">WHOLESALE ARCHITECTURAL HARDWARE &amp; EXPORT CATALOGUE</p>
+      <h1>Wholesale Architectural Hardware, Door Locks &amp; Hinges from India</h1>
       <p className="section-intro" style={{ maxWidth: '880px', lineHeight: '1.8' }}>
-        Browse our comprehensive export catalogue of {products.length} architectural door locks, precision euro cylinders, luxury lever handles, heavy-duty T-hinges, galvanized padbolts, and gate latches manufactured in Aligarh, India. Serving international importers, regional building material wholesalers, and institutional contractors, Arpit Impex provides verified dimensional drawings, surface electroplating options, and flexible OEM private-label packaging with full container export coordination.
+        Browse our comprehensive export catalogue of wholesale architectural hardware: {products.length} architectural door locks, heavy duty mortise locks, precision euro cylinders, heritage door handles, heavy-duty T-hinges, cast iron ironmongery, galvanized padbolts, and gate latches manufactured in Aligarh, India. Serving international importers, regional building material wholesalers, and institutional contractors, Arpit Impex provides verified dimensional drawings, surface electroplating options, and flexible OEM private-label packaging with full container export coordination.
       </p>
 
       {/* Prominent Digital Brochure Callout Banner */}

@@ -11,9 +11,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'Door Locks, Hinges, Bolts & Gate Hardware | Arpit Impex',
+      title: 'Wholesale Architectural Hardware, Door Locks & Hinges | Arpit Impex',
       description:
-        'Browse 79 door locks, cylinders, handles, T-hinges, bolts and gate latches from Aligarh, India. Get specs and a bulk quote.',
+        'Wholesale architectural hardware direct from Aligarh, India: heavy duty mortise locks, heritage door handles, T-hinges, cast iron ironmongery, bolts and cylinders. Get bulk B2B quote.',
       image: images.hero,
       jsonLd: [
         {

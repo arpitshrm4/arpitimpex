@@ -28,9 +28,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'About Arpit Impex | Door Hardware Exporter, Aligarh',
+      title: 'Architectural Door Hardware Manufacturer & Wholesale Exporter | Arpit Impex',
       description:
-        'Established in 2017 in Aligarh, India, Arpit Impex manufactures door locks, rim deadbolts, hinges, and bolts. Contact person: Arpit Sharma. GSTIN: 09AEOPS8020A1ZH.',
+        'Established in 2017 in Aligarh, India, Arpit Impex is an architectural door hardware manufacturer supplying wholesale architectural hardware, heavy duty mortise locks, and ironmongery worldwide.',
       image: images.factoryEntrance,
       jsonLd: [
         {
@@ -76,9 +76,9 @@ export default function AboutPage() {
       {/* Hero Header */}
       <section className="section about-hero">
         <p className="eyebrow">ESTABLISHED 2017 · ALIGARH, INDIA</p>
-        <h1>About Arpit Impex: Door Hardware Exporter in Aligarh, India</h1>
+        <h1>Architectural Door Hardware Manufacturer &amp; Wholesale Exporter in Aligarh, India</h1>
         <p className="section-intro" style={{ maxWidth: '880px', lineHeight: '1.8' }}>
-          Founded in 2017 and led by Arpit Sharma, Arpit Impex is a manufacturer and export coordinator of high-security door locks, rim deadbolts, precision euro cylinders, architectural door handles, and heavy ironmongery. Situated in the historic hardware industrial hub of Aligarh, Uttar Pradesh, we bridge the gap between traditional Indian metal craftsmanship and modern global procurement standards.
+          Founded in 2017 and led by Arpit Sharma, Arpit Impex is an established architectural door hardware manufacturer supplying wholesale architectural hardware, high-security door locks, heavy duty mortise locks, heritage door handles, precision euro cylinders, and heavy cast iron ironmongery. Situated in the historic hardware industrial hub of Aligarh, Uttar Pradesh, we bridge the gap between traditional Indian metal craftsmanship and modern global procurement standards.
         </p>
       </section>
 

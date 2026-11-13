@@ -568,8 +568,8 @@ export const ironmongeryProducts: ProductItem[] = [
     "doorThickness": "Suitable for standard 35mm – 55mm wooden entry doors",
     "packaging": "Complete retail / export presentation box with fixing screws",
     "image": "/images/ironmongery/ornate-black-iron-door-hardware-set.webp",
-    "description": "Comprehensive rustic ironmongery suite designed for cohesive door fittings, including an ornamental pull handle, matching surface bolt, and decorative plates.",
-    "applications": "Rustic barn doors, wine cellar portals, luxury timber gates, and country homes."
+    "description": "Comprehensive cast iron ironmongery and rustic hardware suite designed for cohesive door fittings, including an ornamental pull handle, matching surface bolt, and decorative plates.",
+    "applications": "Cast iron ironmongery for rustic barn doors, wine cellar portals, luxury timber gates, and country homes."
   },
   {
     "slug": "surface-black-metal-latch-dual-catch-plates",

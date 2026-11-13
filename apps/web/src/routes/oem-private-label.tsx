@@ -23,9 +23,9 @@ export function meta({ matches, location }: Route.MetaArgs) {
   return seo(
     { matches, location },
     {
-      title: 'OEM & Private Label Door Hardware Manufacturer India | Arpit Impex',
+      title: 'OEM Hardware & Project-Based Architectural Fittings | Arpit Impex',
       description:
-        'Custom tooling, progressive stamping, private-label packaging, and bespoke electroplated finishes from Aligarh, India. Low MOQ OEM architectural hardware.',
+        'Custom tooling, progressive stamping, project-based architectural fittings, private-label packaging, and wholesale architectural hardware from Aligarh, India.',
       image: images.pressWorkshop,
       jsonLd: [
         {
@@ -51,10 +51,10 @@ export default function OemPrivateLabelPage() {
           <span aria-current="page">OEM &amp; Private Label</span>
         </nav>
 
-        <p className="eyebrow">CUSTOM MANUFACTURING &amp; PRIVATE BRANDING</p>
-        <h1>OEM &amp; Private Label Door Hardware Manufacturer in India</h1>
+        <p className="eyebrow">PROJECT-BASED ARCHITECTURAL FITTINGS &amp; PRIVATE BRANDING</p>
+        <h1>OEM Door Hardware &amp; Project-Based Architectural Fittings in India</h1>
         <p className="section-intro" style={{ maxWidth: '880px', lineHeight: '1.8' }}>
-          Arpit Impex delivers end-to-end OEM and private-label manufacturing solutions for global hardware brands, architectural distributors, building material chains, and security equipment wholesalers. From custom die stamping and CNC keyway milling to bespoke retail packaging and corrosion-resistant electroplating, we turn your engineering drawings into market-ready hardware.
+          Arpit Impex delivers end-to-end OEM manufacturing, wholesale architectural hardware, and project-based architectural fittings for global hardware brands, architectural distributors, building material chains, and security equipment wholesalers. From custom die stamping and CNC keyway milling to bespoke retail packaging and corrosion-resistant electroplating, we turn your engineering drawings into market-ready hardware.
         </p>
       </section>
 
