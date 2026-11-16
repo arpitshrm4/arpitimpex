@@ -25,14 +25,14 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     eyebrow: 'SECURITY LOCKING SYSTEMS · ALIGARH, INDIA',
     image: '/images/products/j-lock-mild-steel-door-penta-bolt-lock-set.webp',
     intro:
-      'Arpit Impex manufactures and coordinates the export supply of premium surface-mounted rim locks, heavy-duty penta-bolt deadbolts, heavy duty mortise locks, and multi-lever security door lock sets from Aligarh, India. Engineered for maximum physical protection across main wooden entrance doors, commercial portals, residential apartments, and perimeter security gates, our lock systems utilize precision mild steel stamping casings, multi-throw solid steel bolts, and pick-resistant lever configurations. Each lockset includes precision-cut brass keys, matched strike boxes, and decorative rosette trims. We cater to global building material distributors, hardware wholesalers, and commercial developers with full OEM branding, custom electroplated finishes, and master export container consolidation.',
+      'Arpit Impex manufactures and coordinates the export supply of premium surface-mounted rim locks, heavy-duty penta-bolt deadbolts, heavy duty mortise locks, and multi-lever security door lock sets from Aligarh, India. Engineered for maximum physical protection across main wooden entrance doors, commercial portals, residential apartments, and perimeter security gates, our lock systems utilize precision mild steel stamping casings, multi-throw solid steel bolts, and pick-resistant lever configurations. Each lockset includes precision-cut SS keys, matched strike boxes, and decorative rosette trims. We cater to global building material distributors, hardware wholesalers, and commercial developers with full OEM branding, custom electroplated finishes, and master export container consolidation.',
     buyerTypes: ['Hardware Importers', 'Wholesale Distributors', 'Residential Developers', 'Security Gate Fabricators'],
     materials: ['Mild Steel Casings', 'Solid Brass Cylinder Mechanisms', 'Die-Cast Zinc Alloy Levers', 'Hardened Carbon Steel Bolts'],
     finishes: ['Dual-Tone Metallic Powder Coat', 'Antique Satin Brass', 'Polished Chrome Plate', 'Matte Black Epoxy'],
     faqs: [
       [
         'What key options and lock mechanisms are supplied with your rim locks?',
-        'Our rim locks are supplied with either 3 precision-numbered brass keys or dimple computer keys. The mechanism features a 5-bolt deadbolt throw operated by key externally and a solid thumbturn or knob internally.',
+        'Our rim locks are supplied with either 3 precision-numbered SS keys or dimple computer keys. The mechanism features a 5-bolt deadbolt throw operated by key externally and a solid thumbturn or knob internally.',
       ],
       [
         'Can you customize box packaging and brand rosettes for commercial buyers?',
@@ -83,7 +83,7 @@ export const CATEGORIES_DATA: Record<string, CategoryData> = {
     eyebrow: 'PRECISION CYLINDER LOCKS · ALIGARH',
     image: '/images/products/euro-cylinder-lock-numbered-keys.webp',
     intro:
-      'As a manufacturer and export supplier from Aligarh—India’s premier lockmaking hub—Arpit Impex produces precision-engineered euro profile lock cylinders, double-key cylinders, and BSK mortise cylinders. Machined from solid extruded brass bar stock, our cylinders feature hardened anti-drill pins, pick-resistant brass tumbler pin arrangements, and smooth sintered bronze cams compliant with standard DIN 18252 and EN 1303 dimensions. Suitable for wooden entrance doors, aluminium architectural sections, and fire-rated exit doors, our cylinders are supplied with 3 numbered brass keys or laser-cut computer dimple keys for precise tracking and controlled duplication.',
+      'As a manufacturer and export supplier from Aligarh—India’s premier lockmaking hub—Arpit Impex produces precision-engineered euro profile lock cylinders, double-key cylinders, and BSK mortise cylinders. Machined from solid extruded brass bar stock, our cylinders feature hardened anti-drill pins, pick-resistant brass tumbler pin arrangements, and smooth sintered bronze cams compliant with standard DIN 18252 and EN 1303 dimensions. Suitable for wooden entrance doors, aluminium architectural sections, and fire-rated exit doors, our cylinders are supplied with 3 numbered SS keys or laser-cut computer dimple keys for precise tracking and controlled duplication.',
     buyerTypes: ['Locksmith Distributors', 'Door Fabricators', 'Security Hardware Wholesalers', 'Institutional Procurement'],
     materials: ['Solid Extruded Brass Body & Plug', 'Hardened Anti-Drill Steel Pins', 'Phosphor Bronze Springs'],
     finishes: ['Natural Satin Brass', 'Polished Chrome Plate', 'Satin Nickel Plated', 'Antique Brass'],

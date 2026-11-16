@@ -357,7 +357,7 @@ export const BLOG_POSTS: BlogPost[] = [
           <li><strong>Mechanical Movement:</strong> Smooth cylinder rotation, double-throw bolt extension without sticking, and solid spring latch return.</li>
           <li><strong>Plating &amp; Edges:</strong> Check recessed corners, strike edges, and screw countersinks for even coating thickness and zero bare spots.</li>
           <li><strong>Caliper Fitment:</strong> Measure case depth, backset, and spindle hub against your architectural door cutouts.</li>
-          <li><strong>Key Configuration:</strong> Inspect brass key stamping, number engraving, and key duplication smoothness across all supplied keys.</li>
+          <li><strong>Key Configuration:</strong> Inspect SS key stamping, number engraving, and key duplication smoothness across all supplied keys.</li>
           <li><strong>Packaging Integrity:</strong> Ensure box rigidity and barcode legibility survive international handling.</li>
         </ul>
       </div>
@@ -523,7 +523,7 @@ export const BLOG_POSTS: BlogPost[] = [
             </tr>
             <tr>
               <td><strong>Cylinder Compatibility</strong></td>
-              <td>Integrated solid brass rim cylinder with flat drive tailpiece; supplied with 3 to 5 numbered brass keys.</td>
+              <td>Integrated solid brass rim cylinder with flat drive tailpiece; supplied with 3 to 5 numbered SS keys.</td>
               <td>Modular Euro Profile (DIN 18252 / EN 1303) or round Scandinavian BSK cylinder; easily retrofitted or master-keyed.</td>
             </tr>
             <tr>
@@ -596,7 +596,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '8 min read',
     author: 'Arpit Sharma',
     image: '/images/products/euro-cylinder-lock-numbered-keys.webp',
-    imageAlt: 'Solid brass euro profile cylinder with numbered brass computer keys compared with BSK mortise cylinder',
+    imageAlt: 'Solid brass euro profile cylinder with numbered SS computer keys compared with BSK mortise cylinder',
     summary:
       'A deep-dive technical and metallurgical analysis comparing DIN 18252 / EN 1303 Euro profile cylinders with Scandinavian BSK round mortise cylinders: dimensional sizing, pin tumbler tolerances, master-keying, anti-snap engineering, and wholesale procurement.',
     faqs: [
@@ -713,7 +713,7 @@ export const BLOG_POSTS: BlogPost[] = [
       <ul class="blog-checklist">
         <li><strong>Sacrificial Anti-Snap Score Line:</strong> Located 10mm from the external face of our Euro cylinders. If an intruder attempts to use mole grips or a snapper bar, the cylinder shears cleanly along the pre-weakened score line, leaving the central locking cam and internal brass pins securely trapped within the mortise lock body.</li>
         <li><strong>Hardened Anti-Drill Barrier:</strong> Solid hardened steel pins inserted horizontally and vertically in both the cylinder body and the rotating plug defeat high-speed carbide drill bits.</li>
-        <li><strong>Numbered Brass Keys:</strong> Every cylinder set is supplied with 3 to 5 heavy-duty solid nickel-plated brass keys stamped with a unique alphanumeric code (<mark class="blog-highlight">Numbered Keys</mark>) for registered key cutting and duplicate tracking.</li>
+        <li><strong>Numbered SS Keys:</strong> Every cylinder set is supplied with 3 to 5 heavy-duty stainless steel (SS) keys stamped with a unique alphanumeric code (<mark class="blog-highlight">Numbered Keys</mark>) for registered key cutting and duplicate tracking.</li>
       </ul>
 
       <h2><span class="blog-step-badge">SIZING GUIDE</span>How to Calculate Exact Cylinder Sizing for Door Assemblies</h2>

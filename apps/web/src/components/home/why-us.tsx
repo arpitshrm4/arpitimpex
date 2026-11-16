@@ -17,7 +17,7 @@ export function WhyUs() {
     {
       num: '03',
       title: 'Pre-Dispatch Quality & Mechanism Checks',
-      text: 'Order-specific inspection covering bolt throw travel, spring latch tension, brass key smoothness, and salt-spray resistant coatings.',
+      text: 'Order-specific inspection covering bolt throw travel, spring latch tension, SS key smoothness, and salt-spray resistant coatings.',
     },
     {
       num: '04',

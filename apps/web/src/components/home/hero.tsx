@@ -15,7 +15,7 @@ export function Hero() {
         />
         <img
           src={images.hero}
-          alt="J-Lock penta-bolt rim door lock set with solid brass keys, strike box, and decorative escutcheon plate"
+          alt="J-Lock penta-bolt rim door lock set with solid SS keys, strike box, and decorative escutcheon plate"
           width="1024"
           height="682"
           fetchPriority="high"
