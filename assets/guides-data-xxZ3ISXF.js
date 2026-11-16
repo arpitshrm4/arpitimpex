@@ -9,7 +9,7 @@ const e=[{slug:"how-to-import-door-hardware-from-india",title:"How to Import Doo
         <li><strong>Exact Dimensions:</strong> Backset distance (e.g. 45mm, 60mm), centre-to-centre distance (e.g. 85mm), plate height, spindle hub size (8mm standard), and door thickness compatibility (typically 35–55mm).</li>
         <li><strong>Substrate & Alloy Grade:</strong> Extruded brass (CuZn39Pb3), Zamak-3/Zamak-5 zinc alloy, cold-rolled mild steel (CRCA), or Grade 304 stainless steel.</li>
         <li><strong>Surface Finish & Micron Coating:</strong> PVD satin gold, electroplated antique brass, matte black epoxy powder coat, or mirror chrome plate. Specify salt-spray resistance hours (e.g. 48hr, 96hr ASTM B117).</li>
-        <li><strong>Key Systems:</strong> Standard numbered brass keys, dimple computer keys, or master-key suites.</li>
+        <li><strong>Key Systems:</strong> Standard numbered SS keys, dimple computer keys, or master-key suites.</li>
       </ul>
 
       <h2>Step 2: Sample Evaluation & Pre-Production Tooling Approval</h2>
