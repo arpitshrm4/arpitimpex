@@ -1,8 +1,29 @@
+import { useEffect } from 'react';
 import type { Route } from './+types/thank-you';
-import { Link } from 'react-router';
+import { Link, useSearchParams } from 'react-router';
 import { seo, absoluteUrl, siteOriginFrom } from '@/lib/seo';
 import { CheckCircle2, ArrowRight, Phone, Mail, FileText, Home } from 'lucide-react';
 import { companyInfo } from '@/data/catalogue';
+
+function parseCountryCode(country?: string | null): string {
+  if (!country) return 'US';
+  const trimmed = country.trim();
+  if (trimmed.length === 2) return trimmed.toUpperCase();
+  const lower = trimmed.toLowerCase();
+  if (lower.includes('united states') || lower.includes('usa') || lower.includes('america')) return 'US';
+  if (lower.includes('united kingdom') || lower.includes('uk') || lower.includes('england') || lower.includes('britain')) return 'GB';
+  if (lower.includes('india') || lower.includes('bharat')) return 'IN';
+  if (lower.includes('emirates') || lower.includes('uae') || lower.includes('dubai')) return 'AE';
+  if (lower.includes('canada')) return 'CA';
+  if (lower.includes('australia')) return 'AU';
+  if (lower.includes('germany') || lower.includes('deutschland')) return 'DE';
+  if (lower.includes('saudi')) return 'SA';
+  if (lower.includes('qatar')) return 'QA';
+  if (lower.includes('kuwait')) return 'KW';
+  if (lower.includes('oman')) return 'OM';
+  if (lower.includes('singapore')) return 'SG';
+  return 'US';
+}
 
 export function meta({ matches, location }: Route.MetaArgs) {
   const origin = siteOriginFrom(matches);
@@ -19,9 +40,102 @@ export function meta({ matches, location }: Route.MetaArgs) {
   );
 }
 
-export default function ThankYouPage() {
+export function loader({ request }: Route.LoaderArgs) {
+  const url = new URL(request.url);
+  const orderId = url.searchParams.get('order_id') || `AI-${Date.now()}`;
+  const email = url.searchParams.get('email') || 'exports@arpitimpex.com';
+  const rawCountry = url.searchParams.get('country') || 'US';
+  const deliveryCountry = parseCountryCode(rawCountry);
+
+  // Google Customer Reviews requires estimated_delivery_date in the format YYYY-MM-DD in the future (+14 days)
+  const deliveryDateObj = new Date();
+  deliveryDateObj.setDate(deliveryDateObj.getDate() + 14);
+  const estimatedDeliveryDate = deliveryDateObj.toISOString().split('T')[0];
+
+  return {
+    merchantId: 5886884173,
+    orderId,
+    email,
+    deliveryCountry,
+    estimatedDeliveryDate,
+  };
+}
+
+export default function ThankYouPage({ loaderData }: Route.ComponentProps) {
+  const [searchParams] = useSearchParams();
+
+  const merchantId = loaderData?.merchantId ?? 5886884173;
+  const orderId = searchParams.get('order_id') || loaderData?.orderId || `AI-${Date.now()}`;
+  const email = searchParams.get('email') || loaderData?.email || 'exports@arpitimpex.com';
+  const deliveryCountry = parseCountryCode(searchParams.get('country') || loaderData?.deliveryCountry || 'US');
+  const estimatedDeliveryDate =
+    loaderData?.estimatedDeliveryDate ||
+    (() => {
+      const d = new Date();
+      d.setDate(d.getDate() + 14);
+      return d.toISOString().split('T')[0];
+    })();
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    (window as any).renderOptIn = function () {
+      if ((window as any).gapi && (window as any).gapi.load) {
+        (window as any).gapi.load('surveyoptin', function () {
+          if ((window as any).gapi.surveyoptin && (window as any).gapi.surveyoptin.render) {
+            (window as any).gapi.surveyoptin.render({
+              merchant_id: merchantId,
+              order_id: orderId,
+              email: email,
+              delivery_country: deliveryCountry,
+              estimated_delivery_date: estimatedDeliveryDate,
+              opt_in_style: 'CENTER_DIALOG',
+            });
+          }
+        });
+      }
+    };
+
+    if ((window as any).gapi && (window as any).gapi.load) {
+      (window as any).renderOptIn();
+    } else {
+      const scriptId = 'google-customer-reviews-optin';
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement('script');
+        script.id = scriptId;
+        script.src = 'https://apis.google.com/js/platform.js?onload=renderOptIn';
+        script.async = true;
+        script.defer = true;
+        document.body.appendChild(script);
+      }
+    }
+  }, [merchantId, orderId, email, deliveryCountry, estimatedDeliveryDate]);
+
   return (
     <main className="thank-you-page section" style={{ minHeight: '70vh', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '60px 24px' }}>
+      {/* Google Customer Reviews Survey Opt-in Module */}
+      <script src="https://apis.google.com/js/platform.js?onload=renderOptIn" async defer />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+window.renderOptIn = function() {
+  window.gapi.load('surveyoptin', function() {
+    window.gapi.surveyoptin.render(
+      {
+        // REQUIRED FIELDS
+        "merchant_id": ${merchantId},
+        "order_id": ${JSON.stringify(orderId)},
+        "email": ${JSON.stringify(email)},
+        "delivery_country": ${JSON.stringify(deliveryCountry)},
+        "estimated_delivery_date": ${JSON.stringify(estimatedDeliveryDate)},
+        "opt_in_style": "CENTER_DIALOG"
+      });
+  });
+};
+`,
+        }}
+      />
+
       <div style={{ maxWidth: '640px', width: '100%', textAlign: 'center', background: '#fff', border: '1px solid var(--border)', borderRadius: 0, padding: '48px 32px', boxShadow: '0 8px 30px rgba(0,0,0,0.04)' }}>
         <div style={{ width: '64px', height: '64px', borderRadius: 0, background: '#ecfdf5', color: '#059669', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 24px auto' }}>
           <CheckCircle2 size={36} />
@@ -58,4 +172,3 @@ export default function ThankYouPage() {
     </main>
   );
 }
-

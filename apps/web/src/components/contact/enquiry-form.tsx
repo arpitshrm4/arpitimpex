@@ -57,7 +57,13 @@ export function EnquiryForm() {
     const url = `https://wa.me/918285687940?text=${encodeURIComponent(text)}`;
     window.open(url, '_blank');
     setSubmitted(true);
-    navigate('/thank-you');
+    const orderId = `AI-${Date.now()}`;
+    const searchParams = new URLSearchParams({
+      order_id: orderId,
+      email: formData.email || '',
+      country: formData.country || 'US',
+    });
+    navigate(`/thank-you?${searchParams.toString()}`);
   };
 
   const handleMailtoSubmit = () => {
@@ -80,8 +86,14 @@ Enquiry Notes & Specifications:
 ${formData.details}`);
 
     window.location.href = `mailto:${companyInfo.email}?subject=${subject}&body=${body}`;
+    const orderId = `AI-${Date.now()}`;
+    const searchParams = new URLSearchParams({
+      order_id: orderId,
+      email: formData.email || '',
+      country: formData.country || 'US',
+    });
     setTimeout(() => {
-      navigate('/thank-you');
+      navigate(`/thank-you?${searchParams.toString()}`);
     }, 400);
   };
 
