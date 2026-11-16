@@ -8,8 +8,9 @@ export async function loader({ request }: Route.LoaderArgs) {
   const country = (url.searchParams.get('country') || 'US').toUpperCase();
   const defaultCurrency = country === 'IN' ? 'INR' : 'USD';
   const currency = (url.searchParams.get('currency') || defaultCurrency).toUpperCase();
+  const shippingLabel = url.searchParams.get('shipping_label') || undefined;
 
-  const xmlContent = serializeGoogleMerchantXml(origin, currency, country);
+  const xmlContent = serializeGoogleMerchantXml(origin, currency, country, shippingLabel);
 
   return new Response(xmlContent, {
     headers: {

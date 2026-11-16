@@ -111,6 +111,7 @@ export interface ProductItem {
   image: string;
   description: string;
   applications: string;
+  shippingLabel?: string;
 }
 
 export const products: ProductItem[] = [

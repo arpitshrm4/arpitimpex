@@ -16,6 +16,7 @@ export interface FeedProduct {
   productType: string;
   material: string;
   color: string;
+  shippingLabel: string;
 }
 
 function cleanId(p: ProductItem): string {
@@ -134,7 +135,35 @@ function toAbsoluteUrl(origin: string, path: string): string {
   return `${origin}${path.startsWith('/') ? path : `/${path}`}`;
 }
 
-export function getFeedProducts(origin: string, currency = 'USD'): FeedProduct[] {
+export function getShippingLabel(p: ProductItem, overrideLabel?: string): string {
+  if (overrideLabel?.trim()) {
+    return overrideLabel.trim();
+  }
+  if (p.shippingLabel?.trim()) {
+    return p.shippingLabel.trim();
+  }
+  const cat = (p.category || '').toLowerCase().trim();
+  switch (cat) {
+    case 'door-locks':
+      return 'door_locks';
+    case 'lock-bodies':
+      return 'mortise_locks';
+    case 'cylinders':
+      return 'cylinders';
+    case 'door-handles':
+      return 'door_handles';
+    case 'hinges':
+      return 'gate_hinges';
+    case 'bolts-latches':
+      return 'bolts_latches';
+    case 'brackets-anchors':
+      return 'brackets_anchors';
+    default:
+      return 'standard_hardware';
+  }
+}
+
+export function getFeedProducts(origin: string, currency = 'USD', overrideShippingLabel?: string): FeedProduct[] {
   return products.map((p) => {
     const id = cleanId(p);
     const title = `${p.name} (${p.modelNumber})`;
@@ -144,6 +173,7 @@ export function getFeedProducts(origin: string, currency = 'USD'): FeedProduct[]
     const price = getIndicativePrice(p, currency);
     const googleProductCategory = getGoogleProductCategory(p);
     const productType = `Architectural Hardware > ${p.categoryName || p.category}`;
+    const shippingLabel = getShippingLabel(p, overrideShippingLabel);
 
     return {
       id,
@@ -161,12 +191,18 @@ export function getFeedProducts(origin: string, currency = 'USD'): FeedProduct[]
       productType,
       material: p.material || 'Architectural Grade Hardware',
       color: p.finish || 'Standard Export Finish',
+      shippingLabel,
     };
   });
 }
 
-export function serializeGoogleMerchantXml(origin: string, currency = 'USD', country = 'US'): string {
-  const items = getFeedProducts(origin, currency);
+export function serializeGoogleMerchantXml(
+  origin: string,
+  currency = 'USD',
+  country = 'US',
+  overrideShippingLabel?: string
+): string {
+  const items = getFeedProducts(origin, currency, overrideShippingLabel);
   const isUsd = currency.toUpperCase() === 'USD';
   const shippingPrice = isUsd ? '0.00 USD' : '0.00 INR';
   const shippingService = country.toUpperCase() === 'US' ? 'Standard Commercial Freight' : 'Standard Logistics / Road Freight';
@@ -189,6 +225,7 @@ export function serializeGoogleMerchantXml(origin: string, currency = 'USD', cou
 \t\t\t<g:product_type><![CDATA[${item.productType}]]></g:product_type>
 \t\t\t<g:material><![CDATA[${item.material}]]></g:material>
 \t\t\t<g:color><![CDATA[${item.color}]]></g:color>
+\t\t\t<g:shipping_label>${escapeXml(item.shippingLabel)}</g:shipping_label>
 \t\t\t<g:shipping>
 \t\t\t\t<g:country>${escapeXml(country.toUpperCase())}</g:country>
 \t\t\t\t<g:service>${shippingService}</g:service>
@@ -210,8 +247,12 @@ ${xmlItems}
 `;
 }
 
-export function serializeGoogleMerchantTsv(origin: string, currency = 'USD'): string {
-  const items = getFeedProducts(origin, currency);
+export function serializeGoogleMerchantTsv(
+  origin: string,
+  currency = 'USD',
+  overrideShippingLabel?: string
+): string {
+  const items = getFeedProducts(origin, currency, overrideShippingLabel);
   const headers = [
     'id',
     'title',
@@ -228,6 +269,7 @@ export function serializeGoogleMerchantTsv(origin: string, currency = 'USD'): st
     'product_type',
     'material',
     'color',
+    'shipping_label',
   ];
 
   const rows = items.map((item) => {
@@ -247,6 +289,7 @@ export function serializeGoogleMerchantTsv(origin: string, currency = 'USD'): st
       item.productType.replace(/[\t\r\n]+/g, ' '),
       item.material.replace(/[\t\r\n]+/g, ' '),
       item.color.replace(/[\t\r\n]+/g, ' '),
+      item.shippingLabel.replace(/[\t\r\n]+/g, ' '),
     ].join('\t');
   });
 
