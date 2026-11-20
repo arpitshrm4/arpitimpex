@@ -62,9 +62,10 @@ export default function BlogIndexPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const selectedCategory = searchParams.get('category') || 'All';
 
-  const filteredPosts = selectedCategory === 'All'
+  const filteredPosts = (selectedCategory === 'All'
     ? BLOG_POSTS
-    : BLOG_POSTS.filter((p) => p.category === selectedCategory);
+    : BLOG_POSTS.filter((p) => p.category === selectedCategory)
+  ).slice().sort((a, b) => new Date(b.publishedDate).getTime() - new Date(a.publishedDate).getTime());
 
   return (
     <main className="blog-index-page">

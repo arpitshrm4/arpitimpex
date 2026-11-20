@@ -28,6 +28,292 @@ export const BLOG_CATEGORIES = [
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    slug: 'hand-forged-ironmongery-from-india',
+    title: 'Hand-Forged Ironmongery from India: A Buyer\'s Guide',
+    metaTitle: 'Hand-Forged Ironmongery from India: Buyer\'s Guide',
+    metaDescription: 'How to source hand-forged hinges, latches and gate hardware from India: finishes, samples, MOQ, packaging and shipping. Request a quote.',
+    h1: 'Hand-Forged Ironmongery from India: A Buyer\'s Guide',
+    category: 'Buying Guides',
+    targetKeyword: 'hand forged ironmongery India',
+    targetReader: 'Importers, wholesalers, gate and ironmongery retailers, and trade buyers in the UK, Europe, UAE, Australia and the US',
+    publishedDate: '2026-11-20',
+    readTime: '7 min read',
+    author: 'Arpit Sharma',
+    image: '/images/ironmongery/black-ornate-iron-door-latch.webp',
+    imageAlt: 'Authentic hand-forged black ornate iron door latch and Suffolk gate hardware manufactured in India',
+    summary:
+      'A practical B2B buyer\'s guide for overseas importers and hardware retailers on sourcing authentic hand-forged hinges, Suffolk latches, and rustic gate hardware from India: quality checks, anti-rust finishes, sample verification, and shipping.',
+    faqs: [
+      [
+        'Are all your products hand-forged?',
+        'No. We offer hand-forged and other architectural ironmongery (including cast, stamped, and precision-machined lines). We maintain complete transparency and explicitly confirm which items are forged in our own manufacturing facility and which come through our audited partner artisan workshops before you order.',
+      ],
+      [
+        'Can I get a sample first before committing to bulk quantity?',
+        'Yes. Evaluation samples can be coordinated for all active catalog models. We confirm sample availability, nominal unit cost, and courier dispatch time (typically 3–7 business days via DHL/FedEx) at the quotation stage.',
+      ],
+      [
+        'Can you manufacture custom hand-forged designs or modify existing models?',
+        'Yes. Send us a technical drawing, sketch, or clear photograph with dimensions. Our Aligarh toolroom and master blacksmiths will evaluate feasibility, tooling/pattern requirements, sample timelines, and volume MOQs.',
+      ],
+      [
+        'Can you pack hand-forged ironmongery under our brand (OEM / Private Label)?',
+        'Yes. We provide comprehensive OEM private-label packaging including customized visual retail boxes, branded polybags with EAN-13 barcodes, and laser-marked brand rosettes, subject to agreed order volume.',
+      ],
+      [
+        'What are your typical Minimum Order Quantities (MOQs)?',
+        'MOQs depend on the specific hardware piece, required finish (e.g. beeswax vs. electroplated vs. powder coated), and packaging specifications. Rather than quoting a rigid single figure, we provide flexible, workable MOQs tailored to your consignment requirements.',
+      ],
+      [
+        'How do I get started with an enquiry or quote?',
+        'Simply send your required model numbers, sizes, finishes, quantities, and destination port through our website contact form or directly via WhatsApp (+91 8285687940). Our export desk will review your details and respond with specifications and commercial terms.',
+      ],
+    ],
+    relatedCategories: [
+      { name: 'Hinges & Gate Hardware', path: '/category/hinges' },
+      { name: 'Bolts & Gate Latches', path: '/category/bolts-latches' },
+      { name: 'Brackets, Anchors & Fixings', path: '/category/brackets-anchors' },
+    ],
+    contentHtml: `
+      <div class="blog-callout tip" style="margin-bottom: 28px;">
+        <div class="blog-callout-header">🎯 Who This Guide Is For</div>
+        <p style="margin: 0; font-size: 15px; line-height: 1.7;">
+          <strong>Who this is for:</strong> Importers, wholesalers, gate hardware fabricators, and ironmongery retailers seeking reliable, direct sourcing of authentic hand-forged hinges, Suffolk latches, bolts, hooks, and rustic gate fittings from India. If you already know what you need, <a href="/contact" style="color: var(--bronze); font-weight: 700; text-decoration: underline;">Request a Quote</a> or <a href="https://wa.me/918285687940?text=Hello%20Arpit%20Impex%2C%20I%20would%20like%20to%20discuss%20hand-forged%20ironmongery%20quotation" target="_blank" rel="noopener noreferrer" style="color: var(--bronze); font-weight: 700; text-decoration: underline;">WhatsApp our export desk at +91 8285687940</a>.
+        </p>
+      </div>
+
+      <p>
+        Hand-forged ironmongery commands premium retail value and high commercial demand because it looks and feels completely distinct from mass-cast, cookie-cutter hardware. Discerning architectural buyers in the United Kingdom, Europe, North America, the Gulf (GCC), and Australia seek hand-forged pieces for heritage barn conversions, period timber cottage restorations, rural estate garden gates, bespoke pubs, rustic restaurants, and artisanal interior joinery.
+      </p>
+      <p>
+        India possesses centuries of traditional metallurgical craftsmanship, anvil-forging mastery, and hot-metal forming expertise. Consequently, international hardware distributors and builders merchants are actively shifting procurement to Indian exporters. However, navigating finishes, rust prevention across maritime transit, sampling, and realistic production MOQs requires clear commercial guidance. This guide explains exactly what to look for, what questions to ask your supplier, and how a seamless export order works.
+      </p>
+
+      <h2><span class="blog-step-badge">SECTION 01</span>What "Hand-Forged" Actually Means (and What It Doesn't)</h2>
+      <p>
+        Authentic hand-forged ironmongery is shaped from red-hot bars of carbon steel or malleable wrought iron using open hearths, anvils, hand hammers, and manual swage forming tools, followed by individual hand-finishing. Because each piece is manually worked by an artisan blacksmith, subtle variations in surface texture, subtle hammer facet marks, and unique taper contours are completely normal—and represent the primary aesthetic appeal buyers pay for.
+      </p>
+      <p>
+        In contrast, cast or stamped hardware is mass-produced in metal moulds or automated mechanical stamping presses. While stamped and cast items offer absolute dimensional uniformity, they lack the organic texture, heavy hand-feel, and traditional architectural character of hot-forged fittings.
+      </p>
+
+      <div class="blog-callout factory">
+        <div class="blog-callout-header">⚠️ Buyer Watch-Out: The "Forged" Label Confusion</div>
+        <p style="margin: 0;">
+          Be cautious with overseas trading suppliers who indiscriminately label all black ironmongery as "forged". Many brokers supply cheap zinc die-cast or thin sheet-metal pressings coated in rough crackle paint to mimic forging. Always ask your supplier which exact SKUs are genuine hand-forged, which are drop-forged, and which are stamped or fabricated, and verify that production samples match your catalog imagery before issuing purchase orders.
+        </p>
+      </div>
+
+      <div class="blog-table-wrapper">
+        <table class="blog-table">
+          <thead>
+            <tr>
+              <th>Manufacturing Method</th>
+              <th>Production Technique</th>
+              <th>Visual &amp; Tactile Characteristics</th>
+              <th>Structural Strength</th>
+              <th>Typical Applications</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Hand-Forged Ironmongery</strong></td>
+              <td>Hot steel shaped manually over anvils with hammer &amp; swage</td>
+              <td>Subtle hammer marks, organic tapered edges, bespoke hand feel</td>
+              <td>High tensile toughness; aligned grain structure</td>
+              <td>Heritage estates, timber gates, rustic barn doors, luxury joinery</td>
+            </tr>
+            <tr>
+              <td><strong>Malleable Cast Iron</strong></td>
+              <td>Molten metal poured into sand moulds &amp; heat-annealed</td>
+              <td>Granular sand texture, parting lines, rigid uniform shape</td>
+              <td>Rigid and hard, but brittle under severe shearing shock</td>
+              <td>Standard black antique handles, commercial rim lock cases</td>
+            </tr>
+            <tr>
+              <td><strong>Stamped / Stamped CRCA</strong></td>
+              <td>Cold steel coil blanked &amp; formed in mechanical power presses</td>
+              <td>Crisp edges, identical repetition, smooth flat sheet plane</td>
+              <td>High uniform yield strength; cost-efficient volume</td>
+              <td>Standard utility T-hinges, builder barrel bolts, shelf brackets</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2><span class="blog-step-badge">SECTION 02</span>The Hand-Forged Products Commercial Buyers Order Most</h2>
+      <p>
+        International trade buyers and retail ironmongers typically consolidate five core product families into export sea shipments from India:
+      </p>
+      <ul class="blog-checklist">
+        <li><strong>Forged Latches:</strong> Traditional Suffolk thumb latches, cottage bar latches, gravity gate latches, and gothic thumb-piece assemblies.</li>
+        <li><strong>Forged Hinges:</strong> Penny-end and arrow-head T-hinges, heavy bean-head strap hinges, reversible hook-and-band hinges, and cranked pintle gate sets.</li>
+        <li><strong>Security Bolts:</strong> Heavy hand-forged barrel bolts, square-shank tower bolts, French casement bolts, and heavy gate drop bolts.</li>
+        <li><strong>Hardware Accessories:</strong> Hand-beaten hasps and staples, forged cabin hooks, ornate escutcheons, ring turn handles, and rustic D-handles.</li>
+        <li><strong>Structural Brackets:</strong> Architectural shelf brackets, beam tie plates, corner braces, and decorative masonry wall anchors.</li>
+      </ul>
+
+      <div class="blog-callout tip" style="display: flex; flex-direction: column; gap: 12px;">
+        <div class="blog-callout-header">🔎 Looking for a Specific Hand-Forged Model?</div>
+        <p style="margin: 0; font-size: 15px;">
+          Explore our complete catalogued collections across our <a href="/products" style="color: var(--bronze); font-weight: 600;">Products Directory</a>, <a href="/category/hinges" style="color: var(--bronze); font-weight: 600;">Hinges &amp; Gate Hardware</a>, and <a href="/category/bolts-latches" style="color: var(--bronze); font-weight: 600;">Bolts &amp; Latches</a>. Have an existing physical sample, CAD drawing, or competitor reference code? We analyze technical feasibility and tooling within 24 hours.
+        </p>
+        <div>
+          <a href="/contact" class="button" style="font-size: 13px; padding: 8px 18px; display: inline-flex; align-items: center; gap: 6px;">
+            Send Drawing / Request a Quote →
+          </a>
+        </div>
+      </div>
+
+      <h2><span class="blog-step-badge">SECTION 03</span>How to Judge Hand-Forged Quality Before You Order</h2>
+      <p>
+        Because hand-forged hardware involves manual blacksmithing, quality control cannot rely solely on automated optical sorters. When evaluating evaluation samples and pre-shipment inspection photography, verify these five mandatory checkpoints:
+      </p>
+      <ul class="blog-checklist">
+        <li><strong>Weld &amp; Joint Quality:</strong> Forged pintle pins and hinge knuckle eyes must have full-penetration, solid joints without micro-cracks, cold shuts, or incomplete forge welds.</li>
+        <li><strong>Edges &amp; Contact Surfaces:</strong> While rustic textures are desirable, edges that contact hands (such as latch thumb pieces, pull handles, and bolt knobs) must be cleanly deburred and comfortable to operate without sharp flashings.</li>
+        <li><strong>Moving Mechanism Tolerances:</strong> Suffolk latch drop bars must fall freely into keepers under their own gravity; hinge knuckles must swing smoothly through 180° without binding or excessive lateral wobble.</li>
+        <li><strong>Screw Fixing Holes:</strong> Mounting holes must be accurately countersunk at the correct pitch to accept matching slotted or pirated black antique timber screws flush with the iron surface.</li>
+        <li><strong>Batch Finish Uniformity:</strong> While individual hammer marks vary organically, the protective finish (black tone, sheen, and wax depth) must match across all components within the set.</li>
+      </ul>
+
+      <!-- In-Content CTA 1 -->
+      <div style="background: #fdfbf7; border: 1px solid var(--border); padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div>
+          <h4 style="margin: 0 0 4px 0; color: var(--navy); font-size: 18px;">Ready to review unit pricing and lead times?</h4>
+          <p style="margin: 0; font-size: 14px; color: var(--body);">Share your model list, target quantities, and destination port for an itemized export quotation.</p>
+        </div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="/contact" class="button" style="font-size: 13px; padding: 10px 18px;">Request a Quote</a>
+          <a href="https://wa.me/918285687940" target="_blank" rel="noopener noreferrer" class="button outline" style="font-size: 13px; padding: 10px 18px;">WhatsApp Desk</a>
+        </div>
+      </div>
+
+      <h2><span class="blog-step-badge">SECTION 04</span>Finishes, Rust Prevention &amp; Sea Freight Protection</h2>
+      <p>
+        Corrosion protection during long ocean freight transit (20–35 days across high-humidity marine corridors) is the single biggest concern for overseas ironmongery importers. Unprotected carbon steel will develop flash rust within 48 hours of salt-mist exposure if packaging is inadequate.
+      </p>
+      <p>
+        Reputable Indian manufacturers offer four standard finish systems, each suited to specific interior or exterior architectural environments:
+      </p>
+
+      <div class="blog-table-wrapper">
+        <table class="blog-table">
+          <thead>
+            <tr>
+              <th>Finish Specification</th>
+              <th>Application Method</th>
+              <th>Corrosion Resistance</th>
+              <th>Aesthetic Appearance</th>
+              <th>Ideal Environment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Traditional Beeswax Finish</strong></td>
+              <td>Hot iron dipped in organic beeswax &amp; hand-buffed</td>
+              <td>Moderate (Requires periodic maintenance wax)</td>
+              <td>Deep natural matte black/charcoal patina with subtle iron luster</td>
+              <td>Internal timber doors, cottage renovations, dry interior joinery</td>
+            </tr>
+            <tr>
+              <td><strong>Electrostatic Matte Black Powder Coat</strong></td>
+              <td>Polyester epoxy powder cured at 200°C over phosphated steel</td>
+              <td>High (240+ Hours ASTM B117 salt-spray resistant)</td>
+              <td>Smooth or subtly textured architectural satin black</td>
+              <td>Exterior timber garden gates, perimeter fences, outdoor sheds</td>
+            </tr>
+            <tr>
+              <td><strong>Black Antique (Rustic Patina)</strong></td>
+              <td>Chemical blackening sealed with high-durability synthetic lacquer</td>
+              <td>Moderate to High</td>
+              <td>Weathered heritage iron with highlighted raised ridges</td>
+              <td>Bespoke furniture, heritage cabinetry, boutique hospitality</td>
+            </tr>
+            <tr>
+              <td><strong>Hot-Dip Galvanized + Powder Coat (Duplex)</strong></td>
+              <td>Molten zinc immersion (ISO 1461) followed by black powder coat</td>
+              <td>Maximum (500+ Hours salt-spray resistant)</td>
+              <td>Heavy-duty rugged black finish with zero under-film creep</td>
+              <td>Coastal estates, agricultural barn gates, marine salt environments</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout tip">
+        <div class="blog-callout-header">📦 The 4-Tier Sea Packaging Protocol That Prevents Rust</div>
+        <p style="margin: 0; margin-bottom: 8px;">
+          To guarantee zero corrosion upon container unstuffing in Bristol, Rotterdam, or Dubai, Arpit Impex enforces a multi-barrier export packaging protocol:
+        </p>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li><strong>Individual Moisture Barrier:</strong> Each piece is wrapped in Volatile Corrosion Inhibitor (VCI) protective paper or sealed heavy-gauge polybags.</li>
+          <li><strong>Desiccant Inclusions:</strong> Industrial-grade silica gel moisture-absorbing packets are inserted into every inner product carton.</li>
+          <li><strong>Heavy-Duty 5-Ply Master Cartons:</strong> High-bursting-strength corrugated export master cartons prevent crushing and puncture during container drayage.</li>
+          <li><strong>Shrink-Wrapped Export Pallets:</strong> Master cartons are strapped onto heat-treated ISPM-15 export wooden pallets and fully wrapped with heavy waterproof stretch film.</li>
+        </ul>
+      </div>
+
+      <h2><span class="blog-step-badge">SECTION 05</span>Start with a Physical Sample Before Ordering Volume</h2>
+      <p>
+        <mark class="blog-highlight">For any new product line or supplier relationship, evaluating physical pre-production samples is mandatory.</mark> Photographs and 3D CAD models cannot convey true weight, balance, knuckle swing friction, hand-hammer depth, or finish warmth.
+      </p>
+      <p>
+        <strong>Our Manufacturing &amp; Sourcing Approach:</strong> At Arpit Impex, we maintain complete operational honesty. We forge and stamp selected architectural hardware pieces in our own Aligarh factory, while coordinating specialized ornamental and bespoke lines through long-established, audited artisan partner workshops. At the quotation stage, we tell you explicitly which items are manufactured in-house and which originate from our dedicated partner units, providing unified quality inspection, consolidated export packaging, and single-invoice commercial convenience.
+      </p>
+
+      <!-- In-Content CTA 2 -->
+      <div class="blog-callout" style="background: #f4f6f8; border-left: 4px solid var(--navy); padding: 20px 24px; margin: 28px 0;">
+        <h4 style="margin: 0 0 6px 0; color: var(--navy);">Want to verify finish and weight in your own hands?</h4>
+        <p style="margin: 0 0 14px 0; font-size: 14px; color: var(--body);">
+          Tell us the models and finishes you are considering, and our export team will advise on sample availability and air-dispatch timelines (DHL/FedEx door-to-door).
+        </p>
+        <a href="/contact" class="button" style="font-size: 13px; padding: 8px 18px; text-decoration: none;">
+          Request a Sample or Quote →
+        </a>
+      </div>
+
+      <h2><span class="blog-step-badge">SECTION 06</span>The 7 Details to Send for a Fast, Confirmed Quotation</h2>
+      <p>
+        To eliminate back-and-forth email delays and receive confirmed factory-gate unit pricing within 12–24 business hours, include these seven parameters in your initial enquiry:
+      </p>
+      <ol style="padding-left: 20px; line-height: 1.8; color: var(--body);">
+        <li><strong>Product Model / Drawing:</strong> Model number from our catalogue, technical drawing, or reference photo of the desired shape.</li>
+        <li><strong>Dimensional Specifications:</strong> Strap length, knuckle width, pin diameter, plate thickness (e.g. 3mm vs. 4mm), and screw hole sizing.</li>
+        <li><strong>Required Surface Finish:</strong> Traditional beeswax, electrostatic black powder coat, black antique, or galvanized.</li>
+        <li><strong>Order Quantities:</strong> Initial trial order quantity per SKU and projected annual/repeat container volumes.</li>
+        <li><strong>Packaging Requirements:</strong> Bulk trade packaging, neutral barcoded retail boxes, or customized OEM private-label branding.</li>
+        <li><strong>Destination Seaport / City:</strong> Destination port (e.g. Felixstowe, Southampton, Hamburg, Jebel Ali, New York) for accurate sea freight estimation.</li>
+        <li><strong>Preferred Commercial Incoterm:</strong> EXW (Aligarh factory), FOB (Mundra or Nhava Sheva port), or CIF (Destination port).</li>
+      </ol>
+
+      <h2><span class="blog-step-badge">SECTION 07</span>MOQ, Production Lead Times &amp; Shipping Consolidation</h2>
+      <p>
+        Unlike rigid mass-production mills, our minimum order quantities (MOQs) and production schedules are structured to accommodate growing trade distributors:
+      </p>
+      <ul class="blog-checklist">
+        <li><strong>Flexible Cross-Category MOQs:</strong> Because we produce and consolidate hinges, bolts, latches, and lock bodies under one roof, buyers can combine multiple hand-forged SKUs into a single pallet or container without meeting prohibitive individual-model thresholds.</li>
+        <li><strong>Production Lead Times:</strong> Standard catalogue items typically dispatch in 20 to 30 days from sample confirmation. Custom tooling or bespoke pattern forging requires an initial 15-day die development window.</li>
+        <li><strong>Clean Export Documentation:</strong> Every consignment ships with verified Commercial Invoices, itemized Packing Lists, Bills of Lading, and authorized Certificates of Origin (COO) to ensure frictionless customs clearance at destination.</li>
+      </ul>
+      <p>
+        For a comprehensive step-by-step breakdown of international shipping terms and customs workflows, consult our detailed <a href="/guides/architectural-hardware-sourcing-guide-india" style="color: var(--bronze); font-weight: 600;">Hardware Sourcing Guide</a> and <a href="/process" style="color: var(--bronze); font-weight: 600;">Factory Production Process</a>.
+      </p>
+
+      <h2><span class="blog-step-badge">SECTION 08</span>5 Common Sourcing Mistakes Importers Must Avoid</h2>
+      <p>
+        Protect your company's margins and brand reputation by avoiding these frequent pitfalls when procuring ironmongery from overseas:
+      </p>
+      <ul class="blog-warning-list">
+        <li><strong>Ordering Bulk Production from Photos Alone:</strong> Digital images conceal metal gauge thickness, rough burrs, and flimsy hinge pins. Always insist on approving a physical golden sample.</li>
+        <li><strong>Accepting Vague "Forged" Descriptions Without Clarification:</strong> Failing to verify whether an item is hand-forged, drop-forged, or cast leads to customer returns when brittle cast pieces crack under heavy gate torque.</li>
+        <li><strong>Omitting Written Salt-Spray &amp; Packaging Specs:</strong> Never leave anti-rust packaging to assumptions. Specify VCI wrapping and master carton burst-strength in your purchase order contract.</li>
+        <li><strong>Rejecting Natural Hand-Made Variation:</strong> Expecting computer-identical symmetry from hand-hammered iron is unrealistic. Educate retail customers on the authentic beauty of artisan metalwork.</li>
+        <li><strong>Skipping Pre-Shipment Inspection Milestones:</strong> Ensure your manufacturer provides pre-dispatch photography, weight checks, and box counts prior to final ocean container loading.</li>
+      </ul>
+    `,
+  },
+  {
     slug: 'architectural-ironmongery-manufacturer-exporter-india',
     title: 'Architectural Ironmongery Manufacturer & Exporter in India: Direct B2B Sourcing Guide',
     metaTitle: 'Architectural Ironmongery Manufacturer & Exporter | India Direct',
@@ -259,167 +545,6 @@ export const BLOG_POSTS: BlogPost[] = [
           Whether you require container-load quantities of standard commercial gate ironmongery, custom-stamped private-label hardware, or specialized building fittings, our Aligarh manufacturing and export desk provides prompt engineering reviews and binding commercial quotations. Explore our full <a href="/products">Product Catalogue</a>, download the <a href="/brochure">Digital Engineering Brochure</a>, or contact our export team directly at <a href="mailto:exports@arpitimpex.com">exports@arpitimpex.com</a> or via WhatsApp at <a href="https://wa.me/918285687940">+91 8285687940</a>.
         </p>
       </div>
-    `,
-  },
-  {
-    slug: 'import-door-hardware-from-india',
-    title: "How to Import Door Hardware from India: A Buyer's Guide",
-    metaTitle: "How to Import Door Hardware from India: Buyer's Guide",
-    metaDescription: 'Step-by-step guide to importing door locks, handles, hinges and ironmongery from India: specs, samples, MOQ, shipping terms and documents.',
-    h1: "How to Import Door Hardware from India: A Buyer's Guide",
-    category: 'Buying Guides',
-    targetKeyword: 'import door hardware from India',
-    targetReader: 'Importers, distributors',
-    publishedDate: '2026-10-31',
-    readTime: '7 min read',
-    author: 'Arpit Sharma',
-    image: '/images/press-workshop.webp',
-    imageAlt: 'Arpit Impex Press & Tooling Workshop in Aligarh, India',
-    summary:
-      'A practical step-by-step roadmap walking through how an import order normally works, what to prepare before you contact a supplier, and the mistakes that cost first-time buyers time and money.',
-    faqs: [
-      [
-        'Do you accept small trial orders?',
-        'MOQ is confirmed per model, finish and packaging requirement. Send your requirement and we will advise what is workable.',
-      ],
-      [
-        'Can I have my own packaging or brand?',
-        'Private-label and buyer-branded packaging can be reviewed, subject to order volume and confirmed MOQ.',
-      ],
-      [
-        'Can I customize the finish or dimensions?',
-        'Custom electroplating and dimensional adaptations can be discussed, depending on the product and volume.',
-      ],
-      [
-        'What shipping terms can you quote?',
-        'EXW, FOB (Indian port) and CIF (destination port) where mutually agreed.',
-      ],
-      [
-        'How do I get started?',
-        'Send the model number or drawing, quantity, preferred finish, packaging requirement and destination.',
-      ],
-    ],
-    relatedCategories: [
-      { name: 'Door Locks & Rim Deadbolts', path: '/category/door-locks' },
-      { name: 'Cylinder Locks & Keys', path: '/category/cylinders' },
-      { name: 'Hinges & Gate Hardware', path: '/category/hinges' },
-    ],
-    contentHtml: `
-      <p class="blog-lead">
-        If you buy door locks, handles, hinges or gate hardware in volume, India is worth a serious look. Aligarh in Uttar Pradesh has long been known as India's premier lock and architectural hardware manufacturing cluster. This guide walks through how an import order normally works, what to prepare before contacting a supplier, and the mistakes that cost first-time buyers time and money.
-      </p>
-
-      <h2><span class="blog-step-badge">STEP 01</span>Define Exactly What You Need</h2>
-      <p>Suppliers can only quote accurately when your requirement is specific. Before submitting an enquiry, gather this complete specification checklist:</p>
-      <ul class="blog-checklist">
-        <li><strong>Product &amp; Model Reference:</strong> Exact model code, technical drawing, high-resolution photo, or physical reference sample.</li>
-        <li><strong>Dimensional Tolerances &amp; Fit:</strong> Case depth, backset, door-thickness range, and cylinder profile (e.g. <a href="/category/cylinders">Euro profile DIN 18252 vs. round BSK cylinder</a>).</li>
-        <li><strong>Material Grade &amp; Surface Finish:</strong> Mild steel stamping, die-cast zinc alloy, brass, stainless steel, hot-dip galvanized, electroplated satin brass, polished chrome, or powder-coated matte black.</li>
-        <li><strong>Order Volumes &amp; Projections:</strong> Initial trial quantity (MOQ) and estimated recurring container volumes.</li>
-        <li><strong>Branding &amp; Packaging Specifications:</strong> Standard neutral export packaging, project-based architectural fittings, or custom private-label box branding (<a href="/oem-private-label">OEM Private Label Service</a>).</li>
-        <li><strong>Destination Port:</strong> Exact seaport or inland container depot (ICD) for landed freight estimation.</li>
-      </ul>
-      <p>The more complete the enquiry, <mark class="blog-highlight">the faster and more binding your commercial quotation will be</mark>.</p>
-
-      <h2><span class="blog-step-badge">STEP 02</span>Confirm How the Product Is Supplied</h2>
-      <p>
-        Not every item from an Indian hardware exporter is produced under one roof. Certain products are manufactured in the supplier's own press workshop, while others are consolidated through a network of specialized partner foundries and electroplating facilities.
-      </p>
-      
-      <div class="blog-callout factory">
-        <div class="blog-callout-header">🏭 Factory Direct vs. Consolidated Sourcing</div>
-        <p style="margin: 0;">
-          At Arpit Impex, we maintain complete transparency: we manufacture selected product lines (<a href="/category/door-locks">such as penta-bolt rim deadbolts</a>, <a href="/category/hinges">heavy-duty T-hinges</a>, and <a href="/category/bolts-latches">barrel bolts</a>) in our own Aligarh press and tooling workshop, while coordinating secondary fittings through vetted regional partner manufacturers. Always confirm the supply arrangement upfront as it directly impacts your lead time and MOQ flexibility.
-        </p>
-      </div>
-
-      <h2><span class="blog-step-badge">STEP 03</span>Review the Commercial Quotation Thoroughly</h2>
-      <p>A professional export quotation must be binding and clearly state:</p>
-      <ul class="blog-checklist">
-        <li><strong>Unit Price &amp; Currency:</strong> Stated in USD or agreed currency, with clear quantity-tiered discounts.</li>
-        <li><strong>Confirmed MOQ:</strong> Stipulated per model, finish variation, and packaging tier.</li>
-        <li><strong>Production Lead Time:</strong> Factory lead time from sample sign-off to container loading (typically 20–35 days).</li>
-        <li><strong>Packaging Specs:</strong> Inner boxes, master export cartons, palletization, and gross container weights.</li>
-        <li><strong>Shipping Incoterm:</strong> Clearly defined named port or factory gate (EXW, FOB, or CIF).</li>
-        <li><strong>Payment Terms:</strong> Standard export terms (such as Irrevocable LC at sight or 30% advance T/T with balance against B/L copy).</li>
-        <li><strong>Price Validity Window:</strong> <mark class="blog-highlight">Quotation expiry date</mark>, as international metal raw material indices (copper, zinc, steel) fluctuate.</li>
-      </ul>
-
-      <h2><span class="blog-step-badge">STEP 04</span>Order &amp; Physically Inspect Evaluation Samples</h2>
-      <p>
-        <mark class="blog-highlight">Never commit to bulk container production based purely on digital photographs or CAD renders.</mark> Physical evaluation is mandatory to verify hand feel, spring return action, key tolerances, and electroplating depth.
-      </p>
-
-      <div class="blog-callout tip">
-        <div class="blog-callout-header">💡 Buyer Pro Tip: The Essential 5-Point Sample Check</div>
-        <p style="margin: 0; margin-bottom: 8px;">When your evaluation samples arrive by air courier, rigorously test:</p>
-        <ul style="margin: 0; padding-left: 20px;">
-          <li><strong>Mechanical Movement:</strong> Smooth cylinder rotation, double-throw bolt extension without sticking, and solid spring latch return.</li>
-          <li><strong>Plating &amp; Edges:</strong> Check recessed corners, strike edges, and screw countersinks for even coating thickness and zero bare spots.</li>
-          <li><strong>Caliper Fitment:</strong> Measure case depth, backset, and spindle hub against your architectural door cutouts.</li>
-          <li><strong>Key Configuration:</strong> Inspect SS key stamping, number engraving, and key duplication smoothness across all supplied keys.</li>
-          <li><strong>Packaging Integrity:</strong> Ensure box rigidity and barcode legibility survive international handling.</li>
-        </ul>
-      </div>
-
-      <h2><span class="blog-step-badge">STEP 05</span>Agree on Quality Standards &amp; Pre-Shipment Inspection</h2>
-      <p>
-        Define formal acceptable quality limits (AQL) in writing before tooling or stamping commences. Quality criteria should govern raw metal grade compliance, plating salt-spray resistance, and master carton drop testing. Review our detailed <a href="/quality-inspection">5-Stage Hardware Inspection Protocol</a> to understand the verification checkpoints implemented at our facility.
-      </p>
-
-      <h2><span class="blog-step-badge">STEP 06</span>Select the Right Shipping Term (Incoterms 2020)</h2>
-      <p>Selecting the proper trade term balances logistics control with cost transparency:</p>
-
-      <div class="blog-table-wrapper">
-        <table class="blog-table">
-          <thead>
-            <tr>
-              <th style="width: 22%;">Incoterm</th>
-              <th style="width: 38%;">Seller (Arpit Impex) Responsibility</th>
-              <th style="width: 40%;">Buyer (Importer) Responsibility</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><span class="incoterm-chip">EXW</span> <strong>Ex Works</strong></td>
-              <td>Manufacture hardware, export-grade carton packaging, and make cargo available at our Aligarh factory gate.</td>
-              <td>Inland transport from Aligarh, Indian export customs clearance, port terminal handling, sea freight, transit insurance, and import clearance.</td>
-            </tr>
-            <tr>
-              <td><span class="incoterm-chip">FOB</span> <strong>Free on Board</strong></td>
-              <td>Factory packaging, inland trucking from Aligarh to Indian seaport (Mundra or Nhava Sheva JNPT), export customs clearance, and loading aboard the vessel.</td>
-              <td>International ocean freight, marine transit cargo insurance, destination port clearance, import tariffs/taxes, and final warehouse delivery. <em>(Most recommended for volume buyers with existing freight forwarders).</em></td>
-            </tr>
-            <tr>
-              <td><span class="incoterm-chip">CIF</span> <strong>Cost, Insurance &amp; Freight</strong></td>
-              <td>All FOB responsibilities plus international ocean freight booking and marine cargo insurance to your designated destination seaport.</td>
-              <td>Destination port terminal handling, customs brokerage, duty tariffs, container de-stuffing, and inland transport to your distribution center.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2><span class="blog-step-badge">STEP 07</span>Prepare Export Documentation &amp; Customs Classifications</h2>
-      <p>Smooth customs clearance requires synchronized documentation. For hardware imports from India, standard paperwork includes:</p>
-      <ul class="blog-checklist">
-        <li><strong>Commercial Invoice:</strong> Complete with itemized descriptions, unit prices, and HS codes.</li>
-        <li><strong>Packing List:</strong> Net weights, gross weights, carton counts, and pallet configurations.</li>
-        <li><strong>Bill of Lading (B/L):</strong> Clean on-board ocean bill of lading or Sea Waybill.</li>
-        <li><strong>Certificate of Origin (COO):</strong> Issued by designated Indian export promotion councils for preferential tariff eligibility where applicable.</li>
-      </ul>
-      <p>
-        Standard customs classifications for architectural door locks fall under <mark class="blog-highlight">HS Code 8301</mark> (Padlocks, locks, and keys of base metal), while handles, hinges, brackets, and gate fittings fall under <mark class="blog-highlight">HS Code 8302</mark>. Always verify duty schedules with your licensed customs broker prior to dispatch.
-      </p>
-
-      <h2><span class="blog-step-badge">WATCH-OUT</span>Critical Sourcing Mistakes to Avoid</h2>
-      <p>Over our years of export supply, we see first-time importers stumble on five avoidable traps:</p>
-      <ul class="blog-warning-list">
-        <li><strong>Committing to Containers Without Physical Samples:</strong> Never sign off mass production based solely on screen photos. Dimensional variations of 1mm can compromise lock mortise installations.</li>
-        <li><strong>Ambiguous Finish Specifications:</strong> Terms like "black hardware" or "gold finish" are dangerously vague. Specify exact electroplating or powder-coat codes (e.g., Matte Black Epoxy, 5–8 micron Satin Nickel, or PVD Brushed Gold).</li>
-        <li><strong>Overlooking Inner Box Barcode &amp; Retail Requirements:</strong> Ensure retail EAN/UPC barcodes, model badges, and multilingual instructions are finalized before packaging print runs begin.</li>
-        <li><strong>Skipping Pre-Dispatch Inspection Sign-Off:</strong> Require a pre-shipment photo and dimension inspection report before final wire payment and container seal application.</li>
-        <li><strong>Uncalculated Landed Duty Calculations:</strong> Verify regional anti-dumping duties, value-added taxes, and terminal handling charges before calculating your retail margins.</li>
-      </ul>
     `,
   },
   {
@@ -744,6 +869,167 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Overlooking Cam Resting Angle Standards:</strong> Standard European DIN mortise locks require a 30° resting cam angle (where the cam sits tucked inside the cylinder body when the key is removed). Specifying a 0° resting cam prevents the cylinder from being inserted or withdrawn through the lock body.</li>
         <li><strong>Supplying Thumbturns on Glazed Doors:</strong> For entry portals with decorative glass side-lights within arm's reach of the lock, never specify double-ended key-and-thumbturn cylinders. A burglar can smash the glass pane and twist the thumbturn freely. Always supply double-key cylinders for glazed perimeter doors.</li>
         <li><strong>Failing to Inspect Key Duplication Smoothness:</strong> Require sample testing of all 3 to 5 supplied keys across both directions before bulk container loading to ensure zero binding in the cylinder barrel.</li>
+      </ul>
+    `,
+  },
+  {
+    slug: 'import-door-hardware-from-india',
+    title: "How to Import Door Hardware from India: A Buyer's Guide",
+    metaTitle: "How to Import Door Hardware from India: Buyer's Guide",
+    metaDescription: 'Step-by-step guide to importing door locks, handles, hinges and ironmongery from India: specs, samples, MOQ, shipping terms and documents.',
+    h1: "How to Import Door Hardware from India: A Buyer's Guide",
+    category: 'Buying Guides',
+    targetKeyword: 'import door hardware from India',
+    targetReader: 'Importers, distributors',
+    publishedDate: '2026-10-31',
+    readTime: '7 min read',
+    author: 'Arpit Sharma',
+    image: '/images/press-workshop.webp',
+    imageAlt: 'Arpit Impex Press & Tooling Workshop in Aligarh, India',
+    summary:
+      'A practical step-by-step roadmap walking through how an import order normally works, what to prepare before you contact a supplier, and the mistakes that cost first-time buyers time and money.',
+    faqs: [
+      [
+        'Do you accept small trial orders?',
+        'MOQ is confirmed per model, finish and packaging requirement. Send your requirement and we will advise what is workable.',
+      ],
+      [
+        'Can I have my own packaging or brand?',
+        'Private-label and buyer-branded packaging can be reviewed, subject to order volume and confirmed MOQ.',
+      ],
+      [
+        'Can I customize the finish or dimensions?',
+        'Custom electroplating and dimensional adaptations can be discussed, depending on the product and volume.',
+      ],
+      [
+        'What shipping terms can you quote?',
+        'EXW, FOB (Indian port) and CIF (destination port) where mutually agreed.',
+      ],
+      [
+        'How do I get started?',
+        'Send the model number or drawing, quantity, preferred finish, packaging requirement and destination.',
+      ],
+    ],
+    relatedCategories: [
+      { name: 'Door Locks & Rim Deadbolts', path: '/category/door-locks' },
+      { name: 'Cylinder Locks & Keys', path: '/category/cylinders' },
+      { name: 'Hinges & Gate Hardware', path: '/category/hinges' },
+    ],
+    contentHtml: `
+      <p class="blog-lead">
+        If you buy door locks, handles, hinges or gate hardware in volume, India is worth a serious look. Aligarh in Uttar Pradesh has long been known as India's premier lock and architectural hardware manufacturing cluster. This guide walks through how an import order normally works, what to prepare before contacting a supplier, and the mistakes that cost first-time buyers time and money.
+      </p>
+
+      <h2><span class="blog-step-badge">STEP 01</span>Define Exactly What You Need</h2>
+      <p>Suppliers can only quote accurately when your requirement is specific. Before submitting an enquiry, gather this complete specification checklist:</p>
+      <ul class="blog-checklist">
+        <li><strong>Product &amp; Model Reference:</strong> Exact model code, technical drawing, high-resolution photo, or physical reference sample.</li>
+        <li><strong>Dimensional Tolerances &amp; Fit:</strong> Case depth, backset, door-thickness range, and cylinder profile (e.g. <a href="/category/cylinders">Euro profile DIN 18252 vs. round BSK cylinder</a>).</li>
+        <li><strong>Material Grade &amp; Surface Finish:</strong> Mild steel stamping, die-cast zinc alloy, brass, stainless steel, hot-dip galvanized, electroplated satin brass, polished chrome, or powder-coated matte black.</li>
+        <li><strong>Order Volumes &amp; Projections:</strong> Initial trial quantity (MOQ) and estimated recurring container volumes.</li>
+        <li><strong>Branding &amp; Packaging Specifications:</strong> Standard neutral export packaging, project-based architectural fittings, or custom private-label box branding (<a href="/oem-private-label">OEM Private Label Service</a>).</li>
+        <li><strong>Destination Port:</strong> Exact seaport or inland container depot (ICD) for landed freight estimation.</li>
+      </ul>
+      <p>The more complete the enquiry, <mark class="blog-highlight">the faster and more binding your commercial quotation will be</mark>.</p>
+
+      <h2><span class="blog-step-badge">STEP 02</span>Confirm How the Product Is Supplied</h2>
+      <p>
+        Not every item from an Indian hardware exporter is produced under one roof. Certain products are manufactured in the supplier's own press workshop, while others are consolidated through a network of specialized partner foundries and electroplating facilities.
+      </p>
+      
+      <div class="blog-callout factory">
+        <div class="blog-callout-header">🏭 Factory Direct vs. Consolidated Sourcing</div>
+        <p style="margin: 0;">
+          At Arpit Impex, we maintain complete transparency: we manufacture selected product lines (<a href="/category/door-locks">such as penta-bolt rim deadbolts</a>, <a href="/category/hinges">heavy-duty T-hinges</a>, and <a href="/category/bolts-latches">barrel bolts</a>) in our own Aligarh press and tooling workshop, while coordinating secondary fittings through vetted regional partner manufacturers. Always confirm the supply arrangement upfront as it directly impacts your lead time and MOQ flexibility.
+        </p>
+      </div>
+
+      <h2><span class="blog-step-badge">STEP 03</span>Review the Commercial Quotation Thoroughly</h2>
+      <p>A professional export quotation must be binding and clearly state:</p>
+      <ul class="blog-checklist">
+        <li><strong>Unit Price &amp; Currency:</strong> Stated in USD or agreed currency, with clear quantity-tiered discounts.</li>
+        <li><strong>Confirmed MOQ:</strong> Stipulated per model, finish variation, and packaging tier.</li>
+        <li><strong>Production Lead Time:</strong> Factory lead time from sample sign-off to container loading (typically 20–35 days).</li>
+        <li><strong>Packaging Specs:</strong> Inner boxes, master export cartons, palletization, and gross container weights.</li>
+        <li><strong>Shipping Incoterm:</strong> Clearly defined named port or factory gate (EXW, FOB, or CIF).</li>
+        <li><strong>Payment Terms:</strong> Standard export terms (such as Irrevocable LC at sight or 30% advance T/T with balance against B/L copy).</li>
+        <li><strong>Price Validity Window:</strong> <mark class="blog-highlight">Quotation expiry date</mark>, as international metal raw material indices (copper, zinc, steel) fluctuate.</li>
+      </ul>
+
+      <h2><span class="blog-step-badge">STEP 04</span>Order &amp; Physically Inspect Evaluation Samples</h2>
+      <p>
+        <mark class="blog-highlight">Never commit to bulk container production based purely on digital photographs or CAD renders.</mark> Physical evaluation is mandatory to verify hand feel, spring return action, key tolerances, and electroplating depth.
+      </p>
+
+      <div class="blog-callout tip">
+        <div class="blog-callout-header">💡 Buyer Pro Tip: The Essential 5-Point Sample Check</div>
+        <p style="margin: 0; margin-bottom: 8px;">When your evaluation samples arrive by air courier, rigorously test:</p>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li><strong>Mechanical Movement:</strong> Smooth cylinder rotation, double-throw bolt extension without sticking, and solid spring latch return.</li>
+          <li><strong>Plating &amp; Edges:</strong> Check recessed corners, strike edges, and screw countersinks for even coating thickness and zero bare spots.</li>
+          <li><strong>Caliper Fitment:</strong> Measure case depth, backset, and spindle hub against your architectural door cutouts.</li>
+          <li><strong>Key Configuration:</strong> Inspect SS key stamping, number engraving, and key duplication smoothness across all supplied keys.</li>
+          <li><strong>Packaging Integrity:</strong> Ensure box rigidity and barcode legibility survive international handling.</li>
+        </ul>
+      </div>
+
+      <h2><span class="blog-step-badge">STEP 05</span>Agree on Quality Standards &amp; Pre-Shipment Inspection</h2>
+      <p>
+        Define formal acceptable quality limits (AQL) in writing before tooling or stamping commences. Quality criteria should govern raw metal grade compliance, plating salt-spray resistance, and master carton drop testing. Review our detailed <a href="/quality-inspection">5-Stage Hardware Inspection Protocol</a> to understand the verification checkpoints implemented at our facility.
+      </p>
+
+      <h2><span class="blog-step-badge">STEP 06</span>Select the Right Shipping Term (Incoterms 2020)</h2>
+      <p>Selecting the proper trade term balances logistics control with cost transparency:</p>
+
+      <div class="blog-table-wrapper">
+        <table class="blog-table">
+          <thead>
+            <tr>
+              <th style="width: 22%;">Incoterm</th>
+              <th style="width: 38%;">Seller (Arpit Impex) Responsibility</th>
+              <th style="width: 40%;">Buyer (Importer) Responsibility</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="incoterm-chip">EXW</span> <strong>Ex Works</strong></td>
+              <td>Manufacture hardware, export-grade carton packaging, and make cargo available at our Aligarh factory gate.</td>
+              <td>Inland transport from Aligarh, Indian export customs clearance, port terminal handling, sea freight, transit insurance, and import clearance.</td>
+            </tr>
+            <tr>
+              <td><span class="incoterm-chip">FOB</span> <strong>Free on Board</strong></td>
+              <td>Factory packaging, inland trucking from Aligarh to Indian seaport (Mundra or Nhava Sheva JNPT), export customs clearance, and loading aboard the vessel.</td>
+              <td>International ocean freight, marine transit cargo insurance, destination port clearance, import tariffs/taxes, and final warehouse delivery. <em>(Most recommended for volume buyers with existing freight forwarders).</em></td>
+            </tr>
+            <tr>
+              <td><span class="incoterm-chip">CIF</span> <strong>Cost, Insurance &amp; Freight</strong></td>
+              <td>All FOB responsibilities plus international ocean freight booking and marine cargo insurance to your designated destination seaport.</td>
+              <td>Destination port terminal handling, customs brokerage, duty tariffs, container de-stuffing, and inland transport to your distribution center.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2><span class="blog-step-badge">STEP 07</span>Prepare Export Documentation &amp; Customs Classifications</h2>
+      <p>Smooth customs clearance requires synchronized documentation. For hardware imports from India, standard paperwork includes:</p>
+      <ul class="blog-checklist">
+        <li><strong>Commercial Invoice:</strong> Complete with itemized descriptions, unit prices, and HS codes.</li>
+        <li><strong>Packing List:</strong> Net weights, gross weights, carton counts, and pallet configurations.</li>
+        <li><strong>Bill of Lading (B/L):</strong> Clean on-board ocean bill of lading or Sea Waybill.</li>
+        <li><strong>Certificate of Origin (COO):</strong> Issued by designated Indian export promotion councils for preferential tariff eligibility where applicable.</li>
+      </ul>
+      <p>
+        Standard customs classifications for architectural door locks fall under <mark class="blog-highlight">HS Code 8301</mark> (Padlocks, locks, and keys of base metal), while handles, hinges, brackets, and gate fittings fall under <mark class="blog-highlight">HS Code 8302</mark>. Always verify duty schedules with your licensed customs broker prior to dispatch.
+      </p>
+
+      <h2><span class="blog-step-badge">WATCH-OUT</span>Critical Sourcing Mistakes to Avoid</h2>
+      <p>Over our years of export supply, we see first-time importers stumble on five avoidable traps:</p>
+      <ul class="blog-warning-list">
+        <li><strong>Committing to Containers Without Physical Samples:</strong> Never sign off mass production based solely on screen photos. Dimensional variations of 1mm can compromise lock mortise installations.</li>
+        <li><strong>Ambiguous Finish Specifications:</strong> Terms like "black hardware" or "gold finish" are dangerously vague. Specify exact electroplating or powder-coat codes (e.g., Matte Black Epoxy, 5–8 micron Satin Nickel, or PVD Brushed Gold).</li>
+        <li><strong>Overlooking Inner Box Barcode &amp; Retail Requirements:</strong> Ensure retail EAN/UPC barcodes, model badges, and multilingual instructions are finalized before packaging print runs begin.</li>
+        <li><strong>Skipping Pre-Dispatch Inspection Sign-Off:</strong> Require a pre-shipment photo and dimension inspection report before final wire payment and container seal application.</li>
+        <li><strong>Uncalculated Landed Duty Calculations:</strong> Verify regional anti-dumping duties, value-added taxes, and terminal handling charges before calculating your retail margins.</li>
       </ul>
     `,
   },
@@ -1096,292 +1382,6 @@ export const BLOG_POSTS: BlogPost[] = [
         <li><strong>Accepting Institute Cargo Clauses (C) Insurance on Fragile Finished Hardware:</strong> Standard CIF only legally mandates Clause (C) insurance (which covers major vessel disasters like sinking or stranding, but excludes rough handling, water ingress, and cargo shifting). Always verify that your exporter provides comprehensive <em>Institute Cargo Clauses (A) "All Risks"</em> coverage.</li>
         <li><strong>Ignoring Demurrage &amp; Detention Free-Time Allowances:</strong> Standard ocean carrier free-time at destination ports is typically only 5 to 7 days before punitive daily detention charges accumulate ($100–$250/day). For large consignments, request your forwarder or exporter to negotiate 14 to 21 free demurrage days on the Bill of Lading prior to vessel departure.</li>
         <li><strong>Discrepancies in HS Code Descriptions:</strong> Inconsistent product descriptions between your purchase order, the commercial invoice, and the customs entry can trigger physical customs examinations and multi-week inspection holds. Ensure model descriptions match harmonized tariff terminology exactly.</li>
-      </ul>
-    `,
-  },
-  {
-    slug: 'hand-forged-ironmongery-from-india',
-    title: 'Hand-Forged Ironmongery from India: A Buyer\'s Guide',
-    metaTitle: 'Hand-Forged Ironmongery from India: Buyer\'s Guide',
-    metaDescription: 'How to source hand-forged hinges, latches and gate hardware from India: finishes, samples, MOQ, packaging and shipping. Request a quote.',
-    h1: 'Hand-Forged Ironmongery from India: A Buyer\'s Guide',
-    category: 'Buying Guides',
-    targetKeyword: 'hand forged ironmongery India',
-    targetReader: 'Importers, wholesalers, gate and ironmongery retailers, and trade buyers in the UK, Europe, UAE, Australia and the US',
-    publishedDate: '2026-11-20',
-    readTime: '7 min read',
-    author: 'Arpit Sharma',
-    image: '/images/ironmongery/ornate-black-iron-door-hardware-set.webp',
-    imageAlt: 'Hand-forged ironmongery manufactured in India including black antique gate hinges, Suffolk latches, and wrought iron hardware',
-    summary:
-      'A practical B2B buyer\'s guide for overseas importers and hardware retailers on sourcing authentic hand-forged hinges, Suffolk latches, and rustic gate hardware from India: quality checks, anti-rust finishes, sample verification, and shipping.',
-    faqs: [
-      [
-        'Are all your products hand-forged?',
-        'No. We offer hand-forged and other architectural ironmongery (including cast, stamped, and precision-machined lines). We maintain complete transparency and explicitly confirm which items are forged in our own manufacturing facility and which come through our audited partner artisan workshops before you order.',
-      ],
-      [
-        'Can I get a sample first before committing to bulk quantity?',
-        'Yes. Evaluation samples can be coordinated for all active catalog models. We confirm sample availability, nominal unit cost, and courier dispatch time (typically 3–7 business days via DHL/FedEx) at the quotation stage.',
-      ],
-      [
-        'Can you manufacture custom hand-forged designs or modify existing models?',
-        'Yes. Send us a technical drawing, sketch, or clear photograph with dimensions. Our Aligarh toolroom and master blacksmiths will evaluate feasibility, tooling/pattern requirements, sample timelines, and volume MOQs.',
-      ],
-      [
-        'Can you pack hand-forged ironmongery under our brand (OEM / Private Label)?',
-        'Yes. We provide comprehensive OEM private-label packaging including customized visual retail boxes, branded polybags with EAN-13 barcodes, and laser-marked brand rosettes, subject to agreed order volume.',
-      ],
-      [
-        'What are your typical Minimum Order Quantities (MOQs)?',
-        'MOQs depend on the specific hardware piece, required finish (e.g. beeswax vs. electroplated vs. powder coated), and packaging specifications. Rather than quoting a rigid single figure, we provide flexible, workable MOQs tailored to your consignment requirements.',
-      ],
-      [
-        'How do I get started with an enquiry or quote?',
-        'Simply send your required model numbers, sizes, finishes, quantities, and destination port through our website contact form or directly via WhatsApp (+91 8285687940). Our export desk will review your details and respond with specifications and commercial terms.',
-      ],
-    ],
-    relatedCategories: [
-      { name: 'Hinges & Gate Hardware', path: '/category/hinges' },
-      { name: 'Bolts & Gate Latches', path: '/category/bolts-latches' },
-      { name: 'Brackets, Anchors & Fixings', path: '/category/brackets-anchors' },
-    ],
-    contentHtml: `
-      <div class="blog-callout tip" style="margin-bottom: 28px;">
-        <div class="blog-callout-header">🎯 Who This Guide Is For</div>
-        <p style="margin: 0; font-size: 15px; line-height: 1.7;">
-          <strong>Who this is for:</strong> Importers, wholesalers, gate hardware fabricators, and ironmongery retailers seeking reliable, direct sourcing of authentic hand-forged hinges, Suffolk latches, bolts, hooks, and rustic gate fittings from India. If you already know what you need, <a href="/contact" style="color: var(--bronze); font-weight: 700; text-decoration: underline;">Request a Quote</a> or <a href="https://wa.me/918285687940?text=Hello%20Arpit%20Impex%2C%20I%20would%20like%20to%20discuss%20hand-forged%20ironmongery%20quotation" target="_blank" rel="noopener noreferrer" style="color: var(--bronze); font-weight: 700; text-decoration: underline;">WhatsApp our export desk at +91 8285687940</a>.
-        </p>
-      </div>
-
-      <p>
-        Hand-forged ironmongery commands premium retail value and high commercial demand because it looks and feels completely distinct from mass-cast, cookie-cutter hardware. Discerning architectural buyers in the United Kingdom, Europe, North America, the Gulf (GCC), and Australia seek hand-forged pieces for heritage barn conversions, period timber cottage restorations, rural estate garden gates, bespoke pubs, rustic restaurants, and artisanal interior joinery.
-      </p>
-      <p>
-        India possesses centuries of traditional metallurgical craftsmanship, anvil-forging mastery, and hot-metal forming expertise. Consequently, international hardware distributors and builders merchants are actively shifting procurement to Indian exporters. However, navigating finishes, rust prevention across maritime transit, sampling, and realistic production MOQs requires clear commercial guidance. This guide explains exactly what to look for, what questions to ask your supplier, and how a seamless export order works.
-      </p>
-
-      <h2><span class="blog-step-badge">SECTION 01</span>What "Hand-Forged" Actually Means (and What It Doesn't)</h2>
-      <p>
-        Authentic hand-forged ironmongery is shaped from red-hot bars of carbon steel or malleable wrought iron using open hearths, anvils, hand hammers, and manual swage forming tools, followed by individual hand-finishing. Because each piece is manually worked by an artisan blacksmith, subtle variations in surface texture, subtle hammer facet marks, and unique taper contours are completely normal—and represent the primary aesthetic appeal buyers pay for.
-      </p>
-      <p>
-        In contrast, cast or stamped hardware is mass-produced in metal moulds or automated mechanical stamping presses. While stamped and cast items offer absolute dimensional uniformity, they lack the organic texture, heavy hand-feel, and traditional architectural character of hot-forged fittings.
-      </p>
-
-      <div class="blog-callout factory">
-        <div class="blog-callout-header">⚠️ Buyer Watch-Out: The "Forged" Label Confusion</div>
-        <p style="margin: 0;">
-          Be cautious with overseas trading suppliers who indiscriminately label all black ironmongery as "forged". Many brokers supply cheap zinc die-cast or thin sheet-metal pressings coated in rough crackle paint to mimic forging. Always ask your supplier which exact SKUs are genuine hand-forged, which are drop-forged, and which are stamped or fabricated, and verify that production samples match your catalog imagery before issuing purchase orders.
-        </p>
-      </div>
-
-      <div class="blog-table-wrapper">
-        <table class="blog-table">
-          <thead>
-            <tr>
-              <th>Manufacturing Method</th>
-              <th>Production Technique</th>
-              <th>Visual &amp; Tactile Characteristics</th>
-              <th>Structural Strength</th>
-              <th>Typical Applications</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Hand-Forged Ironmongery</strong></td>
-              <td>Hot steel shaped manually over anvils with hammer &amp; swage</td>
-              <td>Subtle hammer marks, organic tapered edges, bespoke hand feel</td>
-              <td>High tensile toughness; aligned grain structure</td>
-              <td>Heritage estates, timber gates, rustic barn doors, luxury joinery</td>
-            </tr>
-            <tr>
-              <td><strong>Malleable Cast Iron</strong></td>
-              <td>Molten metal poured into sand moulds &amp; heat-annealed</td>
-              <td>Granular sand texture, parting lines, rigid uniform shape</td>
-              <td>Rigid and hard, but brittle under severe shearing shock</td>
-              <td>Standard black antique handles, commercial rim lock cases</td>
-            </tr>
-            <tr>
-              <td><strong>Stamped / Stamped CRCA</strong></td>
-              <td>Cold steel coil blanked &amp; formed in mechanical power presses</td>
-              <td>Crisp edges, identical repetition, smooth flat sheet plane</td>
-              <td>High uniform yield strength; cost-efficient volume</td>
-              <td>Standard utility T-hinges, builder barrel bolts, shelf brackets</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <h2><span class="blog-step-badge">SECTION 02</span>The Hand-Forged Products Commercial Buyers Order Most</h2>
-      <p>
-        International trade buyers and retail ironmongers typically consolidate five core product families into export sea shipments from India:
-      </p>
-      <ul class="blog-checklist">
-        <li><strong>Forged Latches:</strong> Traditional Suffolk thumb latches, cottage bar latches, gravity gate latches, and gothic thumb-piece assemblies.</li>
-        <li><strong>Forged Hinges:</strong> Penny-end and arrow-head T-hinges, heavy bean-head strap hinges, reversible hook-and-band hinges, and cranked pintle gate sets.</li>
-        <li><strong>Security Bolts:</strong> Heavy hand-forged barrel bolts, square-shank tower bolts, French casement bolts, and heavy gate drop bolts.</li>
-        <li><strong>Hardware Accessories:</strong> Hand-beaten hasps and staples, forged cabin hooks, ornate escutcheons, ring turn handles, and rustic D-handles.</li>
-        <li><strong>Structural Brackets:</strong> Architectural shelf brackets, beam tie plates, corner braces, and decorative masonry wall anchors.</li>
-      </ul>
-
-      <div class="blog-callout tip" style="display: flex; flex-direction: column; gap: 12px;">
-        <div class="blog-callout-header">🔎 Looking for a Specific Hand-Forged Model?</div>
-        <p style="margin: 0; font-size: 15px;">
-          Explore our complete catalogued collections across our <a href="/products" style="color: var(--bronze); font-weight: 600;">Products Directory</a>, <a href="/category/hinges" style="color: var(--bronze); font-weight: 600;">Hinges &amp; Gate Hardware</a>, and <a href="/category/bolts-latches" style="color: var(--bronze); font-weight: 600;">Bolts &amp; Latches</a>. Have an existing physical sample, CAD drawing, or competitor reference code? We analyze technical feasibility and tooling within 24 hours.
-        </p>
-        <div>
-          <a href="/contact" class="button" style="font-size: 13px; padding: 8px 18px; display: inline-flex; align-items: center; gap: 6px;">
-            Send Drawing / Request a Quote →
-          </a>
-        </div>
-      </div>
-
-      <h2><span class="blog-step-badge">SECTION 03</span>How to Judge Hand-Forged Quality Before You Order</h2>
-      <p>
-        Because hand-forged hardware involves manual blacksmithing, quality control cannot rely solely on automated optical sorters. When evaluating evaluation samples and pre-shipment inspection photography, verify these five mandatory checkpoints:
-      </p>
-      <ul class="blog-checklist">
-        <li><strong>Weld &amp; Joint Quality:</strong> Forged pintle pins and hinge knuckle eyes must have full-penetration, solid joints without micro-cracks, cold shuts, or incomplete forge welds.</li>
-        <li><strong>Edges &amp; Contact Surfaces:</strong> While rustic textures are desirable, edges that contact hands (such as latch thumb pieces, pull handles, and bolt knobs) must be cleanly deburred and comfortable to operate without sharp flashings.</li>
-        <li><strong>Moving Mechanism Tolerances:</strong> Suffolk latch drop bars must fall freely into keepers under their own gravity; hinge knuckles must swing smoothly through 180° without binding or excessive lateral wobble.</li>
-        <li><strong>Screw Fixing Holes:</strong> Mounting holes must be accurately countersunk at the correct pitch to accept matching slotted or pirated black antique timber screws flush with the iron surface.</li>
-        <li><strong>Batch Finish Uniformity:</strong> While individual hammer marks vary organically, the protective finish (black tone, sheen, and wax depth) must match across all components within the set.</li>
-      </ul>
-
-      <!-- In-Content CTA 1 -->
-      <div style="background: #fdfbf7; border: 1px solid var(--border); padding: 24px 28px; margin: 32px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
-        <div>
-          <h4 style="margin: 0 0 4px 0; color: var(--navy); font-size: 18px;">Ready to review unit pricing and lead times?</h4>
-          <p style="margin: 0; font-size: 14px; color: var(--body);">Share your model list, target quantities, and destination port for an itemized export quotation.</p>
-        </div>
-        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-          <a href="/contact" class="button" style="font-size: 13px; padding: 10px 18px;">Request a Quote</a>
-          <a href="https://wa.me/918285687940" target="_blank" rel="noopener noreferrer" class="button outline" style="font-size: 13px; padding: 10px 18px;">WhatsApp Desk</a>
-        </div>
-      </div>
-
-      <h2><span class="blog-step-badge">SECTION 04</span>Finishes, Rust Prevention &amp; Sea Freight Protection</h2>
-      <p>
-        Corrosion protection during long ocean freight transit (20–35 days across high-humidity marine corridors) is the single biggest concern for overseas ironmongery importers. Unprotected carbon steel will develop flash rust within 48 hours of salt-mist exposure if packaging is inadequate.
-      </p>
-      <p>
-        Reputable Indian manufacturers offer four standard finish systems, each suited to specific interior or exterior architectural environments:
-      </p>
-
-      <div class="blog-table-wrapper">
-        <table class="blog-table">
-          <thead>
-            <tr>
-              <th>Finish Specification</th>
-              <th>Application Method</th>
-              <th>Corrosion Resistance</th>
-              <th>Aesthetic Appearance</th>
-              <th>Ideal Environment</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td><strong>Traditional Beeswax Finish</strong></td>
-              <td>Hot iron dipped in organic beeswax &amp; hand-buffed</td>
-              <td>Moderate (Requires periodic maintenance wax)</td>
-              <td>Deep natural matte black/charcoal patina with subtle iron luster</td>
-              <td>Internal timber doors, cottage renovations, dry interior joinery</td>
-            </tr>
-            <tr>
-              <td><strong>Electrostatic Matte Black Powder Coat</strong></td>
-              <td>Polyester epoxy powder cured at 200°C over phosphated steel</td>
-              <td>High (240+ Hours ASTM B117 salt-spray resistant)</td>
-              <td>Smooth or subtly textured architectural satin black</td>
-              <td>Exterior timber garden gates, perimeter fences, outdoor sheds</td>
-            </tr>
-            <tr>
-              <td><strong>Black Antique (Rustic Patina)</strong></td>
-              <td>Chemical blackening sealed with high-durability synthetic lacquer</td>
-              <td>Moderate to High</td>
-              <td>Weathered heritage iron with highlighted raised ridges</td>
-              <td>Bespoke furniture, heritage cabinetry, boutique hospitality</td>
-            </tr>
-            <tr>
-              <td><strong>Hot-Dip Galvanized + Powder Coat (Duplex)</strong></td>
-              <td>Molten zinc immersion (ISO 1461) followed by black powder coat</td>
-              <td>Maximum (500+ Hours salt-spray resistant)</td>
-              <td>Heavy-duty rugged black finish with zero under-film creep</td>
-              <td>Coastal estates, agricultural barn gates, marine salt environments</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <div class="blog-callout tip">
-        <div class="blog-callout-header">📦 The 4-Tier Sea Packaging Protocol That Prevents Rust</div>
-        <p style="margin: 0; margin-bottom: 8px;">
-          To guarantee zero corrosion upon container unstuffing in Bristol, Rotterdam, or Dubai, Arpit Impex enforces a multi-barrier export packaging protocol:
-        </p>
-        <ul style="margin: 0; padding-left: 20px;">
-          <li><strong>Individual Moisture Barrier:</strong> Each piece is wrapped in Volatile Corrosion Inhibitor (VCI) protective paper or sealed heavy-gauge polybags.</li>
-          <li><strong>Desiccant Inclusions:</strong> Industrial-grade silica gel moisture-absorbing packets are inserted into every inner product carton.</li>
-          <li><strong>Heavy-Duty 5-Ply Master Cartons:</strong> High-bursting-strength corrugated export master cartons prevent crushing and puncture during container drayage.</li>
-          <li><strong>Shrink-Wrapped Export Pallets:</strong> Master cartons are strapped onto heat-treated ISPM-15 export wooden pallets and fully wrapped with heavy waterproof stretch film.</li>
-        </ul>
-      </div>
-
-      <h2><span class="blog-step-badge">SECTION 05</span>Start with a Physical Sample Before Ordering Volume</h2>
-      <p>
-        <mark class="blog-highlight">For any new product line or supplier relationship, evaluating physical pre-production samples is mandatory.</mark> Photographs and 3D CAD models cannot convey true weight, balance, knuckle swing friction, hand-hammer depth, or finish warmth.
-      </p>
-      <p>
-        <strong>Our Manufacturing &amp; Sourcing Approach:</strong> At Arpit Impex, we maintain complete operational honesty. We forge and stamp selected architectural hardware pieces in our own Aligarh factory, while coordinating specialized ornamental and bespoke lines through long-established, audited artisan partner workshops. At the quotation stage, we tell you explicitly which items are manufactured in-house and which originate from our dedicated partner units, providing unified quality inspection, consolidated export packaging, and single-invoice commercial convenience.
-      </p>
-
-      <!-- In-Content CTA 2 -->
-      <div class="blog-callout" style="background: #f4f6f8; border-left: 4px solid var(--navy); padding: 20px 24px; margin: 28px 0;">
-        <h4 style="margin: 0 0 6px 0; color: var(--navy);">Want to verify finish and weight in your own hands?</h4>
-        <p style="margin: 0 0 14px 0; font-size: 14px; color: var(--body);">
-          Tell us the models and finishes you are considering, and our export team will advise on sample availability and air-dispatch timelines (DHL/FedEx door-to-door).
-        </p>
-        <a href="/contact" class="button" style="font-size: 13px; padding: 8px 18px; text-decoration: none;">
-          Request a Sample or Quote →
-        </a>
-      </div>
-
-      <h2><span class="blog-step-badge">SECTION 06</span>The 7 Details to Send for a Fast, Confirmed Quotation</h2>
-      <p>
-        To eliminate back-and-forth email delays and receive confirmed factory-gate unit pricing within 12–24 business hours, include these seven parameters in your initial enquiry:
-      </p>
-      <ol style="padding-left: 20px; line-height: 1.8; color: var(--body);">
-        <li><strong>Product Model / Drawing:</strong> Model number from our catalogue, technical drawing, or reference photo of the desired shape.</li>
-        <li><strong>Dimensional Specifications:</strong> Strap length, knuckle width, pin diameter, plate thickness (e.g. 3mm vs. 4mm), and screw hole sizing.</li>
-        <li><strong>Required Surface Finish:</strong> Traditional beeswax, electrostatic black powder coat, black antique, or galvanized.</li>
-        <li><strong>Order Quantities:</strong> Initial trial order quantity per SKU and projected annual/repeat container volumes.</li>
-        <li><strong>Packaging Requirements:</strong> Bulk trade packaging, neutral barcoded retail boxes, or customized OEM private-label branding.</li>
-        <li><strong>Destination Seaport / City:</strong> Destination port (e.g. Felixstowe, Southampton, Hamburg, Jebel Ali, New York) for accurate sea freight estimation.</li>
-        <li><strong>Preferred Commercial Incoterm:</strong> EXW (Aligarh factory), FOB (Mundra or Nhava Sheva port), or CIF (Destination port).</li>
-      </ol>
-
-      <h2><span class="blog-step-badge">SECTION 07</span>MOQ, Production Lead Times &amp; Shipping Consolidation</h2>
-      <p>
-        Unlike rigid mass-production mills, our minimum order quantities (MOQs) and production schedules are structured to accommodate growing trade distributors:
-      </p>
-      <ul class="blog-checklist">
-        <li><strong>Flexible Cross-Category MOQs:</strong> Because we produce and consolidate hinges, bolts, latches, and lock bodies under one roof, buyers can combine multiple hand-forged SKUs into a single pallet or container without meeting prohibitive individual-model thresholds.</li>
-        <li><strong>Production Lead Times:</strong> Standard catalogue items typically dispatch in 20 to 30 days from sample confirmation. Custom tooling or bespoke pattern forging requires an initial 15-day die development window.</li>
-        <li><strong>Clean Export Documentation:</strong> Every consignment ships with verified Commercial Invoices, itemized Packing Lists, Bills of Lading, and authorized Certificates of Origin (COO) to ensure frictionless customs clearance at destination.</li>
-      </ul>
-      <p>
-        For a comprehensive step-by-step breakdown of international shipping terms and customs workflows, consult our detailed <a href="/guides/architectural-hardware-sourcing-guide-india" style="color: var(--bronze); font-weight: 600;">Hardware Sourcing Guide</a> and <a href="/process" style="color: var(--bronze); font-weight: 600;">Factory Production Process</a>.
-      </p>
-
-      <h2><span class="blog-step-badge">SECTION 08</span>5 Common Sourcing Mistakes Importers Must Avoid</h2>
-      <p>
-        Protect your company's margins and brand reputation by avoiding these frequent pitfalls when procuring ironmongery from overseas:
-      </p>
-      <ul class="blog-warning-list">
-        <li><strong>Ordering Bulk Production from Photos Alone:</strong> Digital images conceal metal gauge thickness, rough burrs, and flimsy hinge pins. Always insist on approving a physical golden sample.</li>
-        <li><strong>Accepting Vague "Forged" Descriptions Without Clarification:</strong> Failing to verify whether an item is hand-forged, drop-forged, or cast leads to customer returns when brittle cast pieces crack under heavy gate torque.</li>
-        <li><strong>Omitting Written Salt-Spray &amp; Packaging Specs:</strong> Never leave anti-rust packaging to assumptions. Specify VCI wrapping and master carton burst-strength in your purchase order contract.</li>
-        <li><strong>Rejecting Natural Hand-Made Variation:</strong> Expecting computer-identical symmetry from hand-hammered iron is unrealistic. Educate retail customers on the authentic beauty of artisan metalwork.</li>
-        <li><strong>Skipping Pre-Shipment Inspection Milestones:</strong> Ensure your manufacturer provides pre-dispatch photography, weight checks, and box counts prior to final ocean container loading.</li>
       </ul>
     `,
   },
